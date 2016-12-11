@@ -1,5 +1,86 @@
 
+$primary: 'indigo';
+
+@import 'core-client/scss/core';
+@import 'core-client/scss/components/button';
+@import 'core-client/scss/components/form';
+@import 'core-client/scss/components/grid';
+@import 'core-client/scss/components/typography';
+
 body {
 	background-color: #FFF;
 	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	background-color: #000;
+	background-image: url(/assets/images/bg.png);
+	background-position: center top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 90vh;
+	color: #FFF;
+
+	nav {
+		display: flex;
+		align-items: center;
+		padding: 5vh 25px 0;
+
+		h1 {
+			display: flex;
+			align-items: center;
+			font-size: 44px;
+			flex: 0 0 auto;
+			padding-right: 25px;
+			cursor: pointer;
+			transition: color .4s ease;
+
+			&:hover {
+				color: mc('indigo', '100');
+			}
+
+			i {
+				margin-right: 15px;
+			}
+
+			span {
+				font-weight: 300;
+			}
+
+		}
+
+		ul {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 1 0 auto;
+
+			li {
+
+				a {
+					color: #FFF;
+					display: flex;
+					padding: 0 15px;
+					text-transform: uppercase;
+					transition: color .4s ease;
+
+					&:hover {
+						color: mc('indigo', '100');
+						text-decoration: none;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	h2 {
+			text-align: center;
+			padding-top: 100px;
+		}
+
 }

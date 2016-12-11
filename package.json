@@ -26,6 +26,10 @@
     "gulp-sass": "^3.0.0",
     "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.11",
-    "merge-stream": "^1.0.1"
+    "gulp-webserver": "^0.9.1",
+    "lodash": "^4.17.2",
+    "merge-stream": "^1.0.1",
+    "requarks-core": "github:requarks/core",
+    "run-sequence": "^1.2.2"
   }
 }

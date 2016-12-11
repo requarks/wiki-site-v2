@@ -7,6 +7,8 @@ var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var include = require("gulp-include");
+var run = require('run-sequence');
+var webserver = require('gulp-webserver');
 
 var paths = {
 	scripts: {
@@ -21,13 +23,17 @@ var paths = {
 		compile: [
 			'./assets/scss/*.scss'
 		],
+		includes: [
+			'./node_modules/requarks-core' //! MUST BE LAST
+		],
 		watch: [
 			'./assets/scss/**/*.scss'
 		]
 	}
 };
 
-gulp.task('default', ['watch', 'scripts', 'css']);
+gulp.task('default', ['watch', 'build', 'webserver']);
+gulp.task('build', ['scripts', 'css']);
 
 gulp.task('watch', function() {
 	return merge(
@@ -36,10 +42,20 @@ gulp.task('watch', function() {
 	);
 });
 
+gulp.task('dev', function() {
+
+	paths.css.includes.pop();
+	paths.css.includes.push('../core');
+
+	paths.css.watch.push('../core/core-client/scss/**/*.scss');
+
+	return run('default');
+});
+
 gulp.task("css", function () {
 	return gulp.src(paths.css.compile)
 	.pipe(plumber())
-	.pipe(sass.sync())
+	.pipe(sass.sync({ includePaths: paths.css.includes }))
 	.pipe(cleanCSS({ keepSpecialComments: 0 }))
 	.pipe(plumber.stop())
 	.pipe(gulp.dest("./assets"));
@@ -53,4 +69,15 @@ gulp.task("scripts", function () {
 	.pipe(uglify())
 	.pipe(plumber.stop())
 	.pipe(gulp.dest("./assets"));
+});
+
+gulp.task('webserver', function() {
+	return gulp.src('.')
+		.pipe(webserver({
+			port: 3000,
+			livereload: false,
+			directoryListing: false,
+			open: false,
+			fallback: 'index.html'
+		}));
 });
