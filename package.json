@@ -1,0 +1,31 @@
+{
+  "name": "wiki-site",
+  "version": "1.0.0",
+  "description": "Website for Wiki.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Requarks/wiki-site.git"
+  },
+  "author": "Nicolas Giard",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Requarks/wiki-site/issues"
+  },
+  "homepage": "https://github.com/Requarks/wiki-site#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.2.1",
+    "gulp-include": "^2.3.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "merge-stream": "^1.0.1"
+  }
+}
