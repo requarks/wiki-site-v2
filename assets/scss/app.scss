@@ -19,13 +19,18 @@ header {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 90vh;
+	height: 80vh;
 	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 
 	nav {
 		display: flex;
 		align-items: center;
 		padding: 5vh 25px 0;
+		flex: 0 0 auto;
+		width: 100%;
 
 		h1 {
 			display: flex;
@@ -52,7 +57,7 @@ header {
 
 		ul {
 			display: flex;
-			justify-content: center;
+			justify-content: flex-end;
 			align-items: center;
 			flex: 1 0 auto;
 
@@ -63,11 +68,41 @@ header {
 					display: flex;
 					padding: 0 15px;
 					text-transform: uppercase;
-					transition: color .4s ease;
+					transition: color .4s ease, background-color .4s ease;
+
+					> img {
+						transition: opacity .4s ease;
+					}
 
 					&:hover {
 						color: mc('indigo', '100');
 						text-decoration: none;
+
+						> img {
+							opacity: 0.7;
+						}
+
+					}
+
+				}
+
+				&.featured {
+					border-left: 1px solid rgba(255,255,255,0.5);
+					border-right: 1px solid rgba(255,255,255,0.5);
+					margin: 0 10px;
+					padding: 0 25px;
+
+					> a {
+						border: 1px solid rgba(255,255,255,0.5);
+						background-color: rgba(#000, 0.25);
+						border-radius: 4px;
+						padding: 5px 15px;
+
+						&:hover {
+							color: #FFF;
+							background-color: rgba(mc('indigo', '100'), 0.25);
+						}
+
 					}
 
 				}
@@ -79,8 +114,74 @@ header {
 	}
 
 	h2 {
-			text-align: center;
-			padding-top: 100px;
+		text-align: center;
+		padding-top: 100px;
+		font-size: 32px;
+		flex: 0 0 auto;
+	}
+
+	.header-compat {
+		padding-top: 100px;
+		text-align: center;
+		flex: 1 0 auto;
+
+		.fa {
+			margin: 0 3px;
 		}
+
+	}
+
+	.header-learnmore {
+		text-align: center;
+		flex: 0 0 auto;
+		padding: 10px 0 15px;
+		transition: color .4s ease;
+		cursor: pointer;
+
+		span {
+			display: block;
+			font-size: 14px;
+		}
+
+		i {
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			@include prefix(transform, rotate(90deg));
+		}
+
+		&:hover {
+			color: mc('indigo', '100');
+		}
+
+	}
+
+}
+
+section {
+	padding: 50px 0;
+	color: mc('grey', '800');
+
+	h3 {
+		font-size: 24px;
+		display: flex;
+		align-items: center;
+
+		i {
+			color: mc('indigo', '500');
+			margin-right: 10px;
+			font-size: 32px;
+		}
+
+		span {
+			font-weight: 400;
+		}
+
+	}
+
+	p {
+		padding: 25px 0;
+		line-height: 25px;
+	}
 
 }

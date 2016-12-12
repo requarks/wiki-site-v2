@@ -5,26 +5,104 @@
 	<title>Wiki.js | A modern open-source Wiki software</title>
 	<meta name="description" content="An open source, modern, lightweight and powerful wiki app built on NodeJS, Git and Markdown.">
 	<meta name="author" content="Nicolas Giard">
+	<!-- Favicon-->
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<!-- CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 	<link href="/assets/app.css" rel="stylesheet">
+	<!-- SCRIPTS -->
 	<script src="https://cdn.jsdelivr.net/g/jquery@3.1.1,lodash@4.17.2,vue@2.1.4,jquery.smooth-scroll@2.0.1"></script>
+	<script src="https://use.fontawesome.com/3afc72987c.js"></script>
 	<script src="/assets/app.js"></script>
 </head>
 <body>
+
+	<!-- HEADER -->
+
 	<header>
 		<nav class="container">
-			<h1>
+			<h1 class="animated fadeIn">
 				<i class="icon-layers"></i>
 				<span>Wiki.js</span>
 			</h1>
 			<ul>
 				<li class="is-hidden-mobile"><a href="/">Home</a></li>
-				<li><a href="/features.html">Features</a></li>
+				<li><a href="#features">Features</a></li>
 				<li><a href="https://wiki.requarks.io/">Docs</a></li>
 				<li><a href="/about.html">About</a></li>
+				<li class="featured"><a href="/get-started.html">Get Started</a></li>
+				<li><a href="https://github.com/Requarks/wiki"><img src="/assets/images/github.png" alt="GitHub Project" /></a></li>
 			</ul>
 		</nav>
-		<h2>An open source, modern and powerful wiki app built on Node.js, Git and Markdown.<br /><br /> Coming soon!</h2>
+		<h2>An open source, modern and powerful wiki app<br />built on Node.js, Git and Markdown.</h2>
+		<div class="header-compat">
+			<span>Runs on any <i class="fa fa-linux"></i> Linux, <i class="fa fa-windows"></i> Windows or <i class="fa fa-apple"></i> macOS servers.</span>
+		</div>
+		<div class="header-learnmore">
+			<span>Features</span>
+			<i class="icon-play"></i>
+		</div>
 	</header>
+
+	<!-- FEATURES -->
+
+	<section class="container">
+		<div class="columns">
+			<div class="column">
+				<h3>
+					<i class="icon-paper"></i>
+					<span>Markdown editing, backed by Git</span>
+				</h3>
+				<p>Write your content in the widely used and simple Markdown format, using the built-in visual editor. Unlike other wiki software that save content in a database with an hard to extract format, Wiki.js saves all your content directly into Markdown (.md) files and that content is automatically synced with your remote Git repository. Your content is therefore safe and readable directly from your Git repository.</p>
+			</div>
+			<aside class="column">
+				todo
+			</aside>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="columns">
+			<aside class="column">
+				todo
+			</aside>
+			<div class="column">
+				<h3>
+					<i class="icon-loader"></i>
+					<span>Lightweight, yet extremely powerful</span>
+				</h3>
+				<p>Wiki.js runs on the blazing fast Node.js and is optimized to be low on CPU resources. It relies heavily on caching to quickly deliver content to users and makes use of the latest web technologies, such as WebSockets, to provide instant interactivity in the webpage.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="columns">
+			<div class="column">
+				<h3>
+					<i class="icon-drop"></i>
+					<span>Beautifully designed for the modern web</span>
+				</h3>
+				<p>--</p>
+			</div>
+			<aside class="column">
+				todo
+			</aside>
+		</div>
+	</section>
+
 </body>
 </html>
