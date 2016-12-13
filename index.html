@@ -32,7 +32,7 @@
 
 	<!-- HEADER -->
 
-	<header>
+	<header id="root">
 		<nav class="container">
 			<h1 class="animated fadeIn">
 				<i class="icon-layers"></i>
@@ -59,17 +59,19 @@
 
 	<!-- FEATURES -->
 
-	<section class="container">
+	<section class="container" id="features">
 		<div class="columns">
 			<div class="column">
-				<h3>
-					<i class="icon-paper"></i>
-					<span>Markdown editing, backed by Git</span>
-				</h3>
-				<p>Write your content in the widely used and simple Markdown format, using the built-in visual editor. Unlike other wiki software that save content in a database with a difficult to extract format, Wiki.js saves all your content directly into Markdown (.md) files and that content is automatically synced with your remote Git repository. Your content is therefore safe and readable directly from your Git repository.</p>
+				<div>
+					<h3>
+						<i class="icon-paper"></i>
+						<span>Markdown editing, backed by Git</span>
+					</h3>
+					<p>Write your content in the widely used and simple Markdown format, using the built-in visual editor. Unlike other wiki software that save content in a database with a difficult to extract format, Wiki.js saves all your content directly into Markdown (.md) files and that content is automatically synced with your remote Git repository. Your content is therefore safe and readable directly from your Git repository.</p>
+				</div>
 			</div>
 			<aside class="column">
-				todo
+				<img src="/assets/images/feature_editor.png" alt="Markdown Editor" />
 			</aside>
 		</div>
 	</section>
@@ -77,14 +79,24 @@
 	<section class="container">
 		<div class="columns">
 			<aside class="column">
-				todo
+				<img src="/assets/images/feature_technologies.png" alt="Technologies" />
 			</aside>
 			<div class="column">
-				<h3>
-					<i class="icon-loader"></i>
-					<span>Lightweight, yet extremely powerful</span>
-				</h3>
-				<p>Wiki.js runs on the blazing fast Node.js engine and is optimized to be low on CPU resources. It relies heavily on caching to quickly deliver content to users and makes use of the latest web technologies, such as WebSockets, to provide instant interactivity in the webpage.</p>
+				<div>
+					<h3>
+						<i class="icon-loader"></i>
+						<span>Lightweight, yet extremely powerful</span>
+					</h3>
+					<p>Wiki.js runs on the blazing fast Node.js engine and is optimized to be low on CPU resources. It relies heavily on caching to quickly deliver content to users and makes use of the latest web technologies, such as WebSockets, to provide instant interactivity in the webpage.</p>
+					<div>
+						<strong>Server Requirements</strong>
+						<ul>
+							<li>- Node.js 4.6 or later</li>
+							<li>- A Git-compliant repository (public or private)</li>
+							<li>- MongoDB 3.2 or later</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -92,14 +104,16 @@
 	<section class="container">
 		<div class="columns">
 			<div class="column">
-				<h3>
-					<i class="icon-drop"></i>
-					<span>Beautifully designed for the modern web</span>
-				</h3>
-				<p>Content is automagically processed into a beautiful reading format, presented inside an elegant user interface. A sidebar menu is generated for each page based on your headers and sections are rendered in different colors to enhance readability.</p>
+				<div>
+					<h3>
+						<i class="icon-drop"></i>
+						<span>Beautifully designed for the modern web</span>
+					</h3>
+					<p>Content is automagically processed into a beautiful reading format, presented inside an elegant user interface. A sidebar menu is generated for each page based on your headers and sections are rendered in different colors to enhance readability.</p>
+				</div>
 			</div>
 			<aside class="column">
-				todo
+				<img src="/assets/images/feature_ui.png" alt="Interface" />
 			</aside>
 		</div>
 	</section>
@@ -107,14 +121,16 @@
 	<section class="container">
 		<div class="columns">
 			<aside class="column">
-				todo
+				<img src="/assets/images/feature_auth.png" alt="Authentication Providers" />
 			</aside>
 			<div class="column">
-				<h3>
-					<i class="icon-lock"></i>
-					<span>Integrated Access Control</span>
-				</h3>
-				<p>Choose to restrict access to your Wiki to certain users or even just parts of your content. You are in total control with the easy to use access control built into Wiki.js. Login using the local database or connect with external authentication providers like Microsoft Account, Google ID or Facebook to provide a seamless login experience to your users.</p>
+				<div>
+					<h3>
+						<i class="icon-lock"></i>
+						<span>Integrated Access Control</span>
+					</h3>
+					<p>Choose to restrict access to your Wiki to certain users or even just parts of your content. You are in total control with the easy to use access control built into Wiki.js. Login using the local database or connect with external authentication providers like Microsoft Account, Google ID or Facebook to provide a seamless login experience to your users.</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -122,14 +138,16 @@
 	<section class="container">
 		<div class="columns">
 			<div class="column">
-				<h3>
-					<i class="icon-grid"></i>
-					<span>Intuitive Assets Management</span>
-				</h3>
-				<p>Insert images, schemas, documents, videos, links and more in your Wiki.js using the built-in assets manager. Organize your media files into folders and let the built-in editor generate the proper Markdown tags for you. You can even ask Wiki.js to fetch an image from an external website for you. Once again, all your files are automatically synced to your remote Git repository for safekeeping.</p>
+				<div>
+					<h3>
+						<i class="icon-grid"></i>
+						<span>Intuitive Assets Management</span>
+					</h3>
+					<p>Insert images, schemas, documents, videos, links and more in your Wiki.js using the built-in assets manager. Organize your media files into folders and let the built-in editor generate the proper Markdown tags for you. You can even ask Wiki.js to fetch an image from an external website for you. Once again, all your files are automatically synced to your remote Git repository for safekeeping.</p>
+				</div>
 			</div>
 			<aside class="column">
-				todo
+				<img src="/assets/images/feature_assets.png" alt="Assets Management" />
 			</aside>
 		</div>
 	</section>
@@ -137,14 +155,16 @@
 	<section class="container">
 		<div class="columns">
 			<aside class="column">
-				todo
+				<img src="/assets/images/feature_search.png" alt="Search" />
 			</aside>
 			<div class="column">
-				<h3>
-					<i class="icon-search"></i>
-					<span>Built-in search engine</span>
-				</h3>
-				<p>Quickly find the wiki entry you're looking for using the built-in search engine, accessible from any page. It provides relevant results and suggestions by analyzing your wiki entries metadata and content.</p>
+				<div>
+					<h3>
+						<i class="icon-search"></i>
+						<span>Built-in search engine</span>
+					</h3>
+					<p>Quickly find the wiki entry you're looking for using the built-in search engine, accessible from any page. It provides relevant results and suggestions by analyzing your wiki entries metadata and content.</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -152,17 +172,27 @@
 	<section class="container">
 		<div class="columns">
 			<div class="column">
-				<h3>
-					<i class="icon-globe"></i>
-					<span>Free and open-source</span>
-				</h3>
-				<p>We believe great software should be free and transparent. That's why Wiki.js is fully open-source under the <a href="https://github.com/Requarks/wiki/blob/master/LICENSE" target="_blank">GNU AGPLv3 license</a>. You are free to look at the complete source code and contribute new features! Host it on your local servers, in the cloud or even at home. It's free.</p>
+				<div>
+					<h3>
+						<i class="icon-globe"></i>
+						<span>Free and open-source</span>
+					</h3>
+					<p>We believe great software should be free and transparent. That's why Wiki.js is fully open-source under the <a href="https://github.com/Requarks/wiki/blob/master/LICENSE" target="_blank">GNU AGPLv3 license</a>. You are free to look at the complete source code and contribute new features! Host it on your local servers, in the cloud or even at home. It's free.</p>
+				</div>
 			</div>
 			<aside class="column">
-				todo
+				<img src="/assets/images/feature_opensource.png" alt="Open Source" />
 			</aside>
 		</div>
 	</section>
+
+	<footer class="footer">
+		<span><a href="https://github.com/Requarks/wiki">Wiki.js</a> is an open-source (<a href="https://github.com/Requarks/wiki/blob/master/LICENSE" target="_blank">AGPLv3</a>) project, run by <a href="https://github.com/Requarks/wiki/graphs/contributors">contributors</a>.</span>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="#root">Return to top</a></li>
+		</ul>
+	</footer>
 
 </body>
 </html>

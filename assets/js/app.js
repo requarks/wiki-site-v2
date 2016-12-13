@@ -6,9 +6,9 @@ jQuery( document ).ready(function( $ ) {
 	// Scroll
 	// ====================================
 
-	$('a').smoothScroll({
-		speed: 400,
-		offset: -70
+	$('a').smoothScroll({ speed: 'auto' });
+	$('.header-learnmore').on('click', (ev) => {
+		$.smoothScroll({ scrollTarget: '#features', speed: 800 });
 	});
 
 	// ====================================
