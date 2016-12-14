@@ -26,6 +26,15 @@ header {
 	flex-direction: column;
 	align-items: stretch;
 
+	&.short {
+		height: auto;
+
+		h2 {
+			padding: 25px 0;
+		}
+
+	}
+
 	nav {
 		display: flex;
 		align-items: center;
@@ -205,5 +214,56 @@ section {
 	aside img {
 		@include prefix(box-shadow, 0px 0px 60px 0px rgba(mc('grey', '400'),1));
 	}
+
+}
+
+.get-started {
+	padding: 0;
+	margin-bottom: 11px;
+
+	&:nth-child(odd) {
+		background-color: lighten(mc('indigo', '50'), 3%);
+	}
+
+	aside {
+		position: relative;
+		display: flex;
+		padding: 10px 20px;
+
+		i {
+			display: flex;
+			width: 50px;
+			height: 50px;
+			border: 5px solid mc('indigo', '200');
+			background-color: #FFF;
+			border-radius: 50%;
+			justify-content: center;
+			align-items: center;
+			font-style: normal;
+			color: mc('indigo', '200');
+			font-size: 24px;
+			font-weight: 600;
+			z-index: 1;
+			margin-top: 13px;
+		}
+
+		& + div {
+
+			padding: 30px 0;
+
+			h3 {
+				font-size: 24px;
+				color: desaturate(mc('indigo', '900'), 50%);
+			}
+
+			p {
+				padding-top: 10px;
+			}
+
+		}
+
+	}
+
+
 
 }
