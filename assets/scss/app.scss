@@ -264,6 +264,41 @@ section {
 
 	}
 
+}
 
+.about {
+	padding: 25px 0;
+
+	h3 {
+		font-size: 24px;
+		display: flex;
+		align-items: center;
+		padding-bottom: 5px;
+		border-bottom: 1px dotted mc('indigo', '100');
+
+		i {
+			color: mc('indigo', '500');
+			margin-right: 10px;
+			font-size: 32px;
+		}
+
+		span {
+			font-weight: 400;
+			color: mc('indigo', '900');
+		}
+
+	}
+
+	.sponsors {
+		padding: 0 0 0 25px;
+	}
+
+	.contributors {
+		padding: 0 0 40px 25px;
+	}
+
+	p {
+		padding: 10px 0;
+	}
 
 }
