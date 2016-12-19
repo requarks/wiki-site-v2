@@ -291,6 +291,18 @@ section {
 
 	.sponsors {
 		padding: 0 0 0 25px;
+
+		> div {
+			margin-top: 15px;
+
+			.is-narrow {
+				display: flex;
+				align-items: center;
+				width: 250px;
+			}
+
+		}
+
 	}
 
 	.contributors {
@@ -298,6 +310,11 @@ section {
 	}
 
 	p {
+
+		img {
+			float: right;
+		}
+
 		padding: 10px 0;
 	}
 
