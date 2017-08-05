@@ -10,8 +10,8 @@ Write-Host "   < INSTALL >`n"
 
 $VERSION = "1.0.4"
 
-Write-Host "Specify the full path where Wiki.js should be installed: " -ForegroundColor Yellow -NoNewline
-Write-Host "(e.g. C:\wiki)"  -ForegroundColor Gray
+Write-Host "Specify the full path where Wiki.js should be installed " -ForegroundColor Yellow -NoNewline
+Write-Host "(e.g. C:\wiki):"  -ForegroundColor Gray
 $curPath = Read-Host -Prompt 'Path'
 $downloader = New-Object System.Net.WebClient
 $7zip = "$curPath\7za.exe"
@@ -59,8 +59,8 @@ $downloader.DownloadFile("https://github.com/Requarks/wiki/releases/download/v$V
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[4/6] Extracting app files... " -ForegroundColor Cyan -NoNewline
-Gunzip-Item "e -y wiki-js.tar.gz"
-Gunzip-Item "x -y wiki-js.tar"
+Gunzip-Item "e -y $curPath\wiki-js.tar.gz"
+Gunzip-Item "x -y $curPath\wiki-js.tar"
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[5/6] Extracting dependencies... " -ForegroundColor Cyan -NoNewline
@@ -68,19 +68,19 @@ If(!(test-path "node_modules")){
     New-Item -ItemType Directory -Force -Path "node_modules" | Out-Null
 }
 Gunzip-Item "e -y node_modules.tar.gz"
-Gunzip-Item "x -y -o`"node_modules`" node_modules.tar"
+Gunzip-Item "x -y -o`"$curPath\node_modules`" $curPath\node_modules.tar"
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[6/6] Creating config file... " -ForegroundColor Cyan -NoNewline
-If(!(test-path "config.yml")){
-    Rename-Item config.sample.yml config.yml
+If(!(test-path "$curPath\config.yml")){
+    Rename-Item $curPath\config.sample.yml $curPath\config.yml
     Write-Host "OK"
 } else {
     Write-Host "SKIP (already exists)" -ForegroundColor White
 }
 
 Write-Host "[6/6] Removing installation files... " -ForegroundColor Cyan -NoNewline
-Remove-Item -Path * -Include *.tar.gz, *.tar, *.exe
+Remove-Item -Path $curPath\* -Include *.tar.gz, *.tar, *.exe
 
 Write-Host "`nInstallation Complete`n" -ForegroundColor Green
 
