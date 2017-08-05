@@ -13,7 +13,10 @@ echo "-> Fetching dependencies..."
 mkdir ./node_modules
 curl -L -s -S https://github.com/Requarks/wiki/releases/download/v$VERSION/node_modules.tar.gz | tar xz -C ./node_modules
 
-read -p "?> Start the configuration wizard? (y/n) " -n 1 -r
+echo "-> Creating config file..."
+cp -n config.sample.yml config.yml
+
+read -p "-> ${bold}Start the configuration wizard?${normal} " -n 1 -r
 echo  
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
