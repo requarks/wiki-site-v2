@@ -10,9 +10,12 @@ Write-Host "   < INSTALL >`n"
 
 $VERSION = "1.0.4"
 
-$curPath = [IO.Directory]::GetCurrentDirectory()
+$invocation = (Get-Variable MyInvocation).Value
+$curPath = Split-Path $invocation.MyCommand.Path
 $downloader = New-Object System.Net.WebClient
-$7zip = "$PSScriptRoot\7za.exe"
+$7zip = "$curPath\7za.exe"
+
+Set-Location -Path $curPath
 
 Write-Host $7zip
 Write-Host $curPath
