@@ -10,14 +10,13 @@ Write-Host "   < INSTALL >`n"
 
 $VERSION = "1.0.4"
 
-$curPath = Read-Host -Prompt 'Full path where Wiki.js should be installed (e.g. C:\wiki)'
+Write-Host "Specify the full path where Wiki.js should be installed: " -ForegroundColor Yellow -NoNewline
+Write-Host "(e.g. C:\wiki)"  -ForegroundColor Gray
+$curPath = Read-Host -Prompt 'Path'
 $downloader = New-Object System.Net.WebClient
 $7zip = "$curPath\7za.exe"
 
 Set-Location -Path $curPath
-
-Write-Host $7zip
-Write-Host $curPath
 
 function Gunzip-Item {
     param (
@@ -47,41 +46,16 @@ function Gunzip-Item {
   }
 }
 
-function Fix-PowerShellOutputRedirectionBug {
-  $poshMajorVerion = $PSVersionTable.PSVersion.Major
-
-  if ($poshMajorVerion -lt 4) {
-    try{
-      # http://www.leeholmes.com/blog/2008/07/30/workaround-the-os-handles-position-is-not-what-filestream-expected/ plus comments
-      $bindingFlags = [Reflection.BindingFlags] "Instance,NonPublic,GetField"
-      $objectRef = $host.GetType().GetField("externalHostRef", $bindingFlags).GetValue($host)
-      $bindingFlags = [Reflection.BindingFlags] "Instance,NonPublic,GetProperty"
-      $consoleHost = $objectRef.GetType().GetProperty("Value", $bindingFlags).GetValue($objectRef, @())
-      [void] $consoleHost.GetType().GetProperty("IsStandardOutputRedirected", $bindingFlags).GetValue($consoleHost, @())
-      $bindingFlags = [Reflection.BindingFlags] "Instance,NonPublic,GetField"
-      $field = $consoleHost.GetType().GetField("standardOutputWriter", $bindingFlags)
-      $field.SetValue($consoleHost, [Console]::Out)
-      [void] $consoleHost.GetType().GetProperty("IsStandardErrorRedirected", $bindingFlags).GetValue($consoleHost, @())
-      $field2 = $consoleHost.GetType().GetField("standardErrorWriter", $bindingFlags)
-      $field2.SetValue($consoleHost, [Console]::Error)
-    } catch {
-      Write-Output "Unable to apply redirection fix."
-    }
-  }
-}
-
-Fix-PowerShellOutputRedirectionBug
-
 Write-Host "[1/6] Fetching 7zip helper... " -ForegroundColor Cyan -NoNewline
-$downloader.DownloadFile("https://wiki.js.org/7za.exe", "$PSScriptRoot\7za.exe")
+$downloader.DownloadFile("https://wiki.js.org/7za.exe", "$curPath\7za.exe")
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[2/6] Fetching latest build... " -ForegroundColor Cyan -NoNewline
-$downloader.DownloadFile("https://github.com/Requarks/wiki/releases/download/v$VERSION/wiki-js.tar.gz", "$PSScriptRoot\wiki-js.tar.gz")
+$downloader.DownloadFile("https://github.com/Requarks/wiki/releases/download/v$VERSION/wiki-js.tar.gz", "$curPath\wiki-js.tar.gz")
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[3/6] Fetching dependencies... " -ForegroundColor Cyan -NoNewline
-$downloader.DownloadFile("https://github.com/Requarks/wiki/releases/download/v$VERSION/node_modules.tar.gz", "$PSScriptRoot\node_modules.tar.gz")
+$downloader.DownloadFile("https://github.com/Requarks/wiki/releases/download/v$VERSION/node_modules.tar.gz", "$curPath\node_modules.tar.gz")
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[4/6] Extracting app files... " -ForegroundColor Cyan -NoNewline
