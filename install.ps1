@@ -10,8 +10,12 @@ Write-Host "   < INSTALL >`n"
 
 $VERSION = "1.0.4"
 
+$curPath = [IO.Directory]::GetCurrentDirectory()
 $downloader = New-Object System.Net.WebClient
 $7zip = "$PSScriptRoot\7za.exe"
+
+Write-Host $7zip
+Write-Host $curPath
 
 function Gunzip-Item {
     param (
