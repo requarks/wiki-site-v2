@@ -17,7 +17,7 @@ echo "-> Creating config file..."
 cp -n config.sample.yml config.yml
 
 echo -e "-> ${bold}Start the configuration wizard?${normal} (y/n) "
-read answer
+read answer < /dev/tty
 if echo "$answer" | grep -iq "^y" ;then
   node wiki configure
 else
