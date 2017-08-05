@@ -41,6 +41,31 @@ function Gunzip-Item {
   }
 }
 
+function Fix-PowerShellOutputRedirectionBug {
+  $poshMajorVerion = $PSVersionTable.PSVersion.Major
+
+  if ($poshMajorVerion -lt 4) {
+    try{
+      # http://www.leeholmes.com/blog/2008/07/30/workaround-the-os-handles-position-is-not-what-filestream-expected/ plus comments
+      $bindingFlags = [Reflection.BindingFlags] "Instance,NonPublic,GetField"
+      $objectRef = $host.GetType().GetField("externalHostRef", $bindingFlags).GetValue($host)
+      $bindingFlags = [Reflection.BindingFlags] "Instance,NonPublic,GetProperty"
+      $consoleHost = $objectRef.GetType().GetProperty("Value", $bindingFlags).GetValue($objectRef, @())
+      [void] $consoleHost.GetType().GetProperty("IsStandardOutputRedirected", $bindingFlags).GetValue($consoleHost, @())
+      $bindingFlags = [Reflection.BindingFlags] "Instance,NonPublic,GetField"
+      $field = $consoleHost.GetType().GetField("standardOutputWriter", $bindingFlags)
+      $field.SetValue($consoleHost, [Console]::Out)
+      [void] $consoleHost.GetType().GetProperty("IsStandardErrorRedirected", $bindingFlags).GetValue($consoleHost, @())
+      $field2 = $consoleHost.GetType().GetField("standardErrorWriter", $bindingFlags)
+      $field2.SetValue($consoleHost, [Console]::Error)
+    } catch {
+      Write-Output "Unable to apply redirection fix."
+    }
+  }
+}
+
+Fix-PowerShellOutputRedirectionBug
+
 Write-Host "[1/6] Fetching 7zip helper... " -ForegroundColor Cyan -NoNewline
 $downloader.DownloadFile("https://wiki.js.org/7za.exe", "$PSScriptRoot\7za.exe")
 Write-Host "OK" -ForegroundColor White
