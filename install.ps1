@@ -59,8 +59,8 @@ $downloader.DownloadFile("https://github.com/Requarks/wiki/releases/download/v$V
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[4/6] Extracting app files... " -ForegroundColor Cyan -NoNewline
-Gunzip-Item "e -y $curPath\wiki-js.tar.gz"
-Gunzip-Item "x -y $curPath\wiki-js.tar"
+Gunzip-Item "e -y -o`"$curPath`" $curPath\wiki-js.tar.gz"
+Gunzip-Item "x -y -o`"$curPath`" $curPath\wiki-js.tar"
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[5/6] Extracting dependencies... " -ForegroundColor Cyan -NoNewline
