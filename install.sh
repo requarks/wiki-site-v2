@@ -10,7 +10,7 @@ echo "-> Fetching latest build..."
 curl -L -s -S https://github.com/Requarks/wiki/releases/download/v$VERSION/wiki-js.tar.gz | tar xz -C .
 
 echo "-> Fetching dependencies..."
-mkdir ./node_modules
+mkdir -p ./node_modules
 curl -L -s -S https://github.com/Requarks/wiki/releases/download/v$VERSION/node_modules.tar.gz | tar xz -C ./node_modules
 
 echo "-> Creating config file..."
