@@ -7,17 +7,17 @@ normal=$(tput sgr0)
 
 echo -e " __    __ _ _    _    _     \n/ / /\\ \\ (_) | _(_)  (_)___ \n\\ \\/  \\/ / | |/ / |  | / __| \n \\  /\\  /| |   <| |_ | \\__ \\ \n  \\/  \\/ |_|_|\\_\\_(_)/ |___/ \n                   |__/\n   < INSTALL >\n"
 
-echo "-> Fetching latest build..."
+echo "[1/3] Fetching latest build..."
 curl -L -s -S https://github.com/Requarks/wiki/releases/download/v$VERSION/wiki-js.tar.gz | tar xz -C .
 
-echo "-> Fetching dependencies..."
+echo "[2/3] Fetching dependencies..."
 mkdir -p ./node_modules
 curl -L -s -S https://github.com/Requarks/wiki/releases/download/v$VERSION/node_modules.tar.gz | tar xz -C ./node_modules
 
-echo "-> Creating config file..."
+echo "[3/3] Creating config file..."
 cp -n config.sample.yml config.yml
 
-echo -e "-> ${green}Installation Complete\n"
+echo -e "-> ${green}Installation Complete${normal}\n"
 
-echo -e ">> Launch configuration wizard: ${bold}node wiki configure"
-echo -e ">> Start Wiki.js server: ${bold}node wiki start\n"
+echo -e "- Launch configuration wizard: ${bold}node wiki configure${normal}"
+echo -e "- Start Wiki.js server: ${bold}node wiki start${normal}\n"
