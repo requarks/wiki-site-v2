@@ -10,7 +10,7 @@ Write-Host "   < INSTALL >`n"
 
 $VERSION = "1.0.4"
 
-$curPath = Get-ChildItem -Path (Read-Host -Prompt 'Full path where Wiki.js should be installed?')
+$curPath = Read-Host -Prompt 'Full path where Wiki.js should be installed (e.g. C:\wiki)'
 $downloader = New-Object System.Net.WebClient
 $7zip = "$curPath\7za.exe"
 
