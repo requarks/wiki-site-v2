@@ -67,7 +67,7 @@ Write-Host "[5/6] Extracting dependencies... " -ForegroundColor Cyan -NoNewline
 If(!(test-path "node_modules")){
     New-Item -ItemType Directory -Force -Path "node_modules" | Out-Null
 }
-Gunzip-Item "e -y node_modules.tar.gz"
+Gunzip-Item "e -y -o`"$curPath`" $curPath\node_modules.tar.gz"
 Gunzip-Item "x -y -o`"$curPath\node_modules`" $curPath\node_modules.tar"
 Write-Host "OK" -ForegroundColor White
 
