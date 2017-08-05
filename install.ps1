@@ -16,6 +16,12 @@ $curPath = Read-Host -Prompt 'Path'
 $downloader = New-Object System.Net.WebClient
 $7zip = "$curPath\7za.exe"
 
+If(!(test-path $curPath)){
+    Write-Host "[0/6] Creating installation directory... " -ForegroundColor Cyan -NoNewline
+    New-Item -ItemType Directory -Force -Path $curPath | Out-Null
+    Write-Host "OK" -ForegroundColor White
+}
+
 Set-Location -Path $curPath
 
 function Gunzip-Item {
@@ -63,7 +69,7 @@ Gunzip-Item "e -y -o`"$curPath`" $curPath\wiki-js.tar.gz"
 Gunzip-Item "x -y -o`"$curPath`" $curPath\wiki-js.tar"
 Write-Host "OK" -ForegroundColor White
 
-Write-Host "[5/6] Extracting dependencies... " -ForegroundColor Cyan -NoNewline
+Write-Host "[5/6] Extracting dependencies... " -ForegroundColor Cyan -NoNewline
 If(!(test-path "node_modules")){
     New-Item -ItemType Directory -Force -Path "node_modules" | Out-Null
 }
