@@ -16,8 +16,9 @@ curl -L -s -S https://github.com/Requarks/wiki/releases/download/v$VERSION/node_
 echo "-> Creating config file..."
 cp -n config.sample.yml config.yml
 
-echo -e "-> ${bold}Start the configuration wizard?${normal} (y/n) "
-read answer < /dev/tty
+echo -e -n "-> ${bold}Start the configuration wizard?${normal} (y/n) "
+old_stty_cfg=$(stty -g)
+stty raw -echo ; answer=$(head -c 1) ; stty $old_stty_cfg
 if echo "$answer" | grep -iq "^y" ;then
   node wiki configure
 else
