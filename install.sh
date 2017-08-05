@@ -16,7 +16,7 @@ curl -L -s -S https://github.com/Requarks/wiki/releases/download/v$VERSION/node_
 echo "-> Creating config file..."
 cp -n config.sample.yml config.yml
 
-echo -e "-> ${bold}Start the configuration wizard?${normal} "
+echo -e "-> ${bold}Start the configuration wizard?${normal} (y/n) "
 read answer
 if echo "$answer" | grep -iq "^y" ;then
   node wiki configure
