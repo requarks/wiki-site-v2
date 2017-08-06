@@ -8,7 +8,7 @@ Write-Host "  \/  \/ |_|_|\_\_(_)/ |___/"
 Write-Host "                   |__/     "
 Write-Host "   < INSTALL >`n"
 
-$VERSION = "1.0.4"
+$VERSION = "1.0.5"
 
 Write-Host "Specify the full path where Wiki.js should be installed " -ForegroundColor Yellow -NoNewline
 Write-Host "(e.g. C:\wiki):"  -ForegroundColor Gray
