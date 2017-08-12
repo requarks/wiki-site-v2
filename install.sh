@@ -1,11 +1,12 @@
 #!/bin/bash
 
-VERSION=1.0.6
 bold=$(tput bold)
 green=$(tput setaf 2)
 normal=$(tput sgr0)
 
 echo -e "\n\n __    __ _ _    _    _     \n/ / /\\ \\ (_) | _(_)  (_)___ \n\\ \\/  \\/ / | |/ / |  | / __| \n \\  /\\  /| |   <| |_ | \\__ \\ \n  \\/  \\/ |_|_|\\_\\_(_)/ |___/ \n                   |__/\n   < INSTALL >\n"
+
+VERSION=$(curl -L -s -S https://wiki.js.org/VERSION)
 
 echo "[1/3] Fetching latest build..."
 curl -L -s -S https://github.com/Requarks/wiki/releases/download/v$VERSION/wiki-js.tar.gz | tar xz -C .
