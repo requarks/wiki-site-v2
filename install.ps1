@@ -8,8 +8,6 @@ Write-Host "  \/  \/ |_|_|\_\_(_)/ |___/"
 Write-Host "                   |__/     "
 Write-Host "   < INSTALL >`n"
 
-$VERSION = "1.0.6"
-
 Write-Host "Specify the full path where Wiki.js should be installed " -ForegroundColor Yellow -NoNewline
 Write-Host "(e.g. C:\wiki):"  -ForegroundColor Gray
 $curPath = Read-Host -Prompt 'Path'
@@ -51,6 +49,8 @@ function Gunzip-Item {
     default { throw "Error: 7-Zip signalled an unknown error (code $exitCode)" }
   }
 }
+
+$VERSION = $downloader.DownloadString("https://wiki.js.org/VERSION")
 
 Write-Host "[1/6] Fetching 7zip helper... " -ForegroundColor Cyan -NoNewline
 $downloader.DownloadFile("https://wiki.js.org/7za.exe", "$curPath\7za.exe")
