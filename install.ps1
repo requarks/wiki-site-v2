@@ -51,6 +51,7 @@ function Gunzip-Item {
 }
 
 $VERSION = $downloader.DownloadString("https://wiki.js.org/VERSION")
+$VERSION = $VERSION -replace "`t|`n|`r",""
 
 Write-Host "[1/6] Fetching 7zip helper... " -ForegroundColor Cyan -NoNewline
 $downloader.DownloadFile("https://wiki.js.org/7za.exe", "$curPath\7za.exe")
