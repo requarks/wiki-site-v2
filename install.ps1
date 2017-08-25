@@ -54,7 +54,7 @@ $VERSION = $downloader.DownloadString("https://wiki.js.org/VERSION")
 $VERSION = $VERSION -replace "`t|`n|`r",""
 
 Write-Host "[1/6] Fetching 7zip helper... " -ForegroundColor Cyan -NoNewline
-$downloader.DownloadFile("https://wiki.js.org/7za.exe", "$curPath\7za.exe")
+$downloader.DownloadFile("https://static.requarks.io/7za.exe", "$curPath\7za.exe")
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[2/6] Fetching latest build... " -ForegroundColor Cyan -NoNewline
