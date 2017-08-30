@@ -50,7 +50,7 @@ function Gunzip-Item {
   }
 }
 
-$VERSION = $downloader.DownloadString("https://wiki.js.org/VERSION")
+$VERSION = $downloader.DownloadString("https://beta.requarks.io/api/version/stable")
 $VERSION = $VERSION -replace "`t|`n|`r",""
 
 Write-Host "[1/6] Fetching 7zip helper... " -ForegroundColor Cyan -NoNewline
