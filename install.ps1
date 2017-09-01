@@ -75,7 +75,7 @@ If(!(test-path "node_modules")){
     New-Item -ItemType Directory -Force -Path "node_modules" | Out-Null
 }
 Gunzip-Item "e -y -o`"$curPath`" $curPath\node_modules.tar.gz"
-Gunzip-Item "x -y -o`"$curPath\node_modules`" $curPath\node_modules.tar"
+Gunzip-Item "x -y -o`"$curPath`" $curPath\node_modules.tar"
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[6/6] Creating config file... " -ForegroundColor Cyan -NoNewline
