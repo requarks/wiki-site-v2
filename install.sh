@@ -12,8 +12,7 @@ echo "[1/3] Fetching latest build..."
 curl -L -s -S https://github.com/Requarks/wiki/releases/download/v$VERSION/wiki-js.tar.gz | tar xz -C .
 
 echo "[2/3] Fetching dependencies..."
-mkdir -p ./node_modules
-curl -L -s -S https://github.com/Requarks/wiki/releases/download/v$VERSION/node_modules.tar.gz | tar xz -C ./node_modules
+curl -L -s -S https://github.com/Requarks/wiki/releases/download/v$VERSION/node_modules.tar.gz | tar xz -C .
 
 echo "[3/3] Creating config file..."
 cp -n config.sample.yml config.yml
