@@ -91,6 +91,10 @@ Remove-Item -Path $curPath\* -Include *.tar.gz, *.tar, *.exe
 
 Write-Host "`nInstallation Complete`n" -ForegroundColor Green
 
+Write-Host "Thank you for installing Wiki.js!" -ForegroundColor White
+Write-Host "Please consider donating to our open collective to help maintain this project:" -ForegroundColor White
+Write-Host "https://opencollective.com/wikijs/donate`n" -ForegroundColor White
+
 Write-Host "- Launch configuration wizard: " -NoNewline
 Write-Host "node wiki configure" -ForegroundColor Yellow
 Write-Host "- Start Wiki.js server: " -NoNewline
