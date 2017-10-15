@@ -19,5 +19,9 @@ cp -n config.sample.yml config.yml
 
 echo -e "-> ${green}Installation Complete${normal}\n"
 
+echo -e "${bold}Thank you for installing Wiki.js!${normal}"
+echo -e "Please consider donating to our open collective to help maintain this project:"
+echo -e "https://opencollective.com/wikijs/donate\n"
+
 echo -e "- Launch configuration wizard: ${bold}node wiki configure${normal}"
 echo -e "- Start Wiki.js server: ${bold}node wiki start${normal}\n"
