@@ -1,4 +1,5 @@
-﻿Add-Type -AssemblyName System.IO.Compression.FileSystem
+[Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
+Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 Write-Host " __    __ _ _    _    _     "
 Write-Host "/ / /\ \ (_) | _(_)  (_)___ "
