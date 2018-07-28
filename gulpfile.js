@@ -74,6 +74,7 @@ gulp.task("scripts", function () {
 gulp.task('webserver', function() {
 	return gulp.src('.')
 		.pipe(webserver({
+			host: 'vm.ngpixel.com',
 			port: 3000,
 			livereload: false,
 			directoryListing: false,
