@@ -59,11 +59,11 @@ $downloader.DownloadFile("https://static.requarks.io/7za.exe", "$curPath\7za.exe
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[2/6] Fetching latest build... " -ForegroundColor Cyan -NoNewline
-$downloader.DownloadFile("https://github.com/Requarks/wiki/releases/download/v$VERSION/wiki-js.tar.gz", "$curPath\wiki-js.tar.gz")
+$downloader.DownloadFile("https://github.com/Requarks/wiki-v1/releases/download/v$VERSION/wiki-js.tar.gz", "$curPath\wiki-js.tar.gz")
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[3/6] Fetching dependencies... " -ForegroundColor Cyan -NoNewline
-$downloader.DownloadFile("https://github.com/Requarks/wiki/releases/download/v$VERSION/node_modules.tar.gz", "$curPath\node_modules.tar.gz")
+$downloader.DownloadFile("https://github.com/Requarks/wiki-v1/releases/download/v$VERSION/node_modules.tar.gz", "$curPath\node_modules.tar.gz")
 Write-Host "OK" -ForegroundColor White
 
 Write-Host "[4/6] Extracting app files... " -ForegroundColor Cyan -NoNewline
