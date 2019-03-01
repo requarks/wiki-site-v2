@@ -1,0 +1,2087 @@
+@media (min-width:2000px){
+    .call_action_area .action_one{
+        left: 40px;
+    }
+}
+@media(max-width:1650px){
+    .about_content{
+        padding: 100px 30px;
+    }
+    .saas_banner_area_two .shap_img{
+        bottom: 150px;
+    }
+    .section_container{
+        height: 795px;
+    }
+    .section_container .intro_content p {
+        margin-bottom: 40px;
+    }
+    .saas_features_item{
+        padding: 0px;
+    }
+}
+@media (max-width: 1550px){
+    .s_features_item .s_features_img img{
+        max-width: 100%;
+    }
+    .service_promo_area .shape.shape_two{
+        left: -40%;
+    }
+    .s_features_item .ml_50{
+        margin-left: 0;
+    }
+    .s_features_item .s_features_content{
+        padding-right: 0px;
+        padding-left: 45px;
+    }
+    .saas_home_img img,.software_img img{
+        max-width: 100%;
+    }
+    .s_promo_info .promo_item.item_five{
+        left: 80%;
+        top: 53%;
+    }
+    .container.custom_container{
+        max-width: 1170px;
+    }
+    .service_item{
+        padding: 47px 15px 0px;
+    }
+    .call_action_area .action_one {
+        left: -720px;
+    }
+    .company_widget img,.protype_img{
+        max-width: 100%;
+    }
+    .p_feature_item .p_feture_img_one {
+         margin-right: -20px; 
+    }
+    .p_feature_item .p_feture_img_two {
+         margin-left: -20px; 
+    }
+    .action_img {
+        margin-right: 0;
+    }
+    .service_carousel {
+        padding-left: 70px;
+    }
+    .agency_featured_img img{
+        max-width: 100%;
+    }
+    .about_content_left {
+        padding: 0px 0px 0px 50px;
+    }
+    .about_content {
+        padding: 60px 30px 100px;
+    }
+    .about_img .about_img_slider .about_item .about_text{
+        padding: 0px 20px;
+    }
+    .agency_banner_area .banner_shap{
+        width: 80%;
+        top: -100px;
+    }
+    .p_service_item.agency_service_item{
+        padding-right: 0px;
+        padding-left: 0;
+    }
+    .saas_featured_info .f_img_two{
+        margin-right: 0px;
+    }
+    .saas_featured_info .f_img_one{
+        margin-left: 0px;
+    }
+    .footer_top_six .social-widget .f_social_icon a + a{
+        margin-left: 0px;
+    }
+    .app_img .mobile{
+        margin-left: -100px;
+    }
+    .menu > .nav-item:nth-last-child(-n+2).submenu .dropdown-menu{
+        left: auto;
+        right: 0;
+    }
+}
+
+@media (max-width:1450px){
+    .app_banner_area{
+        background-size: cover;
+        padding-bottom: 100px;
+        padding-top: 150px;
+    }
+    .app_img .mobile {
+        margin-top: 140px;
+        max-width: 100%;
+        position: relative;
+        top: -110px;
+        z-index: -1;
+        margin-left: 0px;
+    }
+    .app_banner_contentmt p br{
+        display: none;
+    }
+    .app_feature_info .col-lg-5{
+        text-align: center;
+    }
+    .app_feature_info + .app_feature_info .app_featured_content{
+        padding: 50px 0px 90px 126px;
+    }
+    .app_screenshot_area .app_screenshot_slider .item {
+        padding: 10px 10px 20px;
+    }
+    .agency_banner_img{
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    .developer_product_area .service_tab_img{
+        max-width: 100%;
+    }
+    .s_service_item{
+        padding: 50px 20px 40px;
+    }
+    .payment_features_area .payment_featured_img{
+        margin-left: -130px;
+    }
+    .payment_testimonial_area .testimonial_img {
+        margin-bottom: -38px;
+    }
+    .payment_clients_area .clients_bg_shape_right{
+        right: -77.7%;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.three{
+        left: 150px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.four{
+        left: 400px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.six{
+        left: 295px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.five{
+        left: 520px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.seven{
+        left: 400px;
+    }
+}
+
+@media (max-width:1350px){
+    .payment_banner_content {
+        max-width: 556px;
+    }
+    .animation_img_two{
+        bottom: 120px;
+    }
+}
+
+@media (max-width:1199px){
+    .s_service_item{
+        padding: 50px 22px 40px;
+    }
+    .saas_home_area{
+        height: 920px;
+    }
+    .s_pricing-item{
+        padding: 55px 25px;
+    }
+    .software_promo_area .round_shape{
+        border: 0px;
+    }
+    .feature_info .f_content h2{
+        padding-right: 0px;
+    }
+    .mobile_img .mobile{
+        left: -180px;
+    }
+    .container.custom_container {
+        max-width: 960px;
+    }
+    .service_item .icon{
+        right: 5px;
+    }
+    .slider_area .slider_content p br{
+        display: none;
+    }
+    .footer_top_two .f_width_24{
+        width: 35%;
+    }
+    .f_width_12{
+        width: 15%;   
+    }
+    .f_width_20{
+        width: 25%;
+    }
+    .f_width_24,.f_width_12,.f_width_20{
+        margin-bottom: 35px;
+    }
+    .footer_top_two .pl-30,.footer_top_two .pl_40,.tab-content .tab_img{
+        padding-left: 0;
+    }
+    .service_carousel .owl-stage{
+        left: 0;
+    }
+    .prototype_content h2{
+        padding-right: 0px;
+    }
+    .action_area_two {
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+    .agency_featured_item .agency_featured_content{
+        padding-right: 0px;
+        padding-left: 20px;
+    }
+    .features_info .dot_img,.dot{
+        display: none;
+    }
+    .agency_featured_item {
+        margin-top: 80px;
+    }
+    .features_info{
+        padding-bottom: 0px;
+    }
+    .about_content_left,.about_img{
+        max-width: 100%;
+        flex: 1;
+        padding-left: 0;
+    }
+    .agency_about_area{
+        display: block !important;
+        padding: 0px 15px;
+    }
+    .about_content{
+        bottom: 0px;
+        margin-bottom: 0px;
+        padding: 90px 30px 100px;
+    }
+    .agency_content h2 {
+        font-size: 36px;
+        line-height: 53px;
+    }
+    .agency_banner_area .banner_shap{
+        width: 100%;
+        top: -200px;
+    }
+    .agency_about_area .owl-dots {
+        left: 30px;
+        top: -63px;
+        margin-top: 0px;
+        bottom: auto;
+    }
+    .software_banner_content h2{
+        font-size: 40px;
+    }
+    .software_service_tab_content .software_service_item{
+        padding-right: 0px;
+    }
+    .developer_product_content .develor_tab{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .saas_shap{
+        max-width: 100%;
+    }
+    .saas_featured_content.pr_70,.developer_product_content{
+        padding-right: 0px;
+    }
+    .saas_featured_info .saas_featured_item{
+        padding: 50px 10px 50px 20px;
+    }
+    .saas_featured_content h2 br{
+        display: none;
+    }
+    .saas_featured_info .pl_100{
+        padding-left: 15px;
+    }
+    .saas_featured_info .pr_70{
+        padding-right: 15px;
+    }
+    .footer_top_six .social-widget {
+        margin-left: -42px;
+    }
+    .app_banner_area .app_img .app_screen{
+        max-width: 20%;
+    }
+    .app_banner_area .app_img .app_screen.one {
+        top: 108px;
+        left: 6px;
+    }
+    .app_banner_area .app_img .app_screen.two{
+        top: 70px;
+        left: 89px;
+    }
+    .app_banner_area .app_img .app_screen.three {
+        top: 30px;
+        left: 171px;
+    }
+    .app_featured_content {
+        padding: 50px 0px 90px 0;
+    }
+    .app_item.item_two{
+        left: -10px;
+        top: 70px;
+    }
+    .app_fetured_item{
+        margin-left: 0px;
+    }
+    .app_item.item_three{
+        bottom: 35px;
+    }
+    .app_feature_info .app_img .dot{
+        display: block;
+    }
+    .app_img .text_bg.one {
+        left: -26%;
+    }
+    .app_img .dot_three {
+        left: 164px;
+    }
+    .agency_banner_area_two .agency_content_two h2{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .agency_banner_area_two{
+        padding-top: 150px;
+    }
+    .features_info.feature_info_two{
+        padding-bottom: 0;
+    }
+    .blog_content{
+        padding: 25px 15px 42px 20px;
+    }
+    .blog-sidebar {
+        padding-left: 0px;
+    }
+    .blog-sidebar .widget.widget_recent_post .post_item .media-body{
+        padding-left: 12px;
+    }
+    .menu > .nav-item + .nav-item {
+        margin-left: 20px;
+    }
+    .blog_post_item .blog_content {
+        padding: 22px 12px 35px;
+    }
+    .blog_single .blog_content{
+        padding-bottom: 0px;
+    }
+    .faq_area .pr_50{
+        padding-right: 15px;
+    }
+    .portfolio_details_info.pl_100{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .p_details_three .portfolio_pagination {
+        margin-top: 155px;
+    }
+    .process_area .features_info{
+        padding-bottom: 0px;
+    }
+    .service_details_area .service_details_img img{
+        max-width: 100%;
+    }
+    .cart_box{
+        width: 100%;
+    }
+    .sign_info .login_info{
+        padding-left: 0px;
+    }
+    .sign_info .social_tag li a{
+        margin-left: 0;
+    }
+    .login-form .extra{
+        font-size: 13px;
+    }
+    .feature_info .feature_img.f_img_two .four{
+        left: 0;
+    }
+    .payment_features_area .payment_featured_img,.payment_features_area .payment_featured_img.img_two{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .payment_features_area .payment_featured_img img{
+        max-width: 100%;
+    }
+    .payment_service_item{
+        padding-right: 0;
+    }
+    .animation_img_two {
+        bottom: 20px;
+    }
+    .footer_nine_top .pl_100{
+        padding-left: 50px;
+    }
+    .footer_nine_top {
+        padding-bottom: 100px;
+        padding-top: 125px;
+    }
+    .saas_service_content{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .saas_service_item + .saas_service_item {
+        margin-top: 118px;
+    }
+    .p_feature_item .prototype_content h2{
+        padding-right: 0px;
+    }
+    .app_featured_area {
+        padding: 90px 0px;
+    }
+    .app_feature_info + .app_feature_info {
+        margin-top: 175px;
+    }
+    .job_details_area .pl_70,.job_apply_area .pl_70{
+        padding-left: 20px;
+    }
+    .login_img {
+        padding-left: 20px;
+        margin-right: -115px;
+    }
+    .login_area .login_info {
+        padding-right: 50px;
+    }
+    
+}
+
+@media (max-width:991px){
+    .s_service_section {
+        margin-top: 280px;
+    }
+    .s_service_item{
+        padding: 50px 40px 40px;
+        margin-top: 30px;
+    }
+    .s_service_info{
+        margin-top: 40px;
+    }
+    .s_features_section {
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+    .s_features_item .ml_25{
+        margin-left: 0;
+    }
+    .service_details_area .service_details_img{
+        margin-left: 0;
+        margin-bottom: 60px;
+    }
+    .service_promo_area .shape.shape_four,.service_promo_area .shape.shape_three{
+        bottom: -2%;
+    }
+    .banner_top br,.s_service_section h2 br{
+        display: none;
+    }
+    .footer_top .f_widget{
+        padding-left: 0px;
+        margin-bottom: 40px;
+    }
+    .footer_top{
+        padding-bottom: 60px;
+    }
+    .footer_bottom,.f_social_icon_two a {
+        font-size: 13px;
+    }
+    .s_promo_info .promo_item.item_three{
+        left: 149px;
+        top: 365px;
+    }
+    .slider_area{
+        height: auto;
+    }
+    .mobile_img .mobile {
+        left: 0;
+        top: -143px;
+    }
+    .mobile_img .women_img {
+        top: 70px;
+        right: 280px;
+    }
+    .container.custom_container {
+        max-width: 100%;
+        padding: 0px 15px;
+    }
+    .price_content .price_item{
+        height: 100%;
+    }
+    .price_content .col-sm-6{
+        margin-bottom: 30px;
+    }
+    .pricing_area{
+        padding-bottom: 80px;
+    }
+    .feature_info .feature_img{
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .feature_info .feature_img.f_img_two{
+        max-width: 570px;
+        position: relative;
+    }
+    .feature_info .feature_img.f_img_two .one{
+        right: 40%;
+    }
+    .features_area .mt_130{
+        margin-top: 80px;
+    }
+    .service_item {
+        padding: 47px 25px 0px;
+    }
+    .service_item .icon {
+        right: 20px;
+    }
+    .feature_info .feature_img.f_img_one{
+        margin-left: 0px;
+    }
+    .service_carousel:before{
+        display: none;
+    }
+    .protype_img{
+        margin-top: 50px;
+    }
+    .partner_logo .p_logo_item{
+        width: calc(100% / 4);
+        margin-bottom: 20px;
+    }
+    .p_feature_item .p_feture_img_one {
+        margin-right: 0;
+    }
+    .p_feature_item .p_feture_img_two{
+        margin-left: 0;
+    }
+    .p_feature_item + .p_feature_item{
+        margin-top: 50px;
+    }
+    .prototype_content{
+        padding-top: 20px;
+    }
+    .p_service_item.pl_50,.p_service_item.pl_70{
+        padding-left: 0;
+    }
+    .p_service_item.pr_70{
+        padding-right: 0;
+    }
+    .p_service_item {
+        margin-bottom: 40px;
+    }
+    .action_content{
+        margin-bottom: 40px;
+    }
+    .action_img{
+        margin-top: 0;
+    }
+    .p_service_info {
+        margin-bottom: -40px;
+    }
+    .prototype_service_info {
+        padding: 120px 0px;
+    }
+    .p_feature_item .prototype_content h2{
+        padding-right: 0;
+    }
+    .agency_banner_area .banner_shap {
+        width: auto;
+        top: 0;
+        max-width: 100%;
+    }
+    .footer_area_four .footer_top{
+        padding-bottom: 40px;
+    }
+    .company_widget .f_subscribe{
+        max-width: 300px;
+    }
+    .software_banner_area{
+        padding-top: 150px;
+    }
+    .design_developers_area .col-md-5,.design_developers_area .col-md-7 .design_img{
+        justify-content: center;
+        text-align: center;
+    }
+    .software_featured_img{
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    .software_service_tab_content .software_service_item{
+        margin-bottom: 40px;
+    }
+    .software_service_tab_content{
+        margin-bottom: -40px;
+    }
+    .software_featured_area_two .pl-0{
+        padding-left: 15px !important;
+    }
+    .developer_product_content{
+        padding-right: 0px;
+        margin-bottom: 50px;
+    }
+    .developer_product_area{
+        padding: 120px 0px;
+    }
+    .partner_info .logo_item{
+        width: calc(100% / 3);
+    }
+    .saas_featured_info{
+        margin-top: 60px;
+    }
+    .saas_featured_content.pr_70{
+        margin-top: 0px;
+    }
+    .saas_featured_area .saas_featured_info{
+        margin-top: 30px;
+    }
+    .saas_featured_info .f_img_one,.saas_featured_info .f_img_two{
+        margin-bottom: 50px;
+    }
+    .saas_featured_area .saas_featured_info + .saas_featured_info{
+        margin-top: 100px;
+    }
+    .fun_fact_content .fact_item.pl_100{
+        padding-left: 10px;
+    }
+    .partner_logo_area_three .partner_info .logo_item {
+        margin-bottom: 30px;
+    }
+    .footer_top_six .social-widget{
+        margin-left: 0;
+    }
+    .footer_top_six .f_widget{
+        margin-bottom: 40px;
+    }
+    .footer_area_six.sec_pad{
+        padding-bottom: 80px;
+    }
+    .app_banner_area .app_banner_contentmt h2 br{
+        display: none;
+    }
+    .app_img .mobile{
+        top: -38px;
+    }
+    .app_banner_area {
+        padding-bottom: 50px;
+        padding-top: 110px;
+    }
+    .app_fetured_item .app_item{
+        position: relative;
+        display: inline-block;
+    }
+    .app_item.item_two {
+        left: 31px;
+        top: 120px;
+    }
+    .app_item.item_one{
+        top: -50px;
+    }
+    .app_feature_info .app_featured_content{
+        padding-bottom: 0px;
+    }
+    .app_feature_info + .app_feature_info{
+        margin-top: 100px;
+    }
+    .app_feature_info + .app_feature_info .app_featured_content{
+        padding-left: 0;
+        padding-bottom: 0px;
+    }
+    .app_testimonial_area .nav_container .owl-prev{
+        left: 0;
+    }
+    .app_testimonial_area .nav_container .owl-next{
+        right: 0;
+    }
+    .app_testimonial_area .nav_container .owl-prev,.app_testimonial_area .nav_container .owl-next{
+        opacity: 0;
+    }
+    .app_testimonial_area .nav_container:hover .owl-next,.app_testimonial_area .nav_container:hover .owl-prev{
+        opacity: 1;
+    }
+    .app_contact_info{
+        left: 60px;
+    }
+    .app_banner_area .app_img .app_screen.one {
+        top: 191px;
+        left: 117px;
+    }
+    .app_banner_area .app_img .app_screen.two {
+        top: 116px;
+        left: 233px;
+    }
+    .app_banner_area .app_img .app_screen.three {
+        top: 90px;
+        left: 380px;
+    }
+    .get_started_area .col-lg-6.text-right img{
+        margin-top: 50px;
+    }
+    .ex_team_item img {
+        width: 100%;
+    }
+    .features_info.feature_info_two .agency_featured_img{
+        text-align: left !important;
+        margin-bottom: 50px;
+    }
+    .agency_banner_area_two .agency_banner_img{
+        margin-bottom: 60px;
+    }
+    .blog-sidebar{
+        margin-top: 50px;
+    }
+    .blog_post_item .blog_img img{
+        width: 100%;
+    }
+    .blog_sidebar_left .blog_post{
+        margin-bottom: -30px;
+    }
+    .blog_post .blog_post_item{
+        margin-bottom: 30px;
+    }
+    .faq_tab{
+        margin-bottom: 60px;
+    }
+    .faq_content h3.mt_100{
+        margin-top: 50px;
+    }
+    .portfolio_details_info{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .portfolio_details_info .portfolio_category{
+        margin-top: 40px;
+    }
+    .portfolio_details_info .portfolio_pagination{
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .portfolio_details_area .portfolio_details_gallery.gallery_two{
+        margin-bottom: 20px;
+    }
+    .portfolio_details_info .portfolio_pagination_two{
+        margin-bottom: 0px;
+    }
+    .portfolio_gallery .portfolio_item .portfolio_img .hover_content .portfolio-description {
+        padding-left: 30px;
+        padding-bottom: 28px;
+    }
+    .portfolio_gallery .portfolio_item .portfolio_img .hover_content .img_popup{
+        right: 30px;
+        top: 30px;
+    }
+    .agency_featured_item .agency_featured_img{
+        text-align: left !important;
+    }
+    .agency_content{
+        max-width: 500px;   
+    }
+    .agency_featured_item .agency_featured_content{
+        padding-left: 0px;
+        margin-top: 50px;
+    }
+    .product_details_area .pr_details,.service_details_item + .service_details_item{
+        margin-top: 50px;
+    }
+    .product_details_area .product_slider{
+        padding-right: 0;
+    }
+    .single_product_item .single_pr_details{
+        padding-top: 0px;
+    }
+    .shopping_cart_area .cart_table .product .media{
+        width: 340px;
+    }
+    .coupon {
+        width: 100%;
+    }
+    .shopping_cart_area .cart_btn{
+        padding: 15px 22px;
+    }
+    .sign_info .login_info{
+        margin-top: 50px;
+    }
+    .sec_title p br{
+        display: none;
+    }
+    .menu > .nav-item + .nav-item{
+        margin-left: 0px;
+    }
+    .menu > .nav-item{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .menu{
+        padding: 10px 30px;
+        background: #fff;
+        margin-top: 20px;
+    }
+    .navbar-collapse {
+        max-height: 400px;
+        overflow-y: scroll;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .menu > .nav-item > .nav-link{
+        display: inline-block;
+    }
+    .menu > .nav-item.submenu .dropdown-menu .nav-item > .dropdown-menu{
+        display: block;
+        box-shadow: none;
+    }
+    .menu > .nav-item.submenu .dropdown-menu .nav-item{
+        padding: 0px 25px;
+    }
+    .menu > .nav-item.submenu .dropdown-menu{
+        box-shadow: none;
+        -webkit-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+        -moz-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+        -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0s;
+        -o-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+        transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu > .nav-item.submenu .dropdown-menu.show{
+        -webkit-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+        -moz-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+        -ms-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+        -o-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+        transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+        max-height: 250px;
+        overflow-y: scroll;
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu > .nav-item.submenu .dropdown-menu .nav-item.submenu .dropdown-menu .nav-item{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .menu > .nav-item.submenu .dropdown-menu .nav-item.submenu .dropdown-menu .nav-item:first-child{
+        padding-top: 0;
+    }
+    .menu > .nav-item.submenu .dropdown-menu .nav-item.submenu .dropdown-menu .nav-item:last-child{
+        padding-bottom: 0;
+    }
+    .menu > .nav-item.submenu .dropdown-menu .nav-item.submenu .dropdown-menu .nav-item .nav-link:before{
+        content: "\e649";
+        display: inline-block;
+        font-family: 'themify';
+        margin-right: 8px;
+        width: auto;
+        font-size: 9px;
+        float: none;
+    }
+    .menu > .nav-item.submenu.mega_menu > .dropdown-menu{
+        margin-top: 10px;
+        box-shadow: none;
+    }
+    .menu > .nav-item.submenu.mega_menu > .dropdown-menu > .nav-item + .nav-item{
+        padding-top: 0px;
+    }
+    .menu > .nav-item.submenu.mega_menu > .dropdown-menu > .nav-item .dropdown-menu{
+        padding-left: 15px;
+        opacity: 1;
+        visibility: visible;
+        min-height: max-content;
+    }
+    .menu > .nav-item.submenu .dropdown-menu .nav-item:first-child {
+        padding-top: 12px;
+    }
+    .menu > .nav-item.submenu .dropdown-menu .nav-item:last-child{
+        padding-bottom: 0px;
+    }
+    .menu_one .mobile_btn{
+        margin-left: 15px;
+    }
+    .footer_top_two .company_widget{
+        padding-right: 0px;
+    }
+    .footer_top_two .f_widget{
+        margin-bottom: 40px;
+    }
+    .footer_area_two .footer_top_two .row{
+        margin-bottom: -40px;
+    }
+    .header_area .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .menu_one,.header_area.navbar_fixed .menu_one,.menu_two,.menu_six,.menu_seven{
+        padding: 15px 0px;
+    }
+    .w_menu .nav-item .nav-link{
+        color: #051441;
+    }
+    .w_menu .nav-item:hover .nav-link, .w_menu .nav-item.active .nav-link{
+        color: #00aff0;
+    }
+    .prototype_banner_area{
+        padding-top: 140px;
+    }
+    .menu_four .menu > .nav-item .nav-link,.menu_five .menu > .nav-item .nav-link,.menu_six .menu > .nav-item .nav-link,.menu_seven .menu .nav-item .nav-link{
+        color: #051441;
+    }
+    .menu_five .menu > .nav-item:hover .nav-link,.menu_five .menu > .nav-item.active .nav-link{
+        color: #3d64f4;
+    }
+    .menu_five .menu > .nav-item:hover .nav-link:before,.menu_five .menu > .nav-item.active .nav-link:before{
+        background: #3d64f4;
+    }
+    .menu_seven .menu > .nav-item:hover .nav-link,.menu_seven .menu > .nav-item.active .nav-link{
+        color: #4069eb;
+    }
+    .menu_seven .menu > .nav-item:hover .nav-link:before,.menu_seven .menu > .nav-item.active .nav-link:before{
+        background: #4069eb;
+    }
+    .menu_four .menu > .nav-item:hover .nav-link,.menu_four .menu > .nav-item.active .nav-link{
+        color: #6754e2;
+    }
+    .menu_four .menu > .nav-item:hover .nav-link:before,.menu_four .menu > .nav-item.active .nav-link:before{
+        background: #6754e2;
+    }
+    .payment_features_content.pl_70{
+        padding-left: 0;
+    }
+    .animation_img_two{
+        display: none;
+    }
+    .payment_banner_content {
+        max-width: 90%;
+    }
+    .payment_service_area .service-content{
+        margin-bottom: 40px;
+    }
+    .payment_clients_area .payment_features_content{
+        padding-right: 0px;
+    }
+    .payment_clients_area .payment_clients_inner{
+        height: 450px;
+        margin-top: 50px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.eight{
+        left: 500px;
+    }
+    .payment_clients_area{
+        padding-top: 0px;
+    }
+    .payment_testimonial_area{
+        padding-top: 50px;
+    }
+    .payment_testimonial_info .testimonial_content{
+        padding-bottom: 50px;
+    }
+    .footer_nine_top .company_widget.pr_100{
+        padding-right: 0px;
+    }
+    .footer_nine_top .pl_100{
+        padding-left: 15px;
+    }
+    .footer_nine_top .f_widget{
+        margin-bottom: 40px;
+    }
+    .footer_nine_top{
+        padding-bottom: 80px;
+    }
+    .payment_action_area {
+        padding: 125px 0px 120px;
+    }
+    .payment_features_area{
+        padding-bottom: 0px;
+    }
+    .saas_map_area img{
+        max-width: 100%;
+    }
+    .saas_banner_area_two .animation_img img{
+        width: 100%;
+    }
+    .saas_banner_area_two .animation_img{
+        padding: 0px 15px;
+    }
+    .saas_banner_area_two .shap_img{
+        transform: rotate(0deg);
+        bottom: 176px;
+    }
+    .section_container .intro {
+        height: 50%;
+    }
+    .saas_banner_area_two .shap_img{
+        bottom: 0;
+    }
+    .saas_features_area_two {
+        padding-top: 200px;
+    }
+    .saas_service_img{
+        margin-bottom: 40px;
+    }
+    .saas_service_item + .saas_service_item {
+        margin-top: 80px;
+    }
+    .saas_subscribe_area .saas_action_content{
+        padding: 30px 30px 38px;
+        text-align: center;
+    }
+    .saas_subscribe_area .justify-content-end{
+        justify-content: center !important;
+        margin-top: 20px;
+    }
+    .saas_banner_area_two .animation_img{
+        position: absolute;
+        bottom: -150px;
+    }
+    .saas_banner_content p br{
+        display: none;
+    }
+    .saas_banner_content h2{
+        line-height: 48px;
+    }
+    .saas_banner_area{
+        padding-top: 150px;
+    }
+    .prototype_content .btn_three{
+        margin-top: 25px;   
+    }
+    .app_service_area {
+        padding-top: 100px;
+    }
+    .app_testimonial_area{
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    .app_screenshot_area,.experts_team_area {
+        padding: 100px 0px; 
+    }
+    .payment_features_content.pr_70{
+        padding-right: 0;
+    }
+    .job_listing .listing_tab .list_item figure a, .job_listing .listing_tab .list_item figure img{
+        width: auto;
+        max-width: 95%;
+    }
+    .job_listing .listing_tab .list_item figure{
+        width: 60px;
+        margin-right: 10px;
+    }
+    .job_listing .listing_tab .list_item .joblisting_text{
+        padding-left: 15px;
+    }
+    .job_listing .listing_tab .list_item .joblisting_text .jobsearch-table-cell{
+        width: 70%;
+    }
+    .job_listing .listing_tab .list_item{
+        padding: 20px;
+    }
+    .job_listing .listing_tab .list_item .joblisting_text ul li{
+        font-size: 12px;
+        padding: 0px 5px;
+    }
+    .job_listing {
+        margin-top: 100px;
+    }
+    .job_details_area .pl_70,.job_apply_area .pl_70{
+        padding-left: 15px;
+        margin-bottom: 50px;
+    }
+    .checkout_area .cart_total_box{
+        margin-left: 0px;
+        padding: 50px 20px;
+    }
+    .login_area .login_info{
+        padding-right: 0;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .login_area .login_info:before{
+        right: -20%;
+    }
+    .login_img{
+        margin: 0px auto;
+        padding: 70px 0px;
+    }
+    .footer_bottom .f_menu li + li {
+        margin-left: 7px;
+    }
+    .shopping_cart_area .cart_table .total,.shopping_cart_area .cart_table .quantity{
+        width: 95px;
+    }
+    .shopping_cart_area .cart_table .del-item{
+        width: 60px;
+    }
+    .shopping_cart_area .cart_table .del-item .total{
+        margin-right: 10px;
+    }
+}
+
+@media (max-height:420px){
+    .navbar-collapse {
+        max-height: 310px;
+    }
+    .payment_banner_area{
+        min-height: 435px;
+    }
+}
+
+@media (max-width:768px){
+    .sec_title br,.prototype_service_info h2 br{
+        display: none;
+    }
+    .footer_bottom p{
+        text-align: center;
+        margin-bottom: 12px !important;
+    }
+    .footer_bottom .f_social_icon_two{
+        text-align: right !important;
+        margin-bottom: 12px;
+    }
+    .footer_bottom .f_menu{
+        text-align: center !important;
+    }
+    .banner_top h2{
+        font-size: 32px;
+    }
+    .l_height60{
+        line-height: 55px;
+    }
+    .footer_top_two .f_width_24, .f_width_12, .f_width_20{
+        width: 100%;
+    }
+    .footer_area_two .footer_bottom p{
+        text-align: left;
+        margin-bottom: 0 !important;
+    }
+    .partner_logo .p_logo_item {
+        width: calc(100% / 3);
+    }
+    .prototype_featured_area h2 br{
+        display: none;
+    }
+    .service_carousel{
+        padding-left: 0;
+    }
+     .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev{
+        opacity: 0;
+    }
+    .service_carousel:hover .owl-nav .owl-next,.service_carousel:hover .owl-nav .owl-prev{
+        opacity: 1;
+    }
+    .prototype_service_area{
+        padding-bottom: 70px;
+    }
+    .prototype_service_info .mb_90{
+        margin-bottom: 70px;
+    }
+    .about_img .about_img_slider .about_item .about_text h5{
+        font-size: 15px;
+    }
+    .agency_featured_item .agency_featured_img{
+        text-align: center !important;
+    }
+    .agency_featured_item .agency_featured_content{
+        padding-left: 0;
+        margin-top: 50px;
+    }
+    .action_area_three:before{
+        background-size: contain;
+    }
+    .action_area_three .action_content{
+        margin: 0px;
+    }
+    .mb_90{
+        margin-bottom: 50px;
+    }
+    .agency_service_area{
+        padding: 70px 0px;
+    }
+    .agency_featured_area {
+        padding-top: 120px;
+    }
+    .agency_testimonial_area,.software_featured_area{
+        padding-top: 70px
+    }
+    .agency_testimonial_info .testimonial_slider{
+        padding: 50px 20px;
+    }
+    .sec_pad,.prototype_service_info{
+        padding: 70px 0px;
+    }
+    .sec_title.mb_70{
+        margin-bottom: 50px
+    }
+    .pricing_area {
+        padding-bottom: 10px;
+    }
+    .design_img_two{
+        margin-top: -50px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .software_service_tab .nav-item{
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .software_service_tab_content{
+        margin-top: 60px;
+    }
+    .developer_product_area{
+        padding: 70px 0px;
+    }
+    .partner_logo_area_two .subscribe_form_info{
+        padding: 100px 20px;
+    }
+    .partner_logo_area_two .subscribe_form_info h2{
+        line-height: 42px;
+    }
+    .saas_signup_form .input-group{
+        margin-bottom: 25px;
+    }
+    .saas_signup_form .saas_banner_btn{
+        margin-top: 40px;
+    
+    }
+    .fun_fact_content .fact_item.pl_100{
+        padding-left: 30px;
+    }
+    .fun_fact_content,.cart_box{
+        margin-top: 50px;   
+    }
+    .footer_area_six.sec_pad{
+        padding-bottom: 30px;
+    }
+    .feedback_area .feedback_slider .item{
+        padding: 0px;
+    }
+    .feedback_slider .feedback_item{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .app_featured_area,.agency_featured_area_two{
+        padding-bottom: 80px;
+    }
+    .app_service_area{
+        padding-top: 80px;
+    }
+    .fact_author_img.fact_author_img_two{
+        text-align: center !important;
+    }
+    .features_info.feature_info_two .agency_featured_img{
+        margin-bottom: 0px;
+    }
+    .partner_logo_area_five{
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .blog_area .shop_page_number{
+        text-align: center !important;
+    }
+    .blog_single .blockquote{
+        padding-left: 15px;
+    }
+    .post_share a i{
+        padding-right: 4px;
+    }
+    .post_share a + a {
+        margin-left: 5px;
+    }
+    .post_tag .post-nam {
+        padding-right: 0;
+    }
+    .post_tag a{
+        margin-left: 3px;
+    }
+    .portfolio_filter .work_portfolio_item + .work_portfolio_item {
+        margin-left: 35px;
+    }
+    .price_content .price_item{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .process_area .agency_featured_item{
+        margin-top: 50px;
+    }
+    .single_product_item .single_pr_details{
+        padding-top: 30px;
+    }
+    .sign_info {
+        padding: 50px 30px;
+    }
+    .s_promo_info .promo_item{
+        opacity: 1;
+    }
+    .s_promo_info .promo_item.item_six{
+        top: 47%;
+        left: 9%;
+    }
+    .s_promo_info .promo_item.item_five{
+        left: 72%;
+    }
+    .banner_top {
+        padding-top: 125px;
+    }
+    .svg_intro_bottom{
+        width: 130%;
+    }
+    .payment_banner_content{
+        max-width: 100%;
+    }
+    .payment_banner_content h1 {
+        line-height: 50px;
+        font-size: 32px;
+    }
+    .payment_banner_content .action_btn{
+        margin-top: 45px;
+    }
+    .slider_content{
+        padding-top: 150px;   
+    }
+    .saas_features_area_two {
+        padding-top: 165px;
+    }
+    .section_container .intro_content{
+        position: relative;
+        padding-top: 150px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .section_container .intro_content h1{
+        font-size: 44px;
+    }
+    .saas_service_img img{
+        max-width: 100%;
+    }
+    .about_img .about_img_slider .about_item .about_text .br{
+        margin-bottom: 15px;
+    }
+    .s_service_section {
+        margin-top: 120px;
+    }
+    .mobile_img .women_img {
+        top: 50px;
+        right: 200px;
+        max-width: 40%;
+    }
+    .design_tab_area .tab-content .tab_img{
+        margin-top: 20px;
+    }
+    .saas_featured_info .f_img_two:before{
+        top: -20px;
+    }
+    .saas_featured_info .saas_featured_item{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .payment_testimonial_area .testimonial_img {
+        margin-bottom: -24px;
+    }
+    .payment_testimonial_info .testimonial_content .icon{
+        left: 0;
+    }
+    .payment_testimonial_info .testimonial_content{
+        padding-left: 115px;
+    }
+    .partner_logo_area_two {
+        padding-top: 70px;
+    }
+    .payment_action_content p br{
+        display: none;
+    }
+    .s_features_item .s_features_content .learn_btn{
+        margin-top: 05px;
+    }
+    .f_widget .mb_40{
+        margin-bottom: 16px;
+    }
+    .company_widget .mt_30{
+        margin-top: 20px;
+    }
+    .feature_info .f_content h2{
+        line-height: 33px;
+        margin-bottom: 15px;
+    }
+    .breadcrumb_area{
+        padding: 124px 0px 100px;
+    }
+    .breadcrumb_content p br{
+        display: none;
+    }
+    .job_listing .listing_tab .list_item{
+        padding: 30px;
+    }
+    .job_listing .listing_tab .list_item .joblisting_text{
+        display: block;
+    }
+    .job_listing .listing_tab .list_item .joblisting_text .job_list_table,.job_listing .listing_tab .list_item .joblisting_text .jobsearch-table-cell{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    .job_listing .listing_tab .list_item .joblisting_text{
+        padding: 0px;
+        border: 0px;
+    }
+    .job_listing .listing_tab .list_item figure{
+        margin-bottom: 20px;
+    }
+    .job_listing .listing_tab .list_item figure,.job_listing .listing_tab .list_item figure a, .job_listing .listing_tab .list_item figure img,.job_listing .listing_tab .list_item .joblisting_text .jobsearch-job-userlist{
+        float: none;
+    }
+    .job_listing .listing_tab .list_item .joblisting_text .jobsearch-job-userlist{
+        display: flex;
+        padding-top: 25px;
+    }
+    .job_listing {
+        margin-top: 70px;
+    }
+    .checkout_content .checkout_title{
+        margin-top: 40px;
+    }
+    .checkout_area .cart_total_box{
+        margin-top: 50px;
+    }
+    .checkout_content textarea{
+        padding-left: 20px;
+    }
+    .sign_info{
+        background: #fff;
+    }
+    .error_contain h1 {
+        font-size: 20vw;
+        line-height: 22vw;
+    }
+    .shopping_cart_area .cart_title{
+        display: none;
+    }
+    .shopping_cart_area .cart_table tr{
+        display: block;
+        float: none;
+        width: 100%;
+        margin-bottom: 40px;
+        background: #f5f5f5;
+        padding: 0px 15px;
+    }
+    .shopping_cart_area .cart_table tr td{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        padding-bottom: 20px;
+        padding-top: 20px !important;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #ededed;
+    }
+    .shopping_cart_area .cart_table tr td:last-child{
+        border-bottom: 0px;
+    }
+    .shopping_cart_area .cart_table tr td:before{
+        content: attr(data-title) ": ";
+        font-weight: 600;
+        float: left;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .shopping_cart_area .cart_table{
+        margin: 0px;
+        padding-top: 0;
+    }
+    .shopping_cart_area .cart_table .total, .shopping_cart_area .cart_table .quantity,.shopping_cart_area .cart_table .del-item{
+        float: right;
+        width: auto;
+    }
+    .shopping_cart_area .cart_table .del-item .total{
+        float: none;
+    }
+    .shopping_cart_area .cart_table .product .media{
+        display: inline-block;
+        width: auto;
+        float: right;
+    }
+    .shopping_cart_area .cart_table .product .media .media-left{
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+    .shopping_cart_area .cart_table .del-item a{
+        display: inline-flex;
+    }
+}
+
+@media (max-width:650px){
+    .about_img .about_img_slider .about_item.w45,.about_img .about_img_slider .about_item.w55{
+        width: 100%;
+    }
+    .about_img .pluse_icon{
+        display: none;
+    }
+    .app_img .mobile {
+        top: -83px;
+    }
+    .comment-box .post_comment .reply-comment {
+        padding-left: 25px;
+    }
+    .portfolio_filter .work_portfolio_item + .work_portfolio_item {
+        margin-left: 15px;
+    }
+    .sign_info .login_info .sign-in-form .d-flex{
+        display: block !important;
+    }
+    .sign_info .lead-text{
+        padding-right: 0px;
+        padding-top: 15px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.two,.payment_clients_area .payment_clients_inner .clients_item.one,.payment_clients_area .payment_clients_inner .clients_item.three{
+        left: 0;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.four {
+        left: 205px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.seven {
+        left: 150px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.eight {
+        left: 250px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.six {
+        left: 215px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.five {
+        left: 330px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.four {
+        left: 0;
+        top: 540px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.eight {
+        left: 165px;
+        top: 105px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.six{
+        top: 225px;
+        left: 190px;
+    }
+    .payment_testimonial_info .testimonial_content {
+        padding-left: 110px;
+        margin-top: 20px;
+    }
+    .payment_testimonial_info .testimonial_content .icon{
+        left: 0;
+    }
+    .payment_clients_area .payment_clients_inner {
+        height: 690px;
+    }
+    .agency_featured_area {
+        padding-top: 80px;
+    }
+    .about_img .about_img_slider .about_item .about_text{
+        bottom: 30px;
+    }
+    .software_banner_content h2 {
+        font-size: 35px;
+    }
+    .t_color3 br{
+        display: none;
+    }
+    .design_developers_area .btn_four{
+        margin-top: 35px;
+    } 
+    .company_widget .mt_40{
+        margin-top: 25px;
+    }
+    .f_widget h3.mb-30{
+        margin-bottom: 15px;
+    }
+    .footer_nine_top .f_widget .f-title:after{
+        margin-top: 10px;
+    }
+    .app_featured_content h2{
+        margin-bottom: 15px;
+    }
+    .app_featured_content .learn_btn_two{
+        margin-top: 10px;
+    }
+    .f_widget .widget-wrap{
+        margin-top: 20px;
+    }
+    .agency_banner_area_two .agency_content_two h2{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .agency_banner_area_two .agency_banner_img{
+        max-width: 70%;
+        margin-bottom: 30px;
+    }
+    .agency_banner_area_two {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .error_contain p br{
+        display: none;
+    }
+    .error_contain h2{
+        letter-spacing: 0.50px;
+    }
+}
+
+@media (max-width:576px){
+    .app_featured_area{
+        padding-top: 135px;
+    }
+    .app_banner_area{
+        padding-bottom: 10px;
+    }
+    .saas_home_area {
+        height: auto;
+    }
+    .saas_home_img{
+        margin-top: 50px;
+    }
+    .s_features_item .s_features_content{
+        padding-left: 0px;
+    }
+    .footer_bottom .f_social_icon_two,.footer_bottom .f_menu,.footer_area_two .footer_bottom p{
+        text-align: center !important;
+    }
+    .footer_bottom .f_social_icon_two{
+        margin-bottom: 6px;
+    }
+    .banner_top h2{
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .l_height60,.l_height50 {
+        line-height: 45px;
+    }
+    .f_size_30{
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .mobile_img .mobile {
+        left: 0;
+        top: -100px;
+        max-width: 100%;
+    }
+    .saas_banner_area_two .shap_img{
+        height: 280px;
+    }
+    .call_action_area .action_one {
+        left: -878px;
+    }
+    .f_size_40{
+        font-size: 30px;
+    }
+    .footer_area_two .footer_bottom p{
+        margin-bottom: 8px !important; 
+    }
+    .partner_logo .p_logo_item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .agency_content h2{
+        font-size: 28px;
+        line-height: 45px;
+        margin-bottom: 23px;
+    }
+    .agency_content .action_btn{
+        display: block !important;
+        text-align: center;
+    }
+    .agency_content .action_btn .agency_banner_btn{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .agency_banner_btn_two{
+        margin-left: 0px;
+    }
+    .about_content{
+        padding: 90px 15px 100px;
+    }
+    .developer_product_content .develor_tab .nav-item{
+        margin-left: 25px;
+    }
+    .partner_info .logo_item{
+        width: calc(100% / 2);
+    }
+    .fun_fact_content .fact_item h1{
+        font-size: 60px;
+    }
+    .feedback_slider .feedback_item .feed_back_author{
+        display: block;
+    }
+    .feedback_slider .feedback_item .ratting{
+        text-align: left;
+        padding-left: 75px;
+    }
+    .app_screenshot_area .app_screenshot_slider .item{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .app_img .phone_img{
+        max-width: 80%;
+    }
+    .app_banner_contentmt h2 {
+        line-height: 60px;
+        font-size: 40px;
+    }
+    .app_banner_area .app_img .app_screen.one {
+        top: 155px;
+        left: 15px;
+    }
+    .app_banner_area .app_img .app_screen.two {
+        top: 123px;
+        left: 105px;
+    }
+    .app_banner_area .app_img .app_screen.three {
+        top: 90px;
+        left: 194px;
+    }
+    .app_item.item_one {
+        top: -143px;
+    }
+    .app_item.item_two {
+        left: 31px;
+        top: -60px;
+    }
+    .app_item.item_three {
+        bottom: 50px;
+    }
+    .app_item.item_four{
+        right: -52px;
+        bottom: 36px;
+    }
+    .get_started_area .col-lg-6.text-right img{
+        max-width: 100%;
+    }
+    .get_content .app_btn.app_btn_two{
+        margin-left: 0px;
+    }
+    .app_service_item{
+        padding: 50px 20px;
+    }
+    .app_contact_info .info_item{
+        padding-left: 38px;
+        margin-bottom: 26px;
+    }
+    .app_contact_info{
+        left: 20px;
+        padding: 45px 15px 15px;
+    }
+    .app_screenshot_area .app_screenshot_slider .owl-prev {
+        left: calc(50% - 32px);
+    }
+    .app_screenshot_area .app_screenshot_slider .owl-next {
+        right: calc(50% - 80px);
+    }
+    .partner_logo_area_two .subscribe_form_info {
+        padding: 50px 20px;
+    }
+    .blog_grid_item{
+        max-width: 370px;  
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .comment-box .post_comment .reply-comment{
+        padding-left: 0;
+    }
+    .comment-box .post_comment .post_author .media-left {
+        margin-right: 10px;
+    }
+    .breadcrumb_content h1{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .portfolio_filter{
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .portfolio_filter .work_portfolio_item{
+        margin-bottom: 5px;
+    }
+    .portfolio_gallery .portfolio_item .portfolio_img img,.single_product_item .product_img img{
+        width: 100%;
+    }
+    .shopping_cart_area .cart_btn.cart_btn_two{
+        margin-left: 0;
+    }
+    .shopping_cart_area .cart_btn{
+        margin-bottom: 10px;
+    }
+    .login-form .extra{
+        display: block !important;
+    }
+    .s_promo_info .promo_item.item_one{
+        left: 26%;
+        top: 50px;
+    }
+    .s_promo_info .promo_item.item_four{
+        left: 47%;
+        top: 17%;
+    }
+    .software_promo_area .round_shape .r_shape.r_shape_five{
+        width: 155px;
+        height: 155px;
+    }
+    .s_promo_info .promo_item.item_six {
+        top: 47%;
+        left: 3%;
+    }
+    .s_promo_info .promo_item.item_nine{
+        left: 18px;
+        top: 63%;
+    }
+    .s_promo_info .promo_item.item_five{
+        left: 57%;
+        top: 55%;
+    }
+    .feature_info .feature_img.f_img_one .one{
+        left: 0;
+        max-width: 80%;
+    }
+    .feature_info .feature_img.f_img_one .three{
+        max-width: 69%;
+    }
+    .feature_info .feature_img.f_img_two .one {
+        right: 131px;
+        max-width: 43%;
+    }
+    .mobile_btn{
+        display: none;
+    }
+    .action_area_three .action_content .white_btn{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .payment_clients_area .payment_clients_inner .clients_item.five {
+        left: 180px;
+        top: 517px;
+    }
+    .footer_nine_bottom{
+        text-align: center;
+    }
+    .footer_nine_bottom .flag_selector{
+        float: none;
+        margin-top: 12px;
+    }
+    .payment_action_content h2{
+        line-height: 40px;
+    }
+    .payment_testimonial_area .testimonial_img img{
+        max-width: 100%;
+    }
+    .payment_testimonial_area .testimonial_img {
+        margin-bottom: -13px;
+    }
+    .payment_banner_content .action_btn{
+        display: block !important;
+    }
+    .payment_banner_content .agency_banner_btn_two{
+        display: block;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .payment_banner_content h1 {
+        line-height: 38px;
+        font-size: 28px;
+    }
+    .pay_btn.pay_btn_two{
+        margin-left: 0px;
+    }
+    .section_container .intro_content h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .section_container .intro_content .subcribes{
+        display: block;
+    }
+    .section_container .intro_content .subcribes .form-control{
+        width: 100%;
+    }
+    .section_container .intro_content .subcribes .btn_submit{
+        position: relative;
+        margin-top: 10px;
+        display: block;
+        max-width: 100%;
+        width: 100%;
+    }
+    .saas_banner_area_two .animation_img {
+        bottom: -40px;
+    }
+    .saas_features_area_two {
+        padding-top: 100px;
+    }
+    .software_banner_content .action_btn{
+        display: block !important;
+    }
+    .video_btn{
+        display: block;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .saas_banner_content p.mt_30{
+        margin-top: 20px;
+    }
+    .app_testimonial_area .nav_container .owl-prev, .app_testimonial_area .nav_container .owl-next{
+        display: none;
+    }
+    .app_feature_info .app_featured_content .app_btn{
+        margin-top: 15px;
+    }
+    .banner_top .subcribes .btn_submit{
+        position: relative;
+        right: 0;
+        display: block;
+        top: 0;
+        transform: translateY(0);
+        margin: 20px auto 0px;
+    }
+    .sec_title h2.mb_20{
+        margin-bottom: 10px;
+    }
+    .breadcrumb_area {
+        padding: 110px 0px 50px;
+    }
+    .shop_grid_area .row,.shop_list_area .row{
+        text-align: center;
+    }
+    .shop_menu_right {
+        justify-content: center !important;
+    }
+    .shop_list_area .shop_page_number{
+        margin-top: 40px;
+    }
+    .product_details_area .pr_details, .service_details_item + .service_details_item {
+        margin-top: 30px;
+    }
+    .blog_content .post_date{
+        top: -60px;
+    }
+    .banner_top .subcribes{
+        display: block;
+    }
+    .banner_top .subcribes .form-control{
+        display: block;
+        width: 100%;
+    }
+    .s_promo_info .promo_item.item_two,.s_promo_info .promo_item.item_one{
+        width: 110px;
+        height: 110px;
+    }
+    .s_promo_info .promo_item.item_four,.s_promo_info .promo_item.item_five,.s_promo_info .promo_item.item_nine{
+        width: 115px;
+        height: 115px;
+    }
+    .s_promo_info .promo_item.item_eight {
+        width: 120px;
+       
+    }
+    .s_subcribes .form-control{
+        line-height: 70px;
+        height: 70px;
+    }
+    .s_subcribes .btn-submit{
+        font-size: 18px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width:450px){
+    .price_tab{
+        max-width: 100%;
+        border-radius: 3px;
+    }
+    .price_tab .nav-item .nav-link{
+        display: block;
+        position: relative;
+    }
+    .price_tab,.price_tab .nav-item{
+        display: block;
+    }
+    .price_tab .nav-item .nav-link.active{
+        background: #00aff0;
+        border-radius: 3px;
+    }
+    .partner_info .logo_item{
+        width: 100%;
+    }
+    .app_img .phone_img{
+        max-width: 55%;
+    }
+    .app_img .text_bg{
+        max-width: 60%;
+    }
+    .app_img .text_bg.three {
+        right: -7%;
+        bottom: 125px;
+    }
+    .app_img .text_bg.two {
+        right: 12%;
+        top: -37px;
+    }
+    .app_img .text_bg.one{
+        left: -2%;
+    }
+    .app_img .dot_three {
+        left: 128px;
+    }
+    .app_img .dot_one {
+        right: 145px;
+        top: 20px;
+    }
+    .price_tab.price_tab_two .nav-item .nav-link.active{
+        background: #5f2eed;
+    }
+    .get_content .app_btn{
+        margin-top: 5px;
+    }
+    .pr_details .ratting{
+        float: none;
+        text-align: left;
+        padding-top: 12px;
+    }
+    .pr_footer,.login-form .extra{
+        display: block !important;
+    }
+    .pr_details .post-body .ratting{
+        padding-top: 0px;
+    }
+    .product_info_details .comment-box .comment-content {
+        padding-left: 80px;
+    }
+    .product_info_details .pr_tab{
+        display: block;
+        border-radius: 0px;
+    }
+    .product_info_details .pr_tab .nav-item .nav-link{
+        border-radius: 0px;
+    }
+    .product_info_details .pr_tab .nav-item{
+        float: none;
+    }
+    .sign_info {
+        padding: 30px 15px;
+    }
+    .text_box input[type="text"], .text_box textarea, .text_box input[type="password"]{
+        padding-left: 10px;
+    }
+    .payment_testimonial_info .testimonial_content .icon{
+        top: -53px;
+    }
+    .payment_testimonial_info .testimonial_content{
+        padding-left: 0;
+    }
+    .mobile_img .women_img{
+        right: 80px;
+    }
+    .mobile_img .mobile{
+        top: -35px;
+    }
+    .post_share a + a {
+        margin-left: 0px;
+    }
+    .coupon .button{
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: translateY(0);
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,531 @@
+/*================= saas_home_area css ===============*/
+.saas_home_area{
+    position: relative;
+    background: #fafafe;
+    height: 1100px;
+}
+.banner_top{
+    padding-top: 210px;
+    h2{
+        color: $h_dk;
+        margin-bottom: 25px;
+    }
+    p{
+        margin-bottom: 42px;
+    }
+    .subcribes{
+        max-width: 630px;
+        margin:  0 auto;
+        .form-control{
+            border: 1px solid rgb(233, 235, 244);
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 30px 30px 0px rgba(0, 11, 40, 0.1);
+            font: 400 15px/46px $pop;
+            padding-left: 30px;
+            color: $h_dk;
+            z-index: 0;
+            @include placeholder{
+                color: #b4b9c8;
+            }
+            &:focus{
+                border-color: #6754e2;
+            }
+        }
+        .btn_submit{
+            position: absolute;
+            right: 8px;
+            background: #6754e2;
+            color: #fff;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 11px 32px;
+        }
+    }
+}
+.saas_home_img{
+    text-align: center;
+    margin-top: 120px;
+    position: relative;
+    img{
+        box-shadow: 0px 40px 60px 0px rgba(0, 11, 40, 0.16);
+        border-radius: 8px;
+    }
+}
+
+
+/*============== slider_area css ==============*/
+.slider_area{
+    background-image: -moz-linear-gradient( 40deg, rgb(23,134,216) 0%, rgb(0,175,240) 100%);
+    background-image: -webkit-linear-gradient( 40deg, rgb(23,134,216) 0%, rgb(0,175,240) 100%);
+    background-image: -ms-linear-gradient( 40deg, rgb(23,134,216) 0%, rgb(0,175,240) 100%);
+    height: 930px;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    .bottom_shoape{
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+    }
+    .middle_shape{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+.leaf{
+    position: absolute;
+    &.l_left{
+        top: 200px;
+        left: 260px;
+    }
+    &.l_right{
+        right: 0;
+        bottom: 100px;
+    }
+}
+.mobile_img{
+    position: relative;
+    .img{
+        animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92); 
+        animation-name: animateUpDown;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    .mobile{
+        z-index: -1;
+        position: relative;
+    }
+    .women_img{
+        top: 245px;
+        right: 160px;
+        z-index: 1;
+    }
+}
+.slider_content{
+    color: #fff;
+    padding-top: 200px;
+}
+
+@keyframes animateUpDown {
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/*=============== prototype_banner_area css ==============*/
+.prototype_banner_area{
+    background: #fbfbfd;
+    padding-top: 220px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.prototype_content{
+    .banner_subscribe{
+        .subcribes{
+            display: block;
+            .form-control{
+                max-width: 370px;
+                width: 100%;
+                border-radius: 3px;
+                background-color: rgb(255, 255, 255);
+                border: 0px;
+                height: 50px;
+                color: #222d39;
+                padding-left: 30px;
+                box-shadow: 0px 2px 3px 0px rgba(12, 0, 46, 0.06);
+                font: 300 14px/28px $pop;
+                border: 1px solid transparent;
+                @include placeholder{
+                    color: #aeb4ba;
+                }
+                &:focus{
+                    border-color: #6754e2;
+                }
+            }
+        }
+    }
+}
+
+.partner_logo{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    border-bottom: 1px solid #eeeef5;
+    padding-bottom: 35px;
+    position: relative;
+    z-index: 4;
+    .p_logo_item{
+        width: calc(100% / 5);
+        text-align: center;
+        img{
+            max-width: 100%;
+            filter: contrast(0.3%);
+            transition: all 0.3s ease 0s;
+        }
+        &:hover{
+            img{
+                filter: contrast(100%);
+            }
+        }
+    }
+}
+
+
+/*============== agency_banner_area css =============*/
+.agency_banner_area{
+    padding-top: 150px;
+    position: relative;
+    z-index: 1;
+    .banner_shap{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+.agency_content{
+    h2{
+        font-size: 50px;
+        line-height: 66px;
+    }
+}
+
+/*================ software_banner_area css ================*/
+.software_banner_area{
+    min-height: 100vh;
+    background-image: -moz-linear-gradient( 140deg, rgb(35,2,109) 0%, rgb(61,100,244) 100%);
+    background-image: -webkit-linear-gradient( 140deg, rgb(35,2,109) 0%, rgb(61,100,244) 100%);
+    background-image: -ms-linear-gradient( 140deg, rgb(35,2,109) 0%, rgb(61,100,244) 100%);
+    position: relative;
+    z-index: 0;
+    &:before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background: url("../img/home5/shap_tecture.png") no-repeat scroll center 0 / cover;
+    }
+}
+
+
+/*=============== saas banner area ================*/
+.saas_banner_area{
+    background-image: -moz-linear-gradient( 140deg, rgb(3,2,7) 0%, rgb(17,19,57) 100%);
+    background-image: -webkit-linear-gradient( 140deg, rgb(3,2,7) 0%, rgb(17,19,57) 100%);
+    background-image: -ms-linear-gradient( 140deg, rgb(3,2,7) 0%, rgb(17,19,57) 100%);
+    padding-top: 230px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.saas_shap{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.saas_banner_content{
+    
+}
+.dasboard_img{
+    img{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+}
+
+/*============= app_banner_area css ===========*/
+.app_banner_area{
+    background: url(../img/home7/banner.png) no-repeat scroll center 100%;
+    padding-top: 230px;
+    padding-bottom: 210px;
+    overflow: hidden;
+    background-size: cover;
+    .app_img{
+        .app_screen{
+            position: absolute;
+            animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92); 
+            animation-name: animateUpDown;
+            animation-iteration-count: infinite;
+            &.one{
+                top: 135px;
+                left: 110px;
+                animation-duration: 1.9s;
+            }
+            &.two{
+                top: 46px;
+                left: 220px;
+                animation-duration: 1.8s;
+            }
+            &.three{
+                top: 6px;
+                left: 375px;
+                animation-duration: 1.6s;
+            }
+        }
+    }
+}
+.app_banner_contentmt{
+    h2{
+        line-height: 64px;
+    }
+    .app_btn{
+        border:0px;
+        background: #fff;
+        transition: all 0.2s linear;
+        color: #4069eb;
+        padding: 14px 40px;
+        &:hover{
+            border-color: #4069eb;
+            background:#4069eb;
+            color: #fff;
+        }
+    }
+}
+
+
+/*================ agency_banner_area_two css ===============*/
+.agency_banner_area_two{
+    background-image: -moz-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+    background-image: -webkit-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+    background-image: -ms-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+    padding: 230px 0px 140px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.dot_shap{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    z-index: -1;
+    &.one{
+        width: 740px;
+        height: 740px;
+        top: -280px;
+    }
+    &.two{
+        width: 640px;
+        height: 640px;
+        top: -150px;
+        right: -80px;
+    }
+    &.three{
+        width: 640px;
+        height: 640px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -450px;
+    }
+}
+.agency_banner_img{
+    margin-left: -100px;
+}
+.agency_content_two{
+    .agency_banner_btn{
+        color: #5e2ced;
+        border-color: #fff;
+        background: #fff;
+    }
+}
+
+
+/*=============== saas_banner_area_two css ===============*/
+.saas_banner_area_two{
+    position: relative;
+    z-index: 1;
+    .shap_img{
+        position: absolute;
+        width:101%;
+        height: 540px;
+        bottom: 120px;
+        z-index: 0;
+        left: 0;
+        overflow: hidden;
+        background-size: cover;
+        transform: rotate(2deg);
+        right: 0;
+    }
+    .section_intro{
+        background-image: -moz-linear-gradient( -50deg, rgb(35,126,253) 0%, rgb(36,176,254) 46%, rgb(36,226,255) 100%);
+        background-image: -webkit-linear-gradient( -50deg, rgb(35,126,253) 0%, rgb(36,176,254) 46%, rgb(36,226,255) 100%);
+        background-image: -ms-linear-gradient( -50deg, rgb(35,126,253) 0%, rgb(36,176,254) 46%, rgb(36,226,255) 100%);
+    }
+}
+
+.section_container{
+    max-width: 830px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+    .intro{
+        height: 53%;
+        width: 100%;
+        position: relative;
+    }
+    .intro_content{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        padding: 0px 15px;
+        h1{
+            font-size: 50px;
+            letter-spacing: -0.20px;
+            line-height: 70px;
+            margin-bottom: 16px;
+        }
+        p{
+            line-height: 30px;
+            margin-bottom: 60px;
+        }
+        .subcribes{
+            max-width: 570px;
+            margin: 0 auto;
+            .form-control{
+                border-radius: 4px;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 8px 16px 0px rgba(0, 11, 40, 0.1);
+                font: 300 16px/36px $pop;
+                border: 0px;
+                color: #a1a8be;
+                height: 60px;
+                padding-left: 30px;
+                position: relative;
+                z-index: 1;
+                @include placeholder{
+                    color: #a1a8be;
+                }
+            } 
+            .btn_submit{
+                position: absolute;
+                top: 0;
+                right: 0;
+                font: 400 14px/60px $pop;
+                color: #fff;
+                background: #1c7ce7;
+                border-radius: 4px;
+                padding: 0px 25px;
+                border: 0px;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+.animation_img{
+    text-align: center;
+    margin-top: -320px;
+    z-index: 2;
+    position: relative;
+}
+/*=============== saas_banner_area_two css ===============*/
+
+.payment_banner_area{
+    position: relative;
+    min-height: 100vh;
+    background-image: -moz-linear-gradient( -86deg, rgb(113,33,255) 0%, rgb(33,212,253) 100%);
+    background-image: -webkit-linear-gradient( -86deg, rgb(113,33,255) 0%, rgb(33,212,253) 100%);
+    background-image: -ms-linear-gradient( -86deg, rgb(113,33,255) 0%, rgb(33,212,253) 100%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .shape{
+        background-image: -moz-linear-gradient( -57deg, rgb(113,33,255) 0%, rgb(33,212,253) 100%);
+        background-image: -webkit-linear-gradient( -57deg, rgb(113,33,255) 0%, rgb(33,212,253) 100%);
+        background-image: -ms-linear-gradient( -57deg, rgb(113,33,255) 0%, rgb(33,212,253) 100%);
+        position: absolute;
+        left: -256px;
+        top: -178px;
+        width: 1095px;
+        height: 602px;
+        border-radius: 90px;
+        transform: rotate(-38deg);
+        z-index: -1;
+        opacity: 0.20;
+        &.two{
+            background-image: -moz-linear-gradient( -75deg, rgb(113,33,255) 0%, rgb(33,212,253) 100%);
+            background-image: -webkit-linear-gradient( -75deg, rgb(113,33,255) 0%, rgb(33,212,253) 100%);
+            background-image: -ms-linear-gradient( -75deg, rgb(113,33,255) 0%, rgb(33,212,253) 100%);
+            position: absolute;
+            left: 689px;
+            top: 458px;
+            border-radius: 150px;
+            width: 816px;
+            height: 702px;
+        }
+    }
+}
+.animation_img_two{
+    width: 50%;
+    height: 60%;
+    float: right;
+    text-align: right;
+    position: absolute;
+    bottom: 188px;
+    right: 0;
+    z-index: 0;
+    img{
+        max-width: 100%;
+    }
+}
+.svg_intro_bottom{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.payment_banner_content{
+    max-width: 670px;
+    h1{
+        line-height: 70px;
+        margin-bottom: 25px;
+    }
+    p{
+        line-height: 30px;
+    }
+    .agency_banner_btn{
+        background: #fff;
+        color: #5956fe;
+        border-color: #fff;
+    }
+    .agency_banner_btn_two{
+        color: #ffffff;
+        margin-left: 30px;
+        &:before{
+            display: none;
+        }
+        i{
+            vertical-align: middle;
+            padding-left: 10px;
+            transition: all 0.2s linear;
+        }
+        &:hover{
+            i{
+                padding-left: 15px;
+            }
+        }
+    }
+}

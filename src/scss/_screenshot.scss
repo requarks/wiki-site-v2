@@ -1,0 +1,128 @@
+/*================= app_screenshot_area css =============*/
+.app_screenshot_area{
+    overflow: hidden;
+    .app_screen_info{
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: -10px;
+    }
+    .app_screenshot_slider{
+        padding-bottom: 110px;
+        .item{
+            padding: 10px 20px 20px;
+            .screenshot_img{
+                border: 1px solid #f4f4f9;
+                border-radius: 4px;
+                box-shadow: 0px 6px 16px 0px rgba(12, 0, 46, 0.06);
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+        .owl-prev,.owl-next{
+            position: absolute;
+            bottom: 0;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #d9e1ea;
+            background: #fbfbfd;
+            border-radius: 25px;
+            font-size: 20px;
+            line-height: 50px;
+            transform: translateX(-50%);
+            cursor: pointer;
+            transition: all 0.2s linear;
+            &:hover{
+                background: #4069eb;
+                border-color: #4069eb;
+                color: #fff;
+            }
+        }
+        .owl-prev{
+            left: calc(50% - 60px);
+        }
+        .owl-next{
+            right: calc(50% - 60px);
+        }
+    }
+}
+/*================= app_screenshot_area css =============*/
+
+/*=============== get started area css ===============*/
+.get_started_area{
+    background-image: -moz-linear-gradient( 140deg, rgb(103,45,222) 0%, rgb(64,105,235) 100%);
+    background-image: -webkit-linear-gradient( 140deg, rgb(103,45,222) 0%, rgb(64,105,235) 100%);
+    background-image: -ms-linear-gradient( 140deg, rgb(103,45,222) 0%, rgb(64,105,235) 100%);
+    padding: 120px 0px 80px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    .shap{
+        opacity: 0.03;
+        &.one{
+            background: rgb(255, 255, 255);
+            top: -290px;
+            left: -50px;
+        }
+        &.two{
+            background: rgb(255, 255, 255);
+            top: -260px;
+            left: 100px;
+        }
+        &.three{
+            background: rgb(255, 255, 255);
+            top: auto;
+            left: 47%;
+            bottom: -300px;
+        }
+        &.four{
+            background: rgb(255, 255, 255);
+            top: auto;
+            left: 63%;
+            bottom: -280px;
+        }
+    }
+}
+.get_content{
+    color: #fff;
+    h3{
+        font-size: 24px;
+    }
+    .app_btn{
+        font: 500 16px $pop;
+        padding: 12px 34px;
+        border-color: #fff;
+        background: #fff;
+        line-height: 27px;
+        transition: all 0.2s linear;
+        min-width: 200px;
+        text-align: center;
+        &.app_btn_one{
+            color: #4069eb;
+            vertical-align: middle;
+            img{
+                padding-right: 12px;
+            }
+            &:hover{
+                background: rgba(255, 255, 255, 0.1);
+                color: #fff;
+            }
+        }
+        &.app_btn_two{
+            background: rgba(255, 255, 255, 0.1);
+            vertical-align: middle;
+            box-shadow: none;
+            margin-left: 20px;
+            i{
+                font-size: 25px;
+                padding-right: 10px;
+                vertical-align: sub;
+            }
+            &:hover{
+                color: #4069eb;
+                background:#fff;
+                box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+            }
+        }
+    }
+}

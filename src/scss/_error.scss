@@ -1,0 +1,37 @@
+/*================= error_area css ==================*/
+.error_area{
+    background: -moz-linear-gradient( 180deg, rgba(94,44,237, 0.93) 0%, rgba(164,133,253, 0.90) 100%), url("../img/error_bg.png") no-repeat scroll center 100%;
+    background: -webkit-linear-gradient( 180deg, rgba(94,44,237, 0.93) 0%, rgba(164,133,253, 0.90) 100%), url("../img/error_bg.png") no-repeat scroll center 100%;
+    background: -ms-linear-gradient( 180deg, rgba(94,44,237, 0.93) 0%, rgba(164,133,253, 0.90) 100%), url("../img/error_bg.png") no-repeat scroll center 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    min-height: 650px;
+}
+.error_shap{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.error_contain{
+    h1{
+    font-size: 15vw;
+    line-height: 14vw;
+        margin-bottom: 0px;
+    }
+    h2{
+        letter-spacing: 12px;
+        margin-bottom: 25px;
+    }
+    .about_btn{
+        min-width: 230px;
+        box-shadow: 0px 20px 30px 0px rgba(15, 0, 57, 0.1);
+    }
+}
+/*================= error_area css ==================*/
+
+
+

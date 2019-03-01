@@ -1,0 +1,17 @@
+/*================= Start breadcrumb_area css =================*/
+.breadcrumb_area{
+    background-image: -moz-linear-gradient( 180deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+    position: relative;
+    z-index: 1;
+    padding: 235px 0px 125px;
+    overflow: hidden;
+    .breadcrumb_shap{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+/*================= End breadcrumb_area css =================*/

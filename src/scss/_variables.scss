@@ -1,0 +1,23 @@
+/*=== fonts ====*/
+$pop: 'Poppins', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900');
+
+/*===== color =====*/
+$h_dk:#051441;
+$p-color:#677294;
+
+
+// Mixins
+@mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
