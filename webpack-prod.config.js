@@ -7,7 +7,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin')
-const SriWebpackPlugin = require('webpack-subresource-integrity')
 const WriteFilePlugin = require('write-file-webpack-plugin')
 
 const babelConfig = fs.readJsonSync(path.join(process.cwd(), '.babelrc'))
@@ -125,11 +124,7 @@ module.exports = {
       template: 'src/index.html',
       filename: 'index.html',
       hash: true,
-      inject: true
-    }),
-    new SriWebpackPlugin({
-      hashFuncNames: ['sha256', 'sha512'],
-      enabled: true
+      inject: false
     }),
     new SimpleProgressWebpackPlugin({
       format: 'expanded'

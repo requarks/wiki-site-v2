@@ -4,7 +4,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=5">
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <title>Wiki.js</title>
   <!-- Bootstrap CSS -->
@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="vendors/owl-carousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
   <link rel="stylesheet" href="vendors/magnify-pop/magnific-popup.css">
+<% for (var index in htmlWebpackPlugin.files.css) { %>
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[index] %>">
+<% } %>
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -61,7 +64,7 @@
   <header class="header_area">
     <nav class="navbar navbar-expand-lg menu_one">
       <div class="container custom_container p0">
-        <a class="navbar-brand" href="#"><img src="svg/logo.svg" alt="logo" style='width: 150px;'></a>
+        <a class="navbar-brand" href="#"><img src="svg/logo.svg" alt="logo"></a>
         <a class="btn_get btn_hover mobile_btn ml-auto" href="#get-app">Get Started</a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="menu_toggle">
@@ -124,16 +127,16 @@
             <h2 class="f_p f_size_40 l_height60 wow fadeInUp" data-wow-delay="0.3s">The most <span class="f_700">powerful</span> and <br>extensible <span class="f_700">open source</span> Wiki software</h2>
             <p class="f_size_18 l_height30 wow fadeInUp" data-wow-delay="0.5s">Make documentation a joy to write<br> using Wiki.js beautiful and intuitive interface!</p>
             <div class="f_size_18 l_height60 wow fadeInUp" data-wow-delay="0.7s">
-              <img src="svg/logos/docker.svg" alt="Docker" class="mr_30" style="height: 32px;" />
-              <img src="svg/logos/heroku.svg" alt="Heroku" class="mr_30" style="height: 32px;" />
-              <img src="svg/logos/linux.svg" alt="Linux" class="mr_30" />
-              <img src="svg/logos/macos.svg" alt="macOS" class="mr_30" style="height: 32px;" />
-              <img src="svg/logos/windows-server.svg" alt="Windows" style="height: 32px;" />
+              <img src="svg/logos/docker.svg" alt="Docker" class="mr_30 saas_home_area-platform" />
+              <img src="svg/logos/heroku.svg" alt="Heroku" class="mr_30 saas_home_area-platform" />
+              <img src="svg/logos/linux.svg" alt="Linux" class="mr_30 saas_home_area-platform" />
+              <img src="svg/logos/macos.svg" alt="macOS" class="mr_30 saas_home_area-platform" />
+              <img src="svg/logos/windows-server.svg" alt="Windows" class="saas_home_area-platform" />
             </div>
           </div>
         </div>
         <div class="saas_home_img wow fadeInUp" data-wow-delay="0.8s">
-          <img src="img/wiki-screenshot.png" alt="">
+          <img src="img/wiki-screenshot.png" srcset="img/wiki-screenshot-2x.png 2x" alt="">
         </div>
       </div>
     </div>
@@ -235,7 +238,7 @@
             <div class="service-content wow fadeInRight" data-wow-delay="0.2s">
               <div class="pay_icon">
                 <div class="icon_shape"></div>
-                <img src="svg/icons/nolan-downloading-updates.svg" alt="" style="height: 42px;">
+                <img src="svg/icons/nolan-downloading-updates.svg" alt="">
               </div>
               <h2 class="f_p w_color f_700">Easy Installation</h2>
               <p class="f_p w_color">You'll be ready to go within minutes! Step-by-step install guides available for all platforms.</p>
@@ -664,7 +667,7 @@
             <div class="text-right">
               <div class="square_box box_three"></div>
               <div class="square_box box_four"></div>
-              <img class="wow fadeInUp" data-wow-delay="0.4s" src="svg/logos/color-opensource.svg" style="max-width: 90%; width: 450px;" alt="">
+              <img class="wow fadeInUp opensource-logo" data-wow-delay="0.4s" src="svg/logos/color-opensource.svg" alt="">
             </div>
           </div>
           <div class="col-lg-5 col-md-6">
@@ -699,7 +702,7 @@
           <div class="r_shape r_shape_four"></div>
           <div class="r_shape r_shape_five">
             <span class="text">
-              <img src="svg/logo-inverted.svg" style="width: 150px; margin-top: 10px;" alt="">
+              <img src="svg/logo-inverted.svg" class="integrations-wiki-logo" alt="">
             </span>
           </div>
           <div class="s_promo_info">
@@ -745,7 +748,7 @@
             </div>
             <div class="promo_item item_eight scroll_animation">
               <div class="text">
-                <img src="svg/logos/algolia.svg" style="width: 42px;" alt="">
+                <img src="svg/logos/algolia.svg" alt="">
                 <p>Algolia</p>
               </div>
             </div>
@@ -779,7 +782,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="s_pricing-item wow fadeInUp" data-wow-delay="0.6s">
-              <div class="tag_label blue_bg" style="top: 58px;">Coming soon</div>
+              <div class="tag_label blue_bg comingsoon-bookmark">Coming soon</div>
               <img class="shape_img" src="img/saas/price_line2.png" alt="">
               <img src="svg/icons/handdrawn-cloud.svg" alt="Cloud" />
               <h5 class="f_p f_600 f_size_20 t_color mb-0 mt_40">Cloud</h5>
