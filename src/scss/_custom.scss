@@ -23,3 +23,14 @@
 .payment_service_area .pay_icon img {
   height: 42px;
 }
+
+.action_area_three .curved{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  z-index: -1;
+  background: url("../img/custom/action_shap.png") no-repeat scroll center top;
+  top: 0;
+  background-size: contain;
+}
