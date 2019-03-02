@@ -51,7 +51,7 @@
 /*=============== get started area css ===============*/
 .get_started_area{
     background-image: -moz-linear-gradient( 140deg, rgb(103,45,222) 0%, rgb(64,105,235) 100%);
-    background-image: -webkit-linear-gradient( 140deg, rgb(103,45,222) 0%, rgb(64,105,235) 100%);
+    background-image: linear-gradient( 140deg, rgb(103,45,222) 0%, rgb(64,105,235) 100%);
     background-image: -ms-linear-gradient( 140deg, rgb(103,45,222) 0%, rgb(64,105,235) 100%);
     padding: 120px 0px 80px;
     position: relative;

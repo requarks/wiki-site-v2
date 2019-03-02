@@ -26,7 +26,7 @@
         color: #fff;
         text-align: center;
         background-image: -moz-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
-        background-image: -webkit-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+        background-image: linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
         background-image: -ms-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
         box-shadow: 0px 14px 30px 0px rgba(94, 44, 237, 0.4);
         position: absolute;
@@ -34,25 +34,25 @@
         top: 30px;
         &.s_icon_one{
             background-image: -moz-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
-            background-image: -webkit-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+            background-image: linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
             background-image: -ms-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
             box-shadow: 0px 14px 30px 0px rgba(94, 44, 237, 0.4);
         }
         &.s_icon_two{
             background-image: -moz-linear-gradient( 40deg, rgb(224,56,39) 0%, rgb(249,164,122) 100%);
-            background-image: -webkit-linear-gradient( 40deg, rgb(224,56,39) 0%, rgb(249,164,122) 100%);
+            background-image: linear-gradient( 40deg, rgb(224,56,39) 0%, rgb(249,164,122) 100%);
             background-image: -ms-linear-gradient( 40deg, rgb(224,56,39) 0%, rgb(249,164,122) 100%);
             box-shadow: 0px 14px 30px 0px rgba(224, 56, 39, 0.4);
         }
         &.s_icon_three{
             background-image: -moz-linear-gradient( 40deg, rgb(44,130,237) 0%, rgb(56,208,252) 100%);
-            background-image: -webkit-linear-gradient( 40deg, rgb(44,130,237) 0%, rgb(56,208,252) 100%);
+            background-image: linear-gradient( 40deg, rgb(44,130,237) 0%, rgb(56,208,252) 100%);
             background-image: -ms-linear-gradient( 40deg, rgb(44,130,237) 0%, rgb(56,208,252) 100%);
             box-shadow: 0px 14px 30px 0px rgba(44, 130, 237, 0.4);
         }
         &.s_icon_four{
             background-image: -moz-linear-gradient( 40deg, rgb(224, 149, 32) 0%, rgb(250, 233, 38) 100%);
-            background-image: -webkit-linear-gradient( 40deg, rgb(224, 149, 32) 0%, rgb(250, 233, 38) 100%);
+            background-image: linear-gradient( 40deg, rgb(224, 149, 32) 0%, rgb(250, 233, 38) 100%);
             background-image: -ms-linear-gradient( 40deg, rgb(224, 149, 32) 0%, rgb(250, 233, 38) 100%);
             box-shadow: 0px 14px 30px 0px rgba(224, 149, 32, 0.4);
         }
@@ -287,7 +287,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-    } 
+    }
     a{
         font: 400 14px/26px $pop;
         color: #222d39;
@@ -422,7 +422,7 @@
     .develor_tab{
         display: inline-block;
         border-bottom: 2px solid #e1e3ed;
-        padding: 0px 40px 0px 10px; 
+        padding: 0px 40px 0px 10px;
         .nav-item{
             margin: 0px 0px 0px 50px;
             float: left;
@@ -496,14 +496,14 @@
         .nav-item{
             .nav-link{
                 &:before{
-                    background: #5e2ced; 
+                    background: #5e2ced;
                 }
                 &.active{
                     color: #5e2ced;
                 }
             }
         }
-    } 
+    }
 }
 
 
@@ -532,7 +532,7 @@
             text-shadow: 0px 14px 30px rgba(44, 130, 237, 0.4);
             color: #677294;
             background-image: -moz-linear-gradient( 0deg, rgb(33,113,212) 0%, rgb(44,196,240) 100%);
-            background-image: -webkit-linear-gradient( 0deg, rgb(33,113,212) 0%, rgb(44,196,240) 100%);
+            background-image: linear-gradient( 0deg, rgb(33,113,212) 0%, rgb(44,196,240) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
 
@@ -541,7 +541,7 @@
             text-shadow: 0px 14px 30px rgba(224, 56, 39, 0.4);
             color: #e03827;
             background-image: -moz-linear-gradient( 0deg, #e03827 0%, #f9a47a 100%);
-            background-image: -webkit-linear-gradient( 0deg, #e03827 0%, #f9a47a 100%);
+            background-image: linear-gradient( 0deg, #e03827 0%, #f9a47a 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -549,7 +549,7 @@
             text-shadow: 0px 14px 30px rgba(94, 44, 237, 0.4);
             color: #e03827;
             background-image: -moz-linear-gradient( 0deg, #5e2ced 0%, #a485fd 100%);
-            background-image: -webkit-linear-gradient( 0deg, #5e2ced 0%, #a485fd 100%);
+            background-image: linear-gradient( 0deg, #5e2ced 0%, #a485fd 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -586,7 +586,7 @@
 
 /*============== service_details_area css ==============*/
 .service_details_area{
-    
+
 }
 .service_details_img{
     margin-left: -80px;
@@ -622,7 +622,7 @@
 
 /*============= saas_service_area css =============*/
 .saas_service_area{
-    
+
 }
 .saas_service_item{
     .saas_service_content{
@@ -637,25 +637,25 @@
             margin-bottom: 35px;
             &.icon_one{
                 background-image: -moz-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
-                background-image: -webkit-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+                background-image: linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
                 background-image: -ms-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
                 box-shadow: 0px 10px 20px 0px rgba(94, 44, 237, 0.2);
             }
             &.icon_two{
                 background-image: -moz-linear-gradient( 40deg, rgb(224, 56, 39) 0%, rgb(249, 164, 122) 100%);
-                background-image: -webkit-linear-gradient( 40deg, rgb(224, 56, 39) 0%, rgb(249, 164, 122) 100%);
+                background-image: linear-gradient( 40deg, rgb(224, 56, 39) 0%, rgb(249, 164, 122) 100%);
                 background-image: -ms-linear-gradient( 40deg, rgb(224, 56, 39) 0%, rgb(249, 164, 122) 100%);
                 box-shadow: 0px 10px 20px 0px rgba(227, 69, 49, 0.2);
             }
             &.icon_three{
                 background-image: -moz-linear-gradient( 40deg, rgb(87, 178, 42) 0%, rgb(119, 234, 61) 100%);
-                background-image: -webkit-linear-gradient( 40deg, rgb(87, 178, 42) 0%, rgb(119, 234, 61) 100%);
+                background-image: linear-gradient( 40deg, rgb(87, 178, 42) 0%, rgb(119, 234, 61) 100%);
                 background-image: -ms-linear-gradient( 40deg, rgb(87, 178, 42) 0%, rgb(119, 234, 61) 100%);
                 box-shadow: 0px 10px 20px 0px rgba(92, 186, 45, 0.2);
             }
             &.icon_four{
                 background-image: -moz-linear-gradient( 40deg, rgb(44, 130, 237) 0%, rgb(56, 208, 252) 100%);
-                background-image: -webkit-linear-gradient( 40deg, rgb(44, 130, 237) 0%, rgb(56, 208, 252) 100%);
+                background-image: linear-gradient( 40deg, rgb(44, 130, 237) 0%, rgb(56, 208, 252) 100%);
                 background-image: -ms-linear-gradient( 40deg, rgb(44, 130, 237) 0%, rgb(56, 208, 252) 100%);
                 box-shadow: 0px 10px 20px 0px rgba(45, 139, 239, 0.2);
             }
@@ -676,7 +676,7 @@
 /*============ payment_service_area css ==============*/
 .payment_service_area{
     padding-top: 225px;
-    padding-bottom: 150px;
+    // padding-bottom: 150px;
     position: relative;
     z-index: 2;
     background: url("../img/home9/shape_two.png") no-repeat scroll center 0;

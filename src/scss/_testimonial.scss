@@ -1,10 +1,10 @@
 /*=============== agency_testimonial_area css ==============*/
 .agency_testimonial_area{
-    
+
 }
 .agency_testimonial_info{
     position: relative;
-    
+
     .testimonial_slider{
         max-width: 770px;
         border-radius: 6px;
@@ -176,7 +176,7 @@
                 color: #5e2ced;
             }
         }
-    } 
+    }
 }
 /*=============== partner_logo_area_three css ================*/
 .partner_logo_area_three{
@@ -281,14 +281,14 @@
         width: 630px;
         height: 630px;
         background-image: -moz-linear-gradient( 90deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
-        background-image: -webkit-linear-gradient( 90deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
+        background-image: linear-gradient( 90deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
         background-image: -ms-linear-gradient( 90deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
         opacity: 1;
         top: -460px;
     }
     .box_four{
         background-image: -moz-linear-gradient( 90deg, rgb(65,24,129) 0%, rgb(155,43,220) 100%);
-        background-image: -webkit-linear-gradient( 90deg, rgb(65,24,129) 0%, rgb(155,43,220) 100%);
+        background-image: linear-gradient( 90deg, rgb(65,24,129) 0%, rgb(155,43,220) 100%);
         background-image: -ms-linear-gradient( 90deg, rgb(65,24,129) 0%, rgb(155,43,220) 100%);
         opacity: 1;
         width: 708px;
@@ -304,19 +304,19 @@
 .fact_author_img_two{
     .box_three{
         background-image: -moz-linear-gradient( -90deg, rgb(251,134,47) 0%, rgb(198,64,253) 100%);
-        background-image: -webkit-linear-gradient( -90deg, rgb(251,134,47) 0%, rgb(198,64,253) 100%);
+        background-image: linear-gradient( -90deg, rgb(251,134,47) 0%, rgb(198,64,253) 100%);
         background-image: -ms-linear-gradient( -90deg, rgb(251,134,47) 0%, rgb(198,64,253) 100%);
     }
     .box_four{
         background-image: -moz-linear-gradient( 90deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
-        background-image: -webkit-linear-gradient( 90deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+        background-image: linear-gradient( 90deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
         background-image: -ms-linear-gradient( 90deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
     }
 }
 
 /*============ feedback_area css ==============*/
 .feedback_area{
-    
+
 }
 .feedback_slider{
     .item{
@@ -404,12 +404,12 @@
     }
     .shap_one{
         background-image: -moz-linear-gradient( 40deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
-        background-image: -webkit-linear-gradient( 40deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
-        background-image: -ms-linear-gradient( 40deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);  
+        background-image: linear-gradient( 40deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
+        background-image: -ms-linear-gradient( 40deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
     }
     .shap_two{
         background-image: -moz-linear-gradient( 40deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
-        background-image: -webkit-linear-gradient( 40deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
+        background-image: linear-gradient( 40deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
         background-image: -ms-linear-gradient( 40deg, rgb(41,10,89) 0%, rgb(61,87,244) 100%);
         right: -10px;
         bottom: -45px;
@@ -545,7 +545,7 @@
     z-index: -1;
     &.one{
         background-image: -moz-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
-        background-image: -webkit-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
+        background-image: linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
         background-image: -ms-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
         width: 650px;
         height: 510px;
@@ -554,7 +554,7 @@
     }
     &.two{
         background-image: -moz-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
-        background-image: -webkit-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
+        background-image: linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
         background-image: -ms-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
         width: 666px;
         height: 330px;
@@ -633,7 +633,7 @@
         align-items: center;
         padding: 0px 33px;
         background-image: -moz-linear-gradient( 140deg, rgba(125,13,240, 0.90) 0%, rgba(58,113,235, 0.90) 100%);
-        background-image: -webkit-linear-gradient( 140deg, rgba(125,13,240, 0.90) 0%, rgba(58,113,235, 0.90) 100%);
+        background-image: linear-gradient( 140deg, rgba(125,13,240, 0.90) 0%, rgba(58,113,235, 0.90) 100%);
         background-image: -ms-linear-gradient( 140deg, rgba(125,13,240, 0.90) 0%, rgba(58,113,235, 0.90) 100%);
         opacity: 0;
         visibility: visible;
