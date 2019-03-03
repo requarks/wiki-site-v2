@@ -2,10 +2,14 @@ const webpack = require('webpack')
 const path = require('path')
 const fs = require('fs-extra')
 
+const DEV = process.env.NODE_ENV === 'development'
+
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin')
-const SriWebpackPlugin = require('webpack-subresource-integrity')
 const WriteFilePlugin = require('write-file-webpack-plugin')
 
 const babelConfig = fs.readJsonSync(path.join(process.cwd(), '.babelrc'))
@@ -14,8 +18,18 @@ const babelDir = path.join(process.cwd(), '.webpack-cache/babel')
 
 process.noDeprecation = true
 
+const meta = {
+  'charset': 'utf-8',
+  'viewport': 'user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=5',
+  'apple-mobile-web-app-title': 'Wiki.js',
+  'application-name': 'Wiki.js',
+  'msapplication-TileColor': '#603cba',
+  'msapplication-config': '/favicons/browserconfig.xml',
+  'theme-color': '#ffffff'
+}
+
 module.exports = {
-  mode: 'development',
+  mode: DEV ? 'development' : 'production',
   entry: {
     app: ['./src/scss/style.scss'],
   },
@@ -57,7 +71,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'style-loader',
+          DEV ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader'
         ]
@@ -71,7 +85,7 @@ module.exports = {
               cacheDirectory: cacheDir
             }
           },
-          'style-loader',
+          DEV ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
           {
@@ -126,19 +140,67 @@ module.exports = {
       { from: 'src/img', to: 'img' },
       { from: 'src/svg', to: 'svg' },
       { from: 'src/js', to: 'js' },
-      { from: 'src/vendors', to: 'vendors' }
+      { from: 'src/vendors', to: 'vendors' },
+      { from: 'src/favicons', to: 'favicons' },
+      { from: 'src/favicon.ico', to: 'favicon.ico' }
     ], {}),
+    new MiniCssExtractPlugin({
+      filename: DEV ? 'css/bundle.css' : 'css/bundle.[hash].css',
+      chunkFilename: DEV ? 'css/[name].css' : 'css/[name].[chunkhash].css'
+    }),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       filename: 'index.html',
-      hash: false,
+      meta,
+      hash: !DEV,
       inject: true
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/404.html',
+      filename: '404.html',
+      meta,
+      hash: !DEV,
+      inject: true
+    }),
+    new HtmlWebpackIncludeAssetsPlugin({
+      cssExtensions: ['.css', '.png', '.ico', '.svg', '.webmanifest'],
+      assets: [
+        'css/bootstrap.min.css',
+        'vendors/animation/animate.css',
+        { path: 'favicons/apple-touch-icon.png', attributes: { rel: 'apple-touch-icon', sizes: '180x180' }},
+        { path: 'favicons/favicon-32x32.png', attributes: { rel: 'icon', type: 'image/png', sizes: '32x32' }},
+        { path: 'favicons/favicon-16x16.png', attributes: { rel: 'icon', type: 'image/png', sizes: '16x16' }},
+        { path: 'favicons/site.webmanifest', attributes: { rel: 'manifest' }},
+        { path: 'favicons/safari-pinned-tab.svg', attributes: { rel: 'mask-icon', color: '#7444fd' }},
+        { path: 'favicon.ico', attributes: { rel: 'shortcut icon' }},
+        'js/jquery-3.2.1.min.js',
+        'js/propper.js',
+        'js/bootstrap.min.js',
+        'vendors/wow/wow.min.js',
+        'vendors/sckroller/jquery.parallax-scroll.js',
+        'vendors/imagesloaded/imagesloaded.pkgd.min.js',
+        'js/plugins.js',
+        'js/main.js'
+      ],
+      append: false
+    }),
+    new HtmlWebpackIncludeAssetsPlugin({
+      assets: [
+        'css/responsive.css'
+      ],
+      append: true
+    }),
     new SimpleProgressWebpackPlugin({
-      format: 'compact'
+      format: DEV ? 'compact' : 'expanded'
+    }),
+    new CleanWebpackPlugin([
+      'dist/**/*.*'
+    ], {
+      root: process.cwd(),
+      verbose: false
     }),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
+      'process.env.NODE_ENV': JSON.stringify(DEV ? 'development' : 'production')
     }),
     new WriteFilePlugin(),
     new webpack.HotModuleReplacementPlugin(),
@@ -168,5 +230,5 @@ module.exports = {
     entrypoints: false
   },
   target: 'web',
-  watch: true
+  watch: DEV
 }

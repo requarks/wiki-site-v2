@@ -20,6 +20,21 @@
   width: 150px;
 }
 
+.header_area {
+  .navbar-fixed-show {
+    display: none;
+  }
+
+  &.navbar_fixed {
+    .navbar-fixed-hide {
+      display: none;
+    }
+    .navbar-fixed-show {
+      display: initial;
+    }
+  }
+}
+
 .payment_service_area .pay_icon img {
   height: 42px;
 }

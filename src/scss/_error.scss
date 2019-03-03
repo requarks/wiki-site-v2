@@ -1,8 +1,6 @@
 /*================= error_area css ==================*/
 .error_area{
-    background: -moz-linear-gradient( 180deg, rgba(94,44,237, 0.93) 0%, rgba(164,133,253, 0.90) 100%), url("../img/error_bg.png") no-repeat scroll center 100%;
-    background: -webkit-linear-gradient( 180deg, rgba(94,44,237, 0.93) 0%, rgba(164,133,253, 0.90) 100%), url("../img/error_bg.png") no-repeat scroll center 100%;
-    background: -ms-linear-gradient( 180deg, rgba(94,44,237, 0.93) 0%, rgba(164,133,253, 0.90) 100%), url("../img/error_bg.png") no-repeat scroll center 100%;
+    background: linear-gradient( 220deg, rgba(94,44,237, 0.93) 0%, rgba(164,133,253, 0.90) 100%);
     display: flex;
     align-items: center;
     position: relative;
