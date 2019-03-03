@@ -35,8 +35,15 @@
   }
 }
 
-.payment_service_area .pay_icon img {
-  height: 42px;
+.payment_service_area {
+  .pay_icon img {
+    height: 42px;
+  }
+  .feature-hdicon {
+    img {
+      height: 36px;
+    }
+  }
 }
 
 .action_area_three .curved{
