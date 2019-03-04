@@ -95,7 +95,7 @@
 
 .text_box{
     margin-bottom: 30px;
-    input[type="text"],textarea,input[type="password"]{
+    input[type="text"],textarea,input[type="password"],select,input[type="email"]{
         font: 300 15px/60px $pop;
         color: #222d39;
         height: 60px;

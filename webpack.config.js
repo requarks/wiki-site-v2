@@ -45,7 +45,16 @@ module.exports = {
   devServer: {
     contentBase: './dist',
     port: 8080,
-    host: 'dev.ngpixel.com'
+    host: 'dev.ngpixel.com',
+    historyApiFallback: {
+      rewrites: [
+        { from: /^\/$/, to: '/index.html' },
+        { from: /^\/about/, to: '/about.html' },
+        { from: /^\/cloud/, to: '/cloud.html' },
+        { from: /^\/newsletter/, to: '/newsletter.html' },
+        { from: /./, to: '/404.html' }
+      ]
+    }
   },
   module: {
     rules: [
@@ -151,6 +160,27 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       filename: 'index.html',
+      meta,
+      hash: !DEV,
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/about.html',
+      filename: 'about.html',
+      meta,
+      hash: !DEV,
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/cloud.html',
+      filename: 'cloud.html',
+      meta,
+      hash: !DEV,
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/newsletter.html',
+      filename: 'newsletter.html',
       meta,
       hash: !DEV,
       inject: true
