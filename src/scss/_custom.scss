@@ -1,5 +1,9 @@
 .saas_home_area-platform {
     height: 32px;
+
+    @media (max-width:991px){
+      max-width: 150px;
+    }
 }
 
 .opensource-logo {
@@ -21,6 +25,8 @@
 }
 
 .payment_service_area {
+  background-image: url(../img/custom/shape_two.png);
+
   .pay_icon img {
     height: 42px;
   }
@@ -60,4 +66,106 @@
 .footer_area .f_logo img {
   width: 270px;
   max-width: 90vw;
+}
+
+.header-github-btn {
+  padding-top: 30px !important;
+
+  img {
+    height: 34px;
+    transition: opacity .4s ease;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+.opensource-logo-container {
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  .fun_fact_area {
+    padding: 50px 0;
+
+    .opensource-logo-container {
+      text-align: center;
+    }
+
+    .opensource-logo {
+      max-width: 100%;
+    }
+
+    h1 {
+      font-size: 44px;
+    }
+
+    .fact_item h1 {
+      font-size: 44px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .service_promo_area .s_service_section {
+    margin-top: 50px;
+  }
+
+  .payment_service_area {
+    margin-top: 15px;
+    padding: 15px 15px 30px 15px;
+    background-image: url('../img//custom/shape_two-mobile.png');
+
+    .service-content {
+      text-align: center;
+
+      h2 {
+        margin-bottom: 15px;
+      }
+
+      .pay_icon {
+        margin: 0 auto 15px;
+      }
+
+      .about_btn {
+        margin-top: 0;
+      }
+    }
+
+    .payment_service_item {
+      margin-bottom: 25px;
+
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .software_promo_area .round_shape {
+    display: none;
+  }
+
+  .company_widget img {
+    max-width: 250px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .fun_fact_area {
+
+    .fun_fact_content {
+      text-align: center;
+
+      > .d-flex {
+        justify-content: center;
+      }
+    }
+
+    .opensource-logo {
+      width: auto;
+      text-align: center;
+      height: 200px;
+    }
+  }
 }

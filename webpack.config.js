@@ -195,8 +195,6 @@ module.exports = {
     new HtmlWebpackIncludeAssetsPlugin({
       cssExtensions: ['.css', '.png', '.ico', '.svg', '.webmanifest'],
       assets: [
-        'css/bootstrap.min.css',
-        'vendors/animation/animate.css',
         { path: 'favicons/apple-touch-icon.png', attributes: { rel: 'apple-touch-icon', sizes: '180x180' }},
         { path: 'favicons/favicon-32x32.png', attributes: { rel: 'icon', type: 'image/png', sizes: '32x32' }},
         { path: 'favicons/favicon-16x16.png', attributes: { rel: 'icon', type: 'image/png', sizes: '16x16' }},
@@ -213,12 +211,6 @@ module.exports = {
         'js/main.js'
       ],
       append: false
-    }),
-    new HtmlWebpackIncludeAssetsPlugin({
-      assets: [
-        'css/responsive.css'
-      ],
-      append: true
     }),
     new SimpleProgressWebpackPlugin({
       format: DEV ? 'compact' : 'expanded'
