@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="&#1057;&#1083;&#1086;&#1081;_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve" width="64px" height="64px">
+<linearGradient id="SVGID_1__44028" gradientUnits="userSpaceOnUse" x1="32" y1="6.1667" x2="32" y2="59.0318" spreadMethod="reflect">
+	<stop offset="0" style="stop-color:#1A6DFF"/>
+	<stop offset="1" style="stop-color:#C822FF"/>
+</linearGradient>
+<path style="fill:url(#SVGID_1__44028);" d="M32,58C17.663,58,6,46.337,6,32S17.663,6,32,6s26,11.663,26,26S46.337,58,32,58z M32,8  C18.767,8,8,18.767,8,32s10.767,24,24,24s24-10.767,24-24S45.233,8,32,8z"/>
+<linearGradient id="SVGID_2__44028" gradientUnits="userSpaceOnUse" x1="32" y1="6.1667" x2="32" y2="59.0318" spreadMethod="reflect">
+	<stop offset="0" style="stop-color:#1A6DFF"/>
+	<stop offset="1" style="stop-color:#C822FF"/>
+</linearGradient>
+<path style="fill:url(#SVGID_2__44028);" d="M32,52c-11.028,0-20-8.972-20-20s8.972-20,20-20s20,8.972,20,20S43.028,52,32,52z M32,14  c-9.925,0-18,8.075-18,18s8.075,18,18,18s18-8.075,18-18S41.925,14,32,14z"/>
+<linearGradient id="SVGID_3__44028" gradientUnits="userSpaceOnUse" x1="22" y1="27.3333" x2="22" y2="36.6682" spreadMethod="reflect">
+	<stop offset="0" style="stop-color:#6DC7FF"/>
+	<stop offset="1" style="stop-color:#E6ABFF"/>
+</linearGradient>
+<circle style="fill:url(#SVGID_3__44028);" cx="22" cy="32" r="3"/>
+<linearGradient id="SVGID_4__44028" gradientUnits="userSpaceOnUse" x1="32" y1="27.3333" x2="32" y2="36.6682" spreadMethod="reflect">
+	<stop offset="0" style="stop-color:#6DC7FF"/>
+	<stop offset="1" style="stop-color:#E6ABFF"/>
+</linearGradient>
+<circle style="fill:url(#SVGID_4__44028);" cx="32" cy="32" r="4"/>
+<linearGradient id="SVGID_5__44028" gradientUnits="userSpaceOnUse" x1="42" y1="27.3333" x2="42" y2="36.6682" spreadMethod="reflect">
+	<stop offset="0" style="stop-color:#6DC7FF"/>
+	<stop offset="1" style="stop-color:#E6ABFF"/>
+</linearGradient>
+<circle style="fill:url(#SVGID_5__44028);" cx="42" cy="32" r="3"/>
+</svg>

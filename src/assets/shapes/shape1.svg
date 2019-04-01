@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="shape shape_four">
+    <defs>
+        <linearGradient id="PSgrad_2">
+            <stop offset="0%" stop-color="rgb(76,1,124)" stop-opacity="0.95"></stop>
+            <stop offset="100%" stop-color="rgb(103,84,226)" stop-opacity="0.95"></stop>
+        </linearGradient>
+    </defs>
+    <path fill="url(#PSgrad_2)" opacity='.02' d="M1198.109,264.575 L501.958,11.198 C405.840,-23.787 299.560,25.772 264.576,121.890 L11.198,818.040 C-23.786,914.158 25.773,1020.439 121.891,1055.423 L818.042,1308.801 C914.160,1343.785 1020.440,1294.225 1055.424,1198.107 L1308.802,501.957 C1343.786,405.839 1294.227,299.560 1198.109,264.575 Z"></path>
+</svg>

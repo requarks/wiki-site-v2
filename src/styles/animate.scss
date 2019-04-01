@@ -1,0 +1,13 @@
+$use-fadeIn: true;
+$use-fadeInUp: true;
+$use-fadeInDown: true;
+$use-fadeInLeft: true;
+$use-fadeInRight: true;
+
+@import '~animate-sass/animate';
+
+@for $i from 1 through 9 {
+  .wait-p#{$i}s {
+    animation-delay: $i * .1s;
+  }
+}

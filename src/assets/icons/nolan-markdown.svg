@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve" width="64px" height="64px">
+<g>
+	<linearGradient id="SVGID_1__55494" gradientUnits="userSpaceOnUse" x1="31.8738" y1="12.7607" x2="32.1238" y2="50.8857" spreadMethod="reflect">
+		<stop offset="0" style="stop-color:#1A6DFF"/>
+		<stop offset="1" style="stop-color:#C822FF"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_1__55494);" d="M58,51H6c-1.654,0-3-1.346-3-3V16c0-1.654,1.346-3,3-3h52c1.654,0,3,1.346,3,3v32   C61,49.654,59.654,51,58,51z M6,15c-0.551,0-1,0.449-1,1v32c0,0.551,0.449,1,1,1h52c0.551,0,1-0.449,1-1V16c0-0.551-0.449-1-1-1H6z   "/>
+</g>
+<g>
+	<linearGradient id="SVGID_2__55494" gradientUnits="userSpaceOnUse" x1="31.8738" y1="12.7607" x2="32.1238" y2="50.8857" spreadMethod="reflect">
+		<stop offset="0" style="stop-color:#1A6DFF"/>
+		<stop offset="1" style="stop-color:#C822FF"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_2__55494);" d="M55,47H9c-1.103,0-2-0.897-2-2V19c0-1.103,0.897-2,2-2h46c1.103,0,2,0.897,2,2v26   C57,46.103,56.103,47,55,47z M55,18.999L9,19v26h46V18.999z"/>
+</g>
+<linearGradient id="SVGID_3__55494" gradientUnits="userSpaceOnUse" x1="23" y1="23" x2="23" y2="42.0497" spreadMethod="reflect">
+	<stop offset="0" style="stop-color:#6DC7FF"/>
+	<stop offset="1" style="stop-color:#E6ABFF"/>
+</linearGradient>
+<polygon style="fill:url(#SVGID_3__55494);" points="28,23 23,31 18,23 13,23 13,41 18,41 18,31 23,38 28,31 28,41 33,41 33,23 "/>
+<linearGradient id="SVGID_4__55494" gradientUnits="userSpaceOnUse" x1="44" y1="23" x2="44" y2="42.0497" spreadMethod="reflect">
+	<stop offset="0" style="stop-color:#6DC7FF"/>
+	<stop offset="1" style="stop-color:#E6ABFF"/>
+</linearGradient>
+<polygon style="fill:url(#SVGID_4__55494);" points="46,32 46,23 42,23 42,32 36,32 44,41 52,32 "/>
+</svg>

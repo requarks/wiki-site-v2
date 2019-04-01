@@ -1,1 +1,0 @@
-"use strict";jQuery(document).ready(function(o){o("a").smoothScroll({speed:"auto"}),o(".header-learnmore").on("click",function(e){o.smoothScroll({scrollTarget:"#features",speed:800})}),o("h1").on("click",function(o){window.location.assign("/")})});
