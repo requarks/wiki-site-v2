@@ -13,9 +13,24 @@ export default new Router({
       component: () => import(/* webpackChunkName: "home" */ './views/Home.vue')
     },
     {
+      path: '/cloud',
+      name: 'cloud',
+      component: () => import(/* webpackChunkName: "cloud" */ './views/Cloud.vue')
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: () => import(/* webpackChunkName: "blog" */ './views/Blog.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+    },
+    {
+      path: '/get-started',
+      name: 'get-started',
+      component: () => import(/* webpackChunkName: "get-started" */ './views/GetStarted.vue')
     },
     {
       path: '/newsletter',

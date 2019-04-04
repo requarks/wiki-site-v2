@@ -9,20 +9,20 @@ import SimplexNoise from 'simplex-noise'
 const particleCount = 700
 const particlePropCount = 9
 const particlePropsLength = particleCount * particlePropCount
-const rangeY = 100
+const rangeY = 200
 const baseTTL = 50
 const rangeTTL = 150
 const baseSpeed = 0.1
 const rangeSpeed = 2
 const baseRadius = 1
 const rangeRadius = 4
-const baseHue = 220
-const rangeHue = 100
-const noiseSteps = 8
+const baseHue = 200
+const rangeHue = 120
+const noiseSteps = 6
 const xOff = 0.00125
 const yOff = 0.00125
 const zOff = 0.0005
-const backgroundColor = 'hsla(260,40%,5%,1)'
+// const backgroundColor = 'hsla(260,40%,5%,1)'
 
 const { PI, cos, sin, abs, random } = Math
 const TAU = 2 * PI
@@ -150,7 +150,10 @@ export default {
 
       ctx.a.clearRect(0, 0, canvas.a.width, canvas.a.height)
 
-      ctx.b.fillStyle = backgroundColor
+      let gradient = ctx.b.createLinearGradient(0, 0, 0, canvas.a.height)
+      gradient.addColorStop(0, '#0f1029')
+      gradient.addColorStop(1, '#090a21')
+      ctx.b.fillStyle = gradient
       ctx.b.fillRect(0, 0, canvas.a.width, canvas.a.height)
 
       this.drawParticles()
@@ -217,6 +220,7 @@ export default {
     font-weight: 700;
     line-height: 60px;
     position: relative;
+    text-shadow: 0 0 30px #090a21;
   }
 
   h3 {
@@ -224,6 +228,7 @@ export default {
     font-size: 16px;
     font-weight: 300;
     position: relative;
+    text-shadow: 0 0 30px #090a21;
   }
 
   > canvas {
