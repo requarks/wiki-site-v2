@@ -1,24 +1,24 @@
 <template lang='pug'>
   .header-container
-    v-toolbar.header(app, height='84', v-scroll='toggleNavStyle', :class='{alt1: navStyle === 1}')
-      router-link(to='/')
+    v-toolbar.header(app, fixed, height='84', v-scroll='toggleNavStyle', :class='{alt1: navStyle === 1}')
+      router-link.animated.fadeInLeft(to='/')
         img.header-logo(:src='require("../assets/logos/logo.svg")', alt='Wiki.js')
       v-spacer
       ul.header-nav.hidden-sm-and-down
-        router-link(to='/', tag='li'): a Home
-        router-link(to='/#features', tag='li'): a Features
-        router-link(to='/cloud', tag='li'): a Cloud
-        li: a(href='https://docs-beta.requarks.io/') Docs
-        router-link(to='/blog', tag='li'): a Blog
-        router-link(to='/about', tag='li'): a About
-        li
+        router-link.animated.fadeInDown(to='/', tag='li'): a Home
+        router-link.animated.fadeInDown.wait-p1s(to='/#features', tag='li'): a Features
+        router-link.animated.fadeInDown.wait-p2s(to='/cloud', tag='li'): a Cloud
+        li.animated.fadeInDown.wait-p3s: a(href='https://docs-beta.requarks.io/') Docs
+        router-link.animated.fadeInDown.wait-p4s(to='/blog', tag='li'): a Blog
+        router-link.animated.fadeInDown.wait-p5s(to='/about', tag='li'): a About
+        li.animated.fadeInDown.wait-p6s
           a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project')
             img(:src='require("../assets/logos/windows-github.svg")')
       v-spacer.hidden-sm-and-down
-      .header-versions.text-xs-right.hidden-md-and-down
+      .header-versions.text-xs-right.animated.fadeInRight.wait-p2s.hidden-md-and-down
         .caption Stable #[strong 1.0.117]
         .caption Beta #[strong 2.0.0-beta.84]
-      v-btn.mx-0.hidden-sm-and-down(color='primary', outline, large, to='/get-started') Get Started
+      v-btn.mx-0.hidden-sm-and-down.animated.fadeInRight(color='primary', outline, large, to='/get-started') Get Started
       v-btn.mx-0.hidden-md-and-up.header-mobiletoggle(icon, @click='mobileDrawerOpen = !mobileDrawerOpen')
         img(v-if='mobileDrawerOpen', :src='require("../assets/icons/metro-multiply.svg")', alt='Toggle Navigation Menu')
         img(v-else, :src='require("../assets/icons/metro-menu.svg")', alt='Toggle Navigation Menu')

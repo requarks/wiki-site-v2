@@ -10,7 +10,7 @@
               strong 2M+
               span Installations
             v-flex(xs6)
-              strong 4100+
+              strong 4200+
               span Stars on GitHub
           v-btn.mt-5.mx-0(dark, color='primary', large, to='/newsletter') View on GitHub
         v-flex.home-opensource-side.text-xs-center(xs12, md6)
@@ -38,6 +38,12 @@ export default {
 
   @media screen and (max-width: 599px) {
     padding: 50px 15px;
+  }
+
+  @media screen and (min-width: 1904px) {
+    > .container {
+      max-width: 1520px;
+    }
   }
 
   &-main {

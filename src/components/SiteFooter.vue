@@ -28,7 +28,8 @@
               li: a(href='https://github.com/Requarks/wiki') GitHub Project
               li: a(href='https://twitter.com/requarks') Follow on Twitter
               li: a(href='https://gitter.im/Requarks/wiki') Chat on Gitter
-              li: a(href='/about') Contributors &amp; Sponsors
+              router-link(to='/about', tag='li'): a Contributors &amp; Sponsors
+              router-link(to='/newsletter', tag='li'): a Newsletter
       v-divider.mt-5
       v-container.footer-bar
         v-layout(row, wrap, align-center)
