@@ -6,42 +6,42 @@
         v-flex(xs12, md8)
           v-container.pa-0(grid-list-xl)
             v-layout(row, wrap)
-              v-flex(xs12, md6)
+              v-flex(xs12, sm6)
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-processor.svg`)')
                   .home-easy-tile-text
                     h3 Install anywhere
                     span Works on virtually any platform and is compatible with either PostgreSQL, MySQL, MariaDB, MS SQL Server or SQLite!
-              v-flex(xs12, md6)
+              v-flex(xs12, sm6)
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-gear.svg`)')
                   .home-easy-tile-text
                     h3 Administration
                     span Manage all aspects of your wiki using the extensive and intuitive admin area.
-              v-flex(xs12, md6)
+              v-flex(xs12, sm6)
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-speedometer.svg`)')
                   .home-easy-tile-text
                     h3 Performance
                     span Running on the blazing fast Node.js engine, Wiki.js is built with performance in mind.
-              v-flex(xs12, md6)
+              v-flex(xs12, sm6)
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-illustrator.svg`)')
                   .home-easy-tile-text
                     h3 Customizable
                     span Fully customize the appearance of your wiki, including a light and dark mode.
-              v-flex(xs12, md6)
+              v-flex(xs12, sm6)
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-lock.svg`)')
                   .home-easy-tile-text
                     h3 Protected
                     span Make your wiki public, completely private or a mix of both.
-              v-flex(xs12, md6)
+              v-flex(xs12, sm6)
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-width.svg`)')
@@ -54,7 +54,7 @@
               img(:src='require(`../assets/icons/nolan-downloading-updates.svg`)')
             h3 Easy Installation
             span You'll be ready to go within minutes! Step-by-step install guides available for all platforms.
-            v-btn.mx-0.mt-4.primary--text(color='white', large) Get Started
+            v-btn.mx-0.mt-4.primary--text(color='white', large, to='/get-started') Get Started
 </template>
 
 <script>
@@ -82,11 +82,20 @@ export default {
     margin-top: -1px;
   }
 
+  > .container {
+    max-width: 1400px;
+  }
+
   &-install {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+
+    @media screen and (max-width: 1264px) {
+      align-items: center;
+      text-align: center;
+    }
 
     &-icon {
       background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAABnCAYAAADcxhZVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphMzU5ZGUzNC1kNjA1LTM0NDUtYjYyZC1lNzU3YjQ2NmVhN2QiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzgxOTA1QjBCQzBEMTFFODg0QTVDRjE1RUI5M0M0QjgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzgxOTA1QUZCQzBEMTFFODg0QTVDRjE1RUI5M0M0QjgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6M2U3NTEzZmYtNGY4Yy0yYzQ5LWIxYWQtZDdmZGViNjcyMTEyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmEzNTlkZTM0LWQ2MDUtMzQ0NS1iNjJkLWU3NTdiNDY2ZWE3ZCIv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) no-repeat center 0;

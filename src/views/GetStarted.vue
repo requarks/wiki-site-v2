@@ -38,7 +38,7 @@
           .getstarted-note.animated.fadeInUp.wait-p2s Upgrading from 1.x to 2.0 will be quick and simple. You can safely use 1.x right now and upgrade later.
         v-flex(xs12)
           .getstarted-note.animated.fadeInUp.wait-p3s
-            h3 What's missing in 2.x compared to 1.0?
+            h3 What's missing in 2.x beta compared to 1.0?
             ul
               li Media Upload (images, files, etc.)
               li Social Authentication (Google, Facebook, GitHub, etc.)
