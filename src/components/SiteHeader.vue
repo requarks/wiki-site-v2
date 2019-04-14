@@ -55,6 +55,11 @@
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-management.svg")')
           v-list-tile-title About
+        v-divider
+        v-list-tile(to='/get-started')
+          v-list-tile-avatar
+            img(:src='require("../assets/icons/nolan-downloading-updates.svg")')
+          v-list-tile-title Get Started
 </template>
 
 <script>

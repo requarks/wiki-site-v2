@@ -5,7 +5,7 @@
       h3.animated.fadeInUp.wait-p2s Deploy Wiki.js on your environment
     v-container(grid-list-xl)
       v-layout(row, wrap)
-        v-flex(xs6)
+        v-flex(xs12, sm6)
           .getstarted-ver.animated.fadeInUp
             img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube.svg`)', alt='Stable')
             v-chip.my-3(color='teal', dark, outline)
@@ -20,7 +20,7 @@
                 li Git #[em 2.7.4 or later]
             v-btn(color='teal', large, dark, href='https://docs.requarks.io/wiki/install/installation')
               span Setup Instructions
-        v-flex(xs6)
+        v-flex(xs12, sm6)
           .getstarted-ver.animated.fadeInUp.wait-p1s
             img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube-2.svg`)', alt='Beta')
             v-chip.my-3(color='purple', dark, outline)

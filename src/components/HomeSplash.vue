@@ -119,9 +119,10 @@ export default {
   }
 
   &-codefund-mobile {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    // position: absolute;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 </style>
