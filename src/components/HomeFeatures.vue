@@ -22,26 +22,26 @@
       v-tab Themes
     v-container.mt-5(grid-list-xl)
       v-layout(row, wrap, justify-center)
-        v-flex(xs12, sm6, md3)
+        v-flex(xs12, sm6)
           .home-features-tile
             img(:src='require(`../assets/icons/nolan-data-protection.svg`)')
             h5 Local Authentication
             span Built-in authentication with self-registration and password recovery capabilities.
-        v-flex(xs12, sm6, md3)
+        v-flex(xs12, sm6)
           .home-features-tile
-            img(:src='require(`../assets/icons/nolan-data-protection.svg`)')
-            h5 Local Authentication
-            span Built-in authentication with self-registration and password recovery capabilities.
-        v-flex(xs12, sm6, md3)
+            img(:src='require(`../assets/icons/nolan-cloud-checked.svg`)')
+            h5 Social Authentication
+            span Use 3rd-party authentication services like Google, Facebook, Microsoft, GitHub, Discord, Slack and more.
+        v-flex(xs12, sm6)
           .home-features-tile
-            img(:src='require(`../assets/icons/nolan-data-protection.svg`)')
-            h5 Local Authentication
-            span Built-in authentication with self-registration and password recovery capabilities.
-        v-flex(xs12, sm6, md3)
+            img(:src='require(`../assets/icons/nolan-organization.svg`)')
+            h5 Enterprise Authentication
+            span Integrate with your company existing authentication using LDAP, SAML, CAS, Auth0, Okta, Azure AD and more. Generic OAuth2 and OpenID Connect modules are also included.
+        v-flex(xs12, sm6)
           .home-features-tile
-            img(:src='require(`../assets/icons/nolan-data-protection.svg`)')
-            h5 Local Authentication
-            span Built-in authentication with self-registration and password recovery capabilities.
+            img(:src='require(`../assets/icons/nolan-validation.svg`)')
+            h5 2FA
+            span Add an extra layer of security using two-factor authentication for supported authentication modules.
 </template>
 
 <script>
@@ -65,9 +65,9 @@ export default {
     padding-bottom: 50px;
   }
 
-  // > .container {
-  //   max-width: 1200px;
-  // }
+  > .container {
+    max-width: 1200px;
+  }
 
   h2 {
     font-size: 30px;
@@ -83,7 +83,7 @@ export default {
   }
 
   .v-tabs__bar {
-    background: var(--v-greyish-lighten2) linear-gradient(to bottom, var(--v-greyish-lighten4) 0%, #FFF 100%);
+    background: var(--v-greyish-lighten4); // linear-gradient(to bottom, var(--v-greyish-lighten4) 0%, #FFF 100%);
     box-shadow: inset 0px -2px rgba(#6754e2, .1);
 
     .v-tabs__item {
