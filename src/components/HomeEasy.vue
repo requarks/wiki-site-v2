@@ -80,6 +80,10 @@ export default {
     width: 100%;
     height: 100px;
     margin-top: -1px;
+
+    @media screen and (max-width: 959px) {
+      height: 31px;
+    }
   }
 
   > .container {
@@ -128,8 +132,8 @@ export default {
     justify-content: flex-start;
     min-height: 150px;
 
-    & + & {
-      margin-top: 60px;
+    @media screen and (max-width: 599px) {
+      min-height: 0;
     }
 
     &-icon {
@@ -155,6 +159,10 @@ export default {
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 15px;
+
+        @media screen and (max-width: 599px) {
+          margin-bottom: 2px;
+        }
       }
 
       span {

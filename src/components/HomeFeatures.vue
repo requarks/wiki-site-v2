@@ -299,7 +299,7 @@ export default {
   color: var(--v-greyish-darken2);
 
   @media screen and (max-width: 599px) {
-    padding-bottom: 50px;
+    padding: 50px 0 0 0;
   }
 
   .container {
@@ -311,11 +311,15 @@ export default {
     font-weight: 600;
     padding: 0 15px;
     line-height: 30px;
+
+    @media screen and (max-width: 599px) {
+      font-size: 25px;
+    }
   }
   h3 {
     font-size: 16px;
     font-weight: 300;
-    padding: 15px 0;
+    padding: 15px;
     color: var(--v-greyish-darken1);
   }
 
