@@ -49,10 +49,7 @@ export default {
   &-main {
     position: relative;
     z-index: 1;
-
-    @media screen and (max-width: 1264px) {
-      text-align: center;
-    }
+    text-align: center;
   }
 
   h3 {

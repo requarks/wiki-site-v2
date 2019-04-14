@@ -9,8 +9,12 @@
   },
   "dependencies": {
     "animate-sass": "^0.8.2",
+    "axios": "^0.18.0",
+    "luxon": "^1.12.0",
     "simplex-noise": "^2.4.0",
     "vue": "^2.6.6",
+    "vue-axios": "^2.1.4",
+    "vue-luxon": "^0.6.2",
     "vue-router": "^3.0.1",
     "vuetify": "^1.5.5",
     "vuex": "^3.0.1"

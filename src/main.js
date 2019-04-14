@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import './plugins/vuetify'
+import './plugins/vue-axios'
+import './plugins/vue-luxon'
 import './styles/animate.scss'
 import App from './App.vue'
 import router from './router'
