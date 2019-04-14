@@ -20,7 +20,7 @@
       v-tab-item(v-for='ft of features', :key='ft.key', :value='`tab-` + ft.key', :transition='false', :reverse-transition='false')
         v-container.mt-5(grid-list-xl)
           v-layout(row, wrap, justify-center)
-            v-flex(xs12, sm6, v-for='(tl, idx) of ft.tiles')
+            v-flex(xs12, sm6, v-for='(tl, idx) of ft.tiles', :key='ft.key+idx')
               .home-features-tile.animated.fadeInUp(:class='`wait-p` + idx + `s`')
                 img(:src='tl.icon')
                 h5(v-html='tl.title')

@@ -37,7 +37,7 @@ export default {
     background-size: 50vw auto;
     height: 800px;
     text-align: center;
-    padding: 100px;
+    padding: 100px 15px;
 
     @media screen and (max-width: 900px) {
       background-image: none;
