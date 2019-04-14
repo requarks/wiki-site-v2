@@ -29,7 +29,7 @@
                   )
               v-btn(large, color='primary', block) Subscribe
               .newsletter-form-link
-                a(href='https://us20.campaign-archive.com/home/?u=2c5b24b2d2601202fdc7570cd&id=cecee43e80', target='_blank') View previous newsletter
+                a(href='https://us20.campaign-archive.com/home/?u=2c5b24b2d2601202fdc7570cd&id=cecee43e80', target='_blank') View previous newsletters
           v-flex(xs12, lg6, xl6).white.hidden-md-and-down
             .newsletter-img
               img.animated.fadeInUp(:src='require("../assets/illustrations/fogg-message-sent.png")')

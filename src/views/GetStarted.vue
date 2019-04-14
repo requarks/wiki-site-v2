@@ -36,6 +36,16 @@
               span Setup Instructions
         v-flex(xs12)
           .getstarted-note.animated.fadeInUp.wait-p2s Upgrading from 1.x to 2.0 will be quick and simple. You can safely use 1.x right now and upgrade later.
+        v-flex(xs12)
+          .getstarted-note.animated.fadeInUp.wait-p3s
+            h3 What's missing in 2.x compared to 1.0?
+            ul
+              li Media Upload (images, files, etc.)
+              li Social Authentication (Google, Facebook, GitHub, etc.)
+              li LDAP Authentication
+              li Mathjax Support
+              li Markdown Editor toolbar shortcuts
+
 </template>
 
 <script>
@@ -107,11 +117,22 @@ export default {
   }
 
   &-note {
-    background: var(--v-greyish-lighten2);
+    background: var(--v-greyish-lighten2) linear-gradient(45deg, transparent, rgba(255,255,255,.5));;
     border-radius: 8px;
     padding: 12px;
     text-align: center;
     color: var(--v-greyish-darken1);
+
+    h3 {
+      font-weight: 500;
+      color: var(--v-greyish-darken2);
+    }
+
+    ul {
+      padding: 0;
+      margin: 12px 0 0 0;
+      list-style-position: inside;
+    }
   }
 }
 </style>

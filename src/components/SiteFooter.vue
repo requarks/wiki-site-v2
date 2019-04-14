@@ -7,12 +7,10 @@
             img.footer-logo(:src='require("../assets/logos/requarks.svg")')
             .mt-4 Open source applications for teams
           v-flex.footer-col(xs12, sm4, lg3)
-            .footer-subtitle Documentation
+            .footer-subtitle Current Versions
             ul.footer-links
-              li: a(href='https://docs-beta.requarks.io/install/requirements') Requirements
-              li: a(href='https://docs-beta.requarks.io/install') Install
-              li: a(href='https://docs-beta.requarks.io/install/upgrade') Upgrade
-              li: a(href='https://docs-beta.requarks.io/') More topics...
+              li: a(href='https://docs.requarks.io/wiki/install/installation') Stable #[strong 1.0.117]
+              li: a(href='https://docs-beta.requarks.io/install') Beta #[strong 2.0.0-beta.91]
           v-flex.footer-col(xs12, sm4, lg3)
             .footer-subtitle Contribute
             ul.footer-links
