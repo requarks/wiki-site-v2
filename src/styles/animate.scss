@@ -6,7 +6,7 @@ $use-fadeInRight: true;
 
 @import '~animate-sass/animate';
 
-@for $i from 1 through 9 {
+@for $i from 1 through 20 {
   .wait-p#{$i}s {
     animation-delay: $i * .1s;
   }

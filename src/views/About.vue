@@ -10,11 +10,8 @@
             h2 Quick Navigation
             ul
               li
-                a(href='#sponsors') Sponsors
-                v-chip.ml-2(small, color='primary lighten-5') {{sponsors.length}}
-              li
-                a(href='#backers') Backers
-                v-chip.ml-2(small, color='green lighten-5') {{backers.length}}
+                a(href='#sponsors') Sponsors &amp; Backers
+                v-chip.ml-2(small, color='green lighten-5') {{sponsors.length}}
               li
                 a(href='#translators') Translators
                 v-chip.ml-2(small, color='blue lighten-5') {{translators.length}}
@@ -59,35 +56,25 @@
           .about-list
             .about-list-codefund
               code-fund(tmpl='horizontal')
-            h2(id='sponsors') Sponsors
+            h2(id='sponsors') Sponsors &amp; Backers
             .about-list-loading(v-if='!isLoaded')
               v-progress-circular(:value='true', color='primary', width='2', size='24', indeterminate)
               span Fetching list of sponsors...
-            .about-list-item(v-for='sponsor of sponsors', :key='sponsor.id')
-              img(src='https://d33wubrfki0l68.cloudfront.net/77b9086e5da60475f84fb4f7bec6a8a3c837477c/3ea49/img/process/avast_antivirus.png')
-              v-divider.mx-3(vertical)
-              .about-list-item-text
-                strong(v-html='sponsor.name')
-                div #[em.primary--text Sponsor] | Since {{sponsor.joined | luxon }}
-              v-spacer
-              v-btn(v-if='sponsor.twitter', icon, :href='sponsor.twitter')
-                img(:src='require(`../assets/logos/metro-twitter.svg`)')
-              v-btn(v-if='sponsor.website', outline, color='grey', :href='sponsor.website') Website
-
-            h2(id='backers') Backers
-            .about-list-loading(v-if='!isLoaded')
-              v-progress-circular(:value='true', color='green', width='2', size='24', indeterminate)
-              span Fetching list of backers...
-            .about-list-item(v-for='backer of backers', :key='backer.id')
-              img(src='https://d33wubrfki0l68.cloudfront.net/77b9086e5da60475f84fb4f7bec6a8a3c837477c/3ea49/img/process/avast_antivirus.png')
-              v-divider.mx-3(vertical)
-              .about-list-item-text
-                strong(v-html='backup.name')
-                div #[em.green--text Backer] | Since {{sponsor.joined | luxon }}
-              v-spacer
-              v-btn(v-if='backer.twitter', icon, :href='backer.twitter')
-                img(:src='require(`../assets/logos/metro-twitter.svg`)')
-              v-btn(v-if='backer.website', outline, color='grey', :href='backer.website') Website
+            v-container.pa-0.mb-4(grid-list-xl)
+              v-layout(row, wrap)
+                v-flex(xs12, xl6, v-for='(sponsor, idx) of sponsors', :key='sponsor.id')
+                  .about-list-item.animated.fadeInUp(:class='`wait-p` + idx + `s`')
+                    img(v-if='sponsor.avatar', :src='sponsor.avatar')
+                    v-avatar(v-else, color='greyish darken-1', size='68', tile)
+                      .headline.white--text {{sponsor.name | initials}}
+                    v-divider.mx-3(vertical)
+                    .about-list-item-text
+                      strong(v-html='sponsor.name')
+                      div Since {{sponsor.joined | luxon }} on #[em.green--text {{sponsor.source}}]
+                    v-spacer
+                    v-btn(v-if='sponsor.twitter', icon, :href='sponsor.twitter', rel='nofollow')
+                      img(:src='require(`../assets/logos/metro-twitter.svg`)')
+                    v-btn(v-if='sponsor.website', outline, color='grey', :href='sponsor.website', rel='nofollow') Website
 
             h2(id='translators') Translators
             .about-list-loading(v-if='!isLoaded')
@@ -117,7 +104,7 @@
                       strong(v-html='developer.name')
                       .orange--text {{developer.commits}} commits
                     v-spacer
-                    v-btn(icon, :href='`https://github.com/` + developer.handle')
+                    v-btn(icon, :href='`https://github.com/` + developer.handle', rel='nofollow')
                       img(src='https://static.requarks.io/logo/github-octocat.svg')
 
             h2(id='specialthanks') Special Thanks
@@ -125,16 +112,18 @@
               img(:src='sponsor.logo')
               v-divider.mx-3(vertical)
               .about-list-item-text
-                a(:href='sponsor.link', target='_blank', v-html='sponsor.title')
+                a(:href='sponsor.link', target='_blank', v-html='sponsor.title', rel='nofollow')
                 div(v-html='sponsor.description')
               v-spacer
-              v-btn(outline, color='grey', :href='sponsor.link', target='_blank') Website
+              v-btn(outline, color='grey', :href='sponsor.link', target='_blank', rel='nofollow') Website
 
 </template>
 
 <script>
 import CodeFund from '../components/CodeFund'
 import Particles from '../components/Particles'
+
+import gql from 'graphql-tag'
 
 export default {
   components: {
@@ -143,7 +132,7 @@ export default {
   },
   data () {
     return {
-      isLoaded: false,
+      isLoaded: true,
       sponsors: [],
       backers: [],
       translators: [],
@@ -210,6 +199,38 @@ export default {
           link: 'https://www.statuspage.io'
         }
       ]
+    }
+  },
+  filters: {
+    initials (value) {
+      if (!value) return ''
+      value = value.toString()
+      return value.split(' ').map(v => v.charAt(0).toUpperCase()).join('')
+    }
+  },
+  apollo: {
+    sponsors: {
+      query: gql`
+        {
+          sponsors {
+            list(kind:BACKER) {
+              kind
+              id
+              source
+              name
+              joined
+              website
+              twitter
+              extraInfo
+              avatar
+            }
+          }
+        }
+      `,
+      update: data => data.sponsors.list,
+      watchLoading (isLoading, countModifier) {
+        this.isLoaded = !isLoading
+      }
     }
   }
 }
@@ -331,6 +352,8 @@ export default {
       > img {
         height: 68px;
         max-width: 68px;
+        width: 100%;
+        // background-color: var(--v-greyish-base);
       }
 
       &-text {
