@@ -52,10 +52,10 @@
                 span 0xE1d55C19aE86f6Bcbfb17e7f06aCe96BdBb22Cb5
                 div
                   img(:src='require(`../assets/img/donate_eth_qr.png`)', style='max-width: 150px;')
+            v-divider.my-4
+            code-fund(tmpl='centered')
         v-flex(xs12, md8, xl9)
           .about-list
-            .about-list-codefund
-              code-fund(tmpl='horizontal')
             h2(id='sponsors') Sponsors &amp; Backers
             .about-list-loading(v-if='!isLoaded')
               v-progress-circular(:value='true', color='primary', width='2', size='24', indeterminate)
@@ -65,7 +65,7 @@
                 v-flex(xs12, xl6, v-for='(sponsor, idx) of sponsors', :key='sponsor.id')
                   .about-list-item.animated.fadeInUp(:class='`wait-p` + idx + `s`')
                     img(v-if='sponsor.avatar', :src='sponsor.avatar')
-                    v-avatar(v-else, color='greyish darken-1', size='68', tile)
+                    v-avatar(v-else, color='green darken-1', size='68', tile)
                       .headline.white--text {{sponsor.name | initials}}
                     v-divider.mx-3(vertical)
                     .about-list-item-text
@@ -73,8 +73,9 @@
                       div Since {{sponsor.joined | luxon }} on #[em.green--text {{sponsor.source}}]
                     v-spacer
                     v-btn(v-if='sponsor.twitter', icon, :href='sponsor.twitter', rel='nofollow')
-                      img(:src='require(`../assets/logos/metro-twitter.svg`)')
-                    v-btn(v-if='sponsor.website', outline, color='grey', :href='sponsor.website', rel='nofollow') Website
+                      img(:src='require(`../assets/logos/metro-twitter.svg`)', style='width: 24px;')
+                    v-btn(v-if='sponsor.website', icon, :href='sponsor.website', rel='nofollow')
+                      img(:src='require(`../assets/icons/ios-internet.svg`)')
 
             h2(id='translators') Translators
             .about-list-loading(v-if='!isLoaded')
@@ -84,11 +85,12 @@
               v-layout(row, wrap)
                 v-flex(xs12, md6, xl4, v-for='translator of translators', :key='translator.id')
                   .about-list-item
-                    img(src='translator.avatar')
+                    v-avatar(color='blue', size='48', tile)
+                      .title.white--text {{translator.name | initials}}
                     v-divider.mx-3(vertical)
                     .about-list-item-text
                       strong(v-html='translator.name')
-                      .blue--text(v-html='translator.languages.join(`, `)')
+                      .blue--text.caption(v-html='translator.extraInfo')
 
             h2(id='developers') Developers
             .about-list-loading(v-if='!isLoaded')
@@ -98,13 +100,15 @@
               v-layout(row, wrap)
                 v-flex(xs12, md6, xl4, v-for='developer of developers', :key='developer.id')
                   .about-list-item
-                    img(src='developer.avatar')
+                    img(v-if='developer.avatar', :src='developer.avatar', style='height: 48px; max-width: 48px;')
+                    v-avatar(v-else, color='green darken-1', size='48', tile)
+                      .headline.white--text {{developer.name | initials}}
                     v-divider.mx-3(vertical)
                     .about-list-item-text
                       strong(v-html='developer.name')
-                      .orange--text {{developer.commits}} commits
+                      .orange--text.caption {{developer.extraInfo}} commits
                     v-spacer
-                    v-btn(icon, :href='`https://github.com/` + developer.handle', rel='nofollow')
+                    v-btn(icon, :href='developer.website', rel='nofollow')
                       img(src='https://static.requarks.io/logo/github-octocat.svg')
 
             h2(id='specialthanks') Special Thanks
@@ -115,7 +119,8 @@
                 a(:href='sponsor.link', target='_blank', v-html='sponsor.title', rel='nofollow')
                 div(v-html='sponsor.description')
               v-spacer
-              v-btn(outline, color='grey', :href='sponsor.link', target='_blank', rel='nofollow') Website
+              v-btn(icon, :href='sponsor.link', target='_blank', rel='nofollow')
+                img(:src='require(`../assets/icons/ios-internet.svg`)')
 
 </template>
 
@@ -124,6 +129,7 @@ import CodeFund from '../components/CodeFund'
 import Particles from '../components/Particles'
 
 import gql from 'graphql-tag'
+import _ from 'lodash'
 
 export default {
   components: {
@@ -134,7 +140,6 @@ export default {
     return {
       isLoaded: true,
       sponsors: [],
-      backers: [],
       translators: [],
       developers: [],
       specialthanks: [
@@ -213,8 +218,7 @@ export default {
       query: gql`
         {
           sponsors {
-            list(kind:BACKER) {
-              kind
+            backers: list(kind:BACKER) {
               id
               source
               name
@@ -223,11 +227,29 @@ export default {
               twitter
               extraInfo
               avatar
+            },
+            translators: list(kind:TRANSLATOR) {
+              id
+              name
+              joined
+              extraInfo
+            },
+            developers: list(kind:DEVELOPER) {
+              id
+              name
+              website
+              extraInfo
+              avatar
             }
           }
         }
       `,
-      update: data => data.sponsors.list,
+      manual: true,
+      result ({ data, loading, networkStatus }) {
+        this.sponsors = _.get(data, 'sponsors.backers', [])
+        this.translators = _.get(data, 'sponsors.translators', [])
+        this.developers = _.get(data, 'sponsors.developers', [])
+      },
       watchLoading (isLoading, countModifier) {
         this.isLoaded = !isLoading
       }
