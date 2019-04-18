@@ -5,19 +5,18 @@
         img.header-logo(:src='require("../assets/logos/logo.svg")', alt='Wiki.js')
       v-spacer
       ul.header-nav.hidden-sm-and-down
-        router-link.animated.fadeInDown(to='/', tag='li'): a Home
-        router-link.animated.fadeInDown.wait-p1s(to='/#features', tag='li'): a Features
+        router-link.animated.fadeInDown(to='/', tag='li'): a Features
         router-link.animated.fadeInDown.wait-p2s(to='/cloud', tag='li'): a Cloud
         li.animated.fadeInDown.wait-p3s: a(href='https://docs-beta.requarks.io/') Docs
-        router-link.animated.fadeInDown.wait-p4s(to='/blog', tag='li'): a Blog
+        li.animated.fadeInDown.wait-p4s: a(href='https://blog.requarks.io/') Blog
         router-link.animated.fadeInDown.wait-p5s(to='/about', tag='li'): a About
         li.animated.fadeInDown.wait-p6s
           a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project')
             img(:src='require("../assets/logos/windows-github.svg")')
       v-spacer.hidden-sm-and-down
       .header-versions.text-xs-right.animated.fadeInRight.wait-p2s.hidden-md-and-down
-        .caption Stable #[strong 1.0.117]
-        .caption Beta #[strong 2.0.0-beta.91]
+        .caption Stable #[strong(v-html='stable')]
+        .caption Beta #[strong(v-html='beta')]
       v-btn.mx-0.hidden-sm-and-down.animated.fadeInRight(color='primary', outline, large, to='/get-started') Get Started
       v-btn.mx-0.hidden-md-and-up.header-mobiletoggle(icon, @click='mobileDrawerOpen = !mobileDrawerOpen')
         img(v-if='mobileDrawerOpen', :src='require("../assets/icons/metro-multiply.svg")', alt='Toggle Navigation Menu')
@@ -27,11 +26,6 @@
         .header-logo-mobile
           img(:src='require("../assets/logos/logo.svg")', alt='Wiki.js')
         v-list-tile(to='/')
-          v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-structural.svg")')
-          v-list-tile-title Home
-        v-divider
-        v-list-tile(to='/#features')
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-categorize.svg")')
           v-list-tile-title Features
@@ -63,6 +57,8 @@
 </template>
 
 <script>
+import { get } from 'vuex-pathify'
+
 export default {
   name: 'SiteHeader',
   data () {
@@ -71,6 +67,10 @@ export default {
       navStyle: 0,
       mobileDrawerOpen: false
     }
+  },
+  computed: {
+    stable: get('stable'),
+    beta: get('beta')
   },
   methods: {
     toggleNavStyle () {
@@ -100,6 +100,10 @@ export default {
   &-logo {
     width: 150px;
     padding-top: 12px;
+
+    @media screen and (min-width: 1264px) {
+      margin-right: 117px;
+    }
 
     &-mobile {
       text-align: center;

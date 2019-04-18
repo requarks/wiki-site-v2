@@ -15,5 +15,8 @@ new Vue({
   store,
   render: h => h(App),
   apolloProvider: createProvider(),
-  mounted: () => document.dispatchEvent(new Event('x-app-rendered'))
+  mounted () {
+    document.dispatchEvent(new Event('x-app-rendered'))
+    this.$store.dispatch('fetchGlobalStats', this.$apollo)
+  }
 }).$mount('#app')

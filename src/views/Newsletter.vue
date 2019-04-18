@@ -27,7 +27,8 @@
                   label='Country'
                   append-icon=''
                   )
-              v-btn(large, color='primary', block) Subscribe
+              v-alert(:color='alertColor', v-model='alertShown', outline) {{alertMessage}}
+              v-btn(large, color='primary', block, @click='subscribe', :loading='isLoading') Subscribe
               .newsletter-form-link
                 a(href='https://us20.campaign-archive.com/home/?u=2c5b24b2d2601202fdc7570cd&id=cecee43e80', target='_blank') View previous newsletters
           v-flex(xs12, lg6, xl6).white.hidden-md-and-down
@@ -39,12 +40,18 @@
 <script>
 import Particles from '../components/Particles'
 
+import gql from 'graphql-tag'
+
 export default {
   components: {
     Particles
   },
   data () {
     return {
+      alertShown: false,
+      alertColor: 'success',
+      alertMessage: '',
+      isLoading: false,
       email: '',
       fname: '',
       country: '',
@@ -302,6 +309,63 @@ export default {
         { value: 'Zimbabwe', text: 'Zimbabwe' }
       ]
     }
+  },
+  methods: {
+    async subscribe () {
+      if (this.email.length < 7) {
+        this.alertColor = 'error'
+        this.alertMessage = 'Your email address is missing or invalid.'
+        this.alertShown = true
+      } else if (this.fname.length < 1)  {
+        this.alertColor = 'error'
+        this.alertMessage = 'Your name is missing.'
+        this.alertShown = true
+      } else if (this.country.length < 2) {
+        this.alertColor = 'error'
+        this.alertMessage = 'Please select a country.'
+        this.alertShown = true
+      } else {
+        this.alertShown = false
+        this.isLoading = true
+        try {
+          const resp = await this.$apollo.mutate({
+            mutation: gql`
+              mutation($email: String!, $name: String!, $country: String!) {
+                newsletter {
+                  subscribe(email:$email, name:$name, country:$country) {
+                    responseResult {
+                      succeeded
+                      errorCode
+                      slug
+                      message
+                    }
+                  }
+                }
+              }
+            `,
+            variables: {
+              email: this.email,
+              name: this.fname,
+              country: this.country
+            }
+          })
+          if (_.get(resp, 'data.newsletter.subscribe.responseResult.succeeded', false) !== true) {
+            throw new Error(_.get(resp, 'data.newsletter.subscribe.responseResult.message', 'Something went wrong. Try again later.'))
+          }
+          this.alertColor = 'success'
+          this.alertMessage = 'Success! Check your emails to confirm your subscription.'
+          this.alertShown = true
+        } catch (err) {
+          this.alertColor = 'error'
+          this.alertMessage = err.message
+          this.alertShown = true
+        }
+        this.isLoading = false
+      }
+    }
+  },
+  mounted () {
+    this.alertShown = false
   }
 }
 </script>

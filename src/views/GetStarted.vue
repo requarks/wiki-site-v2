@@ -10,7 +10,7 @@
             img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube.svg`)', alt='Stable')
             v-chip.my-3(color='teal', dark, outline)
               .body-2 STABLE
-            h2 1.0.117
+            h2(v-html='stable')
             .body-2 Recommended for production use
             .getstarted-ver-req
               strong Requirements
@@ -25,7 +25,7 @@
             img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube-2.svg`)', alt='Beta')
             v-chip.my-3(color='purple', dark, outline)
               .body-2 BETA
-            h2 2.0.0-beta.91
+            h2(v-html='beta')
             .body-2 For development and testing
             .getstarted-ver-req
               strong Requirements
@@ -50,6 +50,7 @@
 
 <script>
 import Particles from '../components/Particles'
+import { get } from 'vuex-pathify'
 
 export default {
   components: {
@@ -57,6 +58,10 @@ export default {
   },
   data () {
     return { }
+  },
+  computed: {
+    stable: get('stable'),
+    beta: get('beta')
   }
 }
 </script>

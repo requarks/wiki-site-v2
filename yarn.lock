@@ -9570,6 +9570,11 @@ vue-axios@^2.1.4:
   resolved "https://registry.yarnpkg.com/vue-axios/-/vue-axios-2.1.4.tgz#a9d298f7e876f9a87feb336b37adcbce34ff9f9f"
   integrity sha512-DS8Q+WFT3i7nS0aZ/NMmTPf2yhbtlXhj4QEZmY69au/BshsGzGjC6dXaniZaPQlErP3J3Sv1HtQ4RVrXaUTkxA==
 
+vue-class-component@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-7.0.2.tgz#c5f35a91c0e9341532392b84d606a84911fb13bc"
+  integrity sha512-8xw/wkZI2tgHcwvkSRC1ax7GeP1CG27wKhedvOAdjdASm05VU4RijGsCYti6s6CzBioBL5BQUmntQQTCsp1wnQ==
+
 vue-cli-plugin-apollo@^0.19.2:
   version "0.19.2"
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-apollo/-/vue-cli-plugin-apollo-0.19.2.tgz#ec6a6bdc98fcfa886a616e3a64eaaff71bbeb911"
@@ -9706,6 +9711,14 @@ vuetify@^1.5.5:
   version "1.5.8"
   resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.5.8.tgz#58bbbe07a05e1cb00fffa9abed3f2f1d8e6ca29d"
   integrity sha512-AmyJb/kAIivEC+CM5BVqiumxUeaJRB4oKzKjEzXpI0tCbkNQIrTVrVjB1+ZnAk9al/6fJp63Hq8uy2RfRmZoRg==
+
+vuex-pathify@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/vuex-pathify/-/vuex-pathify-1.2.2.tgz#98903abeccd971be5a0719218ead44af17a0a86d"
+  integrity sha512-JaVidHP1TuGeIlKCTNw97j7DJpFnpIuQSgzlBKi7vi4OAmHKnPB0e1hfaQZVdZrROASZOCYFjVq54QJjCUREtg==
+  dependencies:
+    lodash.clonedeep "^4.5.0"
+    vue-class-component "^7.0.2"
 
 vuex@^3.0.1:
   version "3.1.0"

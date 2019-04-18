@@ -10,7 +10,7 @@
               strong 2M+
               span Installations
             v-flex(xs6)
-              strong 4200+
+              strong {{stars}}+
               span Stars on GitHub
           v-btn.mt-5.mx-0(dark, color='primary', large, to='/newsletter') View on GitHub
         v-flex.home-opensource-side.text-xs-center(xs12, md6)
@@ -20,11 +20,15 @@
 </template>
 
 <script>
+import { get } from 'vuex-pathify'
 
 export default {
   name: 'HomeOpensource',
   data () {
     return {}
+  },
+  computed: {
+    stars: get('stars')
   }
 }
 </script>

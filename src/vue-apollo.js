@@ -9,7 +9,7 @@ Vue.use(VueApollo)
 const AUTH_TOKEN = 'apollo-token'
 
 // Http endpoint
-const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP || 'http://dev.ngpixel.com:3002/'
+const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP || 'https://graph.requarks.io/'
 
 // Config
 const defaultOptions = {
