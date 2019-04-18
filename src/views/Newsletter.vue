@@ -39,6 +39,7 @@
 
 <script>
 import Particles from '../components/Particles'
+import _ from 'lodash'
 
 import gql from 'graphql-tag'
 
@@ -316,7 +317,7 @@ export default {
         this.alertColor = 'error'
         this.alertMessage = 'Your email address is missing or invalid.'
         this.alertShown = true
-      } else if (this.fname.length < 1)  {
+      } else if (this.fname.length < 1) {
         this.alertColor = 'error'
         this.alertMessage = 'Your name is missing.'
         this.alertShown = true
