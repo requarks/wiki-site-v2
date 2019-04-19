@@ -35,7 +35,7 @@
             img(:src='require("../assets/icons/nolan-cloud.svg")')
           v-list-tile-title Cloud
         v-divider
-        v-list-tile(href='https://docs-beta.requarks.io/')
+        v-list-tile(href='https://docs-beta.requarks.io/', @click.stop.prevent='docsSelector = true')
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-open-book.svg")')
           v-list-tile-title Docs
