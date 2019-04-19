@@ -7,7 +7,7 @@
       ul.header-nav.hidden-sm-and-down
         router-link.animated.fadeInDown(to='/', tag='li'): a Features
         router-link.animated.fadeInDown.wait-p2s(to='/cloud', tag='li'): a Cloud
-        li.animated.fadeInDown.wait-p3s: a(href='https://docs-beta.requarks.io/') Docs
+        li.animated.fadeInDown.wait-p3s: a(href='https://docs-beta.requarks.io/', @click.stop.prevent='docsSelector = true') Docs
         li.animated.fadeInDown.wait-p4s: a(href='https://blog.requarks.io/') Blog
         router-link.animated.fadeInDown.wait-p5s(to='/about', tag='li'): a About
         li.animated.fadeInDown.wait-p6s
@@ -54,6 +54,22 @@
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-downloading-updates.svg")')
           v-list-tile-title Get Started
+
+    v-dialog(v-model='docsSelector', width='400')
+      v-card.header-docs
+        v-btn.header-docs-close(icon, @click='docsSelector = false')
+          img(:src='require("../assets/icons/metro-multiply.svg")', alt='Cancel')
+        .pa-3.text-xs-center
+          img(:src='require(`../assets/icons/nolan-literature.svg`)', alt='Documentation', style='width: 64px;')
+          .subheading Select a version...
+        v-divider
+        v-card-actions.grey.lighten-5
+          v-spacer
+          v-btn(color='primary', outline, large, href='https://docs.requarks.io/wiki/') 1.x Stable Docs
+          v-btn(color='primary', outline, large, href='https://docs-beta.requarks.io/') 2.0 Beta Docs
+          v-spacer
+        v-divider
+        .px-3.py-4.text-xs-center.greyish--text.text--darken-1 Not sure which version to use? #[a(@click.stop.prevent='$router.push(`/get-started`); docsSelector = false', href='#') See Comparison]
 </template>
 
 <script>
@@ -65,7 +81,8 @@ export default {
     return {
       currentYear: new Date().getFullYear(),
       navStyle: 0,
-      mobileDrawerOpen: false
+      mobileDrawerOpen: false,
+      docsSelector: false
     }
   },
   computed: {
@@ -171,6 +188,21 @@ export default {
 
     strong {
       font-weight: 600;
+    }
+  }
+
+  &-docs {
+    border-radius: 7px;
+
+    &-close {
+      top: 0;
+      right: 0;
+      position: absolute !important;
+
+      img {
+        width: 20px;
+        opacity: .3;
+      }
     }
   }
 }

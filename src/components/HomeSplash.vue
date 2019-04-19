@@ -12,7 +12,7 @@
     .caption.greyish--text.text--darken-1.animated.fadeInUp.wait-p8s Released under AGPL-v3 license.
     img.home-splash-ss.animated.fadeInUp.wait-p8s(:src='require("../assets/screenshots/wiki-screenshot.png")', :srcset='require("../assets/screenshots/wiki-screenshot-2x.png") + ` 2x`', alt='Wiki.js Screenshot')
     code-fund.home-splash-codefund-desktop.animated.fadeInRight.wait-p8s(tmpl='square', v-if='$vuetify.breakpoint.xlOnly')
-    code-fund.home-splash-codefund-mobile(tmpl='horizontal', v-else)
+    code-fund.home-splash-codefund-mobile.animated.fadeInUp.wait-p8s(tmpl='horizontal', v-else)
 </template>
 
 <script>
