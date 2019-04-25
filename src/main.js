@@ -22,7 +22,7 @@ new Vue({
 
     initApm({
       serviceName: 'wiki-site',
-      serverUrl: 'https://apm.requarks.io:443',
+      serverUrl: 'https://eac0288f0f054154b8e7454e56dd1261.apm.us-east-1.aws.cloud.es.io:443',
       serviceVersion: process.env.VUE_APP_VERSION
     })
   }
