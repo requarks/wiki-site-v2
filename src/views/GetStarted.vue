@@ -41,8 +41,6 @@
             h3 What's missing in 2.x beta compared to 1.0?
             ul
               li Media Upload (images, files, etc.)
-              li Social Authentication (Google, Facebook, GitHub, etc.)
-              li LDAP Authentication
               li Mathjax Support
               li Markdown Editor toolbar shortcuts
 
