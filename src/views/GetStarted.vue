@@ -40,9 +40,9 @@
           .getstarted-note.animated.fadeInUp.wait-p3s
             h3 What's missing in 2.x beta compared to 1.0?
             ul
-              li Media Upload (images, files, etc.)
+              li Manually Create New Users
               li Mathjax Support
-              li Markdown Editor toolbar shortcuts
+              li Microsoft Account Login
 
 </template>
 
