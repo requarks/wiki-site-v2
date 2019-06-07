@@ -23,6 +23,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "blog" */ './views/Blog.vue')
     },
     {
+      path: '/feedback*',
+      name: 'feedback',
+      component: () => import(/* webpackChunkName: "feedback" */ './views/Feedback.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')

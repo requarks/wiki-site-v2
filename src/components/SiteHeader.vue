@@ -9,7 +9,8 @@
         router-link.animated.fadeInDown.wait-p2s(to='/cloud', tag='li'): a Cloud
         li.animated.fadeInDown.wait-p3s: a(href='https://docs-beta.requarks.io/', @click.stop.prevent='docsSelector = true') Docs
         li.animated.fadeInDown.wait-p4s: a(href='https://blog.requarks.io/') Blog
-        router-link.animated.fadeInDown.wait-p5s(to='/about', tag='li'): a About
+        router-link.animated.fadeInDown.wait-p5s(to='/feedback', tag='li'): a Feedback
+        router-link.animated.fadeInDown.wait-p6s(to='/about', tag='li'): a About
         li.animated.fadeInDown.wait-p6s
           a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project')
             img(:src='require("../assets/logos/windows-github.svg")')
@@ -44,6 +45,11 @@
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-news.svg")')
           v-list-tile-title Blog
+        v-divider
+        v-list-tile(to='/feedback')
+          v-list-tile-avatar
+            img(:src='require("../assets/icons/nolan-feedback.svg")')
+          v-list-tile-title Feedback
         v-divider
         v-list-tile(to='/about')
           v-list-tile-avatar
