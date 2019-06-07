@@ -12,7 +12,7 @@
             v-flex(xs6)
               strong {{stars}}+
               span Stars on GitHub
-          v-btn.mt-5.mx-0(dark, color='primary', large, to='/newsletter') View on GitHub
+          v-btn.mt-5.mx-0(dark, color='primary', large, href='https://github.com/Requarks/wiki') View on GitHub
         v-flex.home-opensource-side.text-xs-center(xs12, md6)
           .home-opensource-shape
           .home-opensource-shape
