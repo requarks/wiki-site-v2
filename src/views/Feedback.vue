@@ -12,6 +12,8 @@
 <script>
 import Particles from '../components/Particles'
 
+/* global Canny */
+
 export default {
   components: {
     Particles
@@ -19,7 +21,7 @@ export default {
   data () {
     return { }
   },
-  mounted() {
+  mounted () {
     const cannySdkScript = document.createElement('script')
     cannySdkScript.setAttribute('src', 'https://canny.io/sdk.js')
     cannySdkScript.onload = () => {
