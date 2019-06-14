@@ -25,7 +25,7 @@
             ul.footer-links
               li: a(href='https://github.com/Requarks/wiki') GitHub Project
               li: a(href='https://twitter.com/requarks') Follow on Twitter
-              li: a(href='https://gitter.im/Requarks/wiki') Chat on Gitter
+              li: a(href='https://wiki.requarks.io/slack') Chat on Slack
               router-link(to='/about', tag='li'): a Contributors &amp; Sponsors
               router-link(to='/newsletter', tag='li'): a Newsletter
       v-divider.mt-5
