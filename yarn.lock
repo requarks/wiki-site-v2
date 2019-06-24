@@ -671,24 +671,6 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@elastic/apm-rum-core@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@elastic/apm-rum-core/-/apm-rum-core-4.0.1.tgz#fe32ef6ee6338dd9ed801c886430a20dc8b3b8f9"
-  integrity sha512-BnL5yVx8uP1EGBxUm6zgzjT9iRoXrBKVZaeqwKfHsNDjbo7HrTJvYXshUpSfBYK4G60VwOAFQTVz4xqfyHNoQw==
-  dependencies:
-    error-stack-parser "^1.3.5"
-    opentracing "^0.14.3"
-    stack-generator "^1.0.7"
-    uuid "^3.1.0"
-
-"@elastic/apm-rum@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@elastic/apm-rum/-/apm-rum-4.0.1.tgz#9975df5e305fd1af408b656e15c19b7b476c64e5"
-  integrity sha512-kP6zjgSKWAGZoyFqvTlHZeczSmWDh4SxZx3/Cr4aLhEY/OnT5hNexrazSLFokwRrbG9wMZZlULuF+39X+ECw+Q==
-  dependencies:
-    "@elastic/apm-rum-core" "^4.0.1"
-    es6-promise "^4.2.4"
-
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@intervolga/optimize-cssnano-plugin/-/optimize-cssnano-plugin-1.0.6.tgz#be7c7846128b88f6a9b1d1261a0ad06eb5c0fdf8"
@@ -3616,13 +3598,6 @@ error-ex@^1.2.0, error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-error-stack-parser@^1.3.5:
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/error-stack-parser/-/error-stack-parser-1.3.6.tgz#e0e73b93e417138d1cd7c0b746b1a4a14854c292"
-  integrity sha1-4Oc7k+QXE40c18C3RrGkoUhUwpI=
-  dependencies:
-    stackframe "^0.3.1"
-
 error-stack-parser@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/error-stack-parser/-/error-stack-parser-2.0.2.tgz#4ae8dbaa2bf90a8b450707b9149dcabca135520d"
@@ -3651,7 +3626,7 @@ es-to-primitive@^1.2.0:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-es6-promise@^4.0.3, es6-promise@^4.2.4:
+es6-promise@^4.0.3:
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.6.tgz#b685edd8258886365ea62b57d30de28fadcd974f"
   integrity sha512-aRVgGdnmW2OiySVPUC9e6m+plolMAJKjZnQlCwNSuK5yQ0JN61DZSO1X1Ufd1foqWRAlig0rhduTCHe7sVtK5Q==
@@ -6736,11 +6711,6 @@ opener@^1.5.1:
   resolved "https://registry.yarnpkg.com/opener/-/opener-1.5.1.tgz#6d2f0e77f1a0af0032aca716c2c1fbb8e7e8abed"
   integrity sha512-goYSy5c2UXE4Ra1xixabeVh1guIX/ZV/YokJksb6q2lubWu6UbvPQ20p542/sFIll1nl8JnCyK9oBaOcCWXwvA==
 
-opentracing@^0.14.3:
-  version "0.14.3"
-  resolved "https://registry.yarnpkg.com/opentracing/-/opentracing-0.14.3.tgz#23e3ad029fa66a653926adbe57e834469f8550aa"
-  integrity sha1-I+OtAp+mamU5Jq2+V+g0Rp+FUKo=
-
 opn@^5.1.0, opn@^5.3.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/opn/-/opn-5.5.0.tgz#fc7164fab56d235904c51c3b27da6758ca3b9bfc"
@@ -8720,19 +8690,7 @@ stable@^0.1.8:
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
   integrity sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==
 
-stack-generator@^1.0.7:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/stack-generator/-/stack-generator-1.1.0.tgz#36f6a920751a6c10f499a13c32cbb5f51a0b8b25"
-  integrity sha1-NvapIHUabBD0maE8Msu19RoLiyU=
-  dependencies:
-    stackframe "^1.0.2"
-
-stackframe@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-0.3.1.tgz#33aa84f1177a5548c8935533cbfeb3420975f5a4"
-  integrity sha1-M6qE8Rd6VUjIk1Uzy/6zQgl19aQ=
-
-stackframe@^1.0.2, stackframe@^1.0.4:
+stackframe@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-1.0.4.tgz#357b24a992f9427cba6b545d96a14ed2cbca187b"
   integrity sha512-to7oADIniaYwS3MhtCa/sQhrxidCCQiF/qp4/m5iN3ipf0Y7Xlri0f6eG29r08aL7JYl8n32AF3Q5GYBZ7K8vw==

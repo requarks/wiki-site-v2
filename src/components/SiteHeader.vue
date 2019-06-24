@@ -6,11 +6,11 @@
       v-spacer
       ul.header-nav.hidden-sm-and-down
         router-link.animated.fadeInDown(to='/', tag='li'): a Features
-        router-link.animated.fadeInDown.wait-p2s(to='/cloud', tag='li'): a Cloud
+        router-link.animated.fadeInDown.wait-p2s(to='/modules', tag='li'): a Modules
         li.animated.fadeInDown.wait-p3s: a(href='https://docs-beta.requarks.io/', @click.stop.prevent='docsSelector = true') Docs
         li.animated.fadeInDown.wait-p4s: a(href='https://blog.requarks.io/') Blog
         router-link.animated.fadeInDown.wait-p5s(to='/feedback', tag='li'): a Feedback
-        router-link.animated.fadeInDown.wait-p6s(to='/about', tag='li'): a About
+        router-link.animated.fadeInDown.wait-p6s(to='/about', tag='li'): a Backers
         li.animated.fadeInDown.wait-p6s
           a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project')
             img(:src='require("../assets/logos/windows-github.svg")')
@@ -31,10 +31,10 @@
             img(:src='require("../assets/icons/nolan-categorize.svg")')
           v-list-tile-title Features
         v-divider
-        v-list-tile(to='/cloud')
+        v-list-tile(to='/modules')
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-cloud.svg")')
-          v-list-tile-title Cloud
+          v-list-tile-title Modules
         v-divider
         v-list-tile(href='https://docs-beta.requarks.io/', @click.stop.prevent='docsSelector = true')
           v-list-tile-avatar
@@ -54,7 +54,7 @@
         v-list-tile(to='/about')
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-management.svg")')
-          v-list-tile-title About
+          v-list-tile-title Backers
         v-divider
         v-list-tile(to='/get-started')
           v-list-tile-avatar

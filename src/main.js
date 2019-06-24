@@ -7,7 +7,6 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import { createProvider } from './vue-apollo'
-import { init as initApm } from '@elastic/apm-rum'
 
 Vue.config.productionTip = false
 
@@ -19,12 +18,5 @@ new Vue({
   mounted () {
     document.dispatchEvent(new Event('x-app-rendered'))
     this.$store.dispatch('fetchGlobalStats', this.$apollo)
-
-    initApm({
-      serviceName: 'wiki-site',
-      serverUrl: 'https://eac0288f0f054154b8e7454e56dd1261.apm.us-east-1.aws.cloud.es.io:443',
-      serviceVersion: process.env.VUE_APP_VERSION,
-      pageLoadTransactionName: window.location.pathname
-    })
   }
 }).$mount('#app')

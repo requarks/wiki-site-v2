@@ -13,6 +13,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "home" */ './views/Home.vue')
     },
     {
+      path: '/modules',
+      name: 'modules',
+      component: () => import(/* webpackChunkName: "modules" */ './views/Modules.vue')
+    },
+    {
       path: '/cloud',
       name: 'cloud',
       component: () => import(/* webpackChunkName: "cloud" */ './views/Cloud.vue')
