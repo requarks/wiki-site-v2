@@ -30,6 +30,7 @@
         v-flex(xs12, md8, xl9)
           .modules-list
             h2(id='analytics') Analytics
+            .body-1.mb-3 Use analytics modules to quickly enable session tracking and browser performance monitoring on your wiki.
             v-container.pa-0.mb-4(grid-list-xl)
               v-layout(row, wrap)
                 v-flex(xs12, md6, xl4, v-for='analytic of analytics', :key='analytic.id')
@@ -46,6 +47,7 @@
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='auth') Authentication
+            .body-1.mb-3 Let your users use their existing logins on your wiki, whether it's a social login or enterprise authentication.
             v-container.pa-0.mb-4(grid-list-xl)
               v-layout(row, wrap)
                 v-flex(xs12, md6, xl4, v-for='auth of auths', :key='auth.name')
@@ -62,6 +64,7 @@
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='db') Databases
+            .body-1.mb-3 Wiki.js is compatible with any of the following database systems.
             v-container.pa-0.mb-4(grid-list-xl)
               v-layout(row, wrap)
                 v-flex(xs12, md6, xl4, v-for='db of dbs', :key='db.name')
@@ -78,6 +81,7 @@
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='editors') Editors
+            .body-1.mb-3 Users can use the editor they are most comfortable and proficient with.
             v-container.pa-0.mb-4(grid-list-xl)
               v-layout(row, wrap)
                 v-flex(xs12, md6, xl4, v-for='editor of editors', :key='editor.name')
@@ -94,6 +98,7 @@
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='logging') Logging
+            .body-1.mb-3 Ship all logs produced by Wiki.js to your logging services.
             v-container.pa-0.mb-4(grid-list-xl)
               v-layout(row, wrap)
                 v-flex(xs12, md6, xl4, v-for='logger of loggers', :key='logger.name')
@@ -110,6 +115,7 @@
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='search') Search Engines
+            .body-1.mb-3 Wiki.js ships with 2 excellent database-based search engines. You can however leverage the amazing power of any of these powerful search engines.
             v-container.pa-0.mb-4(grid-list-xl)
               v-layout(row, wrap)
                 v-flex(xs12, md6, xl4, v-for='searchEngine of searchEngines', :key='searchEngine.name')
@@ -126,6 +132,7 @@
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='storage') Storage
+            .body-1.mb-3 Sync and backup your content to any of these storage services.
             v-container.pa-0.mb-4(grid-list-xl)
               v-layout(row, wrap)
                 v-flex(xs12, md6, xl4, v-for='storageTarget of storageTargets', :key='storageTarget.name')
@@ -173,6 +180,7 @@ export default {
         { name: 'Firebase', company: 'Google', icon: 'firebase.svg', dev: true },
         { name: 'Google', company: 'Google', icon: 'google-alt.svg' },
         { name: 'GitHub', company: 'GitHub', icon: 'github-octocat.svg' },
+        { name: 'GitLab', company: 'GitLab', icon: 'gitlab-alt.svg', dev: true },
         { name: 'LDAP / Active Directory', company: 'Microsoft', icon: 'windows.svg' },
         { name: 'Local DB', company: 'Requarks.io' },
         { name: 'Microsoft', company: 'Microsoft', icon: 'microsoft-alt.svg', dev: true },
