@@ -180,7 +180,7 @@ export default {
         { name: 'Firebase', company: 'Google', icon: 'firebase.svg', dev: true },
         { name: 'Google', company: 'Google', icon: 'google-alt.svg' },
         { name: 'GitHub', company: 'GitHub', icon: 'github-octocat.svg' },
-        { name: 'GitLab', company: 'GitLab', icon: 'gitlab-alt.svg', dev: true },
+        { name: 'GitLab', company: 'GitLab', icon: 'gitlab-alt.svg' },
         { name: 'LDAP / Active Directory', company: 'Microsoft', icon: 'windows.svg' },
         { name: 'Local DB', company: 'Requarks.io' },
         { name: 'Microsoft', company: 'Microsoft', icon: 'microsoft-alt.svg', dev: true },
