@@ -165,7 +165,7 @@ export default {
         { name: 'Elasticsearch APM RUM', company: 'Elastic', icon: 'elasticsearch-apm.svg' },
         { name: 'Fathom Analytics', company: 'Fathom', icon: 'fathom.svg' },
         { name: 'FullStory', company: 'FullStory', icon: 'fullstory.svg' },
-        { name: 'Google Analytics', company: 'Google', icon: 'google-analytics.svg' },
+        { name: 'Google Analytics', company: 'Google', icon: 'google-lytics.svg' },
         { name: 'Google Tag Manager', company: 'Google', icon: 'google-tag-manager.svg' },
         { name: 'Hotjar', company: 'Hotjar', icon: 'hotjar.svg' },
         { name: 'New Relic Browser', company: 'New Relic', icon: 'newrelic-alt.svg', dev: true }
