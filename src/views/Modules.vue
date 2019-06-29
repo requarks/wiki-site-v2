@@ -171,7 +171,7 @@ export default {
         { name: 'Matomo', company: 'Matomo', icon: 'matomo-alt.svg', dev: true },
         { name: 'New Relic Browser', company: 'New Relic', icon: 'newrelic-alt.svg', dev: true },
         { name: 'StatCounter', company: 'StatCounter', icon: 'statcountr-alt.svg', dev: true },
-        { name: 'Yandex Metrica', company: 'Yandex', icon: 'yandex.svg', dev: true }
+        { name: 'Yandex Metrica', company: 'Yandex', icon: 'yandex-alt.svg', dev: true }
       ],
       auths: [
         { name: 'Auth0', company: 'Auth0', icon: 'auth0.svg' },
