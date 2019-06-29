@@ -168,7 +168,10 @@ export default {
         { name: 'Google Analytics', company: 'Google', icon: 'google-lytics.svg' },
         { name: 'Google Tag Manager', company: 'Google', icon: 'google-tag-manager.svg' },
         { name: 'Hotjar', company: 'Hotjar', icon: 'hotjar.svg' },
-        { name: 'New Relic Browser', company: 'New Relic', icon: 'newrelic-alt.svg', dev: true }
+        { name: 'Matomo', company: 'Matomo', icon: 'matomo-alt.svg', dev: true },
+        { name: 'New Relic Browser', company: 'New Relic', icon: 'newrelic-alt.svg', dev: true },
+        { name: 'StatCounter', company: 'StatCounter', icon: 'statcountr-alt.svg', dev: true },
+        { name: 'Yandex Metrica', company: 'Yandex', icon: 'yandex.svg', dev: true }
       ],
       auths: [
         { name: 'Auth0', company: 'Auth0', icon: 'auth0.svg' },
