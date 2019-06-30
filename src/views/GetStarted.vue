@@ -18,7 +18,7 @@
                 li Node.js #[em 6.11.1 or later]
                 li MongoDB #[em 3.2 or later]
                 li Git #[em 2.7.4 or later]
-            v-btn(color='teal', large, dark, href='https://docs.requarks.io/wiki/install/installation')
+            v-btn(color='teal', large, dark, href='https://docs-legacy.requarks.io/wiki/install/installation')
               span Setup Instructions
         v-flex(xs12, sm6)
           .getstarted-ver.animated.fadeInUp.wait-p1s
@@ -32,7 +32,7 @@
               ul
                 li Node.js #[em 10.12 or later]
                 li MySQL, MariaDB, PostgreSQL, MSSQL or SQLite3
-            v-btn(color='purple', large, dark, href='https://docs-beta.requarks.io/install')
+            v-btn(color='purple', large, dark, href='https://docs.requarks.io/install')
               span Setup Instructions
         v-flex(xs12)
           .getstarted-note.animated.fadeInUp.wait-p2s Upgrading from 1.x to 2.0 will be quick and simple. You can safely use 1.x right now and upgrade later.
