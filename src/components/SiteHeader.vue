@@ -7,7 +7,7 @@
       ul.header-nav.hidden-sm-and-down
         router-link.animated.fadeInDown(to='/', tag='li'): a Features
         router-link.animated.fadeInDown.wait-p2s(to='/modules', tag='li'): a Modules
-        li.animated.fadeInDown.wait-p3s: a(href='https://docs-beta.requarks.io/', @click.stop.prevent='docsSelector = true') Docs
+        li.animated.fadeInDown.wait-p3s: a(href='https://docs.requarks.io/', @click.stop.prevent='docsSelector = true') Docs
         li.animated.fadeInDown.wait-p4s: a(href='https://blog.requarks.io/') Blog
         router-link.animated.fadeInDown.wait-p5s(to='/feedback', tag='li'): a Feedback
         router-link.animated.fadeInDown.wait-p6s(to='/about', tag='li'): a Backers
@@ -71,8 +71,8 @@
         v-divider
         v-card-actions.grey.lighten-5
           v-spacer
-          v-btn(color='primary', outline, large, href='https://docs.requarks.io/wiki/') 1.x Stable Docs
-          v-btn(color='primary', outline, large, href='https://docs-beta.requarks.io/') 2.0 Beta Docs
+          v-btn(color='primary', outline, large, href='https://docs-legacy.requarks.io/wiki/') 1.x Stable Docs
+          v-btn(color='primary', outline, large, href='https://docs.requarks.io/') 2.0 Beta Docs
           v-spacer
         v-divider
         .px-3.py-4.text-xs-center.greyish--text.text--darken-1 Not sure which version to use? #[a(@click.stop.prevent='$router.push(`/get-started`); docsSelector = false', href='#') See Comparison]
