@@ -9,7 +9,7 @@
           v-flex.footer-col(xs12, sm4, lg3)
             .footer-subtitle Install Guides
             ul.footer-links
-              li: a(href='https://docs-legacy.requarks.io/wiki/install/installation') Stable #[strong(v-html='stable')] #[v-chip.ml-2(small, color='teal', dark) Stable]
+              li: a(href='https://docs-legacy.requarks.io/wiki/install') Stable #[strong(v-html='stable')] #[v-chip.ml-2(small, color='teal', dark) Stable]
               li: a(href='https://docs.requarks.io/install') Beta #[strong(v-html='beta')] #[v-chip.ml-2(small, color='purple', dark) Beta]
           v-flex.footer-col(xs12, sm4, lg3)
             .footer-subtitle Contribute
