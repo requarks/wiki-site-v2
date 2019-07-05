@@ -18,7 +18,7 @@
                 li Node.js #[em 6.11.1 or later]
                 li MongoDB #[em 3.2 or later]
                 li Git #[em 2.7.4 or later]
-            v-btn(color='teal', large, dark, href='https://docs-legacy.requarks.io/wiki/install/installation')
+            v-btn(color='teal', large, dark, href='https://docs-legacy.requarks.io/wiki/install')
               span Setup Instructions
         v-flex(xs12, sm6)
           .getstarted-ver.animated.fadeInUp.wait-p1s
