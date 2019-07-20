@@ -168,14 +168,14 @@ export default {
         { name: 'Google Analytics', company: 'Google', icon: 'google-lytics.svg' },
         { name: 'Google Tag Manager', company: 'Google', icon: 'google-tag-manager.svg' },
         { name: 'Hotjar', company: 'Hotjar', icon: 'hotjar.svg' },
-        { name: 'Matomo', company: 'Matomo', icon: 'matomo-alt.svg', dev: true },
-        { name: 'New Relic Browser', company: 'New Relic', icon: 'newrelic-alt.svg', dev: true },
-        { name: 'StatCounter', company: 'StatCounter', icon: 'statcountr-alt.svg', dev: true },
-        { name: 'Yandex Metrica', company: 'Yandex', icon: 'yandex-alt.svg', dev: true }
+        { name: 'Matomo', company: 'Matomo', icon: 'matomo-alt.svg' },
+        { name: 'New Relic Browser', company: 'New Relic', icon: 'newrelic-alt.svg' },
+        { name: 'StatCounter', company: 'StatCounter', icon: 'statcountr-alt.svg' },
+        { name: 'Yandex Metrica', company: 'Yandex', icon: 'yandex-alt.svg' }
       ],
       auths: [
         { name: 'Auth0', company: 'Auth0', icon: 'auth0.svg' },
-        { name: 'Azure Active Directory', company: 'Microsoft Azure', icon: 'azure-active-directory.svg', dev: true },
+        { name: 'Azure Active Directory', company: 'Microsoft Azure', icon: 'azure-active-directory.svg' },
         { name: 'CAS', company: 'Apereo Foundation', dev: true },
         { name: 'Discord', company: 'Discord', icon: 'discord.svg' },
         { name: 'Dropbox', company: 'Dropbox', icon: 'dropbox-alt.svg' },
