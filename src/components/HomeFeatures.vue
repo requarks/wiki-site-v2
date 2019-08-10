@@ -73,7 +73,7 @@ export default {
             {
               icon: require(`../assets/icons/nolan-overview.svg`),
               title: 'Visual Builder',
-              description: 'Simple and easy to use WYSYWYG editor for non-technical people. No coding or special syntax knowledge required.'
+              description: 'Simple and easy to use WYSIWYG editor for non-technical people. No coding or special syntax knowledge required.'
             },
             {
               icon: require(`../assets/icons/nolan-html.svg`),
