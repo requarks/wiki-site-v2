@@ -40,7 +40,6 @@
           .getstarted-note.animated.fadeInUp.wait-p3s
             h3 What's missing in 2.x beta compared to 1.0?
             ul
-              li Manually Create New Users
               li Mathjax Support
               li Microsoft Account Login
 
