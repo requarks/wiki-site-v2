@@ -159,7 +159,7 @@ export default {
           logo: 'https://static.requarks.io/logo/bugsnag.svg',
           title: 'Bugsnag',
           description: 'Bugsnag monitors apps for errors that impact customers & reports all diagnostic data.',
-          link: 'https://www.netlify.com'
+          link: 'https://www.bugsnag.com'
         },
         {
           logo: 'https://static.requarks.io/logo/cloudflare-alt.svg',
