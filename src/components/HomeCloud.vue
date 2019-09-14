@@ -8,7 +8,7 @@
         v-flex(xs12, sm6)
           .home-cloud-plan
             .home-cloud-plan-icon
-              img(:src='require("../assets/icons/handdrawn-server.svg")')
+              img(:src='require("../assets/icons/handdrawn-server.svg")', alt='Self-Hosted')
             h6 Self-Hosted
             span Host it on your own servers
             strong Free
@@ -17,7 +17,7 @@
         v-flex(xs12, sm6)
           .home-cloud-plan
             .home-cloud-plan-icon.alt1
-              img(:src='require("../assets/icons/handdrawn-cloud.svg")')
+              img(:src='require("../assets/icons/handdrawn-cloud.svg")', alt='Cloud')
             h6 Cloud
             span Managed infrastructure
             strong TBA
