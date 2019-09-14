@@ -12,7 +12,7 @@
         router-link.animated.fadeInDown.wait-p5s(to='/feedback', tag='li'): a Feedback
         router-link.animated.fadeInDown.wait-p6s(to='/about', tag='li'): a Backers
         li.animated.fadeInDown.wait-p6s
-          a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project')
+          a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project', rel='noopener')
             img(:src='require("../assets/logos/windows-github.svg")')
       v-spacer.hidden-sm-and-down
       .header-versions.text-xs-right.animated.fadeInRight.wait-p2s.hidden-md-and-down
