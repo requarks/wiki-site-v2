@@ -22,7 +22,7 @@
           v-layout(row, wrap, justify-center)
             v-flex(xs12, sm6, v-for='(tl, idx) of ft.tiles', :key='ft.key+idx')
               .home-features-tile.animated.fadeInUp(:class='`wait-p` + idx + `s`')
-                img(:src='tl.icon')
+                img(:src='tl.icon', :alt='tl.title')
                 h5(v-html='tl.title')
                 span(v-html='tl.description')
 </template>
