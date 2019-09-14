@@ -13,7 +13,7 @@
         router-link.animated.fadeInDown.wait-p6s(to='/about', tag='li'): a Backers
         li.animated.fadeInDown.wait-p6s
           a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project', rel='noopener')
-            img(:src='require("../assets/logos/windows-github.svg")')
+            img(:src='require("../assets/logos/windows-github.svg")', alt='GitHub')
       v-spacer.hidden-sm-and-down
       .header-versions.text-xs-right.animated.fadeInRight.wait-p2s.hidden-md-and-down
         .caption Stable #[strong(v-html='stable')]
@@ -28,37 +28,37 @@
           img(:src='require("../assets/logos/logo.svg")', alt='Wiki.js')
         v-list-tile(to='/')
           v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-categorize.svg")')
+            img(:src='require("../assets/icons/nolan-categorize.svg")', alt='Features')
           v-list-tile-title Features
         v-divider
         v-list-tile(to='/modules')
           v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-cloud.svg")')
+            img(:src='require("../assets/icons/nolan-cloud.svg")', alt='Modules')
           v-list-tile-title Modules
         v-divider
         v-list-tile(href='https://docs-beta.requarks.io/', @click.stop.prevent='docsSelector = true')
           v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-open-book.svg")')
+            img(:src='require("../assets/icons/nolan-open-book.svg")', alt='Docs')
           v-list-tile-title Docs
         v-divider
         v-list-tile(to='/blog')
           v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-news.svg")')
+            img(:src='require("../assets/icons/nolan-news.svg")', alt='Blog')
           v-list-tile-title Blog
         v-divider
         v-list-tile(to='/feedback')
           v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-feedback.svg")')
+            img(:src='require("../assets/icons/nolan-feedback.svg")', alt='Feedback')
           v-list-tile-title Feedback
         v-divider
         v-list-tile(to='/about')
           v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-management.svg")')
+            img(:src='require("../assets/icons/nolan-management.svg")', alt='Backers')
           v-list-tile-title Backers
         v-divider
         v-list-tile(to='/get-started')
           v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-downloading-updates.svg")')
+            img(:src='require("../assets/icons/nolan-downloading-updates.svg")', alt='Get Started')
           v-list-tile-title Get Started
 
     v-dialog(v-model='docsSelector', width='400')
