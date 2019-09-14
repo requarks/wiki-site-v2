@@ -4,7 +4,7 @@
       v-container
         v-layout(row, wrap)
           v-flex.footer-col(xs12, md12, lg3)
-            img.footer-logo(:src='require("../assets/logos/requarks.svg")')
+            img.footer-logo(:src='require("../assets/logos/requarks.svg")', alt='Requarks.io')
             .mt-4 Open source applications for teams
           v-flex.footer-col(xs12, sm4, lg3)
             .footer-subtitle Install Guides
