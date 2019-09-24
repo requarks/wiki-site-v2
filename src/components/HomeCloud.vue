@@ -1,7 +1,7 @@
 <template lang='pug'>
   .home-cloud
-    h3 Wiki.js Cloud #[v-chip.white--text(color='accent') Coming 2020]
-    h4 Host it yourself or let us handle the infrastructure with a fully managed installation.
+    h3 Wiki.js Cloud #[v-chip.white--text(color='accent') Coming October 2019]
+    h4 Host it yourself or launch a pre-configured installation on a cloud provider.
     h5 Both versions of Wiki.js are identical and have exactly the same set of features.
     v-container.mt-5(grid-list-xl)
       v-layout(row, wrap)
@@ -10,17 +10,15 @@
             .home-cloud-plan-icon
               img(:src='require("../assets/icons/handdrawn-server.svg")', alt='Self-Hosted')
             h6 Self-Hosted
-            span Host it on your own servers
-            strong Free
+            span Host it on your on-premise servers
             v-divider.mt-3
             v-btn.mt-4(large, outline, color='primary', to='/get-started') Get Started
         v-flex(xs12, sm6)
           .home-cloud-plan
             .home-cloud-plan-icon.alt1
               img(:src='require("../assets/icons/handdrawn-cloud.svg")', alt='Cloud')
-            h6 Cloud
-            span Managed infrastructure
-            strong TBA
+            h6 DigitalOcean Marketplace
+            span One-click install, auto-update
             v-divider.mt-3
             v-btn.mt-4(large, outline, color='greyish darken-1', to='/cloud') Coming Soon
 </template>
