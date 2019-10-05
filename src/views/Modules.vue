@@ -161,6 +161,7 @@ export default {
     return {
       analytics: [
         { name: 'Application Insights', company: 'Microsoft Azure', icon: 'azure-alt.svg' },
+        { name: 'Baidu Tongji', company: 'Baidu', icon: 'baidu.svg' },
         { name: 'Countly', company: 'Countly', icon: 'countly-alt.svg' },
         { name: 'Elasticsearch APM RUM', company: 'Elastic', icon: 'elasticsearch-apm.svg' },
         { name: 'Fathom Analytics', company: 'Fathom', icon: 'fathom.svg' },
