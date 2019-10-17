@@ -204,11 +204,11 @@ export default {
       ],
       editors: [
         { name: 'API Docs', desc: 'REST / GraphQL', dev: true },
-        { name: 'Blog', desc: 'Timeline of Posts', dev: true }
+        { name: 'Blog', desc: 'Timeline of Posts', dev: true },
         { name: 'Code', desc: 'Raw HTML' },
         { name: 'Markdown', desc: 'Plain Text Formatting' },
         { name: 'Tabular', desc: 'Excel-like', dev: true },
-        { name: 'Visual Editor', desc: 'Rich-text Formatting' },
+        { name: 'Visual Editor', desc: 'Rich-text Formatting' }
       ],
       loggers: [
         { name: 'Airbrake', company: 'Airbrake', icon: 'airbrake.svg', dev: true },
