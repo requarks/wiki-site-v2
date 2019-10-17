@@ -204,11 +204,11 @@ export default {
       ],
       editors: [
         { name: 'API Docs', desc: 'REST / GraphQL', dev: true },
-        { name: 'Code', desc: 'Raw HTML', dev: true },
-        { name: 'Markdown', desc: 'Default' },
+        { name: 'Blog', desc: 'Timeline of Posts', dev: true }
+        { name: 'Code', desc: 'Raw HTML' },
+        { name: 'Markdown', desc: 'Plain Text Formatting' },
         { name: 'Tabular', desc: 'Excel-like', dev: true },
-        { name: 'Visual Builder', desc: 'Drag-n-drop', dev: true },
-        { name: 'WikiText', desc: 'MediaWiki Format', dev: true }
+        { name: 'Visual Editor', desc: 'Rich-text Formatting' },
       ],
       loggers: [
         { name: 'Airbrake', company: 'Airbrake', icon: 'airbrake.svg', dev: true },
@@ -236,10 +236,10 @@ export default {
         { name: 'Sphinx', company: 'Sphinx Technologies', icon: 'sphinx-alt.svg', dev: true }
       ],
       storageTargets: [
-        { name: 'AWS S3', company: 'Amazon Web Services', icon: 'aws-s3.svg', dev: true },
+        { name: 'AWS S3', company: 'Amazon Web Services', icon: 'aws-s3.svg' },
         { name: 'Azure Blob Storage', company: 'Microsoft Azure', icon: 'azure-alt.svg', dev: true },
         { name: 'Box', company: 'Box', icon: 'box.svg', dev: true },
-        { name: 'DigitalOcean Spaces', company: 'DigitalOCean', icon: 'digitalocean-alt.svg', dev: true },
+        { name: 'DigitalOcean Spaces', company: 'DigitalOCean', icon: 'digitalocean-alt.svg' },
         { name: 'Dropbox', company: 'Dropbox', icon: 'dropbox-alt.svg', dev: true },
         { name: 'Git', company: 'Software Freedom Conservancy', icon: 'git-alt.svg' },
         { name: 'Google Drive', company: 'Google', icon: 'google-alt.svg', dev: true },
