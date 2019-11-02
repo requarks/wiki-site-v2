@@ -10,7 +10,7 @@
   "dependencies": {
     "@elastic/apm-rum": "^4.0.1",
     "animate-sass": "^0.8.2",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "luxon": "^1.12.0",
     "simplex-noise": "^2.4.0",
     "vue": "^2.6.6",
