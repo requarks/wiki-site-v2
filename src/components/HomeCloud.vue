@@ -1,6 +1,6 @@
 <template lang='pug'>
   .home-cloud
-    h3 Wiki.js Cloud #[v-chip.white--text(color='accent') Coming October 2019]
+    h3 Wiki.js Cloud #[v-chip.white--text(color='accent') Coming November 2019]
     h4 Host it yourself or launch a pre-configured installation on a cloud provider.
     h5 Both versions of Wiki.js are identical and have exactly the same set of features.
     v-container.mt-5(grid-list-xl)
