@@ -11,7 +11,21 @@
             v-chip.my-3(color='teal', dark, outline)
               .body-2 STABLE
             h2(v-html='stable')
-            .body-2 Recommended for production use
+            .body-2 Recommended for new installations
+            .getstarted-ver-req
+              strong Requirements
+              ul
+                li Node.js #[em 10.12 or later]
+                li MySQL, MariaDB, PostgreSQL, MSSQL or SQLite3
+            v-btn(color='purple', large, dark, href='https://docs.requarks.io/install')
+              span Setup Instructions
+        v-flex(xs12, sm6)
+          .getstarted-ver.animated.fadeInUp.wait-p1s
+            img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube-2.svg`)', alt='Legacy')
+            v-chip.my-3(color='purple', dark, outline)
+              .body-2 LEGACY
+            h2(v-html='beta')
+            .body-2 Previous version of Wiki.js
             .getstarted-ver-req
               strong Requirements
               ul
@@ -20,25 +34,11 @@
                 li Git #[em 2.7.4 or later]
             v-btn(color='teal', large, dark, href='https://docs-legacy.requarks.io/wiki/install')
               span Setup Instructions
-        v-flex(xs12, sm6)
-          .getstarted-ver.animated.fadeInUp.wait-p1s
-            img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube-2.svg`)', alt='Beta')
-            v-chip.my-3(color='purple', dark, outline)
-              .body-2 BETA
-            h2(v-html='beta')
-            .body-2 For development and testing
-            .getstarted-ver-req
-              strong Requirements
-              ul
-                li Node.js #[em 10.12 or later]
-                li MySQL, MariaDB, PostgreSQL, MSSQL or SQLite3
-            v-btn(color='purple', large, dark, href='https://docs.requarks.io/install')
-              span Setup Instructions
         v-flex(xs12)
-          .getstarted-note.animated.fadeInUp.wait-p2s Upgrading from 1.x to 2.0 will be quick and simple. You can safely use 1.x right now and upgrade later.
+          .getstarted-note.animated.fadeInUp.wait-p2s Upgrading from 1.x to 2.0 is quick and simple.
         v-flex(xs12)
           .getstarted-note.animated.fadeInUp.wait-p3s
-            h3 What's missing in 2.x beta compared to 1.0?
+            h3 What's missing in 2.x compared to 1.0?
             ul
               li Mathjax Support
               li Microsoft Account Login
