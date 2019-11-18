@@ -17,7 +17,7 @@
       v-spacer.hidden-sm-and-down
       .header-versions.text-xs-right.animated.fadeInRight.wait-p2s.hidden-md-and-down
         .caption Stable #[strong(v-html='stable')]
-        .caption Beta #[strong(v-html='beta')]
+        .caption Legacy #[strong(v-html='legacy')]
       v-btn.mx-0.hidden-sm-and-down.animated.fadeInRight(color='primary', outline, large, to='/get-started') Get Started
       v-btn.mx-0.hidden-md-and-up.header-mobiletoggle(icon, @click='mobileDrawerOpen = !mobileDrawerOpen')
         img(v-if='mobileDrawerOpen', :src='require("../assets/icons/metro-multiply.svg")', alt='Toggle Navigation Menu')
@@ -93,7 +93,7 @@ export default {
   },
   computed: {
     stable: get('stable'),
-    beta: get('beta')
+    legacy: get('beta')
   },
   methods: {
     toggleNavStyle () {
