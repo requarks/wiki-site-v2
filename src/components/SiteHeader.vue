@@ -93,7 +93,7 @@ export default {
   },
   computed: {
     stable: get('stable'),
-    legacy: get('beta')
+    legacy: get('legacy')
   },
   methods: {
     toggleNavStyle () {
