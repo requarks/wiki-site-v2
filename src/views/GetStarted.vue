@@ -24,7 +24,7 @@
             img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube-2.svg`)', alt='Legacy')
             v-chip.my-3(color='purple', dark, outline)
               .body-2 LEGACY
-            h2(v-html='beta')
+            h2(v-html='legacy')
             .body-2 Previous version of Wiki.js
             .getstarted-ver-req
               strong Requirements
@@ -58,7 +58,7 @@ export default {
   },
   computed: {
     stable: get('stable'),
-    beta: get('beta')
+    legacy: get('legacy')
   }
 }
 </script>
