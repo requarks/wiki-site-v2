@@ -5,9 +5,9 @@ import gql from 'graphql-tag'
 import _ from 'lodash'
 
 const state = {
-  stable: '1.x',
-  beta: '2.x',
-  stars: 4200
+  stable: '2.x',
+  legacy: '1.0.117',
+  stars: 5800
 }
 
 Vue.use(Vuex)
@@ -33,8 +33,8 @@ export default new Vuex.Store({
           `
         })
         commit('SET_STABLE', _.get(resp, 'data.releases.stable'), '1.x')
-        commit('SET_BETA', _.get(resp, 'data.releases.beta'), '2.x')
-        commit('SET_STARS', _.get(resp, 'data.sponsors.githubStars'), 4200)
+        // commit('SET_BETA', _.get(resp, 'data.releases.beta'), '2.x')
+        commit('SET_STARS', _.get(resp, 'data.sponsors.githubStars'), 5800)
       } catch (err) {
         console.error(err)
       }
