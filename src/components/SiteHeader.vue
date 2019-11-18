@@ -71,8 +71,8 @@
         v-divider
         v-card-actions.grey.lighten-5
           v-spacer
-          v-btn(color='primary', outline, large, href='https://docs-legacy.requarks.io/wiki/') 1.x Stable Docs
-          v-btn(color='primary', outline, large, href='https://docs.requarks.io/') 2.0 Beta Docs
+          v-btn(color='primary', outline, large, href='https://docs.requarks.io/') 2.0 Docs
+          v-btn(color='primary', outline, large, href='https://docs-legacy.requarks.io/wiki/') 1.0 Docs
           v-spacer
         v-divider
         .px-3.py-4.text-xs-center.greyish--text.text--darken-1 Not sure which version to use? #[a(@click.stop.prevent='$router.push(`/get-started`); docsSelector = false', href='#') See Comparison]
