@@ -9,8 +9,8 @@
           v-flex.footer-col(xs12, sm4, lg3)
             .footer-subtitle Install Guides
             ul.footer-links
-              li: a(href='https://docs-legacy.requarks.io/wiki/install') Stable #[strong(v-html='stable')] #[v-chip.ml-2(small, color='teal', dark) Stable]
-              li: a(href='https://docs.requarks.io/install') Beta #[strong(v-html='beta')] #[v-chip.ml-2(small, color='purple', dark) Beta]
+              li: a(href='https://docs.requarks.io/install') Stable #[strong(v-html='stable')] #[v-chip.ml-2(small, color='teal', dark) Stable]
+              li: a(href='https://docs-legacy.requarks.io/wiki/install') Legacy #[strong(v-html='legacy')] #[v-chip.ml-2(small, color='purple', dark) Legacy]
           v-flex.footer-col(xs12, sm4, lg3)
             .footer-subtitle Contribute
             ul.footer-links
@@ -53,7 +53,7 @@ export default {
   },
   computed: {
     stable: get('stable'),
-    beta: get('beta')
+    legacy: get('legacy')
   }
 }
 </script>
