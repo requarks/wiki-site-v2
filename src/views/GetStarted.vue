@@ -21,7 +21,7 @@
               span Setup Instructions
         v-flex(xs12, sm6)
           .getstarted-ver.animated.fadeInUp.wait-p1s
-            img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube-2.svg`)', alt='Legacy')
+            img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-greek-pillar-base.svg`)', alt='Legacy')
             v-chip.my-3(color='purple', dark, outline)
               .body-2 LEGACY
             h2(v-html='legacy')
