@@ -14,12 +14,13 @@
           v-flex.footer-col(xs12, sm4, lg3)
             .footer-subtitle Contribute
             ul.footer-links
+              li: a(href='https://github.com/users/NGPixel/sponsorship') Donate on GitHub Sponsors
               li: a(href='https://www.patreon.com/requarks') Donate on Patreon
               li: a(href='https://opencollective.com/wikijs') Donate on OpenCollective
               li: a(href='https://docs.requarks.io/dev/translations') Help with Translations
-              li: a(href='https://requests.requarks.io/wiki') Request a New Feature
+              li: a(href='https://wiki.js.org/feedback') Request a New Feature
               li: a(href='https://github.com/Requarks/wiki/issues') Report a Bug
-              li: a(href='https://docs-beta.requarks.io/dev') Developers
+              li: a(href='https://docs.requarks.io/dev') Developers
           v-flex.footer-col(xs12, sm4, lg3)
             .footer-subtitle About
             ul.footer-links
