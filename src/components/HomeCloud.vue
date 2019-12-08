@@ -1,6 +1,6 @@
 <template lang='pug'>
   .home-cloud
-    h3 Wiki.js Cloud #[v-chip.white--text(color='accent') Install Anywhere!]
+    h3 Get Started #[v-chip.white--text(color='accent') Install Anywhere!]
     h4 Host it yourself or launch a pre-configured installation on a cloud provider.
     v-container.mt-5(grid-list-xl)
       v-layout(row, wrap)
