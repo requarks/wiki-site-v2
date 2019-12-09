@@ -19,7 +19,7 @@
             h6 DigitalOcean Marketplace
             span One-click install, auto-update
             v-divider.mt-3
-            v-btn.mt-4(large, outline, color='greyish darken-1', to='/cloud') Coming Soon
+            v-btn.mt-4(large, outline, color='primary', href='https://marketplace.digitalocean.com/apps/wiki-js', target='_blank') Get Started
         v-flex(xs12, sm6, md4)
           .home-cloud-plan
             .home-cloud-plan-icon.alt1
