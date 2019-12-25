@@ -237,7 +237,7 @@ export default {
       ],
       storageTargets: [
         { name: 'AWS S3', company: 'Amazon Web Services', icon: 'aws-s3.svg' },
-        { name: 'Azure Blob Storage', company: 'Microsoft Azure', icon: 'azure-alt.svg', dev: true },
+        { name: 'Azure Blob Storage', company: 'Microsoft Azure', icon: 'azure-alt.svg' },
         { name: 'Box', company: 'Box', icon: 'box.svg', dev: true },
         { name: 'DigitalOcean Spaces', company: 'DigitalOCean', icon: 'digitalocean-alt.svg' },
         { name: 'Dropbox', company: 'Dropbox', icon: 'dropbox-alt.svg', dev: true },
@@ -245,7 +245,7 @@ export default {
         { name: 'Google Drive', company: 'Google', icon: 'google-alt.svg', dev: true },
         { name: 'Local File System', company: 'Requarks.io' },
         { name: 'OneDrive', company: 'Microsoft', icon: 'microsoft-alt.svg', dev: true },
-        { name: 'SCP (SSH)', company: 'Requarks.io', dev: true }
+        { name: 'SFTP', company: 'Requarks.io' }
       ]
     }
   }
