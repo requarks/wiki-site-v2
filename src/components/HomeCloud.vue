@@ -27,7 +27,7 @@
             h6 AWS Marketplace
             span One-click install, auto-update
             v-divider.mt-3
-            v-btn.mt-4(large, outline, color='greyish darken-1', to='/cloud', disabled) Coming Soon
+            v-btn.mt-4(large, outline, color='primary', to='https://aws.amazon.com/marketplace/pp/B0832LDTKQ', target='_blank') Get Started
 </template>
 
 <script>
