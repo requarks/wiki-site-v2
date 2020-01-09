@@ -24,7 +24,7 @@
               .home-features-tile.animated.fadeInUp(:class='`wait-p` + idx + `s`')
                 img(:src='tl.icon', :alt='tl.title')
                 h5
-                  span(v-html='tl.title')
+                  strong(v-html='tl.title')
                   v-chip.ml-3.supersmall(v-if='tl.comingsoon', small) Coming Soon
                 span(v-html='tl.description')
 </template>
