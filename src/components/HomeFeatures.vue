@@ -25,7 +25,7 @@
                 img(:src='tl.icon', :alt='tl.title')
                 h5
                   span(v-html='tl.title')
-                  v-chip(v-if='tl.comingsoon', label, x-small) Coming Soon
+                  v-chip.ml-3(v-if='tl.comingsoon', label, small) Coming Soon
                 span(v-html='tl.description')
 </template>
 
