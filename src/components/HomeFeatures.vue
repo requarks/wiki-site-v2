@@ -23,7 +23,9 @@
             v-flex(xs12, sm6, v-for='(tl, idx) of ft.tiles', :key='ft.key+idx')
               .home-features-tile.animated.fadeInUp(:class='`wait-p` + idx + `s`')
                 img(:src='tl.icon', :alt='tl.title')
-                h5(v-html='tl.title')
+                h5
+                  span(v-html='tl.title')
+                  v-chip(v-if='tl.comingsoon', label, x-small) Coming Soon
                 span(v-html='tl.description')
 </template>
 
@@ -57,7 +59,8 @@ export default {
             {
               icon: require(`../assets/icons/nolan-validation.svg`),
               title: '2FA',
-              description: 'Add an extra layer of security using two-factor authentication for supported authentication modules.'
+              description: 'Add an extra layer of security using two-factor authentication for supported authentication modules.',
+              comingsoon: true
             }
           ]
         },
