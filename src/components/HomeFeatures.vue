@@ -25,7 +25,7 @@
                 img(:src='tl.icon', :alt='tl.title')
                 h5
                   strong(v-html='tl.title')
-                  v-chip.ml-3.supersmall(v-if='tl.comingsoon', small) Coming Soon
+                  v-chip.ml-2.supersmall(v-if='tl.comingsoon', small) Coming Soon
                 span(v-html='tl.description')
 </template>
 
@@ -86,17 +86,20 @@ export default {
             {
               icon: require(`../assets/icons/nolan-select-all.svg`),
               title: 'WikiText',
-              description: 'Easily migrate content from MediaWiki platforms using this WikiText editor.'
+              description: 'Easily migrate content from MediaWiki platforms using this WikiText editor.',
+              comingsoon: true
             },
             {
               icon: require(`../assets/icons/nolan-rest-api.svg`),
               title: 'API Docs',
-              description: 'Document your APIs with this powerful REST / GraphQL optimized editor. Add your endpoints, parameters, response and code examples.'
+              description: 'Document your APIs with this powerful REST / GraphQL optimized editor. Add your endpoints, parameters, response and code examples.',
+              comingsoon: true
             },
             {
               icon: require(`../assets/icons/nolan-table.svg`),
               title: 'Tabular',
-              description: 'Quickly create excel-like pages with this powerful table editor.'
+              description: 'Quickly create excel-like pages with this powerful table editor.',
+              comingsoon: true
             }
           ]
         },
@@ -112,12 +115,14 @@ export default {
             {
               icon: require(`../assets/icons/nolan-diff-files.svg`),
               title: 'Compare Versions',
-              description: 'Visually compare two versions of the same page to see exactly what changed.'
+              description: 'Visually compare two versions of the same page to see exactly what changed.',
+              comingsoon: true
             },
             {
               icon: require(`../assets/icons/nolan-split-files.svg`),
               title: 'Export / Branch off',
-              description: 'Quickly export a specific version of a page or create a new page from an older version.'
+              description: 'Quickly export a specific version of a page or create a new page from an older version.',
+              comingsoon: true
             }
           ]
         },
@@ -154,7 +159,8 @@ export default {
             {
               icon: require(`../assets/icons/nolan-edit-image.svg`),
               title: 'Image Editor',
-              description: 'Perform various transformations on your images using the built-in image editor. Cropping, resizing and applying filters has never been easier!'
+              description: 'Perform various transformations on your images using the built-in image editor. Cropping, resizing and applying filters has never been easier!',
+              comingsoon: true
             }
           ]
         },
@@ -180,7 +186,8 @@ export default {
             {
               icon: require(`../assets/icons/nolan-play-button.svg`),
               title: 'Media Players',
-              description: 'Include media content such as Youtube videos, audio, asciinema and more.'
+              description: 'Include media content such as Youtube videos, audio, asciinema and more.',
+              comingsoon: true
             }
           ]
         },
@@ -206,7 +213,8 @@ export default {
             {
               icon: require(`../assets/icons/nolan-more.svg`),
               title: 'and more...',
-              description: 'Use external search engines like Manticore, Solr or Sphinx to power your wiki search capabilities.'
+              description: 'Use external search engines like Manticore, Solr or Sphinx to power your wiki search capabilities.',
+              comingsoon: true
             }
           ]
         },
@@ -227,7 +235,8 @@ export default {
             {
               icon: require(`../assets/icons/nolan-onedrive.svg`),
               title: 'Personal Cloud Storage',
-              description: 'Backup your content to your personal cloud storage service such as Dropbox, Google Drive, MS OneDrive, Box and more.'
+              description: 'Backup your content to your personal cloud storage service such as Dropbox, Google Drive, MS OneDrive, Box and more.',
+              comingsoon: true
             },
             {
               icon: require(`../assets/icons/nolan-hdd.svg`),
@@ -269,7 +278,8 @@ export default {
             {
               icon: require(`../assets/icons/nolan-drafting-compass.svg`),
               title: 'Custom Themes',
-              description: 'Create your own themes to fully change the look and feel of your wiki.'
+              description: 'Create your own themes to fully change the look and feel of your wiki.',
+              comingsoon: true
             },
             {
               icon: require(`../assets/icons/nolan-record.svg`),
@@ -279,7 +289,8 @@ export default {
             {
               icon: require(`../assets/icons/nolan-color-wheel.svg`),
               title: 'Default Theme Personalization',
-              description: 'The default theme has many color and display options. Make it your own!'
+              description: 'The default theme has many color and display options. Make it your own!',
+              comingsoon: true
             },
             {
               icon: require(`../assets/icons/nolan-lightning-bolt.svg`),
