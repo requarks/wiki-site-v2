@@ -36,12 +36,12 @@
               span Setup Instructions
         v-flex(xs12)
           .getstarted-note.animated.fadeInUp.wait-p2s Upgrading from 1.x to 2.0 is quick and simple.
-        v-flex(xs12)
-          .getstarted-note.animated.fadeInUp.wait-p3s
-            h3 What's missing in 2.x compared to 1.0?
-            ul
-              li Mathjax Support
-              li Microsoft Account Login
+        //- v-flex(xs12)
+          //- .getstarted-note.animated.fadeInUp.wait-p3s
+            //- h3 What's missing in 2.x compared to 1.0?
+            //- ul
+              //- li Mathjax Support
+              //- li Microsoft Account Login
 
 </template>
 
