@@ -5,6 +5,7 @@
     home-features
     home-opensource
     home-integrations
+    home-sponsors
     home-cloud
     home-newsletter
 </template>
@@ -17,6 +18,7 @@ import HomeOpensource from '../components/HomeOpensource'
 import HomeIntegrations from '../components/HomeIntegrations'
 import HomeCloud from '../components/HomeCloud'
 import HomeNewsletter from '../components/HomeNewsletter'
+import HomeSponsors from '../components/HomeSponsors'
 
 export default {
   components: {
@@ -26,7 +28,8 @@ export default {
     HomeOpensource,
     HomeIntegrations,
     HomeCloud,
-    HomeNewsletter
+    HomeNewsletter,
+    HomeSponsors
   }
 }
 </script>

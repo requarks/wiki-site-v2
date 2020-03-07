@@ -171,7 +171,7 @@ export default {
           logo: 'https://static.requarks.io/logo/digitalocean-alt.svg',
           title: 'Digital Ocean',
           description: 'DigitalOcean is a simple and robust cloud computing platform, designed for developers.',
-          link: 'https://www.digitalocean.com'
+          link: 'https://m.do.co/c/5f7445bfa4d0'
         },
         {
           logo: 'https://static.requarks.io/logo/github-octocat.svg',

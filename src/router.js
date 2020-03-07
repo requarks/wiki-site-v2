@@ -43,6 +43,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "get-started" */ './views/GetStarted.vue')
     },
     {
+      path: '/donate',
+      name: 'donate',
+      component: () => import(/* webpackChunkName: "donate" */ './views/Donate.vue')
+    },
+    {
       path: '/newsletter',
       name: 'newsletter',
       component: () => import(/* webpackChunkName: "newsletter" */ './views/Newsletter.vue')
