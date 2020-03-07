@@ -17,7 +17,7 @@
         a(href='https://github.com/sponsors/NGPixel/', target='_blank', title='GitHub'): img(src='https://static.requarks.io/logo/github.svg', alt='GitHub')
         a(href='https://icons8.com/', target='_blank', title='Icons8'): img(src='https://static.requarks.io/logo/icons8.svg', alt='Icons8')
         a(href='https://lokalise.com/', target='_blank', title='Lokalise'): img(src='https://static.requarks.io/logo/lokalise.png', alt='Lokalise')
-        a(href='https://www.netlify.com/', target='_blank', title='Netlify'): img(src='https://static.requarks.io/logo/netlify.svg', alt='Netlify')
+        a(href='https://www.netlify.com/', target='_blank', title='Netlify'): img(src='../assets/logos/netlify.svg', alt='Netlify', style='max-width: initial; width: 160px; height: auto;')
         a(href='https://www.atlassian.com/software/statuspage', target='_blank', title='StatusPage'): img(src='https://static.requarks.io/logo/statuspage.svg', alt='StatusPage')
 </template>
 

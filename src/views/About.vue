@@ -10,48 +10,21 @@
             h2 Quick Navigation
             ul
               li
-                a(href='#sponsors') Sponsors &amp; Backers
+                a(href='#sponsors') - Sponsors &amp; Backers
                 v-chip.ml-2(small, color='green lighten-5') {{sponsors.length}}
               li
-                a(href='#translators') Translators
+                a(href='#translators') - Translators
                 v-chip.ml-2(small, color='blue lighten-5') {{translators.length}}
               li
-                a(href='#developers') Developers
+                a(href='#developers') - Developers
                 v-chip.ml-2(small, color='orange lighten-5') {{developers.length}}
               li
-                a(href='#specialthanks') Special Thanks
+                a(href='#specialthanks') - Special Thanks
                 v-chip.ml-2(small, color='grey lighten-3') {{specialthanks.length}}
             v-divider.my-4
-            h2 Donate
-            .about-sidebar-donate
-              .about-sidebar-donate-info
-                span Become a backer or sponsor via Patreon
-                .caption Donations go directly into supporting lead developer Nicolas Giard's goal of working full-time on Wiki.js.
-              a(href='https://www.patreon.com/bePatron?u=16744039')
-                img(:src='require(`../assets/img/donate_patreon.png`)', alt='Become a Patron', style='width: 100%; max-width: 200px;')
-              v-divider.my-3
-              .about-sidebar-donate-info
-                span Donate to our Open Collective initiative
-                .caption A transparent fund that goes toward community resources. You can contribute financially by making a monthly or one-time donation:
-              a(href='https://opencollective.com/wikijs/donate')
-                img(:src='require(`../assets/img/donate_opencollective.png`)', alt='Donate on OpenCollective', style='width: 100%; max-width: 300px;')
-              v-divider.my-3
-              .about-sidebar-donate-info
-                span Donate using Paypal
-                .caption Accepts all major credit cards and PayPal accounts
-              form.mt-3(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
-                input(type='hidden', name='cmd', value='_s-xclick')
-                input(type='hidden', name='hosted_button_id', value='FLV5X255Z9CJU')
-                input(type='image', :src='require(`../assets/img/donate_paypal.png`)', border='0', name='submit', title='PayPal - The safer, easier way to pay online!', alt='Donate with PayPal button')
-                img(alt='', border='0', src='https://www.paypal.com/en_CA/i/scr/pixel.gif', width='1', height='1')
-              v-divider.my-3
-              .about-sidebar-donate-info
-                span Donate using Ethereum
-                .caption Use the Ethereum address below:
-              .about-ethaddress
-                span 0xE1d55C19aE86f6Bcbfb17e7f06aCe96BdBb22Cb5
-                div
-                  img(:src='require(`../assets/img/donate_eth_qr.png`)', style='max-width: 150px;')
+            h2 Become a Sponsor
+            v-btn(color='pink', dark, large, block, to='/donate') Donate
+            .caption.mt-3.text-xs-center Various platforms are supported, for both monthly and one-time donations.
             v-divider.my-4
             code-fund(tmpl='centered')
         v-flex(xs12, md8, xl9)
