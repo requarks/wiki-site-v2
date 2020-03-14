@@ -43,6 +43,7 @@ export default {
   border-bottom: 1px solid #FFF;
   position: relative;
   overflow: hidden;
+  animation: bgSponsorsAnim 4s linear infinite;
 
   &-shape {
     width: 500px;
@@ -105,6 +106,15 @@ export default {
       height: 50px;
       margin: 40px 30px 0;
     }
+  }
+}
+
+@keyframes bgSponsorsAnim {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 50% -137px;
   }
 }
 </style>
