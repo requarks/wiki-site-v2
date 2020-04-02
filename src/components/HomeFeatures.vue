@@ -115,14 +115,12 @@ export default {
             {
               icon: require(`../assets/icons/nolan-diff-files.svg`),
               title: 'Compare Versions',
-              description: 'Visually compare two versions of the same page to see exactly what changed.',
-              comingsoon: true
+              description: 'Visually compare two versions of the same page to see exactly what changed.'
             },
             {
               icon: require(`../assets/icons/nolan-split-files.svg`),
               title: 'Export / Branch off',
-              description: 'Quickly export a specific version of a page or create a new page from an older version.',
-              comingsoon: true
+              description: 'Quickly export a specific version of a page or create a new page from an older version.'
             }
           ]
         },
