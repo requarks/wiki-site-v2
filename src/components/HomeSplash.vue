@@ -11,7 +11,7 @@
       li.animated.fadeInUp.wait-p7s: img(:src='require("../assets/logos/windows-server.svg")', alt='Windows Server')
     .caption.greyish--text.text--darken-1.animated.fadeInUp.wait-p8s Released under AGPL-v3 license.
     img.home-splash-ss.animated.fadeInUp.wait-p8s(:src='require("../assets/screenshots/wiki-screenshot.png")', :srcset='require("../assets/screenshots/wiki-screenshot-2x.png") + ` 2x`', alt='Wiki.js Screenshot')
-    code-fund.home-splash-codefund-desktop.animated.fadeInRight.wait-p8s(tmpl='square', v-if='$vuetify.breakpoint.xlOnly')
+    code-fund.home-splash-codefund-desktop.animated.fadeInLeft.wait-p8s(tmpl='square', v-if='$vuetify.breakpoint.xlOnly')
     code-fund.home-splash-codefund-mobile.animated.fadeInUp.wait-p8s(tmpl='horizontal', v-else)
 </template>
 
@@ -111,7 +111,7 @@ export default {
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     background-color: #EEE;
     border-radius: 4px;
-    right: 12px;
+    left: 12px;
     width: 255px;
     height: 298px;
     display: inline-block;
