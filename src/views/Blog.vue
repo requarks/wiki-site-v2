@@ -1,6 +1,6 @@
 <template lang='pug'>
   .newsletter
-    particles
+    .splash
       h1.animated.fadeInUp Blog
       h3.animated.fadeInUp.wait-p2s Latest news and updates from the Requarks team
 </template>

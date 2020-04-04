@@ -1,6 +1,6 @@
 <template lang='pug'>
   .about
-    particles
+    .splash
       h1.animated.fadeInUp Sponsors &amp; Backers
       h3.animated.fadeInUp.wait-p2s Wiki.js is an AGPL-licensed open source project. It's an independent project with its ongoing development #[br] made possible entirely thanks to the support by the awesome sponsors &amp; backers listed below.
     v-container.my-4(grid-list-xl)
@@ -99,15 +99,13 @@
 
 <script>
 import CodeFund from '../components/CodeFund'
-import Particles from '../components/Particles'
 
 import gql from 'graphql-tag'
 import _ from 'lodash'
 
 export default {
   components: {
-    CodeFund,
-    Particles
+    CodeFund
   },
   data () {
     return {

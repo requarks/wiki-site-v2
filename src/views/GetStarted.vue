@@ -1,6 +1,6 @@
 <template lang='pug'>
   .getstarted
-    particles
+    .splash
       h1.animated.fadeInUp Get Started
       h3.animated.fadeInUp.wait-p2s Deploy Wiki.js on your environment
     v-container(grid-list-xl)
@@ -46,13 +46,9 @@
 </template>
 
 <script>
-import Particles from '../components/Particles'
 import { get } from 'vuex-pathify'
 
 export default {
-  components: {
-    Particles
-  },
   data () {
     return { }
   },

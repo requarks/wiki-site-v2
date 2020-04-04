@@ -8,10 +8,10 @@
         router-link.animated.fadeInDown(to='/', tag='li'): a Features
         router-link.animated.fadeInDown.wait-p2s(to='/modules', tag='li'): a Modules
         li.animated.fadeInDown.wait-p3s: a(href='https://docs.requarks.io/', @click.stop.prevent='docsSelector = true') Docs
-        li.animated.fadeInDown.wait-p4s: a(href='https://blog.requarks.io/') Blog
-        router-link.animated.fadeInDown.wait-p5s(to='/feedback', tag='li'): a Feedback
-        router-link.animated.fadeInDown.wait-p6s(to='/about', tag='li'): a Backers
-        li.animated.fadeInDown.wait-p6s
+        router-link.animated.fadeInDown.wait-p4s(to='/about', tag='li'): a Backers
+        router-link.animated.fadeInDown.wait-p5s(to='/support', tag='li'): a Support
+        router-link.animated.fadeInDown.wait-p6s(to='/feedback', tag='li'): a Feedback
+        li.animated.fadeInDown.wait-p7s
           a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project', rel='noopener')
             img(:src='require("../assets/logos/windows-github.svg")', alt='GitHub')
       v-spacer.hidden-sm-and-down
@@ -41,20 +41,20 @@
             img(:src='require("../assets/icons/nolan-open-book.svg")', alt='Docs')
           v-list-tile-title Docs
         v-divider
-        v-list-tile(to='/blog')
+        v-list-tile(to='/about')
           v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-news.svg")', alt='Blog')
-          v-list-tile-title Blog
+            img(:src='require("../assets/icons/nolan-management.svg")', alt='Backers')
+          v-list-tile-title Backers
+        v-divider
+        v-list-tile(to='/support')
+          v-list-tile-avatar
+            img(:src='require("../assets/icons/nolan-about.svg")', alt='Support')
+          v-list-tile-title Support
         v-divider
         v-list-tile(to='/feedback')
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-feedback.svg")', alt='Feedback')
           v-list-tile-title Feedback
-        v-divider
-        v-list-tile(to='/about')
-          v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-management.svg")', alt='Backers')
-          v-list-tile-title Backers
         v-divider
         v-list-tile(to='/get-started')
           v-list-tile-avatar

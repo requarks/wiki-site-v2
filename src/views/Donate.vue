@@ -1,6 +1,6 @@
 <template lang='pug'>
   .donate
-    particles
+    .splash
       h1.animated.fadeInUp Donate
     v-container(grid-list-xl)
       v-layout(row, wrap, justify-center)
@@ -99,12 +99,7 @@
 </template>
 
 <script>
-import Particles from '../components/Particles'
-
 export default {
-  components: {
-    Particles
-  },
   data () {
     return { }
   }

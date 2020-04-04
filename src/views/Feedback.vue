@@ -1,6 +1,6 @@
 <template lang='pug'>
   .feedback
-    particles
+    .splash
       h1.animated.fadeInUp Feedback
       h3.animated.fadeInUp.wait-p2s Request new features and improvements
     v-container.my-4(grid-list-xl)
@@ -10,14 +10,9 @@
 </template>
 
 <script>
-import Particles from '../components/Particles'
-
 /* global Canny */
 
 export default {
-  components: {
-    Particles
-  },
   data () {
     return { }
   },

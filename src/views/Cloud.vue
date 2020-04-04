@@ -1,6 +1,6 @@
 <template lang='pug'>
   .cloud
-    particles
+    .splash
       h1.animated.fadeInUp Cloud
       h3.animated.fadeInUp.wait-p2s Wiki.js as a service
     .cloud-splash
@@ -18,12 +18,7 @@
 </template>
 
 <script>
-import Particles from '../components/Particles'
-
 export default {
-  components: {
-    Particles
-  },
   data () {
     return { }
   }

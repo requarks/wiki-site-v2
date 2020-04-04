@@ -1,6 +1,6 @@
 <template lang='pug'>
   .newsletter
-    particles
+    .splash
       h1.animated.fadeInUp Newsletter
       h3.animated.fadeInUp.wait-p2s Get notified of important announcements and new major releases.
     .newsletter-content
@@ -38,15 +38,11 @@
 </template>
 
 <script>
-import Particles from '../components/Particles'
 import _ from 'lodash'
 
 import gql from 'graphql-tag'
 
 export default {
-  components: {
-    Particles
-  },
   data () {
     return {
       alertShown: false,

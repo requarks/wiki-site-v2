@@ -1,6 +1,6 @@
 <template lang='pug'>
   .modules
-    particles
+    .splash
       h1.animated.fadeInUp Modules
       h3.animated.fadeInUp.wait-p2s List of modules supported and included in Wiki.js
     v-container.my-4(grid-list-xl)
@@ -151,12 +151,7 @@
 </template>
 
 <script>
-import Particles from '../components/Particles'
-
 export default {
-  components: {
-    Particles
-  },
   data () {
     return {
       analytics: [
