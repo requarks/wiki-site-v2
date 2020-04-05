@@ -131,7 +131,7 @@ export default {
             {
               icon: require(`../assets/icons/nolan-globe-earth.svg`),
               title: 'Available in your language',
-              description: 'Wiki.js is translated in over 25 languages! If your language is not available yet, help us translating it with our easy to use tools. No coding required!'
+              description: 'Wiki.js is translated in over 40 languages! If your language is not available yet, help us translating it with our easy to use tools. No coding required!'
             },
             {
               icon: require(`../assets/icons/nolan-align-right.svg`),
