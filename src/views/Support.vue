@@ -94,12 +94,34 @@ export default {
     transition: all .6s ease;
     height: 130px;
 
+    @media screen and (max-width: 700px) {
+      height: auto;
+      display: block;
+      text-align: center;
+
+      .px-4 {
+        padding: 0 !important;
+      }
+
+      .v-btn {
+        margin-top: 10px;
+      }
+    }
+
     &.dual-lines {
       display: block;
       height: 180px;
 
+      @media screen and (max-width: 700px) {
+        height: auto;
+      }
+
       .first-line {
         display: flex;
+
+        @media screen and (max-width: 700px) {
+          display: block;
+        }
       }
 
       .second-line {
@@ -108,6 +130,16 @@ export default {
         justify-content: center;
         align-items: center;
         padding-top: 2px;
+
+        @media screen and (max-width: 700px) {
+          margin-top: 10px;
+          flex-wrap: wrap;
+
+          .body-2 {
+            padding-top: 12px;
+            flex: 1 0 100%;
+          }
+        }
 
         > a {
           padding: 10px;

@@ -27,6 +27,8 @@
             .text-xs-center
               div: img(:src='require("../assets/icons/ios-crane.svg")', style='width: 34px;')
               .caption Modules with a crane icon are under development and will be available in an upcoming release.
+            v-divider.my-4
+            code-fund(tmpl='centered')
         v-flex(xs12, md8, xl9)
           .modules-list
             h2(id='analytics') Analytics
@@ -151,7 +153,12 @@
 </template>
 
 <script>
+import CodeFund from '../components/CodeFund'
+
 export default {
+  components: {
+    CodeFund
+  },
   data () {
     return {
       analytics: [
