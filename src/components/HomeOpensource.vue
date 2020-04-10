@@ -7,7 +7,7 @@
           h4 It's not just about being free, it also means anyone can contribute new features and help squash bugs. Wiki.js is proudly licensed under AGPLv3.
           v-layout.home-opensource-stats(row)
             v-flex(xs6)
-              strong 9M+
+              strong 10M+
               span Installations
             v-flex(xs6)
               strong {{stars}}+
