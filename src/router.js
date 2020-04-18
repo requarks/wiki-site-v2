@@ -53,6 +53,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "support" */ './views/Support.vue')
     },
     {
+      path: '/telemetry',
+      name: 'telemetry',
+      component: () => import(/* webpackChunkName: "telemetry" */ './views/Telemetry.vue')
+    },
+    {
       path: '/newsletter',
       name: 'newsletter',
       component: () => import(/* webpackChunkName: "newsletter" */ './views/Newsletter.vue')
