@@ -6,21 +6,6 @@
     v-container(grid-list-xl)
       v-layout(row, wrap, justify-center)
         v-flex(xs12)
-          .support-item.animated.fadeInUp.dual-lines
-            .first-line
-              .support-item-logo
-                img(:src='require(`../assets/icons/color-ask-question.svg`)', alt='Ask a Question', style='width: 80px;')
-              .px-4
-                h2.blue--text Ask a Question
-                .body-1 You have a question about Wiki.js capabitilies before installing.
-              v-btn.mx-0(style='width: 200px;', color='blue', large, dark, @click='chat') Chat with Us
-            .second-line
-              .body-2.grey--text.text--darken-1.mr-2 or contact us via
-              a(href='https://fb.me/requarks', title='Facebook Messenger'): img(src='../assets/logos/color-facebook-messenger.svg', alt='Facebook Messenger')
-              a(href='https://telegram.me/wiki_js_bot', title='Telegram'): img(src='../assets/logos/color-telegram-app.svg', alt='Telegram')
-              a(href='https://wiki.requarks.io/slack', title='Slack'): img(src='../assets/logos/color-slack-new.svg', alt='Slack')
-              a(href='https://twitter.com/requarks', title='Twitter'): img(src='../assets/logos/color-twitter.svg', alt='Twitter')
-        v-flex(xs12)
           .support-item.animated.fadeInUp
             .support-item-logo
               img(:src='require(`../assets/icons/color-software-installer.svg`)', alt='Help with Installation / Configuration', style='width: 80px;')
