@@ -10,7 +10,7 @@
         li.animated.fadeInDown.wait-p3s: a(href='https://docs.requarks.io/', @click.stop.prevent='docsSelector = true') Docs
         router-link.animated.fadeInDown.wait-p4s(to='/about', tag='li'): a Backers
         router-link.animated.fadeInDown.wait-p5s(to='/support', tag='li'): a Support
-        router-link.animated.fadeInDown.wait-p6s(to='/feedback', tag='li'): a Feedback
+        li.animated.fadeInDown.wait-p6s: a(href='https://requarks.canny.io/wiki', target='_blank', title='Feedback', rel='noopener') Feedback
         li.animated.fadeInDown.wait-p7s
           a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project', rel='noopener')
             img(:src='require("../assets/logos/windows-github.svg")', alt='GitHub')
@@ -51,7 +51,7 @@
             img(:src='require("../assets/icons/nolan-about.svg")', alt='Support')
           v-list-tile-title Support
         v-divider
-        v-list-tile(to='/feedback')
+        v-list-tile(href='https://requarks.canny.io/wiki', target='_blank', title='Feedback', rel='noopener')
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-feedback.svg")', alt='Feedback')
           v-list-tile-title Feedback
