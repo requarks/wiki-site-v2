@@ -13,11 +13,11 @@
                 a(href='#sponsors') - Sponsors &amp; Backers
                 v-chip.ml-2(small, color='green lighten-5') {{sponsors.length}}
               li
-                a(href='#translators') - Translators
-                v-chip.ml-2(small, color='blue lighten-5') {{translators.length}}
-              li
                 a(href='#developers') - Developers
                 v-chip.ml-2(small, color='orange lighten-5') {{developers.length}}
+              li
+                a(href='#translators') - Translators
+                v-chip.ml-2(small, color='blue lighten-5') {{translators.length}}
               li
                 a(href='#specialthanks') - Special Thanks
                 v-chip.ml-2(small, color='grey lighten-3') {{specialthanks.length}}
@@ -50,21 +50,6 @@
                     v-btn(v-if='sponsor.website', icon, :href='sponsor.website', rel='nofollow')
                       img(:src='require(`../assets/icons/ios-internet.svg`)')
 
-            h2(id='translators') Translators
-            .about-list-loading(v-if='!isLoaded')
-              v-progress-circular(:value='true', color='blue', width='2', size='24', indeterminate)
-              span Fetching list of translators...
-            v-container.pa-0.mb-4(grid-list-xl)
-              v-layout(row, wrap)
-                v-flex(xs12, md6, xl4, v-for='translator of translators', :key='translator.id')
-                  .about-list-item
-                    v-avatar(color='blue', size='48', tile)
-                      .title.white--text {{translator.name | initials}}
-                    v-divider.mx-3(vertical)
-                    .about-list-item-text
-                      strong(v-html='translator.name')
-                      .blue--text.caption(v-html='translator.extraInfo')
-
             h2(id='developers') Developers
             .about-list-loading(v-if='!isLoaded')
               v-progress-circular(:value='true', color='orange', width='2', size='24', indeterminate)
@@ -83,6 +68,21 @@
                     v-spacer
                     v-btn(icon, :href='developer.website', rel='nofollow')
                       img(src='https://static.requarks.io/logo/github-octocat.svg')
+
+            h2(id='translators') Translators
+            .about-list-loading(v-if='!isLoaded')
+              v-progress-circular(:value='true', color='blue', width='2', size='24', indeterminate)
+              span Fetching list of translators...
+            v-container.pa-0.mb-4(grid-list-xl)
+              v-layout(row, wrap)
+                v-flex(xs12, md6, xl4, v-for='translator of translators', :key='translator.id')
+                  .about-list-item
+                    v-avatar(color='blue', size='48', tile)
+                      .title.white--text {{translator.name | initials}}
+                    v-divider.mx-3(vertical)
+                    .about-list-item-text
+                      strong(v-html='translator.name')
+                      .blue--text.caption(v-html='translator.extraInfo')
 
             h2(id='specialthanks') Special Thanks
             .about-list-item(v-for='sponsor of specialthanks', :key='sponsor.id')
@@ -111,8 +111,8 @@ export default {
     return {
       isLoaded: true,
       sponsors: [],
-      translators: [],
       developers: [],
+      translators: [],
       specialthanks: [
         {
           logo: 'https://static.requarks.io/logo/algolia-alt.svg',
