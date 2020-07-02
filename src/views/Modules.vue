@@ -248,6 +248,7 @@ export default {
   },
   mounted () {
     let carbonScript = document.createElement('script')
+    carbonScript.async = true
     carbonScript.setAttribute('src', 'https://cdn.carbonads.com/carbon.js?serve=CE7I5K3W&placement=wikijsorg')
     document.head.appendChild(carbonScript)
   }
