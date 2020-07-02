@@ -28,7 +28,7 @@
               div: img(:src='require("../assets/icons/ios-crane.svg")', style='width: 34px;')
               .caption Modules with a crane icon are under development and will be available in an upcoming release.
             v-divider.my-4
-            .carbon(ref='carbon')
+            .carbon(id='_carbonads_js')
         v-flex(xs12, md8, xl9)
           .modules-list
             h2(id='analytics') Analytics
@@ -249,7 +249,7 @@ export default {
   mounted () {
     let carbonScript = document.createElement('script')
     carbonScript.setAttribute('src', 'https://cdn.carbonads.com/carbon.js?serve=CE7I5K3W&placement=wikijsorg')
-    this.$refs.carbon.appendChild(carbonScript)
+    document.head.appendChild(carbonScript)
   }
 }
 </script>
