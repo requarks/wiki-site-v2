@@ -14,7 +14,7 @@
               .body-1 You're trying to setup Wiki.js but can't get it working and need help.
             v-btn.mx-0(style='width: 200px;', color='blue darken-2', large, dark, href='https://github.com/Requarks/wiki/issues/new?labels=help&template=question---help.md') Request Help
         v-flex(xs12)
-          .support-item.animated.fadeInUp
+          .support-item.animated.fadeInUp.wait-p1s
             .support-item-logo
               img(:src='require(`../assets/icons/color-ladybird.svg`)', alt='Report a Bug', style='width: 80px;')
             .px-4
@@ -22,7 +22,7 @@
               .body-1 You found something that doesn't work or isn't right and want to report it.
             v-btn.mx-0(style='width: 200px;', color='red', large, dark, href='https://github.com/Requarks/wiki/issues/new?template=bug_report.md') Create an Issue
         v-flex(xs12)
-          .support-item.animated.fadeInUp
+          .support-item.animated.fadeInUp.wait-p2s
             .support-item-logo
               img(:src='require(`../assets/icons/color-star.svg`)', alt='Suggest a new feature or improvement', style='width: 80px;')
             .px-4
@@ -30,7 +30,7 @@
               .body-1 You have an idea for a new feature or something that could be improved.
             v-btn.mx-0(style='width: 200px;', color='indigo', large, dark, to='/feedback') Suggest an Idea
         v-flex(xs12)
-          .support-item.animated.fadeInUp
+          .support-item.animated.fadeInUp.wait-p3s
             .support-item-logo
               img(:src='require(`../assets/icons/color-get-cash.svg`)', alt='Donate', style='width: 80px;')
             .px-4
@@ -38,19 +38,26 @@
               .body-1 You'd like to financially contribute to this project and help it grow.
             v-btn.mx-0(style='width: 200px;', color='green', large, dark, to='/donate') Donate
         v-flex(xs12)
-          .support-item.animated.fadeInUp
+          .support-item.animated.fadeInUp.wait-p4s
             .support-item-logo
               img(:src='require(`../assets/icons/color-developer.svg`)', alt='Contribute / Development', style='width: 80px;')
             .px-4
               h2.blue-grey--text Contribute / Development
               .body-1 You're a developer and would like to contribute new features or fix bugs.
             v-btn.mx-0(style='width: 200px;', color='blue-grey', large, dark, href='https://docs.requarks.io/dev') Read Developer Docs
+        v-flex(xs12)
+          carbon.mt-4.animated.fadeInUp.wait-p5s(long)
 </template>
 
 <script>
 /* global $crisp */
 
+import Carbon from '../components/Carbon'
+
 export default {
+  components: {
+    Carbon
+  },
   data () {
     return { }
   },

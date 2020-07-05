@@ -21,7 +21,7 @@
               v-icon mdi-arrow-right
               span Donate
         v-flex(xs12, md6)
-          .donate-item.animated.fadeInUp
+          .donate-item.animated.fadeInUp.wait-p1s
             .donate-item-logo
               img(:src='require(`../assets/logos/opencollective.svg`)', alt='OpenCollective', style='width: 80px;')
             .px-4
@@ -35,7 +35,7 @@
               v-icon mdi-arrow-right
               span Donate
         v-flex(xs12, md6)
-          .donate-item.animated.fadeInUp
+          .donate-item.animated.fadeInUp.wait-p2s
             .donate-item-logo
               img(:src='require(`../assets/logos/patreon.svg`)', alt='Patreon', style='width: 80px;')
             .px-4
@@ -47,7 +47,7 @@
               v-icon mdi-arrow-right
               span Donate
         v-flex(xs12, md6)
-          .donate-item.animated.fadeInUp
+          .donate-item.animated.fadeInUp.wait-p3s
             .donate-item-logo
               img(:src='require(`../assets/icons/color-paypal.svg`)', alt='Paypal')
             .px-4
@@ -61,7 +61,7 @@
               v-icon mdi-arrow-right
               span Donate
         v-flex(xs12, md6)
-          .donate-item.animated.fadeInUp
+          .donate-item.animated.fadeInUp.wait-p4s
             .donate-item-logo
               img(:src='require(`../assets/icons/color-ethereum.svg`)', alt='Ethereum')
             .px-4
@@ -73,7 +73,7 @@
               v-icon mdi-arrow-right
               span Donate
         v-flex(xs12, md6)
-          .donate-item.animated.fadeInUp
+          .donate-item.animated.fadeInUp.wait-p5s
             .donate-item-logo
               img(:src='require(`../assets/icons/color-bitcoin.svg`)', alt='Bitcoin')
             .px-4
@@ -85,7 +85,7 @@
               v-icon mdi-arrow-right
               span Donate
         v-flex(xs12, md6, )
-          .donate-item.animated.fadeInUp
+          .donate-item.animated.fadeInUp.wait-p6s
             .donate-item-logo
               img(:src='require(`../assets/icons/infographic-t-shirt.svg`)', alt='T-Shirts', style='width: 80px;')
             .px-4

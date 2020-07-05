@@ -11,17 +11,17 @@
       li.animated.fadeInUp.wait-p7s: img(:src='require("../assets/logos/windows-server.svg")', alt='Windows Server')
     .caption.greyish--text.text--darken-1.animated.fadeInUp.wait-p8s Released under the AGPL-v3 license.
     img.home-splash-ss.animated.fadeInUp.wait-p8s(:src='require("../assets/screenshots/wiki-screenshot.png")', :srcset='require("../assets/screenshots/wiki-screenshot-2x.png") + ` 2x`', alt='Wiki.js Screenshot')
-    //- code-fund.home-splash-codefund-desktop.animated.fadeInRight.wait-p8s(tmpl='square', v-if='$vuetify.breakpoint.xlOnly')
-    //- code-fund.home-splash-codefund-mobile.animated.fadeInUp.wait-p8s(tmpl='horizontal', v-else)
+    carbon.home-splash-carbon-desktop.animated.fadeInRight.wait-p8s(v-if='$vuetify.breakpoint.xlOnly')
+    carbon.home-splash-carbon-mobile.animated.fadeInUp.wait-p8s(v-else, long)
 </template>
 
 <script>
-import CodeFund from '../components/CodeFund'
+import Carbon from '../components/Carbon'
 
 export default {
   name: 'HomeSplash',
   components: {
-    CodeFund
+    Carbon
   },
   data () {
     return {
@@ -106,22 +106,22 @@ export default {
     }
   }
 
-  &-codefund-desktop {
+  &-carbon-desktop {
     position: absolute;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     background-color: #EEE;
     border-radius: 4px;
     right: 12px;
-    width: 255px;
-    height: 298px;
+    width: 320px;
+    height: 125px;
     display: inline-block;
-    top: calc(100vh - 396px);
+    top: calc(100vh - 225px);
   }
 
-  &-codefund-mobile {
+  &-carbon-mobile {
     // position: absolute;
     width: 90vw;
-    margin: 0 auto;
+    margin: 15px auto 0;
     padding: 0;
   }
 }

@@ -36,6 +36,7 @@
               span Setup Instructions
         v-flex(xs12)
           .getstarted-note.animated.fadeInUp.wait-p2s Upgrading from 1.x to 2.0 is quick and simple.
+          carbon.mt-4.animated.fadeInUp.wait-p3s(long)
         //- v-flex(xs12)
           //- .getstarted-note.animated.fadeInUp.wait-p3s
             //- h3 What's missing in 2.x compared to 1.0?
@@ -48,7 +49,12 @@
 <script>
 import { get } from 'vuex-pathify'
 
+import Carbon from '../components/Carbon'
+
 export default {
+  components: {
+    Carbon
+  },
   data () {
     return { }
   },

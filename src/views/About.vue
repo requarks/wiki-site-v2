@@ -26,7 +26,7 @@
             v-btn(color='pink', dark, large, block, to='/donate') Donate
             .caption.mt-3.text-xs-center Various platforms are supported, for both monthly and one-time donations.
             v-divider.my-4
-            code-fund(tmpl='centered')
+            carbon
         v-flex(xs12, md8, xl9)
           .about-list
             h2(id='sponsors') Sponsors &amp; Backers
@@ -98,14 +98,14 @@
 </template>
 
 <script>
-import CodeFund from '../components/CodeFund'
+import Carbon from '../components/Carbon'
 
 import gql from 'graphql-tag'
 import _ from 'lodash'
 
 export default {
   components: {
-    CodeFund
+    Carbon
   },
   data () {
     return {
