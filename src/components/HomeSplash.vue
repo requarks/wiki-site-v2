@@ -33,7 +33,9 @@ export default {
   },
   mounted () {
     this.$nextTick(() => {
-      this.isReady = true
+      setTimeout(() => {
+        this.isReady = true
+      }, 1000)
     })
   }
 }
