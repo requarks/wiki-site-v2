@@ -11,8 +11,10 @@
       li.animated.fadeInUp.wait-p7s: img(:src='require("../assets/logos/windows-server.svg")', alt='Windows Server')
     .caption.greyish--text.text--darken-1.animated.fadeInUp.wait-p8s Released under the AGPL-v3 license.
     img.home-splash-ss.animated.fadeInUp.wait-p8s(:src='require("../assets/screenshots/wiki-screenshot.png")', :srcset='require("../assets/screenshots/wiki-screenshot-2x.png") + ` 2x`', alt='Wiki.js Screenshot')
-    carbon.home-splash-carbon-desktop.animated.fadeInRight.wait-p8s(v-if='$vuetify.breakpoint.xlOnly')
-    carbon.home-splash-carbon-mobile.animated.fadeInUp.wait-p8s(v-else, long)
+    carbon.animated.wait-p8s(
+      :class='$vuetify.breakpoint.xlOnly ? `home-splash-carbon-desktop fadeInRight` : `home-splash-carbon-mobile fadeInUp`'
+      :long='!$vuetify.breakpoint.xlOnly'
+    )
 </template>
 
 <script>
@@ -25,7 +27,13 @@ export default {
   },
   data () {
     return {
+      isReady: false
     }
+  },
+  mounted () {
+    this.$$nextTick(() => {
+      this.isReady = true
+    })
   }
 }
 </script>
