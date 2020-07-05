@@ -12,6 +12,7 @@
     .caption.greyish--text.text--darken-1.animated.fadeInUp.wait-p8s Released under the AGPL-v3 license.
     img.home-splash-ss.animated.fadeInUp.wait-p8s(:src='require("../assets/screenshots/wiki-screenshot.png")', :srcset='require("../assets/screenshots/wiki-screenshot-2x.png") + ` 2x`', alt='Wiki.js Screenshot')
     carbon.animated.wait-p8s(
+      v-if='isReady'
       :class='$vuetify.breakpoint.xlOnly ? `home-splash-carbon-desktop fadeInRight` : `home-splash-carbon-mobile fadeInUp`'
       :long='!$vuetify.breakpoint.xlOnly'
     )
@@ -31,7 +32,7 @@ export default {
     }
   },
   mounted () {
-    this.$$nextTick(() => {
+    this.$nextTick(() => {
       this.isReady = true
     })
   }

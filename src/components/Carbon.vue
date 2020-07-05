@@ -14,6 +14,7 @@ export default {
     }
   },
   mounted () {
+    this.$refs.carbon.innerHTML = ''
     this.$nextTick(() => {
       const script = document.createElement('script')
       script.async = true
