@@ -59,8 +59,7 @@ export default {
             {
               icon: require(`../assets/icons/nolan-validation.svg`),
               title: '2FA',
-              description: 'Add an extra layer of security using two-factor authentication for supported authentication modules.',
-              comingsoon: true
+              description: 'Add an extra layer of security using two-factor authentication for supported authentication modules.'
             }
           ]
         },
