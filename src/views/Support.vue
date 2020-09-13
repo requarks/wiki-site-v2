@@ -28,7 +28,7 @@
             .px-4
               h2.indigo--text Suggest a new feature or improvement
               .body-1 You have an idea for a new feature or something that could be improved.
-            v-btn.mx-0(style='width: 200px;', color='indigo', large, dark, to='/feedback') Suggest an Idea
+            v-btn.mx-0(style='width: 200px;', color='indigo', large, dark, href='https://requarks.canny.io/wiki') Suggest an Idea
         v-flex(xs12)
           .support-item.animated.fadeInUp.wait-p3s
             .support-item-logo
