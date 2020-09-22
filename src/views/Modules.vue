@@ -226,7 +226,7 @@ export default {
         { name: 'Windows Event Log', company: 'Microsoft', dev: true }
       ],
       searchEngines: [
-        { name: 'CloudSearch', company: 'Amazon Web Services', icon: 'aws-cloudsearch.svg' },
+        { name: 'AWS CloudSearch', company: 'Amazon Web Services', icon: 'aws-cloudsearch.svg' },
         { name: 'Algolia', company: 'Algolia', icon: 'algolia-alt.svg' },
         { name: 'Azure Search', company: 'Microsoft Azure', icon: 'azure-alt.svg' },
         { name: 'DB - Basic', company: 'Requarks.io' },
