@@ -233,6 +233,7 @@ export default {
         { name: 'DB - PostgreSQL', company: 'Requarks.io' },
         { name: 'Elasticsearch', company: 'Elastic', icon: 'elasticsearch-alt.svg' },
         { name: 'Manticore Search', company: 'Manticore Software', icon: 'manticore-alt.svg', dev: true },
+        { name: 'Meilisearch', company: 'Meili SAS', icon: 'meilisearch.svg', dev: true },
         { name: 'Solr', company: 'Apache', icon: 'solr.svg', dev: true },
         { name: 'Sphinx', company: 'Sphinx Technologies', icon: 'sphinx-alt.svg', dev: true }
       ],
