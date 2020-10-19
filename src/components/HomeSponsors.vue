@@ -11,7 +11,6 @@
       .home-sponsors-logos
         a(href='https://www.algolia.com', target='_blank', title='Algolia'): img(src='https://static.requarks.io/logo/algolia.svg', alt='Algolia')
         a(href='https://www.browserstack.com', target='_blank', title='Browserstack'): img(src='https://static.requarks.io/logo/browserstack.svg', alt='Browserstack')
-        a(href='https://www.bugsnag.com', target='_blank', title='Bugsnag'): img(src='https://static.requarks.io/logo/bugsnag.svg', alt='Bugsnag')
         a(href='https://www.cloudflare.com', target='_blank', title='Cloudflare'): img(src='https://static.requarks.io/logo/cloudflare.svg', alt='Cloudflare', style='max-width: 150px;')
         a(href='https://m.do.co/c/5f7445bfa4d0', target='_blank', title='DigitalOcean'): img(src='https://static.requarks.io/logo/digitalocean.svg', alt='DigitalOcean', style='max-width: 200px;')
         a(href='https://github.com/sponsors/NGPixel/', target='_blank', title='GitHub'): img(src='https://static.requarks.io/logo/github.svg', alt='GitHub')
