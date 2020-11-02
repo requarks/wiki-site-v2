@@ -8,7 +8,7 @@
           v-layout.home-opensource-stats(row)
             v-flex(xs6)
               strong 30M+
-              span Installations
+              span Downloads
             v-flex(xs6)
               strong {{stars}}+
               span Stars on GitHub
