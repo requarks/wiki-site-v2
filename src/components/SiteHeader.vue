@@ -2,7 +2,7 @@
   .header-container
     v-toolbar.header(app, fixed, height='84', v-scroll='toggleNavStyle', :class='{alt1: navStyle === 1}')
       router-link.animated.fadeInLeft(to='/')
-        img.header-logo(:src='require("../assets/logos/logo.svg")', alt='Wiki.js')
+        img.header-logo(:src='require("../assets/logos/wikijs-full-2021.svg")', alt='Wiki.js')
       v-spacer
       ul.header-nav.hidden-sm-and-down
         router-link.animated.fadeInDown(to='/', tag='li'): a Features
@@ -25,7 +25,7 @@
     v-navigation-drawer(app, fixed, temporary, v-model='mobileDrawerOpen')
       v-list(two-line)
         .header-logo-mobile
-          img(:src='require("../assets/logos/logo.svg")', alt='Wiki.js')
+          img(:src='require("../assets/logos/wikijs-full-2021.svg")', alt='Wiki.js')
         v-list-tile(to='/')
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-categorize.svg")', alt='Features')
