@@ -8,9 +8,9 @@
         router-link.animated.fadeInDown(to='/', tag='li'): a Features
         router-link.animated.fadeInDown.wait-p2s(to='/modules', tag='li'): a Modules
         li.animated.fadeInDown.wait-p3s: a(href='https://docs.requarks.io/', @click.stop.prevent='docsSelector = true') Docs
-        router-link.animated.fadeInDown.wait-p4s(to='/about', tag='li'): a Backers
-        router-link.animated.fadeInDown.wait-p5s(to='/support', tag='li'): a Support
-        li.animated.fadeInDown.wait-p6s: a(href='https://requarks.canny.io/wiki', target='_blank', title='Feedback', rel='noopener') Feedback
+        li.animated.fadeInDown.wait-p4s: a(href='https://blog.js.wiki', title='News', rel='noopener') News
+        router-link.animated.fadeInDown.wait-p5s(to='/about', tag='li'): a Backers
+        router-link.animated.fadeInDown.wait-p6s(to='/support', tag='li'): a Support
         li.animated.fadeInDown.wait-p7s
           a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project', rel='noopener')
             img(:src='require("../assets/logos/windows-github.svg")', alt='GitHub')
@@ -36,10 +36,15 @@
             img(:src='require("../assets/icons/nolan-cloud.svg")', alt='Modules')
           v-list-tile-title Modules
         v-divider
-        v-list-tile(href='https://docs-beta.requarks.io/', @click.stop.prevent='docsSelector = true')
+        v-list-tile(href='https://docs.requarks.io/', @click.stop.prevent='docsSelector = true')
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-open-book.svg")', alt='Docs')
           v-list-tile-title Docs
+        v-divider
+        v-list-tile(href='https://blog.js.wiki', title='News', rel='noopener')
+          v-list-tile-avatar
+            img(:src='require("../assets/icons/nolan-feedback.svg")', alt='News')
+          v-list-tile-title News
         v-divider
         v-list-tile(to='/about')
           v-list-tile-avatar
@@ -50,11 +55,6 @@
           v-list-tile-avatar
             img(:src='require("../assets/icons/nolan-about.svg")', alt='Support')
           v-list-tile-title Support
-        v-divider
-        v-list-tile(href='https://requarks.canny.io/wiki', target='_blank', title='Feedback', rel='noopener')
-          v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-feedback.svg")', alt='Feedback')
-          v-list-tile-title Feedback
         v-divider
         v-list-tile(to='/get-started')
           v-list-tile-avatar
