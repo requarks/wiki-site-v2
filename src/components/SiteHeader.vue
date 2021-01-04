@@ -121,11 +121,11 @@ export default {
 
 .header {
   &-logo {
-    width: 150px;
-    padding-top: 12px;
+    width: 175px;
+    padding-top: 6px;
 
     @media screen and (min-width: 1264px) {
-      margin-right: 117px;
+      margin-right: 102px;
     }
 
     &-mobile {
