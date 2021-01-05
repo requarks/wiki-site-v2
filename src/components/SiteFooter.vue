@@ -29,7 +29,7 @@
               li: a(href='https://wiki.requarks.io/slack') Chat on Slack
               router-link(to='/about', tag='li'): a Contributors &amp; Sponsors
               li: a(href='https://blog.requarks.io/') Blog
-              router-link(to='/newsletter', tag='li'): a Newsletter
+              li: a(href='https://blog.js.wiki/subscribe') Newsletter
 
       v-divider.mt-5
       v-container.footer-bar
