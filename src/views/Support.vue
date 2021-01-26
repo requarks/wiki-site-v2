@@ -10,9 +10,9 @@
             .support-item-logo
               img(:src='require(`../assets/icons/color-software-installer.svg`)', alt='Help with Installation / Configuration', style='width: 80px;')
             .px-4
-              h2.blue--text.text--darken-2 Help with Installation / Configuration
-              .body-1 You're trying to setup Wiki.js but can't get it working and need help.
-            v-btn.mx-0(style='width: 200px;', color='blue darken-2', large, dark, href='https://github.com/Requarks/wiki/issues/new?labels=help&template=question---help.md') Request Help
+              h2.blue--text.text--darken-2 Questions / Help with Installation / Configuration
+              .body-1 You're trying to setup or perform a specific action in Wiki.js but can't get it working and need help.
+            v-btn.mx-0(style='width: 200px;', color='blue darken-2', large, dark, href='https://github.com/Requarks/wiki/discussions') Request Help
         v-flex(xs12)
           .support-item.animated.fadeInUp.wait-p1s
             .support-item-logo
