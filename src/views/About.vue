@@ -133,7 +133,7 @@ export default {
           link: 'https://www.bugsnag.com'
         },
         {
-          logo: 'https://static.requarks.io/logo/canny.png',
+          logo: 'https://static.requarks.io/logo/canny.svg',
           title: 'Canny',
           description: 'Canny helps you collect and organize feature requests to better understand customer needs and prioritize your roadmap.',
           link: 'https://canny.io'
