@@ -133,6 +133,12 @@ export default {
           link: 'https://www.bugsnag.com'
         },
         {
+          logo: 'https://static.requarks.io/logo/canny.png',
+          title: 'Canny',
+          description: 'Canny helps you collect and organize feature requests to better understand customer needs and prioritize your roadmap.',
+          link: 'https://canny.io'
+        },
+        {
           logo: 'https://static.requarks.io/logo/cloudflare-alt.svg',
           title: 'Cloudflare',
           description: 'Cloudflare provides content delivery network, DDoS mitigation, Internet security services and distributed domain name server services.',
