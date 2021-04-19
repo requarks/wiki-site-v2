@@ -28,7 +28,7 @@
               li: a(href='https://twitter.com/requarks') Follow on Twitter
               li: a(href='https://wiki.requarks.io/slack') Chat on Slack
               router-link(to='/about', tag='li'): a Contributors &amp; Sponsors
-              li: a(href='https://blog.requarks.io/') Blog
+              li: a(href='https://blog.js.wiki/') Blog
               li: a(href='https://blog.js.wiki/subscribe') Newsletter
 
       v-divider.mt-5
