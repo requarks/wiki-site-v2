@@ -11,6 +11,8 @@
             ul.footer-links
               li: a(href='https://docs.requarks.io/install') Stable #[strong(v-html='stable')] #[v-chip.ml-2(small, color='teal', dark) Stable]
               li: a(href='https://docs-legacy.requarks.io/wiki/install') Legacy #[strong(v-html='legacy')] #[v-chip.ml-2(small, color='purple', dark) Legacy]
+            a(href='https://www.digitalocean.com/?refcode=5f7445bfa4d0&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge', style='margin-top: 32px; display: block;')
+              img(src='https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg', alt='DigitalOcean')
           v-flex.footer-col(xs12, sm4, lg3)
             .footer-subtitle Contribute
             ul.footer-links
