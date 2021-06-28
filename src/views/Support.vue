@@ -40,19 +40,19 @@
         v-flex(xs12)
           .support-item.animated.fadeInUp.wait-p4s
             .support-item-logo
-              img(:src='require(`../assets/icons/color-developer.svg`)', alt='Contribute / Development', style='width: 80px;')
+              img(:src='require(`../assets/icons/color-developer.svg`)', alt='Report a Security Vulnerability', style='width: 80px;')
             .px-4
-              h2.blue-grey--text Report a security vulnerability
+              h2.pink--text Report a security vulnerability
               .body-1 Disclose potential vulnerabilities in a quick and secure manner.
-            v-btn.mx-0(style='width: 200px;', color='blue-grey', large, dark, href='https://github.com/Requarks/wiki/security/policy') Security Policy
+            v-btn.mx-0(style='width: 200px;', color='pink', large, dark, href='https://github.com/Requarks/wiki/security/policy') Security Policy
         v-flex(xs12)
           .support-item.animated.fadeInUp.wait-p5s
             .support-item-logo
               img(:src='require(`../assets/icons/color-developer.svg`)', alt='Contribute / Development', style='width: 80px;')
             .px-4
-              h2.pink--text Contribute / Development
+              h2.blue-grey--text Contribute / Development
               .body-1 You're a developer and would like to contribute new features or fix bugs.
-            v-btn.mx-0(style='width: 200px;', color='pink', large, dark, href='https://docs.requarks.io/dev') Read Developer Docs
+            v-btn.mx-0(style='width: 200px;', color='blue-grey', large, dark, href='https://docs.requarks.io/dev') Read Developer Docs
         v-flex(xs12)
           carbon.mt-4.animated.fadeInUp.wait-p6s(long)
 </template>
