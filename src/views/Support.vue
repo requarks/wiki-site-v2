@@ -20,7 +20,7 @@
             .px-4
               h2.red--text Report a Bug
               .body-1 You found something that doesn't work or isn't right and want to report it.
-            v-btn.mx-0(style='width: 200px;', color='red', large, dark, href='https://github.com/Requarks/wiki/issues/new?template=bug_report.md') Create an Issue
+            v-btn.mx-0(style='width: 200px;', color='red', large, dark, href='https://github.com/Requarks/wiki/discussions/categories/error-bug-report') Create an Issue
         v-flex(xs12)
           .support-item.animated.fadeInUp.wait-p2s
             .support-item-logo
@@ -42,11 +42,19 @@
             .support-item-logo
               img(:src='require(`../assets/icons/color-developer.svg`)', alt='Contribute / Development', style='width: 80px;')
             .px-4
-              h2.blue-grey--text Contribute / Development
-              .body-1 You're a developer and would like to contribute new features or fix bugs.
-            v-btn.mx-0(style='width: 200px;', color='blue-grey', large, dark, href='https://docs.requarks.io/dev') Read Developer Docs
+              h2.blue-grey--text Report a security vulnerability
+              .body-1 Disclose potential vulnerabilities in a quick and secure manner.
+            v-btn.mx-0(style='width: 200px;', color='blue-grey', large, dark, href='https://github.com/Requarks/wiki/security/policy') Security Policy
         v-flex(xs12)
-          carbon.mt-4.animated.fadeInUp.wait-p5s(long)
+          .support-item.animated.fadeInUp.wait-p5s
+            .support-item-logo
+              img(:src='require(`../assets/icons/color-developer.svg`)', alt='Contribute / Development', style='width: 80px;')
+            .px-4
+              h2.pink--text Contribute / Development
+              .body-1 You're a developer and would like to contribute new features or fix bugs.
+            v-btn.mx-0(style='width: 200px;', color='pink', large, dark, href='https://docs.requarks.io/dev') Read Developer Docs
+        v-flex(xs12)
+          carbon.mt-4.animated.fadeInUp.wait-p6s(long)
 </template>
 
 <script>
