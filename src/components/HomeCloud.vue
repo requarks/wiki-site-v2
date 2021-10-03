@@ -4,7 +4,7 @@
     h4 Host it yourself or launch a pre-configured installation on a cloud provider.
     v-container.mt-5(grid-list-xl)
       v-layout(row, wrap)
-        v-flex(xs12, sm6, md4)
+        v-flex(xs12, sm6, md6)
           .home-cloud-plan
             .home-cloud-plan-icon
               img(:src='require("../assets/icons/handdrawn-server.svg")', alt='Self-Hosted')
@@ -12,7 +12,7 @@
             span Host it on your on-premise servers
             v-divider.mt-3
             v-btn.mt-4(large, outline, color='primary', to='/get-started') Get Started
-        v-flex(xs12, sm6, md4)
+        v-flex(xs12, sm6, md6)
           .home-cloud-plan
             .home-cloud-plan-icon.alt1
               img(:src='require("../assets/icons/handdrawn-cloud.svg")', alt='Cloud')
@@ -20,14 +20,14 @@
             span One-click install, auto-update
             v-divider.mt-3
             v-btn.mt-4(large, outline, color='primary', href='https://marketplace.digitalocean.com/apps/wiki-js?action=deploy&refcode=5f7445bfa4d0', target='_blank') Get Started
-        v-flex(xs12, sm6, md4)
-          .home-cloud-plan
-            .home-cloud-plan-icon.alt1
-              img(:src='require("../assets/icons/handdrawn-cloud.svg")', alt='Cloud')
-            h6 AWS Marketplace
-            span One-click install, auto-update
-            v-divider.mt-3
-            v-btn.mt-4(large, outline, color='primary', href='https://aws.amazon.com/marketplace/pp/B0832LDTKQ', target='_blank') Get Started
+        //- v-flex(xs12, sm6, md4)
+        //-   .home-cloud-plan
+        //-     .home-cloud-plan-icon.alt1
+        //-       img(:src='require("../assets/icons/handdrawn-cloud.svg")', alt='Cloud')
+        //-     h6 AWS Marketplace
+        //-     span One-click install, auto-update
+        //-     v-divider.mt-3
+        //-     v-btn.mt-4(large, outline, color='primary', href='https://aws.amazon.com/marketplace/pp/B0832LDTKQ', target='_blank') Get Started
 </template>
 
 <script>
