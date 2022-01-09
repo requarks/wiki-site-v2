@@ -114,17 +114,17 @@ export default {
   &-gold {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 50px 50px;
+    padding: 5px 50px 25px;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,.95);
+    background-color: rgba(255,255,255,.97);
     backdrop-filter: blur(10px);
     margin: 0 auto;
 
     img {
-      max-width: 120px;
-      height: 50px;
-      margin: 40px 30px 0;
+      max-width: 300px;
+      height: 82px;
+      margin: 20px 30px 0;
     }
   }
 }
