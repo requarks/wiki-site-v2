@@ -20,6 +20,8 @@
         a(href='https://www.netlify.com/', target='_blank', title='Netlify'): img(src='../assets/logos/netlify.svg', alt='Netlify', style='max-width: initial; width: 160px; height: auto;')
         a(href='https://www.porkbun.com/', target='_blank', title='Porkbun'): img(src='https://static.requarks.io/logo/porkbun.svg', alt='Porkbun')
         a(href='https://www.atlassian.com/software/statuspage', target='_blank', title='StatusPage'): img(src='https://static.requarks.io/logo/statuspage.svg', alt='StatusPage')
+      .home-sponsors-gold
+        a(href='https://trans-zero.com/', target='_blank', title='Transcosmos Zero'): img(src='https://cdn.js.wiki/images/sponsors/transzero.png', alt='Transcosmos Zero')
 </template>
 
 <script>
@@ -101,6 +103,23 @@ export default {
     backdrop-filter: blur(10px);
     margin: 0 auto;
     margin-top: 50px;
+
+    img {
+      max-width: 120px;
+      height: 50px;
+      margin: 40px 30px 0;
+    }
+  }
+  
+  &-gold {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 50px 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,.95);
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
 
     img {
       max-width: 120px;
