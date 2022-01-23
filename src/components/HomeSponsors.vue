@@ -18,6 +18,7 @@
         a(href='https://icons8.com/', target='_blank', title='Icons8'): img(src='https://static.requarks.io/logo/icons8-text.svg', alt='Icons8')
         a(href='https://lokalise.com/', target='_blank', title='Lokalise'): img(src='https://static.requarks.io/logo/lokalise-text.svg', alt='Lokalise')
         a(href='https://www.netlify.com/', target='_blank', title='Netlify'): img(src='../assets/logos/netlify.svg', alt='Netlify', style='max-width: initial; width: 160px; height: auto;')
+        a(href='https://ngrok.com/', target='_blank', title='ngrok'): img(src='https://static.requarks.io/logo/ngrok.svg', alt='ngrok')
         a(href='https://www.porkbun.com/', target='_blank', title='Porkbun'): img(src='https://static.requarks.io/logo/porkbun.svg', alt='Porkbun')
         a(href='https://www.atlassian.com/software/statuspage', target='_blank', title='StatusPage'): img(src='https://static.requarks.io/logo/statuspage.svg', alt='StatusPage')
       .home-sponsors-gold
