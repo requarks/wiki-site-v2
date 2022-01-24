@@ -175,6 +175,12 @@ export default {
           link: 'https://www.netlify.com'
         },
         {
+          logo: 'https://static.requarks.io/logo/ngrok.svg',
+          title: 'ngrok',
+          description: 'ngrok provides a real-time web UI where you can introspect all HTTP traffic running over your tunnels.',
+          link: 'https://ngrok.com'
+        },
+        {
           logo: 'https://static.requarks.io/logo/statuspage.svg',
           title: 'Statuspage',
           description: 'StatusPage.io is the best way for web infrastructure, developer API, and SaaS companies to get set up with their very own status page in minutes.',
