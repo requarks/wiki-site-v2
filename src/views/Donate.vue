@@ -16,7 +16,9 @@
               h2.indigo--text GitHub Sponsors
               div
                 v-chip.ml-0(color='grey lighten-4', small, label): .caption Monthly
+                v-chip.ml-0(color='grey lighten-4', small, label): .caption One-time
                 v-chip.ml-0(color='grey lighten-4', small, label): .caption Public
+                v-chip.ml-0(color='grey lighten-4', small, label): .caption Anonymous
             v-btn.mx-0(color='indigo', large, dark, href='https://github.com/sponsors/NGPixel')
               v-icon mdi-arrow-right
               span Donate
