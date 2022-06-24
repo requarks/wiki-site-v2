@@ -1,1 +1,1 @@
-https://wiki.js.org
+https://js.wiki
