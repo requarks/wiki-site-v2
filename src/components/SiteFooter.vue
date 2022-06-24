@@ -20,8 +20,8 @@
               li: a(href='https://www.patreon.com/requarks') Donate on Patreon
               li: a(href='https://opencollective.com/wikijs') Donate on OpenCollective
               li: a(href='https://docs.requarks.io/dev/translations') Help with Translations
-              li: a(href='https://wiki.js.org/feedback') Request a New Feature
-              li: a(href='https://github.com/Requarks/wiki/issues') Report a Bug
+              li: a(href='https://requarks.canny.io/wiki') Request a New Feature
+              li: a(href='https://github.com/requarks/wiki/discussions') Report a Bug
               li: a(href='https://docs.requarks.io/dev') Developers
           v-flex.footer-col(xs12, sm4, lg3)
             .footer-subtitle About
@@ -29,6 +29,8 @@
               li: a(href='https://github.com/Requarks/wiki') GitHub Project
               li: a(href='https://twitter.com/requarks') Follow on Twitter
               li: a(href='https://wiki.requarks.io/slack') Chat on Slack
+              li: a(href='https://discord.gg/rcxt9QS2jd') Chat on Discord
+              li: a(href='https://t.me/wiki_js') Follow on Telegram
               router-link(to='/about', tag='li'): a Contributors &amp; Sponsors
               li: a(href='https://blog.js.wiki/') Blog
               li: a(href='https://blog.js.wiki/subscribe') Newsletter
