@@ -115,22 +115,10 @@ export default {
       translators: [],
       specialthanks: [
         {
-          logo: 'https://static.requarks.io/logo/algolia-alt.svg',
-          title: 'Algolia',
-          description: 'A powerful hosted search engine API, Algolia provides product teams with the resources &amp; tools they need to create fast, relevant search.',
-          link: 'https://www.algolia.com'
-        },
-        {
           logo: 'https://static.requarks.io/logo/browserstack.svg',
           title: 'BrowserStack',
           description: 'BrowserStack is a cloud-based cross-browser testing tool that enables developers to test their websites across various browsers on different operating systems and mobile devices, without requiring users to install virtual machines, devices or emulators.',
           link: 'https://www.browserstack.com'
-        },
-        {
-          logo: 'https://static.requarks.io/logo/bugsnag.svg',
-          title: 'Bugsnag',
-          description: 'Bugsnag monitors apps for errors that impact customers & reports all diagnostic data.',
-          link: 'https://www.bugsnag.com'
         },
         {
           logo: 'https://static.requarks.io/logo/canny.svg',
