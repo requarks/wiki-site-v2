@@ -9,7 +9,6 @@
       v-btn.mt-5(outline, dark, large, to='/about', color='indigo lighten-4') View List
       v-btn.mt-5(outline, dark, large, to='/donate', color='pink lighten-2') Donate
       .home-sponsors-logos
-        a(href='https://www.algolia.com', target='_blank', title='Algolia'): img(src='https://static.requarks.io/logo/algolia.svg', alt='Algolia')
         a(href='https://www.browserstack.com', target='_blank', title='Browserstack'): img(src='https://static.requarks.io/logo/browserstack.svg', alt='Browserstack')
         a(href='https://canny.io/', target='_blank', title='Canny'): img(src='https://static.requarks.io/logo/canny.svg', alt='Canny')
         a(href='https://www.cloudflare.com', target='_blank', title='Cloudflare'): img(src='https://static.requarks.io/logo/cloudflare.svg', alt='Cloudflare', style='max-width: 150px;')
