@@ -17,11 +17,11 @@ export default new Router({
       name: 'modules',
       component: () => import(/* webpackChunkName: "modules" */ './views/Modules.vue')
     },
-    {
-      path: '/cloud',
-      name: 'cloud',
-      component: () => import(/* webpackChunkName: "cloud" */ './views/Cloud.vue')
-    },
+//     {
+//       path: '/cloud',
+//       name: 'cloud',
+//       component: () => import(/* webpackChunkName: "cloud" */ './views/Cloud.vue')
+//     },
     {
       path: '/blog',
       name: 'blog',
