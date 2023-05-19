@@ -151,7 +151,7 @@ export default {
           link: 'https://www.icons8.com'
         },
         {
-          logo: 'https://static.requarks.io/logo/localazy.svg',
+          logo: 'https://static.requarks.io/logo/localazy-alt.svg',
           title: 'Localazy',
           description: 'Software & content localization on autopilot. Productive software developers choose Localazy for automated SW i18n and content localization.',
           link: 'https://www.localazy.com'
