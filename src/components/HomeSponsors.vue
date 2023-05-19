@@ -15,6 +15,7 @@
         a(href='https://m.do.co/c/5f7445bfa4d0', target='_blank', title='DigitalOcean'): img(src='https://static.requarks.io/logo/digitalocean.svg', alt='DigitalOcean', style='max-width: 200px;')
         a(href='https://github.com/sponsors/NGPixel/', target='_blank', title='GitHub'): img(src='https://static.requarks.io/logo/github.svg', alt='GitHub')
         a(href='https://icons8.com/', target='_blank', title='Icons8'): img(src='https://static.requarks.io/logo/icons8-text.svg', alt='Icons8')
+        a(href='https://localazy.com/', target='_blank', title='Localazy'): img(src='https://static.requarks.io/logo/localazy.svg', alt='Localazy')
         a(href='https://lokalise.com/', target='_blank', title='Lokalise'): img(src='https://static.requarks.io/logo/lokalise-text.svg', alt='Lokalise')
         a(href='https://www.macstadium.com/', target='_blank', title='MacStadium'): img(src='https://static.requarks.io/logo/macstadium.svg', alt='MacStadium')
         a(href='https://www.netlify.com/', target='_blank', title='Netlify'): img(src='../assets/logos/netlify.svg', alt='Netlify', style='max-width: initial; width: 160px; height: auto;')
