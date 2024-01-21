@@ -33,7 +33,6 @@
               li: a(href='https://t.me/wiki_js') Follow on Telegram
               router-link(to='/about', tag='li'): a Contributors &amp; Sponsors
               li: a(href='https://blog.js.wiki/') Blog
-              li: a(href='https://blog.js.wiki/subscribe') Newsletter
 
       v-divider.mt-5
       v-container.footer-bar
