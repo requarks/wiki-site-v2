@@ -47,7 +47,7 @@
                     img(:src='require(`../assets/icons/ios-width.svg`)', alt='Scalable')
                   .home-easy-tile-text
                     h3 Scalable
-                    span Whether it's on a tiny Raspberry Pi or on a high performance VM in the cloud, Wiki.js intelligently make use of the available resources.
+                    span Whether it's on a tiny Raspberry Pi or on a high performance VM in the cloud, Wiki.js intelligently makes use of the available resources.
         v-flex(xs12, md4)
           .home-easy-install
             .home-easy-install-icon
