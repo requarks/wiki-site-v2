@@ -27,9 +27,9 @@
             .footer-subtitle About
             ul.footer-links
               li: a(href='https://github.com/Requarks/wiki') GitHub Project
-              li: a(href='https://twitter.com/requarks') Follow on Twitter
-              li: a(href='https://wiki.requarks.io/slack') Chat on Slack
+              li: a(href='https://bsky.app/profile/js.wiki') Follow on Bluesky
               li: a(href='https://discord.gg/rcxt9QS2jd') Chat on Discord
+              li: a(href='https://wiki.requarks.io/slack') Chat on Slack
               li: a(href='https://t.me/wiki_js') Follow on Telegram
               router-link(to='/about', tag='li'): a Contributors &amp; Sponsors
               li: a(href='https://blog.js.wiki/') Blog
@@ -42,7 +42,6 @@
             div Copyright © 2017-{{currentYear}} #[a(href='https://www.requarks.io/', title='requarks.io') Requarks.io]
           v-flex.hidden-sm-and-down.text-xs-center(md4)
             a.mr-4(href='https://github.com/Requarks/wiki', title='GitHub Project'): img(:src='require("../assets/logos/metro-github.svg")', alt='GitHub')
-            a(href='https://twitter.com/requarks', title='Twitter'): img(:src='require("../assets/logos/metro-twitter.svg")', alt='Twitter')
           v-flex(xs12, md4)
             a(href='https://status.requarks.io/', title='Service Status') Service Status
 </template>
