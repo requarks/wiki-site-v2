@@ -29,7 +29,6 @@
               li: a(href='https://github.com/Requarks/wiki') GitHub Project
               li: a(href='https://bsky.app/profile/js.wiki') Follow on Bluesky
               li: a(href='https://discord.gg/rcxt9QS2jd') Chat on Discord
-              li: a(href='https://wiki.requarks.io/slack') Chat on Slack
               li: a(href='https://t.me/wiki_js') Follow on Telegram
               router-link(to='/about', tag='li'): a Contributors &amp; Sponsors
               li: a(href='https://blog.js.wiki/') Blog
