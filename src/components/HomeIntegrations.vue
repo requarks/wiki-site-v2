@@ -45,7 +45,7 @@ export default {
 
 <style lang='scss'>
 .home-integrations {
-  background: var(--v-greyish-lighten4);
+  background: rgb(var(--v-theme-greyish-lighten4));
   text-align: center;
   padding: 100px 0;
 
@@ -67,7 +67,7 @@ export default {
     font-size: 16px;
     font-weight: 300;
     padding: 15px;
-    color: var(--v-greyish-darken1);
+    color: rgb(var(--v-theme-greyish-darken1));
   }
 
   &-radar {
@@ -78,7 +78,7 @@ export default {
 
     .circle {
       border-radius: 50%;
-      border: 1px solid var(--v-greyish-lighten2);
+      border: 1px solid rgb(var(--v-theme-greyish-lighten2));
       width: 400px;
       height: 400px;
       position: absolute;
@@ -103,7 +103,7 @@ export default {
       align-items: center;
       flex-direction: column;
       background-color: #FFF;
-      border: 1px solid var(--v-greyish-lighten2);
+      border: 1px solid rgb(var(--v-theme-greyish-lighten2));
       box-shadow: 0 30px 60px 0 rgba(0,11,40,.1);
       position: absolute;
       top: 50%;
@@ -116,7 +116,7 @@ export default {
       }
 
       span {
-        color: var(--v-greyish-darken1);
+        color: rgb(var(--v-theme-greyish-darken1));
         margin-top: 7px;
       }
 

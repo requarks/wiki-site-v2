@@ -1,4 +1,7 @@
-import Vue from 'vue'
-import VueLuxon from 'vue-luxon'
+import { DateTime } from 'luxon'
 
-Vue.use(VueLuxon)
+export default {
+  install: (app) => {
+    app.config.globalProperties.$luxon = DateTime
+  }
+}

@@ -1,85 +1,76 @@
 <template lang='pug'>
   .header-container
-    v-toolbar.header(app, fixed, height='84', v-scroll='toggleNavStyle', :class='{alt1: navStyle === 1}')
+    v-app-bar(app, fixed, height='84', :class='{ "bg-white elevation-2": navStyle === 1}', v-scroll='toggleNavStyle')
       router-link.animated.fadeInLeft(to='/')
         img.header-logo(:src='require("../assets/logos/wikijs-full-2021.svg")', alt='Wiki.js')
       v-spacer
-      ul.header-nav.hidden-sm-and-down
-        router-link.animated.fadeInDown(to='/', tag='li'): a Features
-        router-link.animated.fadeInDown.wait-p2s(to='/modules', tag='li'): a Modules
-        li.animated.fadeInDown.wait-p3s: a(href='https://docs.requarks.io/', @click.stop.prevent='docsSelector = true') Docs
-        li.animated.fadeInDown.wait-p4s: a(href='https://blog.js.wiki', title='News', rel='noopener') News
-        router-link.animated.fadeInDown.wait-p5s(to='/about', tag='li'): a Backers
-        router-link.animated.fadeInDown.wait-p6s(to='/support', tag='li'): a Support
+      ul.header-nav.d-none.d-md-flex
+        li.animated.fadeInDown
+          router-link(to='/') Features
+        li.animated.fadeInDown.wait-p2s
+          router-link(to='/modules') Modules
+        li.animated.fadeInDown.wait-p3s
+          a(href='https://docs.requarks.io/', @click.stop.prevent='docsSelector = true') Docs
+        li.animated.fadeInDown.wait-p4s
+          a(href='https://blog.js.wiki', title='News', rel='noopener') News
+        li.animated.fadeInDown.wait-p5s
+          router-link(to='/about') Backers
+        li.animated.fadeInDown.wait-p6s
+          router-link(to='/support') Support
         li.animated.fadeInDown.wait-p7s
           a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project', rel='noopener')
             img(:src='require("../assets/logos/windows-github.svg")', alt='GitHub')
-      v-spacer.hidden-sm-and-down
-      .header-versions.text-xs-right.animated.fadeInRight.wait-p2s.hidden-md-and-down
-        .caption Stable #[strong(v-html='stable')]
-        .caption Legacy #[strong(v-html='legacy')]
-      v-btn.mx-0.hidden-sm-and-down.animated.fadeInRight(color='primary', outline, large, to='/get-started') Get Started
-      v-btn.mx-0.hidden-md-and-up.header-mobiletoggle(icon, @click='mobileDrawerOpen = !mobileDrawerOpen')
-        img(v-if='mobileDrawerOpen', :src='require("../assets/icons/metro-multiply.svg")', alt='Toggle Navigation Menu')
-        img(v-else, :src='require("../assets/icons/metro-menu.svg")', alt='Toggle Navigation Menu')
+      v-spacer.d-none.d-md-flex
+      .header-versions.text-right.animated.fadeInRight.wait-p2s.d-none.d-lg-block
+        .text-caption Stable #[strong(v-html='stable')]
+        .text-caption Legacy #[strong(v-html='legacy')]
+      v-btn.mx-0.d-none.d-md-flex.animated.fadeInRight(color='primary', variant='outlined', size='large', to='/get-started') Get Started
+      v-app-bar-nav-icon.d-md-none(@click='mobileDrawerOpen = !mobileDrawerOpen')
+
     v-navigation-drawer(app, fixed, temporary, v-model='mobileDrawerOpen')
-      v-list(two-line)
+      v-list(density='compact')
         .header-logo-mobile
           img(:src='require("../assets/logos/wikijs-full-2021.svg")', alt='Wiki.js')
-        v-list-tile(to='/')
-          v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-categorize.svg")', alt='Features')
-          v-list-tile-title Features
+        v-list-item(to='/', prepend-avatar-icon='../assets/icons/nolan-categorize.svg')
+          v-list-item-title Features
         v-divider
-        v-list-tile(to='/modules')
-          v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-cloud.svg")', alt='Modules')
-          v-list-tile-title Modules
+        v-list-item(to='/modules', prepend-avatar-icon='../assets/icons/nolan-cloud.svg')
+          v-list-item-title Modules
         v-divider
-        v-list-tile(href='https://docs.requarks.io/', @click.stop.prevent='docsSelector = true')
-          v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-open-book.svg")', alt='Docs')
-          v-list-tile-title Docs
+        v-list-item(href='https://docs.requarks.io/', @click.stop.prevent='docsSelector = true', prepend-avatar-icon='../assets/icons/nolan-open-book.svg')
+          v-list-item-title Docs
         v-divider
-        v-list-tile(href='https://blog.js.wiki', title='News', rel='noopener')
-          v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-feedback.svg")', alt='News')
-          v-list-tile-title News
+        v-list-item(href='https://blog.js.wiki', title='News', rel='noopener', prepend-avatar-icon='../assets/icons/nolan-feedback.svg')
+          v-list-item-title News
         v-divider
-        v-list-tile(to='/about')
-          v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-management.svg")', alt='Backers')
-          v-list-tile-title Backers
+        v-list-item(to='/about', prepend-avatar-icon='../assets/icons/nolan-management.svg')
+          v-list-item-title Backers
         v-divider
-        v-list-tile(to='/support')
-          v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-about.svg")', alt='Support')
-          v-list-tile-title Support
+        v-list-item(to='/support', prepend-avatar-icon='../assets/icons/nolan-about.svg')
+          v-list-item-title Support
         v-divider
-        v-list-tile(to='/get-started')
-          v-list-tile-avatar
-            img(:src='require("../assets/icons/nolan-downloading-updates.svg")', alt='Get Started')
-          v-list-tile-title Get Started
+        v-list-item(to='/get-started', prepend-avatar-icon='../assets/icons/nolan-downloading-updates.svg')
+          v-list-item-title Get Started
 
     v-dialog(v-model='docsSelector', width='400')
       v-card.header-docs
         v-btn.header-docs-close(icon, @click='docsSelector = false')
-          img(:src='require("../assets/icons/metro-multiply.svg")', alt='Cancel')
-        .pa-3.text-xs-center
+          v-icon mdi-close
+        .pa-3.text-center
           img(:src='require(`../assets/icons/nolan-literature.svg`)', alt='Documentation', style='width: 64px;')
-          .subheading Select a version...
+          .text-subtitle-1 Select a version...
         v-divider
-        v-card-actions.grey.lighten-5
+        v-card-actions.bg-grey-lighten-4
           v-spacer
-          v-btn(color='primary', outline, large, href='https://docs.requarks.io/') 2.0 Docs
-          v-btn(color='primary', outline, large, href='https://docs-legacy.requarks.io/wiki/') 1.0 Docs
+          v-btn(color='primary', variant='outlined', large, href='https://docs.requarks.io/') 2.0 Docs
+          v-btn(color='primary', variant='outlined', large, href='https://docs-legacy.requarks.io/wiki/') 1.0 Docs
           v-spacer
         v-divider
-        .px-3.py-4.text-xs-center.greyish--text.text--darken-1 Not sure which version to use? #[a(@click.stop.prevent='$router.push(`/get-started`); docsSelector = false', href='#') See Comparison]
+        .px-3.py-4.text-center.text-grey-darken-1 Not sure which version to use? #[a(@click.stop.prevent='$router.push(`/get-started`); docsSelector = false', href='#') See Comparison]
 </template>
 
 <script>
-import { get } from 'vuex-pathify'
+import { mapState } from 'vuex'
 
 export default {
   name: 'SiteHeader',
@@ -92,8 +83,7 @@ export default {
     }
   },
   computed: {
-    stable: get('stable'),
-    legacy: get('legacy')
+    ...mapState(['stable', 'legacy'])
   },
   methods: {
     toggleNavStyle () {
@@ -108,15 +98,17 @@ export default {
 </script>
 
 <style lang='scss'>
-.theme--light.v-toolbar.header {
-  box-shadow: none;
-  background-color: var(--v-greyish-base);
+.v-app-bar {
   transition: all .4s ease;
+  background: rgb(var(--v-theme-greyish-base)) !important;
+}
 
-  &.alt1 {
-    background-color: #FFF;
-    box-shadow: 0 4px 6px 0 rgba(12,0,46,.06);
-  }
+.v-app-bar.v-toolbar:not(.v-toolbar--flat) {
+  box-shadow: none !important;
+}
+
+.v-toolbar__content {
+  padding: 0 24px;
 }
 
 .header {
@@ -155,18 +147,18 @@ export default {
 
       &.router-link-exact-active {
         a {
-          color: var(--v-primary-base);
+          color: rgb(var(--v-theme-primary));
         }
       }
 
       a {
         font-size: 15px;
         font-weight: 500;
-        color: var(--v-greyish-darken2);
+        color: rgb(var(--v-theme-greyish-darken2));
         text-decoration: none;
 
         &:hover {
-          color: var(--v-primary-base);
+          color: rgb(var(--v-theme-primary));
 
           img {
             opacity: .5;
@@ -180,16 +172,11 @@ export default {
       }
     }
   }
-  &-mobiletoggle {
-    img {
-      width: 20px;
-    }
-  }
   &-versions {
     margin-right: 15px;
-    color: var(--v-greyish-darken1);
+    color: rgb(var(--v-theme-greyish-darken1));
     font-weight: 300;
-    border-right: 1px solid var(--v-greyish-lighten1);
+    border-right: 1px solid rgb(var(--v-theme-greyish-lighten1));
     padding-right: 15px;
 
     strong {

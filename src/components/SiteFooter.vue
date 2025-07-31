@@ -1,19 +1,19 @@
 <template lang='pug'>
   v-footer.footer(height='auto')
-    v-container.pa-0(fluid, grid-list-xl)
+    v-container.pa-0(fluid)
       v-container
-        v-layout(row, wrap)
-          v-flex.footer-col(xs12, md12, lg3)
+        v-row
+          v-col.footer-col(cols='12', md='12', lg='3')
             img.footer-logo(:src='require("../assets/logos/requarks.svg")', alt='Requarks.io')
             .mt-4 Open source applications for teams
-          v-flex.footer-col(xs12, sm4, lg3)
+          v-col.footer-col(cols='12', sm='4', lg='3')
             .footer-subtitle Install Guides
             ul.footer-links
               li: a(href='https://docs.requarks.io/install') Stable #[strong(v-html='stable')] #[v-chip.ml-2(small, color='teal', dark) Stable]
               li: a(href='https://docs-legacy.requarks.io/wiki/install') Legacy #[strong(v-html='legacy')] #[v-chip.ml-2(small, color='purple', dark) Legacy]
             a(href='https://www.digitalocean.com/?refcode=5f7445bfa4d0&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge', style='margin-top: 32px; display: block;')
               img(src='https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg', alt='DigitalOcean')
-          v-flex.footer-col(xs12, sm4, lg3)
+          v-col.footer-col(cols='12', sm='4', lg='3')
             .footer-subtitle Contribute
             ul.footer-links
               li: a(href='https://github.com/users/NGPixel/sponsorship') Donate on GitHub Sponsors
@@ -23,7 +23,7 @@
               li: a(href='https://requarks.canny.io/wiki') Request a New Feature
               li: a(href='https://github.com/requarks/wiki/discussions') Report a Bug
               li: a(href='https://docs.requarks.io/dev') Developers
-          v-flex.footer-col(xs12, sm4, lg3)
+          v-col.footer-col(cols='12', sm='4', lg='3')
             .footer-subtitle About
             ul.footer-links
               li: a(href='https://github.com/Requarks/wiki') GitHub Project
@@ -35,18 +35,18 @@
 
       v-divider.mt-5
       v-container.footer-bar
-        v-layout(row, wrap, align-center)
-          v-flex(xs12, md4)
+        v-row(align='center')
+          v-col(cols='12', md='4')
             div Released under the #[strong AGPL-v3 License]
             div Copyright © 2017-{{currentYear}} #[a(href='https://www.requarks.io/', title='requarks.io') Requarks.io]
-          v-flex.hidden-sm-and-down.text-xs-center(md4)
+          v-col.d-none.d-sm-flex.text-center(md='4')
             a.mr-4(href='https://github.com/Requarks/wiki', title='GitHub Project'): img(:src='require("../assets/logos/metro-github.svg")', alt='GitHub')
-          v-flex(xs12, md4)
+          v-col(cols='12', md='4')
             a(href='https://status.requarks.io/', title='Service Status') Service Status
 </template>
 
 <script>
-import { get } from 'vuex-pathify'
+import { mapState } from 'vuex'
 
 export default {
   name: 'SiteFooter',
@@ -56,15 +56,14 @@ export default {
     }
   },
   computed: {
-    stable: get('stable'),
-    legacy: get('legacy')
+    ...mapState(['stable', 'legacy'])
   }
 }
 </script>
 
 <style lang='scss'>
-.theme--light.v-footer.footer {
-  background-color: var(--v-greyish-base);
+.v-theme--light.v-footer.footer {
+  background-color: rgb(var(--v-theme-greyish-base));
   background-image: url('../assets/shapes/shape1.svg');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -100,13 +99,13 @@ export default {
       }
 
       a {
-        color: var(--v-greyish-darken1);
+        color: rgb(var(--v-theme-greyish-darken1));
         text-decoration: none;
         font-size: 16px;
         transition: color .4s linear;
 
         &:hover {
-          color: var(--v-primary-base);
+          color: rgb(var(--v-theme-primary));
         }
       }
     }
@@ -117,23 +116,23 @@ export default {
     }
   }
   &-bar {
-    color: var(--v-greyish-darken1);
+    color: rgb(var(--v-theme-greyish-darken1));
 
     @media screen and (max-width: 1264px) {
       text-align: center;
     }
 
     a {
-      color: var(--v-greyish-darken1);
+      color: rgb(var(--v-theme-greyish-darken1));
       text-decoration: none;
       transition: color .4s linear;
 
       &:hover {
-        color: var(--v-primary-base);
+        color: rgb(var(--v-theme-primary));
       }
     }
 
-    .flex:last-child {
+    .v-col:last-child {
       text-align: right;
 
       @media screen and (max-width: 1264px) {

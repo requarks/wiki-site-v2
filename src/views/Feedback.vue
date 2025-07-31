@@ -3,9 +3,9 @@
     .splash
       h1.animated.fadeInUp Feedback
       h3.animated.fadeInUp.wait-p2s Request new features and improvements
-    v-container.my-4(grid-list-xl)
-      v-layout(row, wrap)
-        v-flex(xs12)
+    v-container.my-4
+      v-row
+        v-col(cols='12')
           .feedback-content(data-canny)
 </template>
 

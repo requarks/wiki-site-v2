@@ -3,7 +3,7 @@
     .home-newsletter-curve
     h3 Subscribe to our newsletter
     h4 Get notified of important announcements and new major releases.
-    v-btn.mt-5(outline, dark, large, href='https://blog.js.wiki/subscribe') Subscribe
+    v-btn.mt-5(variant='outlined', color='white', large, href='https://blog.js.wiki/subscribe') Subscribe
 </template>
 
 <script>

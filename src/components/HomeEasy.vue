@@ -1,60 +1,60 @@
 <template lang='pug'>
   .home-easy
     .home-easy-curve
-    v-container.mt-5(grid-list-xl)
-      v-layout(row, wrap)
-        v-flex(xs12, md8)
-          v-container.pa-0(grid-list-xl)
-            v-layout(row, wrap)
-              v-flex(xs12, sm6)
+    v-container.mt-5
+      v-row
+        v-col(cols='12', md='8')
+          v-container.pa-0
+            v-row
+              v-col(cols='12', sm='6')
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-processor.svg`)', alt='Install anywhere')
                   .home-easy-tile-text
                     h3 Install anywhere
                     span Works on virtually any platform and is compatible with either PostgreSQL, MySQL, MariaDB, MS SQL Server or SQLite!
-              v-flex(xs12, sm6)
+              v-col(cols='12', sm='6')
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-gear.svg`)', alt='Administration')
                   .home-easy-tile-text
                     h3 Administration
                     span Manage all aspects of your wiki using the extensive and intuitive admin area.
-              v-flex(xs12, sm6)
+              v-col(cols='12', sm='6')
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-speedometer.svg`)', alt='Performance')
                   .home-easy-tile-text
                     h3 Performance
                     span Running on the blazing fast Node.js engine, Wiki.js is built with performance in mind.
-              v-flex(xs12, sm6)
+              v-col(cols='12', sm='6')
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-illustrator.svg`)', alt='Customizable')
                   .home-easy-tile-text
                     h3 Customizable
                     span Fully customize the appearance of your wiki, including a light and dark mode.
-              v-flex(xs12, sm6)
+              v-col(cols='12', sm='6')
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-lock.svg`)', alt='Protected')
                   .home-easy-tile-text
                     h3 Protected
                     span Make your wiki public, completely private or a mix of both.
-              v-flex(xs12, sm6)
+              v-col(cols='12', sm='6')
                 .home-easy-tile
                   .home-easy-tile-icon
                     img(:src='require(`../assets/icons/ios-width.svg`)', alt='Scalable')
                   .home-easy-tile-text
                     h3 Scalable
                     span Whether it's on a tiny Raspberry Pi or on a high performance VM in the cloud, Wiki.js intelligently makes use of the available resources.
-        v-flex(xs12, md4)
+        v-col(cols='12', md='4')
           .home-easy-install
             .home-easy-install-icon
               img(:src='require(`../assets/icons/nolan-downloading-updates.svg`)', alt='Easy Installation')
             h3 Easy Installation
             span You'll be ready to go within minutes! Step-by-step install guides available for all platforms.
-            v-btn.mx-0.mt-4.primary--text(color='white', large, to='/get-started') Get Started
+            v-btn.mx-0.mt-4.text-primary(color='white', large, to='/get-started') Get Started
 </template>
 
 <script>

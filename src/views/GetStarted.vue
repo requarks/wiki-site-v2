@@ -3,12 +3,12 @@
     .splash
       h1.animated.fadeInUp Get Started
       h3.animated.fadeInUp.wait-p2s Deploy Wiki.js on your environment
-    v-container(grid-list-xl)
-      v-layout(row, wrap)
-        v-flex(xs12, sm6)
+    v-container
+      v-row
+        v-col(cols='12', sm='6')
           .getstarted-ver.animated.fadeInUp
             img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube.svg`)', alt='Stable')
-            v-chip.my-3(color='teal', dark, outline)
+            v-chip.my-3(color='teal', variant='outlined')
               .body-2 STABLE
             h2(v-html='stable')
             .body-2 Recommended for new installations
@@ -19,10 +19,10 @@
                 li PostgreSQL, MySQL, MariaDB, MSSQL or SQLite3
             v-btn(color='teal', large, dark, href='https://docs.requarks.io/install')
               span Setup Instructions
-        v-flex(xs12, sm6)
+        v-col(cols='12', sm='6')
           .getstarted-ver.animated.fadeInUp.wait-p1s
             img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-greek-pillar-base.svg`)', alt='Legacy')
-            v-chip.my-3(color='purple', dark, outline)
+            v-chip.my-3(color='purple', variant='outlined')
               .body-2 LEGACY
             h2(v-html='legacy')
             .body-2 Previous version of Wiki.js
@@ -34,20 +34,13 @@
                 li Git #[em 2.7.4 or later]
             v-btn(color='purple', large, dark, href='https://docs-legacy.requarks.io/wiki/install')
               span Setup Instructions
-        v-flex(xs12)
+        v-col(cols='12')
           .getstarted-note.animated.fadeInUp.wait-p2s Upgrading from 1.x to 2.0 is quick and simple.
           carbon.mt-4.animated.fadeInUp.wait-p3s(long)
-        //- v-flex(xs12)
-          //- .getstarted-note.animated.fadeInUp.wait-p3s
-            //- h3 What's missing in 2.x compared to 1.0?
-            //- ul
-              //- li Mathjax Support
-              //- li Microsoft Account Login
-
 </template>
 
 <script>
-import { get } from 'vuex-pathify'
+import { mapState } from 'vuex'
 
 import Carbon from '../components/Carbon'
 
@@ -59,8 +52,7 @@ export default {
     return { }
   },
   computed: {
-    stable: get('stable'),
-    legacy: get('legacy')
+    ...mapState(['stable', 'legacy'])
   }
 }
 </script>
@@ -72,7 +64,7 @@ export default {
   }
 
   &-ver {
-    background: var(--v-greyish-base) linear-gradient(45deg, transparent, var(--v-greyish-lighten4));
+    background: rgb(var(--v-theme-greyish-base)) linear-gradient(45deg, transparent, rgb(var(--v-theme-greyish-lighten4)));
     border: 1px solid transparent;
     border-radius: 8px;
     padding: 12px;
@@ -91,7 +83,7 @@ export default {
 
     &-req {
       padding: 12px;
-      background-color: var(--v-greyish-lighten2);
+      background-color: rgb(var(--v-theme-greyish-lighten2));
       border-radius: 8px;
       width: 100%;
       margin: 24px 0;
@@ -106,7 +98,7 @@ export default {
           em {
             font-style: normal;
             font-weight: 500;
-            color: var(--v-greyish-darken1);
+            color: rgb(var(--v-theme-greyish-darken1));
           }
         }
       }
@@ -121,15 +113,15 @@ export default {
   }
 
   &-note {
-    background: var(--v-greyish-lighten2) linear-gradient(45deg, transparent, rgba(255,255,255,.5));;
+    background: rgb(var(--v-theme-greyish-lighten2)) linear-gradient(45deg, transparent, rgba(255,255,255,.5));;
     border-radius: 8px;
     padding: 12px;
     text-align: center;
-    color: var(--v-greyish-darken1);
+    color: rgb(var(--v-theme-greyish-darken1));
 
     h3 {
       font-weight: 500;
-      color: var(--v-greyish-darken2);
+      color: rgb(var(--v-theme-greyish-darken2));
     }
 
     ul {

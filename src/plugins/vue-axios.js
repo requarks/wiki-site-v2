@@ -1,5 +1,8 @@
-import Vue from 'vue'
 import axios from 'axios'
-import VueAxios from 'vue-axios'
 
-Vue.use(VueAxios, axios)
+export default {
+  install: (app) => {
+    app.config.globalProperties.$http = axios
+    app.config.globalProperties.$axios = axios
+  }
+}

@@ -307,6 +307,9 @@ export default {
       ]
     }
   },
+  mounted () {
+    this.alertShown = false
+  },
   methods: {
     async subscribe () {
       if (this.email.length < 7) {
@@ -360,9 +363,6 @@ export default {
         this.isLoading = false
       }
     }
-  },
-  mounted () {
-    this.alertShown = false
   }
 }
 </script>

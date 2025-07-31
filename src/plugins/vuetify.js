@@ -1,29 +1,26 @@
-import Vue from 'vue'
-import Vuetify from 'vuetify/lib'
-import '../styles/vuetify-overrides.styl'
+import { createVuetify } from 'vuetify'
+import 'vuetify/styles'
 
-Vue.use(Vuetify, {
-  options: {
-    customProperties: true,
-    minifyTheme: function (css) {
-      return process.env.NODE_ENV === 'production'
-        ? css.replace(/[\s|\r\n|\r|\n]/g, '')
-        : css
-    }
-  },
+export default createVuetify({
   theme: {
-    primary: '#6754e2',
-    secondary: '#00aff0',
-    accent: '#19cce6',
-    error: '#e03827',
-    greyish: {
-      base: '#eff2f9',
-      darken1: '#677294',
-      darken2: '#051441',
-      lighten1: '#CDCFD6',
-      lighten2: '#e6e8ef',
-      lighten3: '#bdbed6',
-      lighten4: '#f6f7fa'
+    themes: {
+      light: {
+        dark: false,
+        colors: {
+          primary: '#6754e2',
+          secondary: '#00aff0',
+          accent: '#19cce6',
+          error: '#e03827',
+          greyish: '#eff2f9',
+          'greyish-base': '#eff2f9',
+          'greyish-darken1': '#677294',
+          'greyish-darken2': '#051441',
+          'greyish-lighten1': '#CDCFD6',
+          'greyish-lighten2': '#e6e8ef',
+          'greyish-lighten3': '#bdbed6',
+          'greyish-lighten4': '#f6f7fa'
+        }
+      }
     }
   }
 })

@@ -1,22 +1,25 @@
-import Vue from 'vue'
-import './plugins/vuetify'
-import './plugins/vue-axios'
-import './plugins/vue-luxon'
-import './styles/animate.scss'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import { createProvider } from './vue-apollo'
+import vuetify from './plugins/vuetify'
+import { setupApollo, apolloClient } from './vue-apollo'
+import vueAxios from './plugins/vue-axios'
+import vueLuxon from './plugins/vue-luxon'
+import './styles/animate.scss'
 
-Vue.config.productionTip = false
+const app = createApp(App)
 
-new Vue({
-  router,
-  store,
-  render: h => h(App),
-  apolloProvider: createProvider(),
-  mounted () {
-    document.dispatchEvent(new Event('x-app-rendered'))
-    this.$store.dispatch('fetchGlobalStats', this.$apollo)
-  }
-}).$mount('#app')
+app.use(router)
+app.use(store)
+app.use(vuetify)
+app.use(vueAxios)
+app.use(vueLuxon)
+
+setupApollo(app)
+
+app.mount('#app')
+
+// Dispatch global actions
+store.dispatch('fetchGlobalStats', apolloClient)
+document.dispatchEvent(new Event('x-app-rendered'))

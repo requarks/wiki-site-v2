@@ -8,42 +8,36 @@
       li.animated.fadeInUp.wait-p4s: img(:src='require("../assets/logos/linux.svg")', alt='Linux')
       li.animated.fadeInUp.wait-p5s: img(:src='require("../assets/logos/macos.svg")', alt='macOS')
       li.animated.fadeInUp.wait-p6s: img(:src='require("../assets/logos/windows-server.svg")', alt='Windows Server')
-    .caption.greyish--text.text--darken-1.animated.fadeInUp.wait-p8s Released under the AGPL-v3 license.
+    .text-caption.text-greyish-darken-1.animated.fadeInUp.wait-p8s Released under the AGPL-v3 license.
     img.home-splash-ss.animated.fadeInUp.wait-p7s(:src='require("../assets/screenshots/wiki-screenshot.png")', :srcset='require("../assets/screenshots/wiki-screenshot-2x.png") + ` 2x`', alt='Wiki.js Screenshot')
     carbon.animated.wait-p8s(
       v-if='isReady'
-      :class='$vuetify.breakpoint.xlOnly ? `home-splash-carbon-desktop fadeInRight` : `home-splash-carbon-mobile fadeInUp`'
-      :long='!$vuetify.breakpoint.xlOnly'
+      :class='isXl ? `home-splash-carbon-desktop fadeInRight` : `home-splash-carbon-mobile fadeInUp`'
+      :long='!isXl'
     )
 </template>
 
-<script>
-import Carbon from '../components/Carbon'
+<script setup>
+import { ref, onMounted, computed } from 'vue'
+import { useDisplay } from 'vuetify'
+import Carbon from '../components/Carbon.vue'
 
-export default {
-  name: 'HomeSplash',
-  components: {
-    Carbon
-  },
-  data () {
-    return {
-      isReady: false
-    }
-  },
-  mounted () {
-    this.$nextTick(() => {
-      setTimeout(() => {
-        this.isReady = true
-      }, 1000)
-    })
-  }
-}
+const isReady = ref(false)
+const { name } = useDisplay()
+
+const isXl = computed(() => name.value === 'xl')
+
+onMounted(() => {
+  setTimeout(() => {
+    isReady.value = true
+  }, 1000)
+})
 </script>
 
 <style lang='scss'>
 .home-splash {
-  background-color: var(--v-greyish-base);
-  background-image: linear-gradient(to bottom, var(--v-greyish-base) 0%, #FFF 100%);
+  background-color: rgb(var(--v-theme-greyish-base));
+  background-image: linear-gradient(to bottom, rgb(var(--v-theme-greyish-base)) 0%, #FFF 100%);
   min-height: calc(100vh - 84px);
   height: 100%;
   padding: 100px 0;
@@ -57,7 +51,7 @@ export default {
   h1 {
     font-size: 40px;
     font-weight: 500;
-    color: var(--v-greyish-darken2);
+    color: rgb(var(--v-theme-greyish-darken2));
     padding: 0 15px;
 
     @media screen and (max-width: 599px) {
@@ -68,7 +62,7 @@ export default {
   h2 {
     font-size: 18px;
     font-weight: 400;
-    color: var(--v-greyish-darken1);
+    color: rgb(var(--v-theme-greyish-darken1));
     margin-top: 25px;
 
     @media screen and (max-width: 599px) {

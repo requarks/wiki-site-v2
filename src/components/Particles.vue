@@ -29,23 +29,47 @@ const TAU = 2 * PI
 const rand = n => n * random()
 const randRange = n => n - rand(2 * n)
 const fadeInOut = (t, m) => {
-  let hm = 0.5 * m
+  const hm = 0.5 * m
   return abs((t + hm) % m - hm) / (hm)
 }
 const lerp = (n1, n2, speed) => (1 - speed) * n1 + speed * n2
 
 let canvas
 let ctx
-let center = []
+const center = []
 let tick = 0
-let simplex = new SimplexNoise()
-let particleProps = new Float32Array(particlePropsLength)
+const simplex = new SimplexNoise()
+const particleProps = new Float32Array(particlePropsLength)
 
 export default {
   data () {
     return {
       animRef: null
     }
+  },
+  mounted () {
+    canvas = {
+      a: document.createElement('canvas'),
+      b: document.createElement('canvas')
+    }
+    ctx = {
+      a: canvas.a.getContext('2d'),
+      b: canvas.b.getContext('2d')
+    }
+    this.$refs.canContainer.insertBefore(canvas.b, this.$refs.canContainer.firstChild)
+    this.resize()
+
+    for (let i = 0; i < particlePropsLength; i += particlePropCount) {
+      this.initParticle(i)
+    }
+
+    this.draw()
+
+    window.addEventListener('resize', this.resize)
+  },
+  beforeUnmount () {
+    window.cancelAnimationFrame(this.animRef)
+    window.removeEventListener('resize', this.resize)
   },
   methods: {
     initParticle (i) {
@@ -69,14 +93,14 @@ export default {
       }
     },
     updateParticle (i) {
-      let i2 = 1 + i
-      let i3 = 2 + i
-      let i4 = 3 + i
-      let i5 = 4 + i
-      let i6 = 5 + i
-      let i7 = 6 + i
-      let i8 = 7 + i
-      let i9 = 8 + i
+      const i2 = 1 + i
+      const i3 = 2 + i
+      const i4 = 3 + i
+      const i5 = 4 + i
+      const i6 = 5 + i
+      const i7 = 6 + i
+      const i8 = 7 + i
+      const i9 = 8 + i
       let n, x, y, vx, vy, life, ttl, speed, x2, y2, radius, hue
 
       x = particleProps[i]
@@ -150,7 +174,7 @@ export default {
 
       ctx.a.clearRect(0, 0, canvas.a.width, canvas.a.height)
 
-      let gradient = ctx.b.createLinearGradient(0, 0, 0, canvas.a.height)
+      const gradient = ctx.b.createLinearGradient(0, 0, 0, canvas.a.height)
       gradient.addColorStop(0, '#0f1029')
       gradient.addColorStop(1, '#090a21')
       ctx.b.fillStyle = gradient
@@ -178,30 +202,6 @@ export default {
       center[0] = 0.5 * canvas.a.width
       center[1] = 0.5 * canvas.a.height
     }
-  },
-  mounted () {
-    canvas = {
-      a: document.createElement('canvas'),
-      b: document.createElement('canvas')
-    }
-    ctx = {
-      a: canvas.a.getContext('2d'),
-      b: canvas.b.getContext('2d')
-    }
-    this.$refs.canContainer.insertBefore(canvas.b, this.$refs.canContainer.firstChild)
-    this.resize()
-
-    for (let i = 0; i < particlePropsLength; i += particlePropCount) {
-      this.initParticle(i)
-    }
-
-    this.draw()
-
-    window.addEventListener('resize', this.resize)
-  },
-  beforeDestroy () {
-    window.cancelAnimationFrame(this.animRef)
-    window.removeEventListener('resize', this.resize)
   }
 }
 </script>

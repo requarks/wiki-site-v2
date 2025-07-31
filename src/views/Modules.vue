@@ -3,9 +3,9 @@
     .splash
       h1.animated.fadeInUp Modules
       h3.animated.fadeInUp.wait-p2s List of modules supported and included in Wiki.js
-    v-container.my-4(grid-list-xl)
-      v-layout(row, wrap)
-        v-flex(xs12, md4, xl3)
+    v-container.my-4
+      v-row
+        v-col(cols='12', md='4', xl='3')
           .modules-sidebar
             h2 Categories
             ul
@@ -24,18 +24,18 @@
               li
                 a(href='#storage') Storage
             v-divider.my-4
-            .text-xs-center
+            .text-center
               div: img(:src='require("../assets/icons/ios-crane.svg")', style='width: 34px;')
               .caption Modules with a crane icon are under development and will be available in an upcoming release.
             v-divider.my-4
             carbon
-        v-flex(xs12, md8, xl9)
+        v-col(cols='12', md='8', xl='9')
           .modules-list
             h2(id='analytics') Analytics
             .body-1.mb-3 Use analytics modules to quickly enable session tracking and browser performance monitoring on your wiki.
-            v-container.pa-0.mb-4(grid-list-xl)
-              v-layout(row, wrap)
-                v-flex(xs12, md6, xl4, v-for='analytic of analytics', :key='analytic.id')
+            v-container.pa-0.mb-4
+              v-row
+                v-col(cols='12', md='6', xl='4', v-for='analytic of analytics', :key='analytic.id')
                   .modules-list-item
                     img.modules-list-item-logo(v-if='analytic.icon', :src='`https://static.requarks.io/logo/` + analytic.icon')
                     v-avatar(v-else, color='blue', size='48', tile)
@@ -43,16 +43,16 @@
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='analytic.name')
-                      .blue--text.caption(v-html='analytic.company')
+                      .text-blue.caption(v-html='analytic.company')
                     template(v-if='analytic.dev')
                       v-spacer
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='auth') Authentication
             .body-1.mb-3 Let your users use their existing logins on your wiki, whether it's a social login or enterprise authentication.
-            v-container.pa-0.mb-4(grid-list-xl)
-              v-layout(row, wrap)
-                v-flex(xs12, md6, xl4, v-for='auth of auths', :key='auth.name')
+            v-container.pa-0.mb-4
+              v-row
+                v-col(cols='12', md='6', xl='4', v-for='auth of auths', :key='auth.name')
                   .modules-list-item
                     img.modules-list-item-logo(v-if='auth.icon', :src='`https://static.requarks.io/logo/` + auth.icon')
                     v-avatar(v-else, color='indigo', size='48', tile)
@@ -60,16 +60,16 @@
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='auth.name')
-                      .indigo--text.caption(v-html='auth.company')
+                      .text-indigo.caption(v-html='auth.company')
                     template(v-if='auth.dev')
                       v-spacer
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='db') Databases
             .body-1.mb-3 Wiki.js is compatible with any of the following database systems.
-            v-container.pa-0.mb-4(grid-list-xl)
-              v-layout(row, wrap)
-                v-flex(xs12, md6, xl4, v-for='db of dbs', :key='db.name')
+            v-container.pa-0.mb-4
+              v-row
+                v-col(cols='12', md='6', xl='4', v-for='db of dbs', :key='db.name')
                   .modules-list-item
                     img.modules-list-item-logo(v-if='db.icon', :src='`https://static.requarks.io/logo/` + db.icon')
                     v-avatar(v-else, color='blue-grey', size='48', tile)
@@ -77,16 +77,16 @@
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='db.name')
-                      .blue-grey--text.caption(v-html='db.minVersion')
+                      .text-blue-grey.caption(v-html='db.minVersion')
                     template(v-if='db.dev')
                       v-spacer
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='editors') Editors
             .body-1.mb-3 Users can use the editor they are most comfortable and proficient with.
-            v-container.pa-0.mb-4(grid-list-xl)
-              v-layout(row, wrap)
-                v-flex(xs12, md6, xl4, v-for='editor of editors', :key='editor.name')
+            v-container.pa-0.mb-4
+              v-row
+                v-col(cols='12', md='6', xl='4', v-for='editor of editors', :key='editor.name')
                   .modules-list-item
                     img.modules-list-item-logo(v-if='editor.icon', :src='`https://static.requarks.io/logo/` + editor.icon')
                     v-avatar(v-else, color='pink', size='48', tile)
@@ -94,16 +94,16 @@
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='editor.name')
-                      .pink--text.caption(v-html='editor.desc')
+                      .text-pink.caption(v-html='editor.desc')
                     template(v-if='editor.dev')
                       v-spacer
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='logging') Logging
             .body-1.mb-3 Ship all logs produced by Wiki.js to your logging services.
-            v-container.pa-0.mb-4(grid-list-xl)
-              v-layout(row, wrap)
-                v-flex(xs12, md6, xl4, v-for='logger of loggers', :key='logger.name')
+            v-container.pa-0.mb-4
+              v-row
+                v-col(cols='12', md='6', xl='4', v-for='logger of loggers', :key='logger.name')
                   .modules-list-item
                     img.modules-list-item-logo(v-if='logger.icon', :src='`https://static.requarks.io/logo/` + logger.icon')
                     v-avatar(v-else, color='deep-orange', size='48', tile)
@@ -111,16 +111,16 @@
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='logger.name')
-                      .deep-orange--text.caption(v-html='logger.company')
+                      .text-deep-orange.caption(v-html='logger.company')
                     template(v-if='logger.dev')
                       v-spacer
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='search') Search Engines
             .body-1.mb-3 Wiki.js ships with 2 excellent database-based search engines. You can however leverage the amazing power of any of these powerful search engines.
-            v-container.pa-0.mb-4(grid-list-xl)
-              v-layout(row, wrap)
-                v-flex(xs12, md6, xl4, v-for='searchEngine of searchEngines', :key='searchEngine.name')
+            v-container.pa-0.mb-4
+              v-row
+                v-col(cols='12', md='6', xl='4', v-for='searchEngine of searchEngines', :key='searchEngine.name')
                   .modules-list-item
                     img.modules-list-item-logo(v-if='searchEngine.icon', :src='`https://static.requarks.io/logo/` + searchEngine.icon')
                     v-avatar(v-else, color='teal', size='48', tile)
@@ -128,16 +128,16 @@
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='searchEngine.name')
-                      .teal--text.caption(v-html='searchEngine.company')
+                      .text-teal.caption(v-html='searchEngine.company')
                     template(v-if='searchEngine.dev')
                       v-spacer
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
 
             h2(id='storage') Storage
             .body-1.mb-3 Sync and backup your content to any of these storage services.
-            v-container.pa-0.mb-4(grid-list-xl)
-              v-layout(row, wrap)
-                v-flex(xs12, md6, xl4, v-for='storageTarget of storageTargets', :key='storageTarget.name')
+            v-container.pa-0.mb-4
+              v-row
+                v-col(cols='12', md='6', xl='4', v-for='storageTarget of storageTargets', :key='storageTarget.name')
                   .modules-list-item
                     img.modules-list-item-logo(v-if='storageTarget.icon', :src='`https://static.requarks.io/logo/` + storageTarget.icon')
                     v-avatar(v-else, color='green', size='48', tile)
@@ -145,7 +145,7 @@
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='storageTarget.name')
-                      .green--text.caption(v-html='storageTarget.company')
+                      .text-green.caption(v-html='storageTarget.company')
                     template(v-if='storageTarget.dev')
                       v-spacer
                       img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
@@ -262,14 +262,14 @@ export default {
     box-shadow: 0 2px 4px 0 rgba(12,0,46,.04);
     border-radius: 7px;
     font-size: 16px;
-    color: var(--v-greyish-darken1);
+    color: rgb(var(--v-theme-greyish-darken1));
     border: 1px solid #f4f4f9;
 
     h2 {
       font-size: 22px;
       font-weight: 600;
       margin-bottom: 20px;
-      color: var(--v-greyish-darken2)
+      color: rgb(var(--v-theme-greyish-darken2))
     }
 
     ul {
@@ -283,10 +283,10 @@ export default {
 
         a {
           text-decoration: none;
-          color: var(--v-greyish-darken1);
+          color: rgb(var(--v-theme-greyish-darken1));
 
           &:hover {
-            color: var(--v-primary-base);
+            color: rgb(var(--v-theme-primary));
           }
         }
       }
@@ -339,16 +339,16 @@ export default {
       }
 
       &-text {
-        color: var(--v-greyish-darken1);
+        color: rgb(var(--v-theme-greyish-darken1));
 
         > a {
           font-size: 20px;
           font-weight: 500;
-          color: var(--v-greyish-darken2);
+          color: rgb(var(--v-theme-greyish-darken2));
           text-decoration: none;
 
           &:hover {
-            color: var(--v-primary-base);
+            color: rgb(var(--v-theme-primary));
           }
         }
 

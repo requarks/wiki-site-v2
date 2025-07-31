@@ -1,26 +1,26 @@
 <template lang='pug'>
   .home-opensource
     v-container
-      v-layout(row, wrap)
-        v-flex.home-opensource-main(xs12, md6)
+      v-row
+        v-col.home-opensource-main(cols='12', md='6')
           h3 Open Source
           h4 It's not just about being free, it also means anyone can contribute new features and help squash bugs. Wiki.js is proudly licensed under AGPLv3.
-          v-layout.home-opensource-stats(row)
-            v-flex(xs6)
+          v-row.home-opensource-stats
+            v-col(cols='6')
               strong 100M+
               span Downloads
-            v-flex(xs6)
+            v-col(cols='6')
               strong {{stars}}+
               span Stars on GitHub
-          v-btn.mt-5.mx-0(dark, color='primary', large, href='https://github.com/Requarks/wiki') View on GitHub
-        v-flex.home-opensource-side.text-xs-center(xs12, md6)
+          v-btn.mt-5.mx-0(color='primary', large, href='https://github.com/Requarks/wiki') View on GitHub
+        v-col.home-opensource-side.text-center(cols='12', md='6')
           .home-opensource-shape
           .home-opensource-shape
           img(:src='require("../assets/logos/color-opensource.svg")', alt='Open Source')
 </template>
 
 <script>
-import { get } from 'vuex-pathify'
+import { mapState } from 'vuex'
 
 export default {
   name: 'HomeOpensource',
@@ -28,7 +28,7 @@ export default {
     return {}
   },
   computed: {
-    stars: get('stars')
+    ...mapState(['stars'])
   }
 }
 </script>
@@ -68,7 +68,7 @@ export default {
     margin-top: 20px;
     font-size: 15px;
     font-weight: 300;
-    color: var(--v-greyish-lighten3)
+    color: rgb(var(--v-theme-greyish-lighten3))
   }
 
   &-stats {
@@ -83,7 +83,7 @@ export default {
       }
     }
     span {
-      color: var(--v-greyish-lighten3);
+      color: rgb(var(--v-theme-greyish-lighten3));
       font-size: 16px;
     }
   }
