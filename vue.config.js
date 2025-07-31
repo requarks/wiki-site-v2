@@ -12,16 +12,13 @@ module.exports = {
     allowedHosts: 'all',
     host: '0.0.0.0'
   },
-  css: {
-    loaderOptions: { // 使用 loaderOptions 而不是 preprocessorOptions
-      scss: {
-        additionalData: `
-          @import "~@/styles/vuetify-overrides.styl";
-        `
-      }
-    }
-  },
   pluginOptions: {
+    vuetify: {
+      // 告诉插件使用SASS编译样式，这是激活自定义变量的关键
+      styles: {
+        configFile: 'src/styles/vuetify-overrides.scss' // Vuetify 3 推荐使用这个选项
+      },
+    },
     prerenderSpa: {
       registry: undefined,
       renderRoutes: [
