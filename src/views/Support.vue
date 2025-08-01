@@ -8,7 +8,7 @@
         v-col(cols='12')
           .support-item.animated.fadeInUp
             .support-item-logo
-              img(:src='require(`../assets/icons/color-software-installer.svg`)', alt='Help with Installation / Configuration', style='width: 80px;')
+              img(src='../assets/icons/color-software-installer.svg', alt='Help with Installation / Configuration', style='width: 80px;')
             .px-4
               h2.text-blue-darken-2 Questions / Help with Installation / Configuration
               .body-1 You're trying to setup or perform a specific action in Wiki.js but can't get it working and need help.
@@ -16,7 +16,7 @@
         v-col(cols='12')
           .support-item.animated.fadeInUp.wait-p1s
             .support-item-logo
-              img(:src='require(`../assets/icons/color-ladybird.svg`)', alt='Report a Bug', style='width: 80px;')
+              img(src='../assets/icons/color-ladybird.svg', alt='Report a Bug', style='width: 80px;')
             .px-4
               h2.text-red Report a Bug
               .body-1 You found something that doesn't work or isn't right and want to report it.
@@ -24,7 +24,7 @@
         v-col(cols='12')
           .support-item.animated.fadeInUp.wait-p2s
             .support-item-logo
-              img(:src='require(`../assets/icons/color-star.svg`)', alt='Suggest a new feature or improvement', style='width: 80px;')
+              img(src='../assets/icons/color-star.svg', alt='Suggest a new feature or improvement', style='width: 80px;')
             .px-4
               h2.text-indigo Suggest a new feature or improvement
               .body-1 You have an idea for a new feature or something that could be improved.
@@ -32,7 +32,7 @@
         v-col(cols='12')
           .support-item.animated.fadeInUp.wait-p3s
             .support-item-logo
-              img(:src='require(`../assets/icons/color-get-cash.svg`)', alt='Donate', style='width: 80px;')
+              img(src='../assets/icons/color-get-cash.svg', alt='Donate', style='width: 80px;')
             .px-4
               h2.text-green Donate
               .body-1 You'd like to financially contribute to this project and help it grow.
@@ -40,7 +40,7 @@
         v-col(cols='12')
           .support-item.animated.fadeInUp.wait-p4s
             .support-item-logo
-              img(:src='require(`../assets/icons/color-developer.svg`)', alt='Report a Security Vulnerability', style='width: 80px;')
+              img(src='../assets/icons/color-developer.svg', alt='Report a Security Vulnerability', style='width: 80px;')
             .px-4
               h2.text-pink Report a security vulnerability
               .body-1 Disclose potential vulnerabilities in a quick and secure manner.
@@ -48,7 +48,7 @@
         v-col(cols='12')
           .support-item.animated.fadeInUp.wait-p5s
             .support-item-logo
-              img(:src='require(`../assets/icons/color-developer.svg`)', alt='Contribute / Development', style='width: 80px;')
+              img(src='../assets/icons/color-developer.svg', alt='Contribute / Development', style='width: 80px;')
             .px-4
               h2.text-blue-grey Contribute / Development
               .body-1 You're a developer and would like to contribute new features or fix bugs.
@@ -60,7 +60,7 @@
 <script>
 /* global $crisp */
 
-import Carbon from '../components/Carbon'
+import Carbon from '../components/Carbon.vue'
 
 export default {
   components: {

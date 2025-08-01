@@ -33,7 +33,7 @@
                 a(href='https://us20.campaign-archive.com/home/?u=2c5b24b2d2601202fdc7570cd&id=cecee43e80', target='_blank') View previous newsletters
           v-flex(xs12, lg6, xl6).white.hidden-md-and-down
             .newsletter-img
-              img.animated.fadeInUp(:src='require("../assets/illustrations/fogg-message-sent.png")')
+              img.animated.fadeInUp(src='../assets/illustrations/fogg-message-sent.png')
           v-flex(xs1, lg2).grey.lighten-4.hidden-sm-and-down.hidden-lg-and-up
 </template>
 

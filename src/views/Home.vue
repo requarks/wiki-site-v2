@@ -11,14 +11,14 @@
 </template>
 
 <script>
-import HomeSplash from '../components/HomeSplash'
-import HomeEasy from '../components/HomeEasy'
-import HomeFeatures from '../components/HomeFeatures'
-import HomeOpensource from '../components/HomeOpensource'
-import HomeIntegrations from '../components/HomeIntegrations'
-import HomeCloud from '../components/HomeCloud'
-import HomeNewsletter from '../components/HomeNewsletter'
-import HomeSponsors from '../components/HomeSponsors'
+import HomeSplash from '../components/HomeSplash.vue'
+import HomeEasy from '../components/HomeEasy.vue'
+import HomeFeatures from '../components/HomeFeatures.vue'
+import HomeOpensource from '../components/HomeOpensource.vue'
+import HomeIntegrations from '../components/HomeIntegrations.vue'
+import HomeCloud from '../components/HomeCloud.vue'
+import HomeNewsletter from '../components/HomeNewsletter.vue'
+import HomeSponsors from '../components/HomeSponsors.vue'
 
 export default {
   components: {

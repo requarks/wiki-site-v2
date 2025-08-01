@@ -46,9 +46,9 @@
                       div Since {{formatDate(sponsor.joined)}} on #[em.text-green {{sponsor.source}}]
                     v-spacer
                     v-btn(v-if='sponsor.twitter', icon, :href='sponsor.twitter', rel='nofollow')
-                      img(:src='require(`../assets/logos/metro-twitter.svg`)', style='width: 24px;')
+                      img(src='../assets/logos/metro-twitter.svg', style='width: 24px;')
                     v-btn(v-if='sponsor.website', icon, :href='sponsor.website', rel='nofollow')
-                      img(:src='require(`../assets/icons/ios-internet.svg`)')
+                      img(src='../assets/icons/ios-internet.svg')
 
             h2(id='developers') Developers
             .about-list-loading(v-if='loading')
@@ -93,7 +93,7 @@
                 div(v-html='sponsor.description')
               v-spacer
               v-btn(icon, :href='sponsor.link', target='_blank', rel='nofollow')
-                img(:src='require(`../assets/icons/ios-internet.svg`)')
+                img(src='../assets/icons/ios-internet.svg')
 
 </template>
 

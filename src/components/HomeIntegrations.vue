@@ -5,32 +5,32 @@
     .home-integrations-radar
       .circle(v-for='idx of [1,2,3,4,5]')
       .bubble.bubble-one
-        img(:src='require(`../assets/logos/logo-inverted.svg`)', alt='Wiki.js')
+        img(src='../assets/logos/logo-inverted.svg', alt='Wiki.js')
       .bubble.bubble-two
-        img(:src='require(`../assets/logos/color-git.svg`)', alt='Git')
+        img(src='../assets/logos/color-git.svg', alt='Git')
         span Git
       .bubble.bubble-three
-        img(:src='require(`../assets/logos/color-aws.svg`)', alt='AWS')
+        img(src='../assets/logos/color-aws.svg', alt='AWS')
         span AWS
       .bubble.bubble-four
-        img(:src='require(`../assets/logos/color-azure.svg`)', alt='Azure')
+        img(src='../assets/logos/color-azure.svg', alt='Azure')
         span Azure
       .bubble.bubble-five
-        img(:src='require(`../assets/logos/color-googlecloud.svg`)', alt='Google Cloud')
+        img(src='../assets/logos/color-googlecloud.svg', alt='Google Cloud')
         span Google Cloud
       .bubble.bubble-six
-        img(:src='require(`../assets/logos/color-facebook.svg`)', alt='Facebook')
+        img(src='../assets/logos/color-facebook.svg', alt='Facebook')
         span Facebook
       .bubble.bubble-seven
-        img(:src='require(`../assets/logos/algolia.svg`)', alt='Algolia')
+        img(src='../assets/logos/algolia.svg', alt='Algolia')
         span Algolia
       .bubble.bubble-eight
-        img(:src='require(`../assets/logos/color-openid.svg`)', alt='OpenID')
+        img(src='../assets/logos/color-openid.svg', alt='OpenID')
         span OpenID
       .bubble.bubble-nine
-        img(:src='require(`../assets/logos/elasticsearch.svg`)', alt='Elasticsearch')
+        img(src='../assets/logos/elasticsearch.svg', alt='Elasticsearch')
       .bubble.bubble-ten
-        img(:src='require(`../assets/logos/color-dropbox.svg`)', alt='Dropbox')
+        img(src='../assets/logos/color-dropbox.svg', alt='Dropbox')
 </template>
 
 <script>

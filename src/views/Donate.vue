@@ -11,7 +11,7 @@
         v-col(cols='12', md='6')
           .donate-item.animated.fadeInUp
             .donate-item-logo
-              img(:src='require(`../assets/icons/bubbles-github.svg`)', alt='Github')
+              img(src='../assets/icons/bubbles-github.svg', alt='Github')
             .px-4
               h2.text-indigo GitHub Sponsors
               div
@@ -29,7 +29,7 @@
         v-col(cols='12', md='6')
           .donate-item.animated.fadeInUp.wait-p1s
             .donate-item-logo
-              img(:src='require(`../assets/logos/opencollective.svg`)', alt='OpenCollective', style='width: 80px;')
+              img(src='../assets/logos/opencollective.svg', alt='OpenCollective', style='width: 80px;')
             .px-4
               h2.text-blue OpenCollective
               div
@@ -47,7 +47,7 @@
         v-col(cols='12', md='6')
           .donate-item.animated.fadeInUp.wait-p2s
             .donate-item-logo
-              img(:src='require(`../assets/logos/patreon.svg`)', alt='Patreon', style='width: 80px;')
+              img(src='../assets/logos/patreon.svg', alt='Patreon', style='width: 80px;')
             .px-4
               h2.text-deep-orange Patreon
               div
@@ -61,7 +61,7 @@
         v-col(cols='12', md='6')
           .donate-item.animated.fadeInUp.wait-p3s
             .donate-item-logo
-              img(:src='require(`../assets/icons/color-paypal.svg`)', alt='Paypal')
+              img(src='../assets/icons/color-paypal.svg', alt='Paypal')
             .px-4
               h2.text-blue-darken-2 Paypal
               div
@@ -78,7 +78,7 @@
         v-col(cols='12', md='6')
           .donate-item.animated.fadeInUp.wait-p4s
             .donate-item-logo
-              img(:src='require(`../assets/icons/color-ethereum.svg`)', alt='Ethereum')
+              img(src='../assets/icons/color-ethereum.svg', alt='Ethereum')
             .px-4
               h2.text-blue-grey Ethereum
               div
@@ -92,7 +92,7 @@
         v-col(cols='12', md='6')
           .donate-item.animated.fadeInUp.wait-p5s
             .donate-item-logo
-              img(:src='require(`../assets/icons/color-bitcoin.svg`)', alt='Bitcoin')
+              img(src='../assets/icons/color-bitcoin.svg', alt='Bitcoin')
             .px-4
               h2.text-orange Bitcoin
               div
@@ -106,7 +106,7 @@
         v-col(cols='12', md='6')
           .donate-item.animated.fadeInUp.wait-p6s
             .donate-item-logo
-              img(:src='require(`../assets/icons/infographic-t-shirt.svg`)', alt='T-Shirts', style='width: 80px;')
+              img(src='../assets/icons/infographic-t-shirt.svg', alt='T-Shirts', style='width: 80px;')
             .px-4
               h2.text-teal T-Shirts
               div

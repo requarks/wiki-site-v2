@@ -1,4 +1,6 @@
-$body-font-family: 'Poppins';
+@forward 'vuetify/settings' with (
+  $body-font-family: ('Poppins', sans-serif),
+);
 
 .v-chip.supersmall .v-chip__content {
   height: 18px;

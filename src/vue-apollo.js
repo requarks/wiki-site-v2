@@ -3,7 +3,7 @@ import { DefaultApolloClient } from '@vue/apollo-composable'
 import { createApp, h } from 'vue'
 
 const httpLink = createHttpLink({
-  uri: process.env.VUE_APP_GRAPHQL_HTTP || 'https://graph.requarks.io/'
+  uri: import.meta.env.VUE_APP_GRAPHQL_HTTP || 'https://graph.requarks.io/'
 })
 
 const cache = new InMemoryCache()

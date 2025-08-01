@@ -8,6 +8,7 @@
 <script>
 
 export default {
+  name: 'Carbon',
   props: {
     long: {
       type: Boolean,

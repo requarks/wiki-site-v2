@@ -4,7 +4,7 @@
       v-container
         v-row
           v-col.footer-col(cols='12', md='12', lg='3')
-            img.footer-logo(:src='require("../assets/logos/requarks.svg")', alt='Requarks.io')
+            img.footer-logo(src='../assets/logos/requarks.svg', alt='Requarks.io')
             .mt-4 Open source applications for teams
           v-col.footer-col(cols='12', sm='4', lg='3')
             .footer-subtitle Install Guides
@@ -40,7 +40,7 @@
             div Released under the #[strong AGPL-v3 License]
             div Copyright © 2017-{{currentYear}} #[a(href='https://www.requarks.io/', title='requarks.io') Requarks.io]
           v-col.d-none.d-sm-flex.text-center(md='4')
-            a.mr-4(href='https://github.com/Requarks/wiki', title='GitHub Project'): img(:src='require("../assets/logos/metro-github.svg")', alt='GitHub')
+            a.mr-4(href='https://github.com/Requarks/wiki', title='GitHub Project'): img(src='../assets/logos/metro-github.svg', alt='GitHub')
           v-col(cols='12', md='4')
             a(href='https://status.requarks.io/', title='Service Status') Service Status
 </template>

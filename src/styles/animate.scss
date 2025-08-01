@@ -4,7 +4,7 @@ $use-fadeInDown: true;
 $use-fadeInLeft: true;
 $use-fadeInRight: true;
 
-@import '~animate-sass/animate';
+@import 'animate-sass/animate';
 
 @for $i from 1 through 20 {
   .wait-p#{$i}s {

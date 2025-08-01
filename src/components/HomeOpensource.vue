@@ -16,7 +16,7 @@
         v-col.home-opensource-side.text-center(cols='12', md='6')
           .home-opensource-shape
           .home-opensource-shape
-          img(:src='require("../assets/logos/color-opensource.svg")', alt='Open Source')
+          img(src='../assets/logos/color-opensource.svg', alt='Open Source')
 </template>
 
 <script>

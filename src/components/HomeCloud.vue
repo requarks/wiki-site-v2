@@ -7,7 +7,7 @@
         v-col(cols='12', sm='6', md='6')
           .home-cloud-plan
             .home-cloud-plan-icon
-              img(:src='require("../assets/icons/handdrawn-server.svg")', alt='Self-Hosted')
+              img(src='../assets/icons/handdrawn-server.svg', alt='Self-Hosted')
             h6 Self-Hosted
             span Host it on your on-premise servers
             v-divider.mt-3
@@ -15,7 +15,7 @@
         v-col(cols='12', sm='6', md='6')
           .home-cloud-plan
             .home-cloud-plan-icon.alt1
-              img(:src='require("../assets/icons/handdrawn-cloud.svg")', alt='Cloud')
+              img(src='../assets/icons/handdrawn-cloud.svg', alt='Cloud')
             h6 DigitalOcean Marketplace
             span One-click install, auto-update
             v-divider.mt-3

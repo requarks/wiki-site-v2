@@ -3,13 +3,13 @@
     h1.animated.fadeInUp The most #[strong powerful] and #[br] extensible #[strong open source] Wiki software
     h2.animated.fadeInUp.wait-p1s Make documentation a joy to write #[br] using Wiki.js's beautiful and intuitive interface!
     ul.home-splash-platforms
-      li.animated.fadeInUp.wait-p2s: img(:src='require("../assets/logos/docker.svg")', alt='Docker')
-      li.animated.fadeInUp.wait-p3s: img(:src='require("../assets/logos/kubernetes.svg")', alt='Kubernetes')
-      li.animated.fadeInUp.wait-p4s: img(:src='require("../assets/logos/linux.svg")', alt='Linux')
-      li.animated.fadeInUp.wait-p5s: img(:src='require("../assets/logos/macos.svg")', alt='macOS')
-      li.animated.fadeInUp.wait-p6s: img(:src='require("../assets/logos/windows-server.svg")', alt='Windows Server')
+      li.animated.fadeInUp.wait-p2s: img(src='../assets/logos/docker.svg', alt='Docker')
+      li.animated.fadeInUp.wait-p3s: img(src='../assets/logos/kubernetes.svg', alt='Kubernetes')
+      li.animated.fadeInUp.wait-p4s: img(src='../assets/logos/linux.svg', alt='Linux')
+      li.animated.fadeInUp.wait-p5s: img(src='../assets/logos/macos.svg', alt='macOS')
+      li.animated.fadeInUp.wait-p6s: img(src='../assets/logos/windows-server.svg', alt='Windows Server')
     .text-caption.text-greyish-darken-1.animated.fadeInUp.wait-p8s Released under the AGPL-v3 license.
-    img.home-splash-ss.animated.fadeInUp.wait-p7s(:src='require("../assets/screenshots/wiki-screenshot.png")', :srcset='require("../assets/screenshots/wiki-screenshot-2x.png") + ` 2x`', alt='Wiki.js Screenshot')
+    img.home-splash-ss.animated.fadeInUp.wait-p7s(src='../assets/screenshots/wiki-screenshot.png', srcset='../assets/screenshots/wiki-screenshot-2x.png 2x', alt='Wiki.js Screenshot')
     carbon.animated.wait-p8s(
       v-if='isReady'
       :class='isXl ? `home-splash-carbon-desktop fadeInRight` : `home-splash-carbon-mobile fadeInUp`'

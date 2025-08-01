@@ -4,62 +4,62 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import(/* webpackChunkName: "home" */ './views/Home.vue')
+    component: () => import('./views/Home.vue')
   },
   {
     path: '/modules',
     name: 'modules',
-    component: () => import(/* webpackChunkName: "modules" */ './views/Modules.vue')
+    component: () => import('./views/Modules.vue')
   },
   // {
   //   path: '/cloud',
   //   name: 'cloud',
-  //   component: () => import(/* webpackChunkName: "cloud" */ './views/Cloud.vue')
+  //   component: () => import('./views/Cloud.vue')
   // },
   {
     path: '/blog',
     name: 'blog',
-    component: () => import(/* webpackChunkName: "blog" */ './views/Blog.vue')
+    component: () => import('./views/Blog.vue')
   },
   {
     path: '/feedback*',
     name: 'feedback',
-    component: () => import(/* webpackChunkName: "feedback" */ './views/Feedback.vue')
+    component: () => import('./views/Feedback.vue')
   },
   {
     path: '/about',
     name: 'about',
-    component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+    component: () => import('./views/About.vue')
   },
   {
     path: '/get-started',
     name: 'get-started',
-    component: () => import(/* webpackChunkName: "get-started" */ './views/GetStarted.vue')
+    component: () => import('./views/GetStarted.vue')
   },
   {
     path: '/donate',
     name: 'donate',
-    component: () => import(/* webpackChunkName: "donate" */ './views/Donate.vue')
+    component: () => import('./views/Donate.vue')
   },
   {
     path: '/support',
     name: 'support',
-    component: () => import(/* webpackChunkName: "support" */ './views/Support.vue')
+    component: () => import('./views/Support.vue')
   },
   {
     path: '/telemetry',
     name: 'telemetry',
-    component: () => import(/* webpackChunkName: "telemetry" */ './views/Telemetry.vue')
+    component: () => import('./views/Telemetry.vue')
   },
   {
     path: '/newsletter',
     name: 'newsletter',
-    component: () => import(/* webpackChunkName: "newsletter" */ './views/Newsletter.vue')
+    component: () => import('./views/Newsletter.vue')
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {

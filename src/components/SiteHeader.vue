@@ -2,7 +2,7 @@
   .header-container
     v-app-bar(app, fixed, height='84', :class='{ "bg-white elevation-2": navStyle === 1}', v-scroll='toggleNavStyle')
       router-link.animated.fadeInLeft(to='/')
-        img.header-logo(:src='require("../assets/logos/wikijs-full-2021.svg")', alt='Wiki.js')
+        img.header-logo(src='../assets/logos/wikijs-full-2021.svg', alt='Wiki.js')
       v-spacer
       ul.header-nav.d-none.d-md-flex
         li.animated.fadeInDown
@@ -19,7 +19,7 @@
           router-link(to='/support') Support
         li.animated.fadeInDown.wait-p7s
           a(href='https://github.com/Requarks/wiki', target='_blank', title='GitHub Project', rel='noopener')
-            img(:src='require("../assets/logos/windows-github.svg")', alt='GitHub')
+            img(src='../assets/logos/windows-github.svg', alt='GitHub')
       v-spacer.d-none.d-md-flex
       .header-versions.text-right.animated.fadeInRight.wait-p2s.d-none.d-lg-block
         .text-caption Stable #[strong(v-html='stable')]
@@ -30,7 +30,7 @@
     v-navigation-drawer(app, fixed, temporary, v-model='mobileDrawerOpen')
       v-list(density='compact')
         .header-logo-mobile
-          img(:src='require("../assets/logos/wikijs-full-2021.svg")', alt='Wiki.js')
+          img(src='../assets/logos/wikijs-full-2021.svg', alt='Wiki.js')
         v-list-item(to='/', prepend-avatar-icon='../assets/icons/nolan-categorize.svg')
           v-list-item-title Features
         v-divider
@@ -56,8 +56,8 @@
       v-card.header-docs
         v-btn.header-docs-close(icon, @click='docsSelector = false')
           v-icon mdi-close
-        .pa-3.text-center
-          img(:src='require(`../assets/icons/nolan-literature.svg`)', alt='Documentation', style='width: 64px;')
+        .pa-3.text-centerx
+          img(src='../assets/icons/nolan-literature.svg', alt='Documentation', style='width: 64px;')
           .text-subtitle-1 Select a version...
         v-divider
         v-card-actions.bg-grey-lighten-4

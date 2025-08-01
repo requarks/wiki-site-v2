@@ -7,7 +7,7 @@
       v-row
         v-col(cols='12', sm='6')
           .getstarted-ver.animated.fadeInUp
-            img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube.svg`)', alt='Stable')
+            img.getstarted-ver-icon(src='../assets/icons/pastel-test-tube.svg', alt='Stable')
             v-chip.my-3(color='teal', variant='outlined')
               .body-2 STABLE
             h2(v-html='stable')
@@ -21,7 +21,7 @@
               span Setup Instructions
         v-col(cols='12', sm='6')
           .getstarted-ver.animated.fadeInUp.wait-p1s
-            img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-greek-pillar-base.svg`)', alt='Legacy')
+            img.getstarted-ver-icon(src='../assets/icons/pastel-greek-pillar-base.svg', alt='Legacy')
             v-chip.my-3(color='purple', variant='outlined')
               .body-2 LEGACY
             h2(v-html='legacy')
@@ -42,7 +42,7 @@
 <script>
 import { mapState } from 'vuex'
 
-import Carbon from '../components/Carbon'
+import Carbon from '../components/Carbon.vue'
 
 export default {
   components: {

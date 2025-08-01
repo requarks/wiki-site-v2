@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import SiteFooter from './components/SiteFooter'
-import SiteHeader from './components/SiteHeader'
+import SiteFooter from './components/SiteFooter.vue'
+import SiteHeader from './components/SiteHeader.vue'
 
 export default {
   name: 'App',

@@ -25,7 +25,7 @@
                 a(href='#storage') Storage
             v-divider.my-4
             .text-center
-              div: img(:src='require("../assets/icons/ios-crane.svg")', style='width: 34px;')
+              div: img(src='../assets/icons/ios-crane.svg', style='width: 34px;')
               .caption Modules with a crane icon are under development and will be available in an upcoming release.
             v-divider.my-4
             carbon
@@ -39,14 +39,14 @@
                   .modules-list-item
                     img.modules-list-item-logo(v-if='analytic.icon', :src='`https://static.requarks.io/logo/` + analytic.icon')
                     v-avatar(v-else, color='blue', size='48', tile)
-                      img(:src='require("../assets/icons/ios-web-analytics.svg")')
+                      img(src='../assets/icons/ios-web-analytics.svg')
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='analytic.name')
                       .text-blue.caption(v-html='analytic.company')
                     template(v-if='analytic.dev')
                       v-spacer
-                      img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
+                      img.modules-list-item-dev(src='../assets/icons/ios-crane.svg', alt='Coming soon')
 
             h2(id='auth') Authentication
             .body-1.mb-3 Let your users use their existing logins on your wiki, whether it's a social login or enterprise authentication.
@@ -56,14 +56,14 @@
                   .modules-list-item
                     img.modules-list-item-logo(v-if='auth.icon', :src='`https://static.requarks.io/logo/` + auth.icon')
                     v-avatar(v-else, color='indigo', size='48', tile)
-                      img(:src='require("../assets/icons/ios-key.svg")')
+                      img(src='../assets/icons/ios-key.svg')
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='auth.name')
                       .text-indigo.caption(v-html='auth.company')
                     template(v-if='auth.dev')
                       v-spacer
-                      img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
+                      img.modules-list-item-dev(src='../assets/icons/ios-crane.svg', alt='Coming soon')
 
             h2(id='db') Databases
             .body-1.mb-3 Wiki.js is compatible with any of the following database systems.
@@ -73,14 +73,14 @@
                   .modules-list-item
                     img.modules-list-item-logo(v-if='db.icon', :src='`https://static.requarks.io/logo/` + db.icon')
                     v-avatar(v-else, color='blue-grey', size='48', tile)
-                      img(:src='require("../assets/icons/ios-database.svg")')
+                      img(src='../assets/icons/ios-database.svg')
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='db.name')
                       .text-blue-grey.caption(v-html='db.minVersion')
                     template(v-if='db.dev')
                       v-spacer
-                      img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
+                      img.modules-list-item-dev(src='../assets/icons/ios-crane.svg', alt='Coming soon')
 
             h2(id='editors') Editors
             .body-1.mb-3 Users can use the editor they are most comfortable and proficient with.
@@ -90,14 +90,14 @@
                   .modules-list-item
                     img.modules-list-item-logo(v-if='editor.icon', :src='`https://static.requarks.io/logo/` + editor.icon')
                     v-avatar(v-else, color='pink', size='48', tile)
-                      img(:src='require("../assets/icons/ios-inscription.svg")')
+                      img(src='../assets/icons/ios-inscription.svg')
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='editor.name')
                       .text-pink.caption(v-html='editor.desc')
                     template(v-if='editor.dev')
                       v-spacer
-                      img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
+                      img.modules-list-item-dev(src='../assets/icons/ios-crane.svg', alt='Coming soon')
 
             h2(id='logging') Logging
             .body-1.mb-3 Ship all logs produced by Wiki.js to your logging services.
@@ -107,14 +107,14 @@
                   .modules-list-item
                     img.modules-list-item-logo(v-if='logger.icon', :src='`https://static.requarks.io/logo/` + logger.icon')
                     v-avatar(v-else, color='deep-orange', size='48', tile)
-                      img(:src='require("../assets/icons/ios-check.svg")')
+                      img(src='../assets/icons/ios-check.svg')
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='logger.name')
                       .text-deep-orange.caption(v-html='logger.company')
                     template(v-if='logger.dev')
                       v-spacer
-                      img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
+                      img.modules-list-item-dev(src='../assets/icons/ios-crane.svg', alt='Coming soon')
 
             h2(id='search') Search Engines
             .body-1.mb-3 Wiki.js ships with 2 excellent database-based search engines. You can however leverage the amazing power of any of these powerful search engines.
@@ -124,14 +124,14 @@
                   .modules-list-item
                     img.modules-list-item-logo(v-if='searchEngine.icon', :src='`https://static.requarks.io/logo/` + searchEngine.icon')
                     v-avatar(v-else, color='teal', size='48', tile)
-                      img(:src='require("../assets/icons/ios-google-web-search.svg")')
+                      img(src='../assets/icons/ios-google-web-search.svg')
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='searchEngine.name')
                       .text-teal.caption(v-html='searchEngine.company')
                     template(v-if='searchEngine.dev')
                       v-spacer
-                      img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
+                      img.modules-list-item-dev(src='../assets/icons/ios-crane.svg', alt='Coming soon')
 
             h2(id='storage') Storage
             .body-1.mb-3 Sync and backup your content to any of these storage services.
@@ -141,19 +141,19 @@
                   .modules-list-item
                     img.modules-list-item-logo(v-if='storageTarget.icon', :src='`https://static.requarks.io/logo/` + storageTarget.icon')
                     v-avatar(v-else, color='green', size='48', tile)
-                      img(:src='require("../assets/icons/ios-cloud-storage.svg")')
+                      img(src='../assets/icons/ios-cloud-storage.svg')
                     v-divider.mx-3(vertical)
                     .modules-list-item-text
                       strong(v-html='storageTarget.name')
                       .text-green.caption(v-html='storageTarget.company')
                     template(v-if='storageTarget.dev')
                       v-spacer
-                      img.modules-list-item-dev(:src='require("../assets/icons/ios-crane.svg")', alt='Coming soon')
+                      img.modules-list-item-dev(src='../assets/icons/ios-crane.svg', alt='Coming soon')
 
 </template>
 
 <script>
-import Carbon from '../components/Carbon'
+import Carbon from '../components/Carbon.vue'
 
 export default {
   components: {
