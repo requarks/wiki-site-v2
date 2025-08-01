@@ -145,13 +145,11 @@ export default {
         }
       }
 
-      &.router-link-exact-active {
-        a {
+      a {
+        &.router-link-exact-active {
           color: rgb(var(--v-theme-primary));
         }
-      }
 
-      a {
         font-size: 15px;
         font-weight: 500;
         color: rgb(var(--v-theme-greyish-darken2));
