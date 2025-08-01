@@ -1,6 +1,6 @@
 <template lang='pug'>
   .header-container
-    v-app-bar(app, fixed, height='84', :class='{ "bg-white elevation-2": navStyle === 1}', v-scroll='toggleNavStyle')
+    v-app-bar.header(app, flat, height='84', v-scroll='toggleNavStyle', :class='{alt1: navStyle === 1}')
       router-link.animated.fadeInLeft(to='/')
         img.header-logo(src='../assets/logos/wikijs-full-2021.svg', alt='Wiki.js')
       v-spacer
@@ -25,45 +25,46 @@
         .text-caption Stable #[strong(v-html='stable')]
         .text-caption Legacy #[strong(v-html='legacy')]
       v-btn.mx-0.d-none.d-md-flex.animated.fadeInRight(color='primary', variant='outlined', size='large', to='/get-started') Get Started
-      v-app-bar-nav-icon.d-md-none(@click='mobileDrawerOpen = !mobileDrawerOpen')
-
-    v-navigation-drawer(app, fixed, temporary, v-model='mobileDrawerOpen')
-      v-list(density='compact')
+      v-btn.d-md-none.header-mobiletoggle(@click='mobileDrawerOpen = !mobileDrawerOpen')
+        img(v-if='mobileDrawerOpen', src='../assets/icons/metro-multiply.svg', alt='Toggle Navigation Menu')
+        img(v-else, src='../assets/icons/metro-menu.svg', alt='Toggle Navigation Menu')
+    v-navigation-drawer(app, absolute, temporary, v-model='mobileDrawerOpen')
+      v-list(lines='two', density='compact')
         .header-logo-mobile
           img(src='../assets/logos/wikijs-full-2021.svg', alt='Wiki.js')
-        v-list-item(to='/', prepend-avatar-icon='../assets/icons/nolan-categorize.svg')
+        v-list-item(to='/', prepend-avatar='../assets/icons/nolan-categorize.svg')
           v-list-item-title Features
         v-divider
-        v-list-item(to='/modules', prepend-avatar-icon='../assets/icons/nolan-cloud.svg')
+        v-list-item(to='/modules', prepend-avatar='../assets/icons/nolan-cloud.svg')
           v-list-item-title Modules
         v-divider
-        v-list-item(href='https://docs.requarks.io/', @click.stop.prevent='docsSelector = true', prepend-avatar-icon='../assets/icons/nolan-open-book.svg')
+        v-list-item(href='https://docs.requarks.io/', @click.stop.prevent='docsSelector = true', prepend-avatar='../assets/icons/nolan-open-book.svg')
           v-list-item-title Docs
         v-divider
-        v-list-item(href='https://blog.js.wiki', title='News', rel='noopener', prepend-avatar-icon='../assets/icons/nolan-feedback.svg')
+        v-list-item(href='https://blog.js.wiki', rel='noopener', prepend-avatar='../assets/icons/nolan-feedback.svg')
           v-list-item-title News
         v-divider
-        v-list-item(to='/about', prepend-avatar-icon='../assets/icons/nolan-management.svg')
+        v-list-item(to='/about', prepend-avatar='../assets/icons/nolan-management.svg')
           v-list-item-title Backers
         v-divider
-        v-list-item(to='/support', prepend-avatar-icon='../assets/icons/nolan-about.svg')
+        v-list-item(to='/support', prepend-avatar='../assets/icons/nolan-about.svg')
           v-list-item-title Support
         v-divider
-        v-list-item(to='/get-started', prepend-avatar-icon='../assets/icons/nolan-downloading-updates.svg')
+        v-list-item(to='/get-started', prepend-avatar='../assets/icons/nolan-downloading-updates.svg')
           v-list-item-title Get Started
 
     v-dialog(v-model='docsSelector', width='400')
       v-card.header-docs
-        v-btn.header-docs-close(icon, @click='docsSelector = false')
-          v-icon mdi-close
-        .pa-3.text-centerx
+        v-btn.header-docs-close(icon, variant='plain', @click='docsSelector = false')
+          img(src='../assets/icons/metro-multiply.svg', alt='Cancel')
+        .pa-3.text-center
           img(src='../assets/icons/nolan-literature.svg', alt='Documentation', style='width: 64px;')
           .text-subtitle-1 Select a version...
         v-divider
         v-card-actions.bg-grey-lighten-4
           v-spacer
-          v-btn(color='primary', variant='outlined', large, href='https://docs.requarks.io/') 2.0 Docs
-          v-btn(color='primary', variant='outlined', large, href='https://docs-legacy.requarks.io/wiki/') 1.0 Docs
+          v-btn(color='primary', variant='outlined', size='large', href='https://docs.requarks.io/') 2.0 Docs
+          v-btn(color='primary', variant='outlined', size='large', href='https://docs-legacy.requarks.io/wiki/') 1.0 Docs
           v-spacer
         v-divider
         .px-3.py-4.text-center.text-grey-darken-1 Not sure which version to use? #[a(@click.stop.prevent='$router.push(`/get-started`); docsSelector = false', href='#') See Comparison]
@@ -98,17 +99,29 @@ export default {
 </script>
 
 <style lang='scss'>
-.v-app-bar {
+.v-theme--light.v-app-bar.header {
+  background-color: rgb(var(--v-theme-greyish-base));
   transition: all .4s ease;
-  background: rgb(var(--v-theme-greyish-base)) !important;
+
+  &.alt1 {
+    background-color: #FFF;
+    box-shadow: 0 4px 6px 0 rgba(12,0,46,.06);
+  }
+
+  .v-toolbar__content {
+    padding: 0 24px;
+  }
+
+  @media only screen and (max-width: 959px) {
+    .v-toolbar__content {
+      padding: 0 16px;
+    }
+  }
 }
 
-.v-app-bar.v-toolbar:not(.v-toolbar--flat) {
-  box-shadow: none !important;
-}
-
-.v-toolbar__content {
-  padding: 0 24px;
+.v-navigation-drawer {
+  z-index: 2000 !important;
+  top: 0 !important;
 }
 
 .header {
@@ -168,6 +181,11 @@ export default {
           transition: opacity .4s ease;
         }
       }
+    }
+  }
+  &-mobiletoggle {
+    img {
+      width: 20px;
     }
   }
   &-versions {
