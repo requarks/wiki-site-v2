@@ -1,5 +1,4 @@
 import { createStore } from 'vuex'
-// import pathify, { make } from 'vuex-pathify'
 import gql from 'graphql-tag'
 import _ from 'lodash'
 
