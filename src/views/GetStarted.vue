@@ -15,7 +15,7 @@
             .getstarted-ver-req
               strong Requirements
               ul
-                li Node.js #[em 12.x or later]
+                li Node.js #[em 18.x or later]
                 li PostgreSQL, MySQL, MariaDB, MSSQL or SQLite3
             v-btn(color='teal', large, dark, href='https://docs.requarks.io/install')
               span Setup Instructions
