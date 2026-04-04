@@ -74,19 +74,7 @@
             v-btn.mx-0(color='blue-grey', large, dark, href='https://etherscan.io/address/0xe1d55c19ae86f6bcbfb17e7f06ace96bdbb22cb5')
               v-icon mdi-arrow-right
               span Donate
-        <!-- v-flex(xs12, md6)
-          .donate-item.animated.fadeInUp.wait-p5s
-            .donate-item-logo
-              img(:src='require(`../assets/icons/color-bitcoin.svg`)', alt='Bitcoin')
-            .px-4
-              h2.orange--text Bitcoin
-              div
-                v-chip.ml-0(color='grey lighten-4', small, label): .caption One-time
-                v-chip.ml-0(color='grey lighten-4', small, label): .caption Anonymous
-            v-btn.mx-0(color='orange', large, dark, href='https://checkout.opennode.com/p/2553c612-f863-4407-82b3-1a7685268747')
-              v-icon mdi-arrow-right
-              span Donate-->
-        v-flex(xs12, md6, )
+        v-flex(xs12, md6)
           .donate-item.animated.fadeInUp.wait-p6s
             .donate-item-logo
               img(:src='require(`../assets/icons/infographic-t-shirt.svg`)', alt='T-Shirts', style='width: 80px;')
