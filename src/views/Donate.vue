@@ -6,7 +6,7 @@
       v-layout(row, wrap, justify-center)
         v-flex(xs12)
           .text-xs-center.py-3(style='max-width: 1000px; margin: 0 auto;')
-            .body-1 Wiki.js is #[strong open-source] and #[strong completely free]. I believe in building great software which benefits the community. However, it also brings challenges when it comes to sustaining the developers behind the project. Maintaining and developing new features to Wiki.js takes a considerable amount of time, and I am currently exploring the possibility of working on Wiki.js fulltime.
+            .body-1 Wiki.js is #[strong open-source] and #[strong completely free]. I believe in building great software which benefits the community. However, it also brings challenges when it comes to sustaining the developers behind the project. Maintaining and developing new features to Wiki.js takes a considerable amount of time.
             .body-1.mt-3 If you run a business and are using Wiki.js, it would make business sense to sponsor Wiki.js development: it ensures the project that your company relies on stays healthy and actively maintained. Of course, individual users are also welcome to make a recurring pledge if Wiki.js has helped you in your work or personal projects!
         v-flex(xs12, md6)
           .donate-item.animated.fadeInUp
