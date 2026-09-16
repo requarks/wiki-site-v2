@@ -21,28 +21,21 @@
               span Setup Instructions
         v-flex(xs12, sm6)
           .getstarted-ver.animated.fadeInUp.wait-p1s
-            img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-greek-pillar-base.svg`)', alt='Legacy')
+            img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube.svg`)', alt='Beta')
             v-chip.my-3(color='purple', dark, outline)
-              .body-2 LEGACY
-            h2(v-html='legacy')
-            .body-2 Previous version of Wiki.js
+              .body-2 BETA
+            h2(v-html='beta')
+            .body-2 Unstable beta version of Wiki.js
             .getstarted-ver-req
               strong Requirements
               ul
-                li Node.js #[em 6.11.1 or later]
-                li MongoDB #[em 3.2 or later]
-                li Git #[em 2.7.4 or later]
-            v-btn(color='purple', large, dark, href='https://docs-legacy.requarks.io/wiki/install')
-              span Setup Instructions
+                li Node.js #[em 26.x or later]
+                li PostgreSQL #[em 16.x or later]
+            v-btn(color='purple', large, dark, href='https://beta.js.wiki')
+              span Go to Beta Website
         v-flex(xs12)
-          .getstarted-note.animated.fadeInUp.wait-p2s Upgrading from 1.x to 2.0 is quick and simple.
+          .getstarted-note.animated.fadeInUp.wait-p2s Wiki.js 2.5 is recommended for production installations.
           carbon.mt-4.animated.fadeInUp.wait-p3s(long)
-        //- v-flex(xs12)
-          //- .getstarted-note.animated.fadeInUp.wait-p3s
-            //- h3 What's missing in 2.x compared to 1.0?
-            //- ul
-              //- li Mathjax Support
-              //- li Microsoft Account Login
 
 </template>
 
@@ -60,7 +53,7 @@ export default {
   },
   computed: {
     stable: get('stable'),
-    legacy: get('legacy')
+    beta: get('beta')
   }
 }
 </script>

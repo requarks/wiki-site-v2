@@ -6,8 +6,8 @@ import _ from 'lodash'
 
 const state = {
   stable: '2.x',
-  legacy: '1.0.117',
-  stars: 5800
+  beta: '3.0.0-beta',
+  stars: 28900
 }
 
 Vue.use(Vuex)
@@ -32,9 +32,9 @@ export default new Vuex.Store({
             }
           `
         })
-        commit('SET_STABLE', _.get(resp, 'data.releases.stable'), '1.x')
+        commit('SET_STABLE', _.get(resp, 'data.releases.stable'), '2.x')
         // commit('SET_BETA', _.get(resp, 'data.releases.beta'), '2.x')
-        commit('SET_STARS', _.get(resp, 'data.sponsors.githubStars'), 5800)
+        commit('SET_STARS', _.get(resp, 'data.sponsors.githubStars'), 28900)
       } catch (err) {
         console.error(err)
       }

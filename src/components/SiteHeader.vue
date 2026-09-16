@@ -17,7 +17,7 @@
       v-spacer.hidden-sm-and-down
       .header-versions.text-xs-right.animated.fadeInRight.wait-p2s.hidden-md-and-down
         .caption Stable #[strong(v-html='stable')]
-        .caption Legacy #[strong(v-html='legacy')]
+        .caption Beta #[strong(v-html='beta')]
       v-btn.mx-0.hidden-sm-and-down.animated.fadeInRight(color='primary', outline, large, to='/get-started') Get Started
       v-btn.mx-0.hidden-md-and-up.header-mobiletoggle(icon, @click='mobileDrawerOpen = !mobileDrawerOpen')
         img(v-if='mobileDrawerOpen', :src='require("../assets/icons/metro-multiply.svg")', alt='Toggle Navigation Menu')
@@ -71,8 +71,8 @@
         v-divider
         v-card-actions.grey.lighten-5
           v-spacer
-          v-btn(color='primary', outline, large, href='https://docs.requarks.io/') 2.0 Docs
-          v-btn(color='primary', outline, large, href='https://docs-legacy.requarks.io/wiki/') 1.0 Docs
+          v-btn(color='primary', outline, large, href='https://docs.requarks.io/') 2.0 Stable Docs
+          v-btn(color='primary', outline, large, href='https://docs.js.wiki/') 3.0 Beta Docs
           v-spacer
         v-divider
         .px-3.py-4.text-xs-center.greyish--text.text--darken-1 Not sure which version to use? #[a(@click.stop.prevent='$router.push(`/get-started`); docsSelector = false', href='#') See Comparison]
@@ -93,7 +93,7 @@ export default {
   },
   computed: {
     stable: get('stable'),
-    legacy: get('legacy')
+    beta: get('beta')
   },
   methods: {
     toggleNavStyle () {
