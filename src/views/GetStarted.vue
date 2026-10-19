@@ -7,11 +7,11 @@
       v-layout(row, wrap)
         v-flex(xs12, sm6)
           .getstarted-ver.animated.fadeInUp
-            img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-test-tube.svg`)', alt='Stable')
+            img.getstarted-ver-icon(:src='require(`../assets/icons/pastel-greek-pillar-base.svg`)', alt='Stable')
             v-chip.my-3(color='teal', dark, outline)
               .body-2 STABLE
             h2(v-html='stable')
-            .body-2 Recommended for new installations
+            .body-2 The older, mature, battle-tested version.
             .getstarted-ver-req
               strong Requirements
               ul
@@ -25,16 +25,16 @@
             v-chip.my-3(color='purple', dark, outline)
               .body-2 BETA
             h2(v-html='beta')
-            .body-2 Unstable beta version of Wiki.js
+            .body-2 The newer, actively developed beta version.
             .getstarted-ver-req
               strong Requirements
               ul
                 li Node.js #[em 26.x or later]
-                li PostgreSQL #[em 16.x or later]
+                li PostgreSQL #[em 17.x or later]
             v-btn(color='purple', large, dark, href='https://beta.js.wiki')
               span Go to Beta Website
         v-flex(xs12)
-          .getstarted-note.animated.fadeInUp.wait-p2s Wiki.js 2.5 is recommended for production installations.
+          .getstarted-note.animated.fadeInUp.wait-p2s Wiki.js 2.5 is recommended for critical production installations. Migrate to 3.x when you're ready.
           carbon.mt-4.animated.fadeInUp.wait-p3s(long)
 
 </template>
